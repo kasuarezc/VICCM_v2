@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "VICCM 2026"
+
+format:
+  html:
+    theme: none
+    toc: false
+    smooth-scroll: true
+    page-layout: full
+    css:
+      - /css/main.css
+      - /css/header.css
+      - /css/footer.css
+      - /css/home.css
+      - /css/responsive.css
+    include-in-header:
+     - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    include-before-body:
+      - partials/header.html
+    include-after-body:
+      - partials/footer.html
+      - text: |
+          <script src="/js/main.js"></script>
+          <script src="/js/menu.js"></script>
+          <script src="/js/slider.js"></script>
+          <script src="/js/comites.js"></script>
+          <script src="/js/noticias.js"></script>
+          <script src="/js/simposios.js"></script>
+          <script src="/js/sede.js"></script>
+          <script src="/js/contacto.js"></script>
+           <script src="/js/home.js"></script>
+      
+  
+
+execute:
+  echo: false
+  warning: false
+  message: false

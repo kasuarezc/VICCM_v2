@@ -1,4 +1,8 @@
-.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+.quarto/
+_site/
+*.log
+.DS_Store
+Thumbs.db

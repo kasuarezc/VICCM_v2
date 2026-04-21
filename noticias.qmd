@@ -35,7 +35,7 @@ format:
 
 <div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-04-06" data-titulo="Concurso de Diseño" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">6 Abr</div>
-<div class="noticia-img"><img src="noticias/2026-04-06_Concurso_Diseno/images/Concurso_Diseño.png" alt="Concurso de Diseño"></div>
+<div class="noticia-img"><img src="noticias/2026-04-06_Concurso_Diseno/images/Concurso_Diseno.png" alt="Concurso de Diseño"></div>
 <div class="noticia-content">
 <div class="noticia-meta">
 <span class="noticia-fecha">6 Abril 2026</span>
@@ -46,7 +46,7 @@ format:
 <span class="noticia-autor">Javier García-Villalba</span>
 </div>
 <h3 class="noticia-titulo">Concurso de Diseño</h3>
-<p class="noticia-descripcion">Consúlten las bases del concurso de diseño para participar en el VICCM 2026.</p>
+<p class="noticia-descripcion">Consúlten las bases del concurso de Diseno para participar en el VICCM 2026.</p>
 <a href="noticias/2026-04-06_Concurso_Diseno/concurso_diseno.html" class="noticia-btn">Ver Noticia Completa →</a>
 </div>
 </div>
