@@ -1,0 +1,98 @@
+---
+title: "Contacto"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/contacto.css
+      - css/responsive.css
+---
+
+<section class="contacto-hero">
+<div class="container">
+<h1>Contáctanos</h1>
+<p>Estamos aquí para resolver tus dudas sobre el VICCM 2026</p>
+</div>
+</section>
+
+<section class="contacto-page">
+<div class="contacto-container">
+
+<div class="contacto-info">
+<h2>Información de Contacto</h2>
+
+<div class="info-item">
+<div class="info-icon">✉️</div>
+<div class="info-content">
+<h3>Correo Electrónico</h3>
+<p>congresomastozoologiacol@gmail.com</p>
+<p>kar.suarez@udla.edu.co</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon">📞</div>
+<div class="info-content">
+<h3>Teléfono</h3>
+<p>+57 310 318 8539</p>
+<p>+57 312 412 7268</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-content">
+<h3>Dirección</h3>
+<p>Universidad de la Amazonia</p>
+<p>Sede Centro, Calle 17 # 11-85</p>
+<p>Florencia, Caquetá, Colombia</p>
+</div>
+</div>
+
+</div>
+
+<div class="contacto-formulario">
+<h2>Envíanos un Mensaje</h2>
+
+<form>
+
+<div class="form-group">
+<label for="nombre">Nombre Completo *</label>
+<input type="text" class="form-control" id="nombre" name="nombre" required>
+</div>
+
+<div class="form-group">
+<label for="email">Correo Electrónico *</label>
+<input type="email" class="form-control" id="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label for="telefono">Teléfono</label>
+<input type="tel" class="form-control" id="telefono" name="telefono">
+</div>
+
+<div class="form-group">
+<label for="asunto">Asunto *</label>
+<select class="form-control" id="asunto" name="asunto" required>
+<option value="" disabled selected>Seleccione un asunto</option>
+<option value="informacion">Información general</option>
+<option value="inscripciones">Inscripciones</option>
+<option value="propuestas">Propuestas académicas</option>
+<option value="patrocinios">Patrocinios</option>
+<option value="alojamiento">Alojamiento</option>
+<option value="otro">Otro</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="mensaje">Mensaje *</label>
+<textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+</div>
+
+<button type="submit" class="btn-enviar">Enviar Mensaje</button>
+
+</form>
+</div>
+
+</div>
+</section>

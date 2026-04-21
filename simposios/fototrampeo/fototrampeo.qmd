@@ -1,0 +1,69 @@
+---
+title: "Fototrampeo"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - fototrampeo.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Fototrampeo</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/fototrampeo.jpg" alt="Mazama sp. - Fototrampeo en la Macarena, Colombia">
+<div class="pie-foto">
+📷 Mazama sp. 2023. Macarena, Colombia
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Angelica Díaz Pulido</li>
+<li>Diego Lizcano</li>
+</ul>
+<div class="badge-simposio">VI Simposio de Fototrampeo · 2026</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Fototrampeo: Avances y Aplicaciones en Mastozoología</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Visibilizar los avances y desarrollos que se han realizado recientemente frente al uso del fototrampeo como técnica de muestreo de mamíferos y como el uso de los datos obtenidos ha potenciado la generación de nuevo conocimiento.</li>
+<li>Mantener la continuidad de un espacio de intercambio de saberes y de fortalecimiento de la red colombiana de fototrampeo.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El uso de cámaras trampa como herramienta para el muestreo de mamíferos cada vez es más frecuente y con el tiempo no solo se ha incrementado su uso, sino que también se ha diversificado, lo que nos ha permitido obtener una gran cantidad de datos que han sido la base de cientos de registros biológicos y de información de calidad para la toma de decisiones.</p>
+
+<p>Adicionalmente, las imágenes obtenidas han acercado a múltiples actores al uso de la herramienta potenciándola en contextos de ciencia ciudadana y reconectándonos con la naturaleza como estrategia de apropiación social del conocimiento, el primer paso para la materialización de estrategias de conservación.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="fototrampeo.js"></script>

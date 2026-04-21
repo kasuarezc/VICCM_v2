@@ -1,0 +1,350 @@
+---
+title: "Comités"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/comites.css
+      - css/responsive.css
+---
+
+<section class="comites-page">
+<div class="main-container">
+<aside class="comites-sidebar">
+<div class="sidebar-title">
+<span>👥</span>
+<span>Comités VICCM</span>
+</div>
+
+<nav class="comites-nav">
+<a href="#organizador" class="comite-nav-item active"><span>📅</span><span>Organizador</span><span class="badge">5</span></a>
+<a href="#cientifico" class="comite-nav-item"><span>🧪</span><span>Científico</span><span class="badge">3</span></a>
+<a href="#logistico" class="comite-nav-item"><span>🚚</span><span>Logístico</span><span class="badge">1</span></a>
+<a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">1</span></a>
+<a href="#financiero" class="comite-nav-item"><span>🪙</span><span>Financiero</span><span class="badge">1</span></a>
+<a href="#diversidad" class="comite-nav-item"><span>🌎</span><span>Diversidad</span><span class="badge">2</span></a>
+</nav>
+</aside>
+
+<main class="content-area">
+<h1 class="page-title">Comités</h1>
+<p class="page-subtitle">Conoce a las personas que hacen posible el VICCM 2026</p>
+
+<section id="organizador" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">📅</div>
+<h2>Comité Organizador</h2>
+</div>
+<div class="comite-descripcion">
+Es responsable de definir el desarrollo a medio y largo plazo de la serie de conferencias y de garantizar que esta mantenga un alto nivel organizativo. El congreso suele tener una duración de una semana (de lunes a viernes) en noviembre 2026.
+</div>
+<div class="miembros-grid">
+
+<div class="miembro-card"
+data-nombre="Javier García Villalba"
+data-rol="Presidente"
+data-img="comites/Javier_Garcia/images/Javier_Garcia.jpg"
+data-comite="Comité Organizador"
+data-biografia="Javier es biólogo de la Universidad Nacional de Colombia, su experiencia se ha concentrado en la Amazonía colombiana, particularmente en proyectos de educación ambiental, zoología, ecología y biología de la conservación. Ha desarrollado inventarios de mastofauna y cuenta con un sólido conocimiento taxonómico de la fauna silvestre amazónica, con énfasis en la conservación de primates y el estudio de mamíferos medianos y grandes. Es especialista en Gerencia del Talento Humano de la Universidad de la Amazonia y miembro fundador de la Asociación Colombiana de Zoología, la Sociedad Colombiana de Mastozoología y la Asociación Primatológica Colombiana, de la cual fue vicepresidente. Ha participado en la organización de eventos académicos, entre ellos el I Simposio Nacional de Jóvenes Investigadores de la Región Centro-Sur (Florencia, Caquetá, 2023)."
+data-rol-viccm="Javier está encargado de la organización general del congreso."
+data-enlaces='[{"tipo":"google-scholar","url":"https://scholar.google.com/citations?user=0d6gVY0AAAAJ&hl=es","texto":"Google Scholar"}]'>
+<div class="miembro-img">
+<img src="comites/Javier_Garcia/images/Javier_Garcia.jpg" alt="Javier García Villalba">
+</div>
+<div class="miembro-info">
+<h3>Javier García Villalba</h3>
+<div class="miembro-rol">Presidente</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Catalina Concha Osbahr"
+data-rol="Presidenta SCMas"
+data-img="comites/Catalina_Concha/images/Catalina_Concha.jpg"
+data-comite="Comité Organizador"
+data-biografia="Catalina es ecóloga de la Pontificia Universidad Javeriana (Bogotá), CEO de Arasarí Conservación e Investigación S.A.S. y presidenta de la Sociedad Colombiana de Mastozoología. Cuenta con experiencia en investigación mastozoológica, con énfasis en guaguas, puercoespines y tigrillos. Posee una sólida trayectoria en la organización y coordinación de eventos científicos de alcance nacional, participando en comités organizadores, académicos y logísticos de diversas ediciones del Congreso Colombiano de Mastozoología y del Congreso Colombiano de Ecología. Su trabajo integra gestión académica, articulación institucional y divulgación científica en ecología y mastozoología en Colombia."
+data-rol-viccm="Catalina dirige el comité organizador."
+data-enlaces='[{"tipo":"globe","url":"https://www.arasari-ci.com/","texto":"Sitio Web Arasarí CI"},{"tipo":"researchgate","url":"https://www.researchgate.net/profile/Dora-Concha-Osbahr-2","texto":"ResearchGate"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/dora-catalina-concha-osbahr-42031297/","texto":"LinkedIn"}]'
+data-posts='[{"titulo":"Nueva publicación sobre conservación","url":"noticias/2026-02-01_segunda_circular/segunda_circular.html","fecha":"Feb 2026"}]'>
+<div class="miembro-img">
+<img src="comites/Catalina_Concha/images/Catalina_Concha.jpg" alt="Catalina Concha Osbahr">
+</div>
+<div class="miembro-info">
+<h3>Catalina Concha Osbahr</h3>
+<div class="miembro-rol">Presidenta SCMas</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Cesar Rojano Bolaños"
+data-rol="Delegado Junta SCMas"
+data-img="comites/Cesar_Rojano/images/Cesar_Rojano.jpg"
+data-comite="Comité Organizador"
+data-biografia="Médico veterinario zootecnista de la Universidad de Córdoba, Magister en Ciencias Veterinarias del Trópico. Director Científico de Cunaguaro, Biodiversidad y Cultura y coordinador del proyecto de conservación de hormigueros de Colombia. Investigador con experiencia en conservación de vida silvestre en Colombia. Presidente del Comité Organizador del V Congreso Colombiano de Mastozoología, desarrollado en Yopal, Casanare."
+data-rol-viccm="Cesar es el enlace entre la Junta Directiva de la SCMas y el comité organizador del VICCM."
+data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/cesar.rojano.9/photos","texto":"Facebook"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/cesar-rojano-bola%C3%B1o-a082011aa/","texto":"LinkedIn"},{"tipo":"instagram","url":"https://www.instagram.com/crojanob/","texto":"Instagram"}]'>
+<div class="miembro-img">
+<img src="comites/Cesar_Rojano/images/Cesar_Rojano.jpg" alt="Cesar Rojano Bolaños">
+</div>
+<div class="miembro-info">
+<h3>Cesar Rojano Bolaños</h3>
+<div class="miembro-rol">Delegado Junta SCMas</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Diego J. Lizcano"
+data-rol="Página Web y OpenConf"
+data-img="comites/Diego_Lizcano/images/Diego_Lizcano.jpg"
+data-comite="Comité Organizador"
+data-biografia="Diego es biólogo, con un fuerte interés en ecología y conservación. Su trabajo se centra en el desarrollo y adaptación de herramientas conceptuales, computacionales y estadísticas para analizar grandes conjuntos de datos que ayudan a comprender mejor los patrones de distribución y abundancia de los mamíferos en la naturaleza. Diego es el editor técnico de Mammalogy Notes."
+data-rol-viccm="Diego está encargado de la página web y el OpenConf."
+data-enlaces='[{"tipo":"github","url":"https://github.com/dlizcano","texto":"GitHub"},{"tipo":"globe","url":"https://dlizcano.github.io/about/","texto":"Sitio Web Personal"},{"tipo":"x-twitter","url":"https://x.com/dlizcano","texto":"X (Twitter)"}]'
+data-posts='[{"titulo":"Código de Conducta del Congreso","url":"noticias/2026-01-25_codigo_de_conducta/index.html","fecha":"Ene 2026"},{"titulo":"Premios y reconocimientos","url":"noticias/2026-01-26_premios/index.html","fecha":"Ene 2026"}]'>
+<div class="miembro-img">
+<img src="comites/Diego_Lizcano/images/Diego_Lizcano.jpg" alt="Diego J. Lizcano">
+</div>
+<div class="miembro-info">
+<h3>Diego J. Lizcano</h3>
+<div class="miembro-rol">Página Web y OpenConf</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Karol Andres Suarez"
+data-rol="Diseñador Página Web"
+data-img="comites/Karol_Suarez/images/Karol_Suarez.png"
+data-comite="Comité Organizador"
+data-biografia="Ingeniero de sistemas con una sólida trayectoria en la creación de experiencias de usuario intuitivas y desarrollo front-end, complementada con una profunda experiencia en programación back-end utilizando Java, Python y PHP. Se destaca como experto en automatización mediante inteligencia artificial, integrando soluciones inteligentes en diversos proyectos. Apasionado por la divulgación científica, combina su habilidad técnica con un firme compromiso por la accesibilidad, dedicándose a construir interfaces y herramientas digitales que no solo comuniquen conceptos complejos de manera clara, sino que sean inclusivas y utilizables por la mayor cantidad de personas posible."
+data-rol-viccm="Responsable del diseño gráfico y experiencia de usuario del sitio web del congreso."
+data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/andres.s.castro.37","texto":"Facebook"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/karol-andr%C3%A9s-suarez-castro-553066177/","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Karol_Suarez/images/Karol_Suarez.png" alt="Karol Andres Suarez">
+</div>
+<div class="miembro-info">
+<h3>Karol Andres Suarez</h3>
+<div class="miembro-rol">Diseñador Página Web</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="cientifico" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">🧪</div>
+<h2>Comité Científico</h2>
+</div>
+<div class="comite-descripcion">
+Su función es seleccionar las ponencias presentadas. Las ponencias se revisan y seleccionan en función de su excelencia científica. Los integrantes del Comité Científico realizan una selección final de las ponencias científicamente excelentes para crear un programa equilibrado e interesante.
+</div>
+<div class="miembros-grid">
+
+<div class="miembro-card"
+data-nombre="Hugo Mantilla Meluk"
+data-rol="Aspectos Científicos y Divulgación"
+data-img="comites/Hugo_Mantilla/images/Hugo_Mantilla.jpg"
+data-comite="Comité Científico"
+data-biografia="Hugo es biólogo de la Universidad Nacional de Colombia y doctor en Sistemática y Evolución por la Universidad Tecnológica de Texas, donde se graduó con honores. Es profesor investigador de la Universidad del Quindío, curador de su Colección de Mamíferos y coordinador del Centro de Estudios de Alta Montaña. Es miembro de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales y miembro fundador de la Sociedad Colombiana de Mastozoología. Su investigación se centra en la evolución de primates y murciélagos, y cuenta con amplia experiencia en la coordinación y dirección de simposios científicos nacionales e internacionales."
+data-rol-viccm="Hugo está encargado del comité científico y los elementos de divulgación se han abordado desde lo técnico."
+data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profile/Hugo-Mantilla-Meluk-2","texto":"ResearchGate"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/hugo-mantilla-meluk-46b405223/?originalSubdomain=co","texto":"LinkedIn"},{"tipo":"orcid","url":"https://orcid.org/0000-0001-8134-3694","texto":"ORCID"}]'>
+<div class="miembro-img">
+<img src="comites/Hugo_Mantilla/images/Hugo_Mantilla.jpg" alt="Hugo Mantilla Meluk">
+</div>
+<div class="miembro-info">
+<h3>Hugo Mantilla Meluk</h3>
+<div class="miembro-rol">Aspectos Científicos y Divulgación</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Andres Felipe Suarez Castro"
+data-rol="Comité Científico"
+data-img="comites/Felipe_Suarez/images/Andres-Suarez-Castro.jpg"
+data-comite="Comité Científico"
+data-biografia="El Dr. Andrés Felipe Suárez Castro combina diferentes herramientas para ampliar el conocimiento de la biodiversidad en áreas poco monitoreadas, comprender los factores que determinan la distribución de las especies y predecir los efectos de las presiones antrópicas sobre la diversidad funcional y los servicios ecosistémicos. Su trabajo ha contribuido al conocimiento de los mamíferos en Colombia mediante la documentación de los primeros registros para cuatro especies para el país, la descripción de una especie nueva, el desarrollo de inventarios y revisiones taxonómicas con comentarios sobre la ecología de especies, y la consolidación de la lista de mamíferos de Colombia."
+data-rol-viccm="Andres Felipe apoya al comité científico."
+data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profile/Andres-Suarez-Castro","texto":"ResearchGate"},{"tipo":"x-twitter","url":"https://x.com/fsuarezca","texto":"X (Twitter)"},{"tipo":"orcid","url":"https://orcid.org/0000-0002-6621-3821","texto":"ORCID"}]'>
+<div class="miembro-img">
+<img src="comites/Felipe_Suarez/images/Andres-Suarez-Castro.jpg" alt="Andres Felipe Suarez Castro">
+</div>
+<div class="miembro-info">
+<h3>Andres Felipe Suarez Castro</h3>
+<div class="miembro-rol">Comité Científico</div>
+</div>
+</div>
+
+<div class="miembro-card"
+data-nombre="Adriana C. Acero Murcia"
+data-rol="Comité Científico"
+data-img="comites/Adriana_Acero/images/Adriana_Acero.jpg"
+data-comite="Comité Científico"
+data-biografia="Adriana es licenciada en Biología de la Universidad Distrital Francisco José de Caldas, magíster en Ecología y Evolución en la Universidad Federal de São Paulo y doctora en Ecología y Conservación en la Universidad Federal de Mato Grosso do Sul (Brasil). Su investigación se enfoca en la ecología de mamíferos, con énfasis en primatología y quiropterología, integrando bioacústica, etología, morfometría geométrica y ecología de comunidades. Actualmente profundiza en ciencias de la computación para aplicar machine learning al análisis de grandes volúmenes de datos acústicos. Cuenta con experiencia en investigación, docencia y divulgación científica en Colombia y Brasil. Posee una sólida trayectoria editorial como revisora en revistas científicas, incluyendo Community Ecology, Mammal Species, PeerJ, Caldasia y Mammalogy Notes."
+data-rol-viccm="Adriana apoya el comité científico."
+data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profile/Adriana-Acero-Murcia","texto":"ResearchGate"},{"tipo":"orcid","url":"https://orcid.org/0000-0002-3376-5099","texto":"ORCID"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/adriana-acero-murcia-9290b9a9/","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Adriana_Acero/images/Adriana_Acero.jpg" alt="Adriana C. Acero Murcia">
+</div>
+<div class="miembro-info">
+<h3>Adriana C. Acero Murcia</h3>
+<div class="miembro-rol">Comité Científico</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="logistico" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">🚚</div>
+<h2>Comité Logístico</h2>
+</div>
+<div class="comite-descripcion">
+Se encarga de asegurar que el Congreso funcione de manera fluida y ordenada durante su ejecución presencial. Ofrece soporte a ponentes, asistentes, invitados y público general antes, durante y después del evento.
+</div>
+<div class="miembros-grid">
+
+<div class="miembro-card"
+data-nombre="Luisa Fernanda Martínez"
+data-rol="Comunicaciones y Logística"
+data-img="comites/Luisa_Martinez/images/Luisa_Martinez.jpg"
+data-comite="Comité Logístico"
+data-biografia="Estudiante de Ingeniería Agroecológica de la Universidad de la Amazonia. Joven Investigador -MINCIENCIAS 2023-2024. Integrante activo de la Sociedad Colombiana de Mastozoología. Coordinadora del Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas de la Universidad de la Amazonia."
+data-rol-viccm="Luisa está encargada de los elementos de divulgación y logistica."
+data-enlaces='[]'>
+<div class="miembro-img">
+<img src="comites/Luisa_Martinez/images/Luisa_Martinez.jpg" alt="Luisa Fernanda Martínez">
+</div>
+<div class="miembro-info">
+<h3>Luisa Fernanda Martínez</h3>
+<div class="miembro-rol">Comunicaciones y Logística</div>
+</div>
+</div>
+
+<div class="miembro-card placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="comunicaciones" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">📣</div>
+<h2>Comité de Comunicaciones</h2>
+</div>
+<div class="comite-descripcion">
+Lidera la divulgación y posicionamiento del Congreso a nivel local, nacional e internacional. Gestiona la comunicación oficial mediante el envío y publicación oportuna de noticias, convocatorias y contenidos audiovisuales.
+</div>
+<div class="miembros-grid">
+
+<div class="miembro-card"
+data-nombre="Erick D. Cardona"
+data-rol="Comunicaciones"
+data-img="comites/Erick_Cardona/images/Erick_Cardona.jpg"
+data-comite="Comité de Comunicaciones"
+data-biografia="Estudiante de Biología de la Universidad de la Amazonia. Integrante del Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA) de la Universidad de la Amazonia. Cuenta con experiencia en el desarrollo de piezas audiovisuales, cortometrajes, reels, teaser y demás elementos para la difusión de información a través de páginas web y redes sociales."
+data-rol-viccm="Erick está encargado de los elementos de divulgación."
+data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/erick.cardona.540667?_rdc=1&_rdr#","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/erickdacar/","texto":"Instagram"},{"tipo":"youtube","url":"https://www.youtube.com/watch?v=CKl_GKncaes","texto":"YouTube"}]'>
+<div class="miembro-img">
+<img src="comites/Erick_Cardona/images/Erick_Cardona.jpg" alt="Erick D. Cardona">
+</div>
+<div class="miembro-info">
+<h3>Erick D. Cardona</h3>
+<div class="miembro-rol">Comunicaciones</div>
+</div>
+</div>
+
+<div class="miembro-card placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="financiero" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">🪙</div>
+<h2>Comité Financiero</h2>
+</div>
+<div class="comite-descripcion">
+Está a cargo de la planeación financiera del Congreso y de contribuir a su sostenibilidad. Apoya la búsqueda y gestión de recursos, patrocinios y apoyos.
+</div>
+<div class="miembros-grid">
+
+<div class="miembro-card"
+data-nombre="Mauricio Vela"
+data-rol="Tesorero"
+data-img="comites/Mauricio_Vela/images/Mauricio_Vela.jpg"
+data-comite="Comité Financiero"
+data-biografia="Biólogo de la Pontificia Universidad Javeriana de Bogotá, Maestro en Ciencias biológicas de la misma universidad y doctor en Manejo y conservación de fauna silvestre en la Universidad de Arizona (Arizona-Estados Unidos de América). Mauricio ha estudiado las dinámicas de las poblaciones de mamíferos en matrices de paisaje heterogéneas con grupos bioindicadores. Además de lo anterior, su trabajo se ha centrado en el estudio de la ecología espacial de grandes carnívoros neotropicales y sus interacciones con comunidades humanas en diferentes regiones de Colombia y el neotrópico. Mauricio ha estado vinculado a la SCMas desde 2009, y participó como organizador del II Congreso Colombiano de Mastozoología y III Congreso Latinoamericano de Mastozoología realizados en el año 2018 en Bogotá. Mauricio ha sido parte del cuerpo editorial de la Revista Mammalogy Notes desde su creación."
+data-rol-viccm="Mauricio está encargado de los aspectos financieros."
+data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/mauricio.vela.3150","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/imauriciovela/","texto":"Instagram"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/i-mauricio-vela-vargas-b62a9448/","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Mauricio_Vela/images/Mauricio_Vela.jpg" alt="Mauricio Vela">
+</div>
+<div class="miembro-info">
+<h3>Mauricio Vela</h3>
+<div class="miembro-rol">Tesorero</div>
+</div>
+</div>
+
+<div class="miembro-card placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="diversidad" class="comite-section">
+<div class="comite-header">
+<div class="comite-icon">🌎</div>
+<h2>Comité de Diversidad e Integración Científica</h2>
+</div>
+<div class="comite-descripcion">
+Promueve un Congreso diverso, incluyente y representativo. Favorece la participación amplia de regiones, instituciones y diferentes trayectorias académicas.
+</div>
+<div class="miembros-grid">
+<div class="miembro-card placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="miembro-card placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+</section>
+
+<div class="modal" id="miembroModal">
+<div class="modal-content">
+<div class="modal-header">
+<h2 id="modalNombre">Perfil del Miembro</h2>
+<button class="modal-close" type="button" id="modalCloseBtn">&times;</button>
+</div>
+<div class="modal-body" id="modalBody"></div>
+</div>
+</div>

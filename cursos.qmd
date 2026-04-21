@@ -1,0 +1,189 @@
+---
+title: "Cursos y talleres"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/cursos.css
+      - css/responsive.css
+---
+
+<section class="breadcrumb-container">
+
+::: breadcrumb
+<a href="index.html">⌂</a> [›]{.separator} [Cursos y talleres]{.current}
+:::
+
+</section>
+
+<section class="cursos-hero">
+
+::: container
+<h1>Cursos y actividades académicas</h1>
+
+<p>Espacios de formación, intercambio de saberes y actualización en mastozoología durante el VICCM 2026</p>
+:::
+
+</section>
+
+<section class="seccion-cursos">
+
+::: encabezado-seccion
+<img src="cursos/images/SVG/mono.svg" alt="Ícono cursos"/>
+
+<h2>Cursos</h2>
+:::
+
+:::::: cards-grid
+<article class="card-placeholder">
+
+::: placeholder-icon
+👨‍🏫
+:::
+
+<h3>Curso 1</h3>
+
+<p>Información del curso próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+👨‍🏫
+:::
+
+<h3>Curso 2</h3>
+
+<p>Información del curso próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+👨‍🏫
+:::
+
+<h3>Curso 3</h3>
+
+<p>Información del curso próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+::::::
+
+</section>
+
+<section class="seccion-cursos">
+
+::: encabezado-seccion
+<img src="cursos/images/SVG/Perezoso.svg" alt="Ícono talleres"/>
+
+<h2>Talleres</h2>
+:::
+
+:::::: cards-grid
+<article class="card-placeholder">
+
+::: placeholder-icon
+🛠
+:::
+
+<h3>Taller 1</h3>
+
+<p>Información del taller próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+🛠
+:::
+
+<h3>Taller 2</h3>
+
+<p>Información del taller próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+🛠
+:::
+
+<h3>Taller 3</h3>
+
+<p>Información del taller próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+::::::
+
+</section>
+
+<section class="seccion-cursos">
+
+::: encabezado-seccion
+<img src="cursos/images/SVG/Pavo_real.svg" alt="Ícono próximos eventos"/>
+
+<h2>Próximos eventos</h2>
+:::
+
+:::::: cards-grid
+<article class="card-placeholder">
+
+::: placeholder-icon
+📅
+:::
+
+<h3>Evento 1</h3>
+
+<p>Detalles del evento próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+📅
+:::
+
+<h3>Evento 2</h3>
+
+<p>Detalles del evento próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+
+<article class="card-placeholder">
+
+::: placeholder-icon
+📅
+:::
+
+<h3>Evento 3</h3>
+
+<p>Detalles del evento próximamente</p>
+
+[Próximamente]{.badge}
+
+</article>
+::::::
+
+</section>

@@ -1,0 +1,94 @@
+---
+title: "Concurso de Diseño"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - concurso_diseno.css
+---
+
+```{=html}
+<section class="noticia-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../noticias.html">Noticias</a>
+<span class="separator">›</span>
+<span class="current">Concurso de diseño</span>
+</div>
+
+<article class="noticia-card">
+
+<div class="noticia-header">
+<h1 class="noticia-titulo">Concurso para el diseño del logo oficial del VICCM 2026</h1>
+<div class="noticia-meta">
+<span>📅 06 Abril 2026</span>
+</div>
+</div>
+
+<div class="noticia-body">
+
+<div class="imagen-destacada">
+<img src="images/Concurso_Diseño.png">
+</div>
+
+<p>La Sociedad Colombiana de Mastozoología (SCMas) y la Universidad de la Amazonia invitan a participar en el concurso para el diseño del logo oficial del VI Congreso Colombiano de Mastozoología (VICCM).</p>
+
+<h2>🎯 Objetivo</h2>
+<p>Crear la imagen institucional del VICCM 2026 que represente la biodiversidad amazónica y la mastozoología colombiana.</p>
+
+<h2>📋 Lineamientos</h2>
+<ul class="lista-viñetas">
+<li>El logo debe ser original e inédito.</li>
+<li>No debe infringir derechos de autor.</li>
+<li>Debe ser adaptable a distintos formatos.</li>
+<li>No debe contener contenido ofensivo o comercial.</li>
+</ul>
+
+<h2>💡 Especificaciones</h2>
+<ul class="lista-numerada">
+<li>Formato vectorial (.AI, .EPS o .SVG)</li>
+<li>Versión a color y monocromática</li>
+<li>Máximo 3 colores</li>
+<li>Tipografía definida</li>
+</ul>
+
+<h2>📅 Cronograma</h2>
+<div class="cronograma">
+<div>25 marzo 2026 - Apertura</div>
+<div>24 abril 2026 - Cierre</div>
+<div>01 mayo 2026 - Evaluación</div>
+<div>06 mayo 2026 - Resultados</div>
+</div>
+
+<h2>🏆 Premio</h2>
+<p>Inscripción al congreso o stand comercial + certificado oficial.</p>
+
+<div class="botones">
+<a href="https://forms.gle/YsNRCLoibKhumTeq6" target="_blank" class="btn-primary">Participar</a>
+<a href="https://drive.google.com/file/d/1yMwalERVwAflB5820sPcIdlX4dED32iH/view" target="_blank" class="btn-secondary">Ver términos</a>
+</div>
+
+<div class="invitacion">
+<p>¡Participa y deja tu huella en la mastozoología colombiana!</p>
+</div>
+
+<div class="detalle-nav">
+<a href="../2026-02-01_segunda_circular/segunda_circular.html">
+<div class="label">Anterior</div>
+<div class="title">Segunda Circular</div>
+</a>
+
+<a href="../2026-02-09_Formulario/formulario.html">
+<div class="label">Siguiente</div>
+<div class="title">Formulario</div>
+</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="concurso_diseno.js"></script>

@@ -1,0 +1,192 @@
+---
+title: "Formulario de Propuestas"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - formulario.css
+---
+
+```{=html}
+<section class="formulario-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../noticias.html">Noticias</a>
+<span class="separator">›</span>
+<span class="current">Formulario de Propuestas</span>
+</div>
+
+<div class="fechas-container">
+<div class="fecha-card">
+<div class="fecha-icono">📅</div>
+<h3>Apertura</h3>
+<div class="fecha">1 Feb 2026</div>
+<div class="descripcion">Inicio de recepción</div>
+</div>
+
+<div class="fecha-card">
+<div class="fecha-icono">⏳</div>
+<h3>Cierre</h3>
+<div class="fecha">5 Abr 2026</div>
+<div class="descripcion">Fecha límite</div>
+</div>
+
+<div class="fecha-card">
+<div class="fecha-icono">✅</div>
+<h3>Notificación</h3>
+<div class="fecha">17 Abr 2026</div>
+<div class="descripcion">Resultados</div>
+</div>
+</div>
+
+<article class="formulario-card">
+
+<div class="formulario-header">
+<div class="formulario-header-content">
+<h1 class="formulario-titulo">Formulario de propuesta: simposios, cursos, talleres y otras actividades académicas del VICCM</h1>
+</div>
+</div>
+
+<div class="formulario-body">
+
+<div class="introduccion">
+<p>El Comité Organizador del VI Congreso Colombiano de Mastozoología (VICCM) invita a la comunidad académica, investigativa y de la sociedad civil a presentar propuestas para la realización de simposios, talleres, mesas redondas, cursos y otras actividades académicas, que harán parte de la programación oficial del Congreso.</p>
+
+<p>Este evento se llevará a cabo del <strong>02 al 06 de noviembre de 2026</strong>, en la ciudad de Florencia, Caquetá, y tiene como propósito fortalecer el intercambio de conocimientos, experiencias y enfoques relacionados con la mastozoología, así como promover espacios de reflexión, articulación y construcción colectiva en torno al estudio y la conservación de los mamíferos en Colombia.</p>
+
+<p>Los interesados en organizar alguna de estas actividades deberán someter su propuesta a través de la página web del congreso, hasta el <strong>05 de abril de 2026</strong>. Los proponentes serán notificados sobre la decisión del Comité Organizador hasta el <strong>17 de abril de 2026</strong>.</p>
+
+<div class="observaciones">
+<p><strong>Tenga en cuenta las siguientes observaciones:</strong></p>
+<ol>
+<li>El Comité Organizador podrá solicitar ajustes y realizará la programación final según disponibilidad de agenda y logística.</li>
+<li>Las propuestas incompletas o que no sean sometidas a través de la página web del congreso o el respectivo formulario, no serán evaluadas.</li>
+</ol>
+</div>
+</div>
+
+<div class="imagen-destacada">
+<img src="/images/generales/Florencia_Caqueta4.png" alt="Transición Andes-Amazonía">
+<div class="imagen-caption">Transición Andes-Amazonía. Bota caucana. Corregimiento de Miraflor. Reserva Natural La Cristalina-Pico Relámpago.</div>
+</div>
+
+<div class="preguntas-grid">
+
+<div class="pregunta-card">
+<div class="pregunta-numero">1</div>
+<h3>TÍTULO DEL EVENTO</h3>
+<div class="requerido">*Requerido</div>
+<p>Máximo 10 palabras.</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">2</div>
+<h3>MODALIDAD</h3>
+<div class="requerido">*Requerido</div>
+<p>Seleccione la modalidad de su propuesta.</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">3</div>
+<h3>COMITÉ ORGANIZADOR</h3>
+<p>Se sugiere al menos dos responsables de instituciones distintas:</p>
+<ul class="lista-simple">
+<li>Nombres completos</li>
+<li>Afiliación institucional</li>
+<li>Correo electrónico</li>
+<li>Rol (coordinador/a y/o moderador/a)</li>
+</ul>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">4</div>
+<h3>OBJETIVOS Y JUSTIFICACIÓN</h3>
+<p>Hasta 300 palabras. Para cursos y talleres por favor definir objetivos de aprendizaje.</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">5</div>
+<h3>METODOLOGÍA</h3>
+<p>Para talleres y cursos definir modalidad: Teórica / Práctica / Mixta.</p>
+</div>
+
+<div class="especies-grid">
+<div class="especie-card">
+<div class="especie-icono">🐒</div>
+<div class="especie-info">
+<h4>Pithecia milleri Allen, 1914</h4>
+<p>Mico volador, Oso mono (Ingano), Jidobe (Huitoto)</p>
+</div>
+</div>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">6</div>
+<h3>PARTICIPANTES E INVITADOS</h3>
+<p>a. Nombre completo<br>b. Afiliación institucional<br>c. País/Ciudad</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">7</div>
+<h3>ESTRATEGIA DE PARTICIPACIÓN</h3>
+<p>Breve descripción para garantizar la participación equitativa, diversa e incluyente.</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">8</div>
+<h3>DURACIÓN</h3>
+<p>a. Número de sesiones<br>b. Horas requeridas<br>c. Franja preferida (mañana/tarde)</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">9</div>
+<h3>REQUERIMIENTOS LOGÍSTICOS</h3>
+<p>Técnicos, de montaje y aforo.</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">10</div>
+<h3>FUENTE(S) DE FINANCIAMIENTO</h3>
+<p>Indicar si ya tienen o si tienen planes de obtener financiamiento y el nombre del donante(s).</p>
+</div>
+
+<div class="pregunta-card">
+<div class="pregunta-numero">11</div>
+<h3>SÓLO PARA PROPUESTAS DE CURSOS Y TALLERES</h3>
+<p>Defina el número máximo y el umbral mínimo de participantes para la apertura del curso o taller. A su vez, indique el costo potencial que tendría para los asistentes.</p>
+</div>
+
+</div>
+
+<div class="form-button-container">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScn7ZnsB9eSmrfRMw25gEbB_B1Jlyw6La7FHrt7aquRl3nFYw/viewform" target="_blank" rel="noopener noreferrer" class="btn-formulario">
+<span>📨</span>
+<span>Ir al Formulario de Propuestas<br><small>Google Forms</small></span>
+</a>
+</div>
+
+<div class="privacidad-note">
+<span>Este formulario utiliza Google Forms.</span>
+</div>
+
+<div class="organizadores-section">
+<h3>ORGANIZADORES</h3>
+<p>VI Congreso Colombiano de Mastozoología · Universidad de la Amazonia · Sociedad Colombiana de Mastozoología</p>
+</div>
+
+<div class="detalle-nav">
+<a href="../2026-02-01_segunda_circular/segunda_circular.html">
+<div class="label">Anterior</div>
+<div class="title">Segunda Circular</div>
+</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+
+<script src="formulario.js"></script>

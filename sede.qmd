@@ -1,0 +1,82 @@
+---
+title: "Sede"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/sede.css
+      - css/responsive.css
+---
+
+<section class="breadcrumb-container">
+<div class="breadcrumb">
+<a href="index.html">⌂</a>
+<span class="separator">›</span>
+<span class="current">Sede</span>
+</div>
+</section>
+
+<section class="sede-hero">
+<div class="container">
+<h1>Sede del Congreso</h1>
+<p>Información sobre la ciudad anfitriona y la Universidad de la Amazonia</p>
+</div>
+</section>
+
+<section class="seccion-sede">
+<div class="bloque">
+<div class="bloque-imagen">
+<div class="carrusel" id="carruselFlorencia">
+<div class="carrusel-contenedor">
+<div class="carrusel-slides" id="slidesFlorencia">
+<div class="carrusel-slide"><img src="sede/images/florencia1.jpg" alt="Florencia 1"></div>
+<div class="carrusel-slide"><img src="sede/images/florencia2.jpeg" alt="Florencia 2"></div>
+<div class="carrusel-slide"><img src="sede/images/florencia3.jpg" alt="Florencia 3"></div>
+</div>
+<button class="carrusel-btn carrusel-prev" id="prevFlorencia" type="button">❮</button>
+<button class="carrusel-btn carrusel-next" id="nextFlorencia" type="button">❯</button>
+<div class="carrusel-indicadores" id="indicadoresFlorencia"></div>
+</div>
+</div>
+</div>
+
+<div class="bloque-texto">
+<h2>Florencia, Caquetá</h2>
+<p>La ciudad ofrece una amplia variedad de restaurantes y sitios de esparcimiento nocturno, la mayoría de ellos ubicados en la zona rosa de la ciudad, cerca del parque longitudinal Paseo de los Fundadores. Destacan de igual forma sus parques, iglesias, edificios históricos y construcciones modernas. En Florencia existen múltiples monumentos públicos que rinden homenaje a los personajes y hechos históricos de la región, siendo los más conocidos el Monumento a los Colonos, a la Diosa del Chairá y a la Ciencia, Hombre y Manigua. Adicionalmente existen varios museos en Florencia, siendo el Museo Etnográfico y Centro Indigenista del Caquetá uno de los más visitados, pues en sus instalaciones se encuentra una detallada colección de más de diez mil piezas precolombinas pertenecientes a los pobladores originarios de la región.</p>
+</div>
+</div>
+
+<div class="bloque">
+<div class="bloque-imagen">
+<div class="carrusel" id="carruselUni">
+<div class="carrusel-contenedor">
+<div class="carrusel-slides" id="slidesUni">
+<div class="carrusel-slide"><img src="sede/images/uniamazonia1.jpg" alt="Universidad de la Amazonia 1"></div>
+<div class="carrusel-slide"><img src="sede/images/uniamazonia2.png" alt="Universidad de la Amazonia 2"></div>
+<div class="carrusel-slide"><img src="sede/images/uniamazonia3.png" alt="Universidad de la Amazonia 3"></div>
+</div>
+<button class="carrusel-btn carrusel-prev" id="prevUni" type="button">❮</button>
+<button class="carrusel-btn carrusel-next" id="nextUni" type="button">❯</button>
+<div class="carrusel-indicadores" id="indicadoresUni"></div>
+</div>
+</div>
+</div>
+
+<div class="bloque-texto">
+<h2>¿Cómo llegar?</h2>
+<div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4730.82210175032!2d-75.60683052432172!3d1.62013236064601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e244e2307a3b2af%3A0x2eb9e14897cad6c7!2sUniversidad%20de%20la%20Amazonia%20sede%20principal!5e1!3m2!1ses!2sco!4v1775502218616!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+
+<div class="descripcion-universidad">
+<h3>🏛 Universidad de la Amazonia</h3>
+<p>Comprometida con la excelencia académica, la investigación científica y la conservación de la biodiversidad, la Universidad de la Amazonia es el alma mater del VI Congreso Colombiano de Mastozoología. Ubicada en el corazón de la región amazónica, esta institución pionera en estudios ambientales y biológicos ofrece un escenario incomparable para el intercambio de saberes. Sus modernas instalaciones, laboratorios equipados y su estrecho vínculo con las comunidades locales y los ecosistemas tropicales la convierten en el lugar ideal para tejer redes de colaboración y avanzar en el conocimiento de los mamíferos. ¡Te esperamos en la puerta de entrada a la Amazonía colombiana para vivir una experiencia única de ciencia, cultura y naturaleza!</p>
+</div>
+</section>
+
+<div id="modalImagen" class="modal-imagen">
+<span class="cerrar-modal">&times;</span>
+<img id="imagenAmpliada" src="" alt="Imagen ampliada">
+</div>

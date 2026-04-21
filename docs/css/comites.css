@@ -1,0 +1,499 @@
+h1.title{
+  display: none;
+}
+.comites-page {
+  padding: 2rem 0 0;
+}
+
+.main-container {
+  width: min(1400px, 94%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.comites-sidebar {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 110px;
+}
+
+.sidebar-title {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #a7d0b0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comites-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comite-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  color: var(--primary);
+  transition: var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.comite-nav-item:hover,
+.comite-nav-item.active {
+  background: #e8d7b5;
+  border-left-color: var(--secondary);
+}
+
+.badge {
+  margin-left: auto;
+  background: var(--secondary);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+}
+
+.content-area {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  color: var(--secondary);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #a7d0b0;
+}
+
+.comite-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 120px;
+}
+
+.comite-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.comite-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #a7d0b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.comite-header h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+.comite-descripcion {
+  background: #f8f9fa;
+  padding: 1.4rem;
+  border-radius: 14px;
+  border-left: 4px solid var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.miembros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.7rem;
+}
+
+.miembro-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.miembro-card:hover {
+  transform: translateY(-8px);
+}
+
+.miembro-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+}
+
+.miembro-card:hover::before {
+  transform: scaleX(1);
+}
+
+.miembro-img {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.miembro-img::after {
+  content: "🔍 Ver perfil completo";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(transparent, rgba(11,59,47,0.96));
+  padding: 1rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+.miembro-card:hover .miembro-img::after {
+  transform: translateY(0);
+}
+
+.miembro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.miembro-card:hover .miembro-img img {
+  transform: scale(1.08);
+}
+
+.miembro-info {
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.miembro-info h3 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.miembro-rol {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.placeholder {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  border: 2px dashed #a7d0b0;
+  cursor: default;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: var(--primary);
+}
+
+.placeholder-icon {
+  font-size: 2.4rem;
+  opacity: 0.6;
+  margin-bottom: 0.8rem;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(5px);
+  z-index: 3000;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  width: min(820px, 100%);
+  max-height: 90vh;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+  animation: modalSlideUp 0.35s ease;
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--primary), #1a5a4a);
+  color: white;
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  font-size: 1.7rem;
+}
+
+.modal-close {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.18);
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 2rem;
+  max-height: calc(90vh - 90px);
+  overflow-y: auto;
+}
+
+.perfil-header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 2px solid #a7d0b0;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 5px solid var(--secondary);
+}
+
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil-titulo h3 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.rol-principal {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.comite-badge {
+  display: inline-block;
+  background: #a7d0b0;
+  color: var(--primary);
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #a7d0b0;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.7;
+  position: relative;
+}
+
+.tab-btn.active {
+  opacity: 1;
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background: var(--secondary);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.tab-btn.active::after {
+  transform: scaleX(1);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.biografia {
+  line-height: 1.8;
+  color: #444;
+}
+
+.destacado {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary);
+  margin-top: 1rem;
+}
+
+.enlaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.enlace-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.enlace-card:hover {
+  background: #a7d0b0;
+  transform: translateX(4px);
+}
+
+.enlace-icon {
+  font-size: 1.4rem;
+}
+
+.enlace-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--primary);
+}
+
+.enlace-info span {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.publicaciones-list {
+  list-style: none;
+  padding: 0;
+}
+
+.publicacion-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #a7d0b0;
+}
+
+.publicacion-item a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--primary);
+}
+
+.fecha {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.no-data {
+  color: #999;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .comites-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 1.3rem;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-body {
+    padding: 1.2rem;
+  }
+}

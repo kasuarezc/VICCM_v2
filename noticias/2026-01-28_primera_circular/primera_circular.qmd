@@ -1,0 +1,123 @@
+---
+title: "Primera Circular"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - primera_circular.css
+---
+
+```{=html}
+<section class="noticia-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../noticias.html">Noticias</a>
+<span class="separator">›</span>
+<span class="current">Primera Circular</span>
+</div>
+
+<article class="noticia-card">
+
+<div class="noticia-header">
+<div class="noticia-header-content">
+<h1 class="noticia-titulo">Primera Circular</h1>
+
+<div class="noticia-meta">
+<span>28 Enero 2026</span>
+<span>8:25 a.m</span>
+</div>
+</div>
+</div>
+
+<div class="noticia-body">
+
+<a class="autor-destacado" href="../../comites.html">
+<div class="autor-avatar">
+<img src="../../comites/Catalina_Concha/images/Catalina_Concha.jpg">
+</div>
+<div class="autor-info">
+<h3>Catalina Concha Osbahr</h3>
+<p>Autora de la noticia</p>
+<small>Haz clic para ver el comité</small>
+</div>
+</a>
+
+<h2>Presentación</h2>
+
+<p>La Sociedad Colombiana de Mastozoología, junto a la Universidad de la Amazonia se complacen en anunciar la realización del VI Congreso Colombiano de Mastozoología - VICCM, que tendrá lugar en la ciudad de Florencia, Caquetá, Colombia, del 2 al 6 de noviembre de 2026.</p>
+
+<p>El Congreso Colombiano de Mastozoología se celebra cada dos años y sus sedes se alternan en distintas regiones del país, visibilizando la riqueza natural y cultural de cada territorio.</p>
+
+<p>Este Congreso constituye un espacio de encuentro para la comunidad mastozoológica colombiana, fomentando el diálogo entre conocimiento académico y saberes ancestrales.</p>
+
+<h2>Objetivos</h2>
+
+<p>El VI CCM busca consolidar un espacio dinámico de intercambio académico y científico en torno al conocimiento de los mamíferos.</p>
+
+<ul class="lista-numerada">
+<li>Intercambio de experiencias y construcción de conocimiento.</li>
+<li>Fortalecimiento de redes de colaboración.</li>
+<li>Discusión de desafíos actuales en conservación.</li>
+<li>Apropiación social del conocimiento.</li>
+</ul>
+
+<h2>Participación en el Congreso</h2>
+
+<ul class="lista-viñetas">
+<li>Conferencias magistrales</li>
+<li>Presentaciones orales y póster</li>
+<li>Simposios y mesas de trabajo</li>
+<li>Cursos y talleres</li>
+<li>Salidas académicas</li>
+</ul>
+
+<div class="pdf-wrap">
+<a href="https://drive.google.com/file/d/1Lq5iMzcDebR0df6Ym_6OeXTuLEvjPbUs/view" target="_blank" class="pdf-download">
+📄 Descargar Primera Circular
+</a>
+</div>
+
+<div class="nota-especial">
+<p><strong>Nota:</strong> Próximamente se informará sobre:</p>
+<ul>
+<li>Fechas importantes</li>
+<li>Inscripciones</li>
+<li>Convocatorias</li>
+<li>Alojamiento</li>
+</ul>
+</div>
+
+<h2>Idioma Oficial</h2>
+<p>El idioma oficial del congreso es español.</p>
+
+<h2>Invitación</h2>
+
+<p>Extendemos una cordial invitación a todos los interesados en la mastozoología.</p>
+
+<div class="invitacion-especial">
+<p>¡Nos vemos en Florencia, Caquetá!</p>
+</div>
+
+<div class="detalle-nav">
+
+<a href="../2026-01-26_premios/premios.html">
+<div class="label">Anterior</div>
+<div class="title">Premios VICCM 2026</div>
+</a>
+
+<a href="../2026-02-01_segunda_circular/segunda_circular.html" class="next">
+<div class="label">Siguiente</div>
+<div class="title">Segunda Circular</div>
+</a>
+
+</div>
+
+</div>
+</article>
+</section>
+```
+
+<script src="primera_circular.js"></script>

@@ -1,0 +1,159 @@
+---
+title: "Noticias"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/noticias.css
+      - css/responsive.css
+---
+
+<section class="noticias-hero">
+<div class="container">
+<h1>Noticias del Congreso</h1>
+<p>Entérate de las últimas novedades, convocatorias y actualizaciones del VICCM 2026</p>
+</div>
+</section>
+
+<section class="noticias-page">
+<div class="filtros-container">
+<div class="filtros-categorias">
+<button class="filtro-btn active" data-categoria="todas" type="button">Todas</button>
+<button class="filtro-btn" data-categoria="convocatorias" type="button">Convocatorias</button>
+<button class="filtro-btn" data-categoria="circulares" type="button">Circulares</button>
+<button class="filtro-btn" data-categoria="premios" type="button">Premios</button>
+<button class="filtro-btn" data-categoria="conducta" type="button">Código de Conducta</button>
+</div>
+
+<div class="busqueda-wrapper">
+<span class="busqueda-icon">🔎</span>
+<input type="text" class="busqueda-input" placeholder="Buscar noticias..." id="busquedaInput">
+</div>
+</div>
+
+<div class="noticias-grid" id="noticiasGrid">
+
+<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-04-06" data-titulo="Concurso de Diseño" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
+<div class="noticia-badge">6 Abr</div>
+<div class="noticia-img"><img src="noticias/2026-04-06_Concurso_Diseno/images/Concurso_Diseño.png" alt="Concurso de Diseño"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">6 Abril 2026</span>
+<span class="noticia-hora">5:00 p.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Catalina Concha-Osbahr</span>
+<span class="noticia-autor">Javier García-Villalba</span>
+</div>
+<h3 class="noticia-titulo">Concurso de Diseño</h3>
+<p class="noticia-descripcion">Consúlten las bases del concurso de diseño para participar en el VICCM 2026.</p>
+<a href="noticias/2026-04-06_Concurso_Diseno/concurso_diseno.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-02-09" data-titulo="Enviar Propuesta Simposio" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
+<div class="noticia-badge">9 Feb</div>
+<div class="noticia-img"><img src="noticias/2026-02-09_Formulario/images/Formulario_Google.jpg" alt="Formulario de propuestas"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">9 Febrero 2026</span>
+<span class="noticia-hora">8:00 a.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Catalina Concha-Osbahr</span>
+<span class="noticia-autor">Javier García-Villalba</span>
+</div>
+<h3 class="noticia-titulo">Enviar Propuesta Simposio</h3>
+<p class="noticia-descripcion">Diligencie el formulario para enviar propuestas de simposios, talleres, mesas redondas, cursos y otras actividades académicas del VICCM.</p>
+<a href="noticias/2026-02-09_Formulario/formulario.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+<div class="noticia-card" data-categoria="circulares" data-fecha="2026-02-01" data-titulo="Segunda Circular" data-autor="Catalina Concha-Osbahr">
+<div class="noticia-badge">1 Feb</div>
+<div class="noticia-img"><img src="noticias/2026-02-01_segunda_circular/images/segunda_circular.png" alt="Segunda Circular"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">1 Febrero 2026</span>
+<span class="noticia-hora">10:00 a.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Catalina Concha-Osbahr</span>
+</div>
+<h3 class="noticia-titulo">Segunda Circular</h3>
+<p class="noticia-descripcion">El Comité Organizador del VICCM invita a presentar propuestas para la realización de simposios, talleres, mesas redondas, cursos y otras actividades académicas del VICCM.</p>
+<a href="noticias/2026-02-01_segunda_circular/segunda_circular.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+<div class="noticia-card" data-categoria="circulares" data-fecha="2026-01-28" data-titulo="Primera Circular" data-autor="Catalina Concha-Osbahr">
+<div class="noticia-badge">28 Ene</div>
+<div class="noticia-img"><img src="noticias/2026-01-28_primera_circular/images/primera_circular.jpg" alt="Primera Circular"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">28 Enero 2026</span>
+<span class="noticia-hora">8:25 a.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Catalina Concha-Osbahr</span>
+</div>
+<h3 class="noticia-titulo">Primera Circular</h3>
+<p class="noticia-descripcion">El Comité Organizador del VICCM presenta oficialmente el VI Congreso Colombiano de Mastozoología, que se realizará en Florencia, Caquetá, con la Universidad de la Amazonia como institución anfitriona.</p>
+<a href="noticias/2026-01-28_primera_circular/primera_circular.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+<div class="noticia-card" data-categoria="premios" data-fecha="2026-01-26" data-titulo="Premios" data-autor="Diego J. Lizcano">
+<div class="noticia-badge">26 Ene</div>
+<div class="noticia-img"><img src="noticias/2026-01-26_premios/images/Alberto_Cadena_Garcia.jpg" alt="Premios"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">26 Enero 2026</span>
+<span class="noticia-hora">8:48 a.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Diego J. Lizcano</span>
+</div>
+<h3 class="noticia-titulo">Premios</h3>
+<p class="noticia-descripcion">El VICCM ofrece varios premios, incluyendo uno a la mejor presentación oral y al mejor poster de un estudiante.</p>
+<a href="noticias/2026-01-26_premios/premios.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+<div class="noticia-card" data-categoria="conducta" data-fecha="2026-01-25" data-titulo="Código de conducta, VICCM 2026" data-autor="Diego J. Lizcano">
+<div class="noticia-badge">25 Ene</div>
+<div class="noticia-img"><img src="noticias/2026-01-25_codigo_de_conducta/images/Diego_Lizcano.jpg" alt="Código de Conducta"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">25 Enero 2026</span>
+<span class="noticia-hora">10:48 a.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Diego J. Lizcano</span>
+</div>
+<h3 class="noticia-titulo">Código de conducta, VICCM 2026</h3>
+<p class="noticia-descripcion">Los participantes que infrinjan estas normas podrán ser denunciados, sancionados y expulsados del congreso.</p>
+<a href="noticias/2026-01-25_codigo_de_conducta/codigo_conducta.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+</div>
+
+<div class="paginacion"><ul>
+<li><a href="#" class="page-item active">1</a></li>
+<li><a href="#" class="page-item">2</a></li>
+<li><a href="#" class="page-item">3</a></li>
+<li><a href="#" class="page-item">→</a></li>
+</ul></div>
+</section>
+
+<section class="newsletter-section">
+<div class="newsletter-container">
+<h2>📬 Recibe nuestras noticias</h2>
+<p>Suscríbete para recibir las últimas actualizaciones del congreso directamente en tu correo</p>
+<div class="newsletter-form">
+<input type="email" class="newsletter-input" placeholder="Tu correo electrónico">
+<button class="newsletter-btn" type="button">Suscribirme</button>
+</div>
+</div>
+</section>

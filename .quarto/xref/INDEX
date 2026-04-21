@@ -1,0 +1,50 @@
+{
+  "about.qmd": {
+    "about.html": "e98c7d5b"
+  },
+  "comites.qmd": {
+    "comites.html": "c227f97a"
+  },
+  "contacto.qmd": {
+    "contacto.html": "b09deabe"
+  },
+  "cursos.qmd": {
+    "cursos.html": "678bf12c"
+  },
+  "index.qmd": {
+    "index.html": "598e9463"
+  },
+  "noticias.qmd": {
+    "noticias.html": "38ff1faf"
+  },
+  "simposios.qmd": {
+    "simposios.html": "aded3215"
+  },
+  "sede.qmd": {
+    "sede.html": "b14e8c6e"
+  },
+  "noticias/2026-01-25_codigo_de_conducta/codigo_conducta.qmd": {
+    "codigo_conducta.html": "8cb5b827"
+  },
+  "noticias/2026-01-26_premios/premios.qmd": {
+    "premios.html": "731c351d"
+  },
+  "noticias/2026-01-28_primera_circular/primera_circular.qmd": {
+    "primera_circular.html": "02eae6aa"
+  },
+  "noticias/2026-02-01_segunda_circular/segunda_circular.qmd": {
+    "segunda_circular.html": "64179977"
+  },
+  "noticias/2026-02-09_Formulario/formulario.qmd": {
+    "formulario.html": "cb4e012f"
+  },
+  "noticias/2026-04-06_Concurso_Diseño/concurso_diseño.qmd": {
+    "concurso_diseño.html": "103e59d6"
+  },
+  "noticias/2026-04-06_Concurso_Diseno/concurso_diseno.qmd": {
+    "concurso_diseno.html": "dcd91e7f"
+  },
+  "simposios/fototrampeo/fototrampeo.qmd": {
+    "fototrampeo.html": "da0c1ecb"
+  }
+}

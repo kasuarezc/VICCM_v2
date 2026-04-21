@@ -1,0 +1,139 @@
+---
+title: "Simposios"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/simposios.css
+      - css/responsive.css
+---
+
+<section class="simposios-hero">
+<div class="container">
+<h1>Simposios del Congreso</h1>
+<p>Conoce los simposios temáticos, organizadores y detalles de cada actividad académica del VICCM 2026</p>
+</div>
+</section>
+
+<section class="simposios-page">
+<div class="filtros-container">
+<div class="filtros-categorias">
+<button class="filtro-btn active" data-categoria="todos" type="button">Todos</button>
+<button class="filtro-btn" data-categoria="fototrampeo" type="button">Fototrampeo</button>
+<button class="filtro-btn" data-categoria="conservacion" type="button">Conservación</button>
+<button class="filtro-btn" data-categoria="ecologia" type="button">Ecología</button>
+<button class="filtro-btn" data-categoria="primates" type="button">Primates</button>
+<button class="filtro-btn" data-categoria="genetica" type="button">Genética</button>
+</div>
+
+<div class="busqueda-wrapper">
+<span class="busqueda-icon">🔎</span>
+<input type="text" class="busqueda-input" placeholder="Buscar simposios..." id="busquedaInput">
+</div>
+</div>
+
+<div class="simposios-grid" id="simposiosGrid">
+
+<div class="simposio-card"
+data-categoria="fototrampeo"
+data-titulo="Fototrampeo: Avances y Aplicaciones en Mastozoología"
+data-organizadores="Angelica Díaz Pulido, Diego Lizcano">
+<div class="simposio-badge">Organizan</div>
+<div class="simposio-img">
+<img src="simposios/images/fototrampeo.jpg" alt="Fototrampeo">
+</div>
+<div class="simposio-content">
+<div class="simposio-organizadores">
+<span class="simposio-organizador">Angelica Díaz Pulido</span>
+<span class="simposio-organizador">Diego Lizcano</span>
+</div>
+<h3 class="simposio-titulo">Fototrampeo: Avances y Aplicaciones en Mastozoología</h3>
+<p class="simposio-descripcion">
+Este simposio aborda los últimos avances en técnicas de fototrampeo, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos en ecosistemas tropicales.
+</p>
+<div class="simposio-temas">
+<span class="tema-tag">Ecología</span>
+<span class="tema-tag">Conservación</span>
+<span class="tema-tag">Método</span>
+</div>
+<a href="simposios/fototrampeo/fototrampeo.html" class="simposio-btn">
+Ver Simposio Completo →
+</a>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+<div class="simposio-placeholder">
+<div class="placeholder-content">
+<div class="placeholder-icon">➕</div>
+<h3>Próximamente</h3>
+<p>Espacio disponible</p>
+</div>
+</div>
+
+</div>
+
+<div class="paginacion"><ul>
+<li><a href="#" class="page-item active">1</a></li>
+<li><a href="#" class="page-item">2</a></li>
+<li><a href="#" class="page-item">→</a></li>
+</u></div>
+</section>
+
+<section class="newsletter-section">
+<div class="newsletter-container">
+<h2>📬 Recibe nuestras noticias</h2>
+<p>Suscríbete para recibir las últimas actualizaciones del congreso directamente en tu correo</p>
+<div class="newsletter-form">
+<input type="email" class="newsletter-input" placeholder="Tu correo electrónico">
+<button class="newsletter-btn" type="button">Suscribirme</button>
+</div>
+</div>
+</section>
