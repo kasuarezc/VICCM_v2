@@ -48,7 +48,7 @@ format:
 
     <div class="intro-highlight reveal">
       <div class="highlight-card">
-        <div class="highlight-number">06</div>
+        <div class="highlight-number"></div>
         <div class="highlight-text">
           <strong>VI Congreso Colombiano</strong>
           <span>Un espacio para ciencia, territorio, biodiversidad y saberes compartidos.</span>

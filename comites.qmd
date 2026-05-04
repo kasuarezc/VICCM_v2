@@ -41,7 +41,7 @@ Es responsable de definir el desarrollo a medio y largo plazo de la serie de con
 <div class="miembros-grid">
 
 <div class="miembro-card"
-data-nombre="Javier García Villalba"
+data-nombre="Javier García-Villalba"
 data-rol="Presidente"
 data-img="comites/Javier_Garcia/images/Javier_Garcia.jpg"
 data-comite="Comité Organizador"
@@ -58,7 +58,7 @@ data-enlaces='[{"tipo":"google-scholar","url":"https://scholar.google.com/citati
 </div>
 
 <div class="miembro-card"
-data-nombre="Catalina Concha Osbahr"
+data-nombre="Catalina Concha-Osbahr"
 data-rol="Presidenta SCMas"
 data-img="comites/Catalina_Concha/images/Catalina_Concha.jpg"
 data-comite="Comité Organizador"
@@ -76,7 +76,7 @@ data-posts='[{"titulo":"Nueva publicación sobre conservación","url":"noticias/
 </div>
 
 <div class="miembro-card"
-data-nombre="Cesar Rojano Bolaños"
+data-nombre="Cesar Rojano-Bolaños"
 data-rol="Delegado Junta SCMas"
 data-img="comites/Cesar_Rojano/images/Cesar_Rojano.jpg"
 data-comite="Comité Organizador"
@@ -141,7 +141,7 @@ Su función es seleccionar las ponencias presentadas. Las ponencias se revisan y
 <div class="miembros-grid">
 
 <div class="miembro-card"
-data-nombre="Hugo Mantilla Meluk"
+data-nombre="Hugo Mantilla-Meluk"
 data-rol="Aspectos Científicos y Divulgación"
 data-img="comites/Hugo_Mantilla/images/Hugo_Mantilla.jpg"
 data-comite="Comité Científico"
@@ -158,7 +158,7 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 </div>
 
 <div class="miembro-card"
-data-nombre="Andres Felipe Suarez Castro"
+data-nombre="Andres Felipe Suarez-Castro"
 data-rol="Comité Científico"
 data-img="comites/Felipe_Suarez/images/Andres-Suarez-Castro.jpg"
 data-comite="Comité Científico"
@@ -175,7 +175,7 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 </div>
 
 <div class="miembro-card"
-data-nombre="Adriana C. Acero Murcia"
+data-nombre="Adriana C. Acero-Murcia"
 data-rol="Comité Científico"
 data-img="comites/Adriana_Acero/images/Adriana_Acero.jpg"
 data-comite="Comité Científico"
