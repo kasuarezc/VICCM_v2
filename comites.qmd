@@ -52,7 +52,7 @@ data-enlaces='[{"tipo":"google-scholar","url":"https://scholar.google.com/citati
 <img src="comites/Javier_Garcia/images/Javier_Garcia.jpg" alt="Javier García Villalba">
 </div>
 <div class="miembro-info">
-<h3>Javier García Villalba</h3>
+<h3>Javier García-Villalba</h3>
 <div class="miembro-rol">Presidente</div>
 </div>
 </div>
@@ -70,7 +70,7 @@ data-posts='[{"titulo":"Nueva publicación sobre conservación","url":"noticias/
 <img src="comites/Catalina_Concha/images/Catalina_Concha.jpg" alt="Catalina Concha Osbahr">
 </div>
 <div class="miembro-info">
-<h3>Catalina Concha Osbahr</h3>
+<h3>Catalina Concha-Osbahr</h3>
 <div class="miembro-rol">Presidenta SCMas</div>
 </div>
 </div>
@@ -87,7 +87,7 @@ data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/cesar.rojano.9
 <img src="comites/Cesar_Rojano/images/Cesar_Rojano.jpg" alt="Cesar Rojano Bolaños">
 </div>
 <div class="miembro-info">
-<h3>Cesar Rojano Bolaños</h3>
+<h3>Cesar Rojano-Bolaños</h3>
 <div class="miembro-rol">Delegado Junta SCMas</div>
 </div>
 </div>
@@ -152,7 +152,7 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 <img src="comites/Hugo_Mantilla/images/Hugo_Mantilla.jpg" alt="Hugo Mantilla Meluk">
 </div>
 <div class="miembro-info">
-<h3>Hugo Mantilla Meluk</h3>
+<h3>Hugo Mantilla-Meluk</h3>
 <div class="miembro-rol">Aspectos Científicos y Divulgación</div>
 </div>
 </div>
@@ -169,7 +169,7 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 <img src="comites/Felipe_Suarez/images/Andres-Suarez-Castro.jpg" alt="Andres Felipe Suarez Castro">
 </div>
 <div class="miembro-info">
-<h3>Andres Felipe Suarez Castro</h3>
+<h3>Andres Felipe Suarez-Castro</h3>
 <div class="miembro-rol">Comité Científico</div>
 </div>
 </div>
@@ -186,7 +186,7 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 <img src="comites/Adriana_Acero/images/Adriana_Acero.jpg" alt="Adriana C. Acero Murcia">
 </div>
 <div class="miembro-info">
-<h3>Adriana C. Acero Murcia</h3>
+<h3>Adriana C. Acero-Murcia</h3>
 <div class="miembro-rol">Comité Científico</div>
 </div>
 </div>
