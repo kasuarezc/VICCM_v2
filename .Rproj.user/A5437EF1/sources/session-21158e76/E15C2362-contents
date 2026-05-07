@@ -1,0 +1,634 @@
+h1.title{
+  display: none;
+}
+.home-hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 1.5rem 5rem;
+  background:
+    linear-gradient(rgba(11, 59, 47, 0.55), rgba(11, 59, 47, 0.72)),
+    url("../images/banners/Florencia_Caqueta6.jpg") center/cover no-repeat;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.08), transparent 25%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 999px;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  line-height: 1;
+  margin: 0 0 1rem;
+  color: #fff;
+  text-shadow: 0 8px 26px rgba(0, 0, 0, 0.28);
+}
+
+.hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.8;
+  color: rgba(255,255,255,0.95);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.hero-btn {
+  text-decoration: none;
+  padding: 1rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.hero-btn-primary {
+  background: var(--secondary);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(217, 108, 47, 0.28);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-4px);
+  background: #c75f29;
+}
+
+.hero-btn-secondary {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border-color: rgba(255,255,255,0.28);
+  backdrop-filter: blur(8px);
+}
+
+.hero-btn-secondary:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.2);
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero-scroll-indicator span {
+  display: block;
+  width: 26px;
+  height: 46px;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 999px;
+  position: relative;
+}
+
+.hero-scroll-indicator span::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border-radius: 999px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  animation: scrollPulse 1.8s infinite;
+}
+
+@keyframes scrollPulse {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 14px); }
+}
+
+.section-block {
+  padding: 5rem 1.2rem;
+}
+
+.section-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-header {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.section-kicker {
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.section-kicker.light {
+  color: #ffd8bf;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary);
+  margin: 0 0 0.8rem;
+  line-height: 1.15;
+}
+
+.section-heading.light {
+  color: #fff;
+}
+
+.section-description {
+  font-size: 1.05rem;
+  color: #52616d;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.section-description.light {
+  color: rgba(255,255,255,0.88);
+}
+
+.intro-shell {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.intro-copy p {
+  color: #41515f;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.intro-highlight {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-card {
+  width: 100%;
+  max-width: 360px;
+  background: linear-gradient(135deg, var(--primary), #184b3e);
+  color: #fff;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 18px 40px rgba(11, 59, 47, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -60px -60px auto;
+  width: 160px;
+  height: 160px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+
+.highlight-number {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffd8bf;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-text strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-text span {
+  display: block;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.88);
+}
+
+.home-news {
+  background: linear-gradient(180deg, #ffffff 0%, #f7faf8 100%);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+.news-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.06);
+}
+
+.news-content {
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-date {
+  font-size: 0.88rem;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.news-content h3 {
+  margin: 0 0 0.6rem;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.news-content p {
+  color: #55636f;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.news-link {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
+
+.quick-icons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.2rem;
+}
+
+.quick-icon-card {
+  background: #fff;
+  border: 1px solid #eef2ef;
+  border-radius: 20px;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+  transition: var(--transition);
+}
+
+.quick-icon-card:hover {
+  transform: translateY(-5px);
+}
+
+.quick-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.quick-icon-card span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.home-abstracts {
+  background:
+    linear-gradient(135deg, rgba(11, 59, 47, 0.94), rgba(24, 75, 62, 0.94)),
+    url("images/banners/Florencia_Caqueta6.jpg") center/cover no-repeat;
+}
+
+.abstracts-shell {
+  text-align: center;
+}
+
+.abstracts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.abstract-card {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  padding: 2rem 1.5rem;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  transition: var(--transition);
+}
+
+.abstract-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.14);
+}
+
+.abstract-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.abstract-card h3 {
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+
+.abstract-card p {
+  color: rgba(255,255,255,0.88);
+  line-height: 1.75;
+}
+
+.abstract-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.9rem 1.35rem;
+  border-radius: 999px;
+  transition: var(--transition);
+}
+
+.abstract-btn:hover {
+  transform: translateY(-4px);
+  background: #c75f29;
+}
+
+.home-register {
+  background: linear-gradient(180deg, #f7faf8 0%, #ffffff 100%);
+}
+
+.register-card {
+  max-width: 760px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, #f8f5ef);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.register-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.register-card h2 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.register-card p {
+  color: #5a6975;
+  line-height: 1.8;
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+}
+
+.register-btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 1rem 1.6rem;
+  border-radius: 999px;
+  transition: var(--transition);
+}
+
+.register-btn:hover {
+  transform: translateY(-4px);
+  background: #c75f29;
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.venue-gallery,
+.venue-map {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1rem;
+  box-shadow: 0 16px 34px rgba(0,0,0,0.08);
+}
+
+.venue-slider {
+  position: relative;
+  min-height: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.venue-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+.venue-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.venue-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.venue-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c9d4cc;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.venue-dot.active {
+  background: var(--secondary);
+  transform: scale(1.2);
+}
+
+.venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 470px;
+  border: 0;
+  border-radius: 18px;
+}
+
+.home-values {
+  background: linear-gradient(180deg, #ffffff 0%, #f7faf8 100%);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.7rem;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.07);
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
+
+.value-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.value-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.7rem;
+}
+
+.value-card p {
+  color: #53626f;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .intro-shell,
+  .venue-grid,
+  .news-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abstracts-grid,
+  .quick-icons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-actions,
+  .abstracts-grid,
+  .quick-icons {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .hero-actions {
+    gap: 0.9rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-block {
+    padding: 4rem 1rem;
+  }
+
+  .home-hero {
+    min-height: 88vh;
+    padding-top: 6rem;
+  }
+
+  .venue-slider {
+    min-height: 280px;
+  }
+
+  .venue-map iframe {
+    min-height: 320px;
+  }
+}

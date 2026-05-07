@@ -1,0 +1,50 @@
+@media (max-width: 992px) {
+  .news-grid,
+  .values-grid,
+  .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venue-grid,
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-direction: column;
+    padding: 0.8rem 0;
+  }
+
+  body {
+    padding-top: 135px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-grid,
+  .values-grid,
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+  .header-logo {
+    height: 44px;
+  }
+
+  .hero {
+    min-height: 76vh;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .venue-slider,
+  .venue-map {
+    min-height: 320px;
+  }
+}
