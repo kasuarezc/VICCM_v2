@@ -1,6 +1,7 @@
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user
 .quarto/
 _site/
 *.log
