@@ -54,7 +54,7 @@ format:
 <div class="contacto-formulario">
 <h2>Envíanos un Mensaje</h2>
 
-<form>
+<form id="contactForm" action="https://formspree.io/f/mbdzbkbv" method="POST">
 
 <div class="form-group">
 <label for="nombre">Nombre Completo *</label>
