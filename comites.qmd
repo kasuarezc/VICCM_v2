@@ -259,11 +259,20 @@ data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/erick.cardona.
 </div>
 </div>
 
-<div class="miembro-card placeholder">
-<div class="placeholder-content">
-<div class="placeholder-icon">➕</div>
-<h3>Próximamente</h3>
-<p>Espacio disponible</p>
+<div class="miembro-card"
+data-nombre="Yohaysa Perea"
+data-rol="Periodista"
+data-img="comites/Yohaysa_Perea/images/Yohaysa_Perea.jpeg"
+data-comite="Comité de Comunicaciones"
+data-biografia="Comunicadora Social y Periodista, especialista en Administración de la Informática Educativa y magíster en Gerencia y Práctica del Desarrollo. Cuenta con experiencia en procesos comunitarios y estrategias de comunicación en contextos territoriales. Ha trabajado con instituciones públicas y privadas, impulsando iniciativas orientadas al fortalecimiento organizativo, la participación ciudadana y el desarrollo con enfoque étnico y territorial. Se destaca por su compromiso con la defensa y promoción de las tradiciones ancestrales de las comunidades negras y racializadas en la Amazonía."
+data-rol-viccm="Yohaysa está encargada de divulgación de información, entrevistas, etc.."
+data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/YOHAYSAP","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/yohaysa/","texto":"Instagram"},{"tipo":"youtube","url":"https://www.youtube.com/@uamazonia","texto":"YouTube"}]'>
+<div class="miembro-img">
+<img src="comites/Yohaysa_Perea/images/Yohaysa_Perea.jpeg" alt="Yohaysa Perea">
+</div>
+<div class="miembro-info">
+<h3>Yohaysa Perea</h3>
+<div class="miembro-rol">Periodista</div>
 </div>
 </div>
 
@@ -297,11 +306,20 @@ data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/mauricio.vela.
 </div>
 </div>
 
-<div class="miembro-card placeholder">
-<div class="placeholder-content">
-<div class="placeholder-icon">➕</div>
-<h3>Próximamente</h3>
-<p>Espacio disponible</p>
+<div class="miembro-card"
+data-nombre="Carlos Benavides"
+data-rol="Contador"
+data-img="comites/Carlos_Benavides/images/Carlos_Benavides.jpeg"
+data-comite="Comité Financiero"
+data-biografia="Contador y especialista en Gerencia de Empresas Agropecuarias, Universidad de la Amazonia. Tiene experiencia en el manejo financiero de proyectos del Sistema General de Regalías y fue Coordinador del proyecto Fortalecimiento de Vocaciones Científica en la Región Centro-Sur. Caquetá, Putumayo, Huila, Tolima."
+data-rol-viccm="Carlos está encargado procesos contables."
+data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/carlos.a.carvajal.359","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/carlosbenavides76/","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Carlos_Benavides/images/Carlos_Benavides.jpeg" alt="Carlos Benavides">
+</div>
+<div class="miembro-info">
+<h3>Carlos Benavides</h3>
+<div class="miembro-rol">Contador</div>
 </div>
 </div>
 
@@ -317,21 +335,40 @@ data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/mauricio.vela.
 Promueve un Congreso diverso, incluyente y representativo. Favorece la participación amplia de regiones, instituciones y diferentes trayectorias académicas.
 </div>
 <div class="miembros-grid">
-<div class="miembro-card placeholder">
-<div class="placeholder-content">
-<div class="placeholder-icon">➕</div>
-<h3>Próximamente</h3>
-<p>Espacio disponible</p>
+
+<div class="miembro-card"
+data-nombre="Bibiana Gómez-Valencia"
+data-rol="Bióloga"
+data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg"
+data-comite="Comité de Diversidad e Integración Científica"
+data-biografia="Bióloga y Magíster en Ciencias Biológicas de la Universidad Nacional de Colombia. Doctora en Ciencias Biológicas en la Universidad de Buenos Aires. Actualmente es investigadora del Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Su trabajo se ha enfocado en la biología de la conservación, el monitoreo de mamíferos, la ecología de poblaciones y la evaluación del riesgo de extinción de especies en Colombia. Ha participado activamente en iniciativas científicas orientadas a la conservación de la mastofauna colombiana y fue presidenta de la Sociedad Colombiana de Mastozoología durante el periodo 2021–2023."
+data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg" alt="Bibiana Gomez">
+</div>
+<div class="miembro-info">
+<h3>Bibiana Gomez</h3>
+<div class="miembro-rol">Bióloga</div>
 </div>
 </div>
 
-<div class="miembro-card placeholder">
-<div class="placeholder-content">
-<div class="placeholder-icon">➕</div>
-<h3>Próximamente</h3>
-<p>Espacio disponible</p>
+<div class="miembro-card"
+data-nombre="Daniela Martínez Medina"
+data-rol="Bióloga"
+data-img="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg"
+data-comite="Comité de Diversidad e Integración Científica"
+data-biografia="Bióloga de la Universidad Javeriana con una maestría en Ciencias en Ecología Aplicada de la Universidad de Kiel, Alemania. Especializada en acústica de murciélagos y análisis acústico de la biodiversidad, así como en el impacto de factores externos sobre esta. Experiencia en el manejo de repositorios acústicos de biodiversidad, en grabación direccional y en proyectos con monitoreo acústico pasivo. Desde 2021, se desempeña como investigadora en la Colección de Sonidos Ambientales del Instituto Humboldt."
+data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
+<div class="miembro-img">
+<img src="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" alt="Daniela Martínez Medina">
+</div>
+<div class="miembro-info">
+<h3>Daniela Martínez Medina</h3>
+<div class="miembro-rol">Bióloga</div>
 </div>
 </div>
+
+
 </div>
 </section>
 
