@@ -104,7 +104,7 @@ h1.title{
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
 }
 
@@ -175,4 +175,80 @@ h1.title{
   .cursos-hero h1 {
     font-size: 2rem;
   }
+}
+
+/* ============================================================
+   Clases para tarjetas con contenido real (cursos/talleres)
+   ============================================================ */
+
+/* Contenedor de la tarjeta con contenido real (reemplaza a card-placeholder) */
+.card-contenido {
+  padding-bottom: 1.5rem;
+}
+
+/* Contenedor de la imagen dentro de la tarjeta */
+.card-imagen {
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 200px;
+  background: #eef4f0;
+}
+
+/* Imagen dentro de la tarjeta */
+.card-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Título de la tarjeta (curso o taller) */
+.card-titulo {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Contenedor de las etiquetas de organizadores */
+.card-organizadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+  justify-content: center;
+}
+
+/* Cada etiqueta de organizador */
+.card-organizador {
+  background: #a7d0b0;
+  color: #0b3b2f;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Descripción del curso/taller */
+.card-descripcion {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+/* Botón "Ver [Curso/Taller] Completo" */
+.card-boton {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.card-boton:hover {
+  background: var(--primary);
 }

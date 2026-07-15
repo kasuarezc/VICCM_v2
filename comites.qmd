@@ -20,8 +20,8 @@ format:
 <a href="#organizador" class="comite-nav-item active"><span>📅</span><span>Organizador</span><span class="badge">5</span></a>
 <a href="#cientifico" class="comite-nav-item"><span>🧪</span><span>Científico</span><span class="badge">3</span></a>
 <a href="#logistico" class="comite-nav-item"><span>🚚</span><span>Logístico</span><span class="badge">1</span></a>
-<a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">1</span></a>
-<a href="#financiero" class="comite-nav-item"><span>🪙</span><span>Financiero</span><span class="badge">1</span></a>
+<a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">3</span></a>
+<a href="#financiero" class="comite-nav-item"><span>🪙</span><span>Financiero</span><span class="badge">2</span></a>
 <a href="#diversidad" class="comite-nav-item"><span>🌎</span><span>Diversidad</span><span class="badge">2</span></a>
 </nav>
 </aside>
@@ -100,7 +100,7 @@ data-comite="Comité Organizador"
 data-biografia="Diego es biólogo, con un fuerte interés en ecología y conservación. Su trabajo se centra en el desarrollo y adaptación de herramientas conceptuales, computacionales y estadísticas para analizar grandes conjuntos de datos que ayudan a comprender mejor los patrones de distribución y abundancia de los mamíferos en la naturaleza. Diego es el editor técnico de Mammalogy Notes."
 data-rol-viccm="Diego está encargado de la página web y el OpenConf."
 data-enlaces='[{"tipo":"github","url":"https://github.com/dlizcano","texto":"GitHub"},{"tipo":"globe","url":"https://dlizcano.github.io/about/","texto":"Sitio Web Personal"},{"tipo":"x-twitter","url":"https://x.com/dlizcano","texto":"X (Twitter)"}]'
-data-posts='[{"titulo":"Código de Conducta del Congreso","url":"noticias/2026-01-25_codigo_de_conducta/index.html","fecha":"Ene 2026"},{"titulo":"Premios y reconocimientos","url":"noticias/2026-01-26_premios/index.html","fecha":"Ene 2026"}]'>
+data-posts='[{"titulo":"Código de Conducta del Congreso","url":"noticias/2026-01-25_codigo_de_conducta/codigo_conducta.html","fecha":"Ene 2026"},{"titulo":"Premios y reconocimientos","url":"noticias/2026-01-26_premios/premios.html","fecha":"Ene 2026"}]'>
 <div class="miembro-img">
 <img src="comites/Diego_Lizcano/images/Diego_Lizcano.jpg" alt="Diego J. Lizcano">
 </div>
@@ -276,6 +276,24 @@ data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/YOHAYSAP","tex
 </div>
 </div>
 
+
+<div class="miembro-card"
+data-nombre="Monica Maria Penuela"
+data-rol="Biólogo"
+data-img="comites/Monica_Penuela/images/Monica_Penuela.jpeg"
+data-comite="Comité de Comunicaciones"
+data-biografia="Bióloga, especialista en Educación y Gerencia Ambiental, y magíster en Ciencias Biológicas de la Pontificia Universidad Javeriana. Cuenta con experiencia en investigación, mastozoología, educación ambiental, divulgación científica y trabajo territorial en diferentes regiones de Colombia."
+data-rol-viccm="Monica está encargada de construir narrativas visuales, cercanas y estratégicas que fortalezcan la conexión entre la ciencia, territorio y comunidad"
+data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com","texto":"Instagram"},{"tipo":"youtube","url":"https://www.youtube.com","texto":"YouTube"}]'>
+<div class="miembro-img">
+<img src="comites/Monica_Penuela/images/Monica_Penuela.jpeg" alt="Monica Penuela">
+</div>
+<div class="miembro-info">
+<h3>Monica Maria peñuela</h3>
+<div class="miembro-rol">Bióloga</div>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -342,12 +360,13 @@ data-rol="Bióloga"
 data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg"
 data-comite="Comité de Diversidad e Integración Científica"
 data-biografia="Bióloga y Magíster en Ciencias Biológicas de la Universidad Nacional de Colombia. Doctora en Ciencias Biológicas en la Universidad de Buenos Aires. Actualmente es investigadora del Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Su trabajo se ha enfocado en la biología de la conservación, el monitoreo de mamíferos, la ecología de poblaciones y la evaluación del riesgo de extinción de especies en Colombia. Ha participado activamente en iniciativas científicas orientadas a la conservación de la mastofauna colombiana y fue presidenta de la Sociedad Colombiana de Mastozoología durante el periodo 2021–2023."
+data-rol-viccm="Bibiana Líder de Representatividad Científica"
 data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
 <div class="miembro-img">
 <img src="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg" alt="Bibiana Gomez">
 </div>
 <div class="miembro-info">
-<h3>Bibiana Gomez</h3>
+<h3>Bibiana Gomez Valencia</h3>
 <div class="miembro-rol">Bióloga</div>
 </div>
 </div>
@@ -358,6 +377,7 @@ data-rol="Bióloga"
 data-img="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg"
 data-comite="Comité de Diversidad e Integración Científica"
 data-biografia="Bióloga de la Universidad Javeriana con una maestría en Ciencias en Ecología Aplicada de la Universidad de Kiel, Alemania. Especializada en acústica de murciélagos y análisis acústico de la biodiversidad, así como en el impacto de factores externos sobre esta. Experiencia en el manejo de repositorios acústicos de biodiversidad, en grabación direccional y en proyectos con monitoreo acústico pasivo. Desde 2021, se desempeña como investigadora en la Colección de Sonidos Ambientales del Instituto Humboldt."
+data-rol-viccm="Daniela, Líder de Interdisciplinariedad e Innovación"
 data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
 <div class="miembro-img">
 <img src="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" alt="Daniela Martínez Medina">

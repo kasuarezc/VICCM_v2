@@ -1,0 +1,67 @@
+---
+title: "Estrategias"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - estrategias.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Estrategias Comunitarias</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/estrategias.jpeg" alt="Conocimiento colectivo y gobernanza para la conservación de mamíferos.">
+<div class="pie-foto">
+📷 Conocimiento colectivo y gobernanza para la conservación de mamíferos.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Miguel E. Rodríguez-Posada</li>
+<li>Dora Catalina Concha Osbahr</li>
+<li>Bibiana Gómez-Valencia</li>
+<li>Andrea Natalia Martínez Bulla</li>
+</ul>
+<div class="badge-simposio">III Simposio: Estrategias comunitarias en gestión del conocimiento y conservación de mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>III Simposio: Estrategias comunitarias en gestión del conocimiento y conservación de mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>El objetivo de este simposio busca incentivar el diálogo entre diferentes estrategias comunitarias para la gestión de conocimiento y conservación de mamíferos en diferentes regiones geográficas del país, intercambiando conocimientos, aprendizajes y saberes; respetando todas las visiones, tanto la voz de las comunidades como otros actores que llevan estos procesos. Con un enfoque no solo en los resultados exitosos, sino también en la discusión sobre los retos,  dificultades y aprendizajes de las experiencias.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Recientemente se ha incrementado la participación de actores sociales, especialmente las comunidades locales, en las estrategias de gestión y conservación de la biodiversidad en sus territorios para garantizar su efectividad bajo su propia gobernanza. Esto ha sido posible gracias al desarrollo de procesos de construcción conjunta entre distintos actores, cuyos resultados y continuidad han permitido diseñar e implementar acciones con base en lo aprendido en el proceso y contribuir a la toma de decisiones entre los diferentes actores involucrados y el manejo de los territorios. Diversos escenarios han demostrado que los proyectos diversos, equitativos e incluyentes favorecen la construcción de conocimiento desde un enfoque diferencial, integrando perspectivas de género y la participación de distintos grupos etarios. Este tipo de iniciativas se consideran casos exitosos, ya que involucran activamente a los actores locales desde las etapas de diseño hasta la ejecución. Asimismo, incluyen el monitoreo continuo del proceso, lo que permite identificar resultados, debilidades y oportunidades para mejorar la gestión territorial.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="estrategias.js"></script>

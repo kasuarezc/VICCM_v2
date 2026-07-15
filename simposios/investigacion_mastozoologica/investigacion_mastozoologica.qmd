@@ -1,0 +1,74 @@
+---
+title: "Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - investigacion_mastozoologica.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Mastozoología en la Amazonia</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/investigacion_mastozoologica.jpg" alt="Mastozoología Amazonica">
+<div class="pie-foto">
+📷 Mastozoología Amazonica.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Natalia Atuesta-Dimian</li>
+<li>Mónica Peñuela</li>
+<li>Javier García</li>
+<li>Hugo Fernando López-Arévalo</li>
+<li>Catalina Cárdenas</li>
+</ul>
+<div class="badge-simposio">Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Dar a conocer los antecedentes y el panorama actual de la investigación en mastozoología en la Amazonia colombiana, con el fin de identificar fortalezas, vacíos de información y oportunidades que permitan orientar prioridades y perspectivas futuras de investigación en la región.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Promover el intercambio académico y la socialización de resultados de investigación que contribuyan al conocimiento de los mamíferos de la Amazonía.</li>
+<li>Generar un espacio de discusión orientado a la construcción conjunta de prioridades de investigación mastozoológica en la región.</li>
+<li>Fortalecer la articulación entre instituciones, organizaciones, investigadores y comunidades locales para promover procesos colaborativos de investigación, monitoreo y conservación de los mamíferos de la Amazonia colombiana.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>La Panamazonia es una de las regiones más ricas en mamíferos del mundo y, a nivel nacional, se estima que la región alberga una alta diversidad de mastofauna, así como algunas de las poblaciones en mejor estado de conservación. Sin embargo, la Amazonia colombiana continúa siendo una de las regiones con mayores vacíos de información sobre diversidad, distribución, ecología y estado de conservación de sus mamíferos. Aunque se cuenta con avances en algunos temas, persisten vacíos importantes de conocimiento, además de una necesidad creciente de fortalecer el intercambio entre investigadores e instituciones que trabajan en la región. Los institutos de investigación, las universidades y ONGs dinamizan procesos de apropiación social del conocimiento, educación ambiental y monitoreo participativo favoreciendo una relación más cercana entre los mamíferos, la gestión territorial y la toma de decisiones para la sostenibilidad regional. Por ello, el Instituto Sinchi, la Universidad Nacional de Colombia, la Universidad de la Amazonía y la dirección territorial Amazonía de Parques Nacionales Naturales, como parte del ecosistema regional de conocimiento, vemos en el VI Congreso de mastozoología, una gran oportunidad de poner sobre la mesa la discusión sobre avances y desafíos en la investigación mastozoológica, además de abrir espacios que permitan el intercambio de experiencias y aprendizajes, entre actores con trabajo de larga data en la región y nuevos investigadores que enfrentan los desafíos propios del territorio. Este simposio será un espacio para presentar los avances en la investigación mastozoológica en la Amazonia colombiana, identificar vacíos de información y discutir prioridades que orienten futuras agendas de investigación en la región.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="investigacion_mastozoologica.js"></script>

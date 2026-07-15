@@ -1,0 +1,69 @@
+---
+title: "Xenartros"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - primatologia.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Primatología</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/primatologia.jpeg" alt="Primates colombianos: uniendo esfuerzos para la conservación de primates.">
+<div class="pie-foto">
+📷 Primates colombianos: uniendo esfuerzos para la conservación de primates.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Sebastián García Restrepo</li>
+<li>Sebastián O. Montilla</li>
+<li>María Gabriela Luna Conde</li>
+<li>Rafael Santiago Escucha Ramírez</li>
+<li>Efraín Camilo Mora Cruz</li>
+<li>Sergio González Linares</li>
+</ul>
+<div class="badge-simposio">VII Simposio Colombiano de Primatología</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>VII Simposio Colombiano de Primatología</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Permitir la divulgación y promoción de proyectos e iniciativas de estudio, conservación o educación que buscan proteger y conservar las poblaciones silvestres y ex situ. Esta versión del Simposio toma una particular relevancia al ser el año donde se espera contar con el lanzamiento del Programa Nacional de Conservación de Primates por parte del Ministerio de Ambiente y Desarrollo Sostenible.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Colombia alberga una alta riqueza de especies de primates (alrededor de 38 a 40 especies) y a lo largo de los años se ha posicionado como un referente latinoamericano en cuanto al potencial de investigación y a las capacidades de sus profesionales y grupos de investigación en Primatología. Aún así, el conocimiento sobre la biología y el estado de las poblaciones de muchas especies aún es relativamente limitado y enfocado en ciertas especies. En el VII Simposio Colombiano de Primatología reuniremos especialistas, estudiantes y profesionales de diferentes áreas del conocimiento para compartir avances sobre estudios en áreas como ecología, comportamiento, educación, genética, taxonomía y otros aspectos relacionados con los Primates en Colombia.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="primatologia.js"></script>

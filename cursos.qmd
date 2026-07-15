@@ -9,181 +9,302 @@ format:
 ---
 
 <section class="breadcrumb-container">
-
-::: breadcrumb
-<a href="index.html">⌂</a> [›]{.separator} [Cursos y talleres]{.current}
-:::
-
+<div class="breadcrumb">
+<a href="index.html">⌂</a> <span class="separator">›</span> <span class="current">Cursos y talleres</span>
+</div>
 </section>
 
 <section class="cursos-hero">
-
-::: container
+<div class="container">
 <h1>Cursos y actividades académicas</h1>
-
 <p>Espacios de formación, intercambio de saberes y actualización en mastozoología durante el VICCM 2026</p>
-:::
-
+</div>
 </section>
 
+<!-- ==================== CURSOS ==================== -->
 <section class="seccion-cursos">
-
-::: encabezado-seccion
-<img src="cursos/images/SVG/mono.svg" alt="Ícono cursos"/>
-
+<div class="encabezado-seccion">
+<img src="cursos/images/SVG/mono.svg" alt="Ícono cursos">
 <h2>Cursos</h2>
-:::
+</div>
 
-:::::: cards-grid
-<article class="card-placeholder">
+<div class="cards-grid">
 
-::: placeholder-icon
-👨‍🏫
-:::
-
-<h3>Curso 1</h3>
-
-<p>Información del curso próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- CURSO REAL 1 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c1_interacciones_bioticas_mamiferos/images/c1_interacciones_bioticas_mamiferos.jpg" alt="Curso interacciones bióticas">
+</div>
+<h3 class="card-titulo">Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Kevin González Gutiérrez</span>
+<span class="card-organizador">Alejandro Rodriguez Villa</span>
+<span class="card-organizador">John Harold Castaño Salazar</span>
+</div>
+<p class="card-descripcion">Las interacciones bióticas constituyen un componente fundamental para comprender la estructura y el funcionamiento de los ecosistemas.</p>
+<a href="cursos/c1_interacciones_bioticas_mamiferos/c1_interacciones_bioticas_mamiferos.html" class="card-boton">Ver el Curso Completo →</a>
 </article>
 
-<article class="card-placeholder">
-
-::: placeholder-icon
-👨‍🏫
-:::
-
-<h3>Curso 2</h3>
-
-<p>Información del curso próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- CURSO REAL 2 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c2_ciencia_dosel/images/c2_ciencia_dosel.jpg" alt="Curso Ciencia del Dosel">
+</div>
+<h3 class="card-titulo">Investigación de Ciencia del Dosel para la conservación de mamíferos</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Juan Lucas Capa Procel</span>
+<span class="card-organizador">Ollie Thomas </span>
+<span class="card-organizador">Laura Suárez Ramírez</span>
+<span class="card-organizador">Alexis Ruiz Burbano</span>
+</div>
+<p class="card-descripcion">El curso Investigación de Ciencia del Dosel para la Conservación de Mamíferos tiene como objetivo principal fortalecer las capacidades técnicas y científicas de jóvenes, estudiantes y actores vinculados a la conservación, mediante la apropiación de herramientas básicas para la investigación del dosel.</p>
+<a href="cursos/c2_ciencia_dosel/c2_ciencia_dosel.html" class="card-boton">Ver el Curso Completo →</a>
 </article>
 
-<article class="card-placeholder">
-
-::: placeholder-icon
-👨‍🏫
-:::
-
-<h3>Curso 3</h3>
-
-<p>Información del curso próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- CURSO REAL 3 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c3_modelamiento_conectividad/images/c3_modelamiento_conectividad.png" alt="Curso Conectividad Ecologica">
+</div>
+<h3 class="card-titulo">Modelamiento de Conectividad Ecológica Funcional en Evaluación de Impacto Ambiental.</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Carlos Eduardo Ortiz Yusty</span>
+<span class="card-organizador">Diana Marcela Cardona Ramirez</span>
+<span class="card-organizador">María Camila Aduén Espinosa</span>
+</div>
+<p class="card-descripcion">El modelamiento de la conectividad ecológica se ha consolidado como una herramienta clave para identificar, evaluar y mitigar los impactos de proyectos de infraestructura sobre la biodiversidad y los procesos ecológicos a escala de paisaje.</p>
+<a href="cursos/c3_modelamiento_conectividad/c3_modelamiento_conectividad.html" class="card-boton">Ver el Curso Completo →</a>
 </article>
-::::::
 
+<!-- CURSO REAL 4 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c4_procesamiento/images/c4_procesamiento.jpg" alt="Curso Procesamiento, analisis de datos">
+</div>
+<h3 class="card-titulo">Procesamiento, visualización y análisis de datos espaciales en R.</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Diego J. Lizcano</span>
+<span class="card-organizador">Andrés Felipe Suárez Castro</span>
+</div>
+<p class="card-descripcion">Durante el curso, se presentarán diferentes estrategias que facilitan la detección de errores, la creación de gráficos y el resumen de grandes bases de datos para el análisis de biodiversidad.</p>
+<a href="cursos/c4_procesamiento/c4_procesamiento.html" class="card-boton">Ver el Curso Completo →</a>
+</article>
+
+<!-- CURSO REAL 5 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c5_colecciones/images/c5_colecciones.jpg" alt="Preparación de especímenes para colecciones biológicas y educación">
+</div>
+<h3 class="card-titulo">De las Colecciones a la Comunidad: Taxidermia como Herramienta de Educación Ambiental para la Conservación Biológica</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Manuela Alzate Lozada</span>
+<span class="card-organizador">Jaime Ramírez Mosquera</span>
+<span class="card-organizador">Natalia Ramírez Sáenz</span>
+<span class="card-organizador">Yesyca Andrea López Bolaños</span>
+<span class="card-organizador">Wilmar Guzmán Zapata</span>
+<span class="card-organizador">Lorena Alvear Narváez</span>
+</div>
+<p class="card-descripcion">La taxidermia, tradicionalmente asociada a colecciones científicas, ha adquirido un papel relevante en procesos de educación ambiental al facilitar una aproximación directa al conocimiento de las especies que representan la biodiversidad de una región.</p>
+<a href="cursos/c5_colecciones/c5_colecciones.html" class="card-boton">Ver el Curso Completo →</a>
+</article>
+
+<!-- CURSO REAL 6 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/c6_basico/images/c6_basico.jpg" alt="Morfometría geométrica para el estudio de la forma en mamíferos">
+</div>
+<h3 class="card-titulo">Curso básico teórico-práctico de morfometría geométrica aplicada usando MorphoJ.</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Nicolas Reyes-Amaya</span>
+<span class="card-organizador">Alejandra Pardo</span>
+<span class="card-organizador">Paula Calambas Pizo</span>
+</div>
+<p class="card-descripcion">La morfometría geométrica ha emergido como un enfoque robusto para cuantificar y analizar la variación morfológica a partir de coordenadas espaciales, facilitando la separación entre tamaño y forma y permitiendo interpretar los cambios morfológicos de manera gráfica y estadísticamente sustentada.</p>
+<a href="cursos/c6_basico/c6_basico.html" class="card-boton">Ver el Curso Completo →</a>
+</article>
+
+</div>
 </section>
 
+<!-- ==================== TALLERES ==================== -->
 <section class="seccion-cursos">
-
-::: encabezado-seccion
-<img src="cursos/images/SVG/Perezoso.svg" alt="Ícono talleres"/>
-
+<div class="encabezado-seccion">
+<img src="cursos/images/SVG/Perezoso.svg" alt="Ícono talleres">
 <h2>Talleres</h2>
-:::
+</div>
 
-:::::: cards-grid
-<article class="card-placeholder">
+<div class="cards-grid">
 
-::: placeholder-icon
-🛠
-:::
-
-<h3>Taller 1</h3>
-
-<p>Información del taller próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- TALLER REAL 1 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t1_tejiendo_conservacion/images/t1_tejiendo_conservacion.jpg" alt="Taller Tejiendo la conservación">
+</div>
+<h3 class="card-titulo">Tejiendo la conservación: arte y mamíferos en peligro</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Leidy Laura Ocampo López</span>
+</div>
+<p class="card-descripcion">Fortalecer capacidades en educación para la conservación de mamíferos mediante el uso del tejido como herramienta pedagógica y comunitaria.</p>
+<a href="cursos/t1_tejiendo_conservacion/t1_tejiendo_conservacion.html" class="card-boton">Ver Taller Completo →</a>
 </article>
 
-<article class="card-placeholder">
-
-::: placeholder-icon
-🛠
-:::
-
-<h3>Taller 2</h3>
-
-<p>Información del taller próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- TALLER REAL 2 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t2_murcielagos/images/t2_murcielagos.png" alt="Refugios de Murciélagos">
+</div>
+<h3 class="card-titulo">Introducción al Estudio de los Refugios de Murciélagos en Colombia</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Liceth Margarita Suárez Payares</span>
+</div>
+<p class="card-descripcion">Los refugios de murciélagos son elementos cruciales en la dinámica ecosistémica neotropical, su estudio y comprensión permite el acercamiento a escala fina, de fenómenos que escapan, en muchas ocasiones, de nuestra vista, pero que podrían tener un impacto al alcance de todos.</p>
+<a href="cursos/t2_murcielagos/t2_murcielagos.html" class="card-boton">Ver Taller Completo →</a>
 </article>
 
-<article class="card-placeholder">
 
-::: placeholder-icon
-🛠
-:::
-
-<h3>Taller 3</h3>
-
-<p>Información del taller próximamente</p>
-
-[Próximamente]{.badge}
-
+<!-- TALLER REAL 3 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t3_murcielloween/images/t3_murcielloween.jpg" alt="Taller Ciencia participativa para la conservación de murciélagos en contextos urbanos.">
+</div>
+<h3 class="card-titulo">Murcielloween: Investigación participativa para la conservación de murciélagos en entornos urbanos</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Kevin Alexander Ramírez</span>
+<span class="card-organizador">Joseph Alejandro Romero</span>
+<span class="card-organizador">Cesar Camilo Castillo</span>
+<span class="card-organizador">Charles S. Muñoz Nates</span>
+</div>
+<p class="card-descripcion">El taller "Murcielloween", surge como una iniciativa de ciencia participativa desarrollada por la Universidad del Cauca para generar conocimiento sobre los murciélagos en entornos urbanos, dada la escasez de información sobre la quiropterofauna del campus y la necesidad de valorar este grupo biológico.</p>
+<a href="cursos/t3_murcielloween/t3_murcielloween.html" class="card-boton">Ver Taller Completo →</a>
 </article>
-::::::
 
+
+<!-- TALLER REAL 4 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t4_innovacion/images/t4_innovacion.jpg" alt="Herramientas didácticas que construyen puentes entre la ciencia y las comunidades">
+</div>
+<h3 class="card-titulo">Innovación educativa y herramientas didácticas para la conservación de mamíferos</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Laura Suárez Ramírez</span>
+<span class="card-organizador">María Angélica Contreras</span>
+<span class="card-organizador">Ginna Ruiz Burbano</span>
+<span class="card-organizador">Hernan Dario Granda Rodriguez</span>
+<span class="card-organizador">Johana Alejandra Villota Mogollón</span>
+</div>
+<p class="card-descripcion">La educación ambiental ha dejado de ser un contenido complementario en la conservación de la biodiversidad en Colombia para consolidarse como un eje estratégico en la construcción de territorios sostenibles y en el fortalecimiento de comunidades locales comprometidas y apropiadas de la biodiversidad que las rodea.</p>
+<a href="cursos/t4_innovacion/t4_innovacion.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+<!-- TALLER REAL 5 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t5_mammalogy/images/t5_mammalogy.png" alt="Escribir ciencia es el primer paso para transformar la conservación.">
+</div>
+<h3 class="card-titulo">Publique su Manuscrito en Mammalogy Notes</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Diego J. Lizcano</span>
+<span class="card-organizador">Mauricio Vela</span>
+</div>
+<p class="card-descripcion">En la divulgación de resultados de investigación de mamíferos, la palabra escrita —en particular la literatura revisada por pares— sigue siendo fundamental.</p>
+<a href="cursos/t5_mammalogy/t5_mammalogy.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+<!-- TALLER REAL 6 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t6_conozcamonos/images/t6_conozcamonos.png" alt="Jugar para aprender: el arte de conocer nuestros primates.">
+</div>
+<h3 class="card-titulo">ConozcáMonos: aprende sobre ecología y conservación de monos de Colombia</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Alma Hernández</span>
+<span class="card-organizador">Caralina Orrego</span>
+</div>
+<p class="card-descripcion">El orden Primates es uno de los más amenazados a nivel global principalmente por la pérdida de su hábitat, extracción como mascotas y cacería, la mayoría de las especies de monos están en alguna categoría de amenaza según la UICN.</p>
+<a href="cursos/t6_conozcamonos/t6_conozcamonos.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+<!-- TALLER REAL 7 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t7_mastogami/images/t7_mastogami.jpg" alt="Plegar la ciencia para divulgar la mastofauna con arte y precisión.">
+</div>
+<h3 class="card-titulo">Mastogami: Animalitos en papel</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Carolina López Castañeda</span>
+</div>
+<p class="card-descripcion">El primer taller de Mastozoogami Busca crear un espacio creativo,  inmersión dinámica entre el papel y la morfología básica de los mamíferos a través de la precisión del plegado.</p>
+<a href="cursos/t7_mastogami/t7_mastogami.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+
+<!-- TALLER REAL 8 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t8_guardianes/images/t8_guardianes.png" alt="Diálogo de saberes para la gobernanza territorial y la coexistencia.">
+</div>
+<h3 class="card-titulo">Guardianes del Territorio: Ciencia, Comunidades y Gestión Institucional.</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Daniel Rodríguez</span>
+<span class="card-organizador">Andrés Felipe Vargas Arboleda</span>
+<span class="card-organizador">Stefania Gómez</span>
+<span class="card-organizador">Javier García</span>
+</div>
+<p class="card-descripcion">La creciente complejidad de los desafíos socioambientales en los territorios exige enfoques participativos que integren el conocimiento local, la gestión de la información y la toma de decisiones colaborativa.</p>
+<a href="cursos/t8_guardianes/t8_guardianes.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+<!-- TALLER REAL 9 -->
+<article class="card-placeholder card-contenido">
+<div class="card-imagen">
+<img src="cursos/t9_dato/images/t9_dato.jpg" alt="La ilustración territorial como herramienta para narrar y conservar la biodiversidad.">
+</div>
+<h3 class="card-titulo">Del dato a la imagen: infografías narrativas con contexto territorial para la conservación de mamíferos</h3>
+<div class="card-organizadores">
+<span class="card-organizador">Yesyca Andrea López Bolaños</span>
+<span class="card-organizador">Nilsa Lorena Alvear </span>
+<span class="card-organizador">Jhonier Apraez Bravo</span>
+<span class="card-organizador">Lina Maria Velasquez Caviche</span>
+<span class="card-organizador">Jhonny Rosero</span>
+<span class="card-organizador">Janssen Byron Sevilla Tintinago</span>
+<span class="card-organizador">Adrian Pazu Passu</span>
+</div>
+<p class="card-descripcion">En el contexto actual, uno de los principales retos de la mastozoología es lograr que el conocimiento científico trascienda de los espacios académicos y se conecte con diversos públicos de manera accesible, significativa y contextualizada.</p>
+<a href="cursos/t9_dato/t9_dato.html" class="card-boton">Ver Taller Completo →</a>
+</article>
+
+</div>
 </section>
 
+<!-- ==================== PRÓXIMOS EVENTOS ==================== -->
 <section class="seccion-cursos">
-
-::: encabezado-seccion
-<img src="cursos/images/SVG/Pavo_real.svg" alt="Ícono próximos eventos"/>
-
+<div class="encabezado-seccion">
+<img src="cursos/images/SVG/Pavo_real.svg" alt="Ícono próximos eventos">
 <h2>Próximos eventos</h2>
-:::
+</div>
 
-:::::: cards-grid
+<div class="cards-grid">
+
 <article class="card-placeholder">
-
-::: placeholder-icon
-📅
-:::
-
+<div class="placeholder-icon">📅</div>
 <h3>Evento 1</h3>
-
 <p>Detalles del evento próximamente</p>
-
-[Próximamente]{.badge}
-
+<span class="badge">Próximamente</span>
 </article>
 
 <article class="card-placeholder">
-
-::: placeholder-icon
-📅
-:::
-
+<div class="placeholder-icon">📅</div>
 <h3>Evento 2</h3>
-
 <p>Detalles del evento próximamente</p>
-
-[Próximamente]{.badge}
-
+<span class="badge">Próximamente</span>
 </article>
 
 <article class="card-placeholder">
-
-::: placeholder-icon
-📅
-:::
-
+<div class="placeholder-icon">📅</div>
 <h3>Evento 3</h3>
-
 <p>Detalles del evento próximamente</p>
-
-[Próximamente]{.badge}
-
+<span class="badge">Próximamente</span>
 </article>
-::::::
 
+</div>
 </section>

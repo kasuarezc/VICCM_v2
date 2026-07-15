@@ -1,0 +1,70 @@
+---
+title: "IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - bioacustica_mamiferos.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Bioacústica de Mamiferos de Colombia</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/bioacustica_mamiferos.jpg" alt="Bioacústica de mamiferos">
+<div class="pie-foto">
+📷 Monitoreo acústico pasivo para la investigación de mamíferos en Colombia.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Daniela Martínez-Medina</li>
+<li>Francisco Sánchez</li>
+<li>Diego J. Lizcano</li>
+<li>Víctor Martínez-Arias</li>
+<li>Jefferson Sánchez</li>
+<li>Andrea Martínez-Bulla</li>
+<li>Miguel E. Rodríguez-Posada</li>
+</ul>
+<div class="badge-simposio">IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Revisar el estado actual, los avances y las nuevas contribuciones de la bioacústica al entendimiento de los mamíferos, así como discutir las tendencias emergentes y los retos en los desarrollos metodológicos. Todo ello con el fin de trazar una hoja de ruta que defina las prioridades de investigación y desarrollo tecnológico para la próxima década en el contexto latinoamericano.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Tras el éxito de las versiones anteriores del simposio, donde se ha avanzado en la consolidación de la apropiación de las herramientas acústicas, fortaleciendo el desarrollo de la mastozoología e incentivando el intercambio de experiencias de investigación usando estas herramientas,  se ha generado un incremento exponencial en la generación de datos y el acceso a nuevas tecnologías de monitoreo acústico pasivo (MAP), llevando la bioacústica a un punto de inflexión, exigiendo una transición del inventario hacia el análisis de sistemas complejos y hacia la consolidación del uso de las herramientas para entender más sobre la biología y ecología de los mamíferos colombianos.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="bioacustica_mamiferos.js"></script>

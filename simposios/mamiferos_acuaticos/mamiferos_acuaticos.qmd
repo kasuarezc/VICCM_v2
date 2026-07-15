@@ -1,0 +1,66 @@
+---
+title: "Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - mamiferos_acuaticos.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/mamiferos_acuaticos.jpg" alt="Ecosistemas acuáticos y su conservación en el Neotrópico.">
+<div class="pie-foto">
+📷 Ecosistemas acuáticos y su conservación en el Neotrópico.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Federico Mosquera Guerra</li>
+<li>Fernando Trujillo</li>
+<li>Carlos Saavedra</li>
+</ul>
+<div class="badge-simposio">Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Generar un espacio de intercambio científico, técnico y social sobre el estado del conocimiento, la conservación y el manejo de los mamíferos acuáticos y semiacuáticos presentes en ecosistemas marinos, costeros, fluviales y humedales del Neotrópico, promoviendo el diálogo entre investigadores, estudiantes, autoridades ambientales, organizaciones sociales y comunidades locales para fortalecer redes de colaboración, enfoques interdisciplinarios y estrategias integrales de conservación. </p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El simposio abordará avances recientes en ecología, distribución, monitoreo, amenazas emergentes, restauración de hábitats y conservación de cetáceos, sirénidos, nutrias y otros mamíferos asociados a ecosistemas acuáticos. Asimismo, propiciará la discusión sobre los efectos del cambio climático, la contaminación, la pérdida de conectividad ecológica, la pesca incidental y la transformación de los ecosistemas acuáticos en el Neotrópico. La realización de este espacio responde a la importancia ecológica de estos mamíferos como reguladores tróficos, dispersores de nutrientes e indicadores de la salud ecosistémica, así como a la necesidad de reducir los vacíos de información y fortalecer la articulación entre investigación, manejo y conservación. Finalmente, el simposio contribuirá a visibilizar experiencias regionales, identificar prioridades de investigación y promover la construcción colectiva de estrategias para la conservación de los mamíferos acuáticos y los ecosistemas asociados en el Neotrópico.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="mamiferos_acuaticos.js"></script>

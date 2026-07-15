@@ -1,0 +1,69 @@
+---
+title: "Xenartros"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - perezosos.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Perezosos, Armadillos y Hormigueros</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/perezosos.jpeg" alt="Xenartros amazónicos: ingenieros del ecosistema ante la transformación del paisaje.">
+<div class="pie-foto">
+📷 Xenartros amazónicos: ingenieros del ecosistema ante la transformación del paisaje.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Carlos Aya Cuero</li>
+<li>Maria Jose Andrade</li>
+<li>Julio Chacón Pacheco</li>
+<li>Catalina Perez</li>
+<li>Nathalia Niño</li>
+<li>Cesar Rojano</li>
+</ul>
+<div class="badge-simposio">VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>El objetivo principal del simposio es socializar avances recientes, identificar vacíos prioritarios de información, fortalecer la articulación interinstitucional, impulsar una red nacional de trabajo colaborativo y definir lineamientos preliminares para  la investigación y conservación de los Xenartros a nivel Nacional. En esta oportunidad se dará un especial énfasis en la región de la Amazonia como unas de las regiones donde menos se han documentado esfuerzos de conservación de las especies de xenartros.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros da continuidad a los cinco encuentros previos que han consolidado un espacio técnico y científico dedicado al estudio y conservación de los xenartros en el país. Los xenartros (armadillos, perezosos y osos hormigueros) constituyen uno de los linajes más representativos de la historia evolutiva de Suramérica. En Colombia, estas especies cumplen roles ecológicos fundamentales como ingenieros ecosistémicos, controladores de insectos y dispersores de semillas. No obstante, continúan enfrentando amenazas significativas como la pérdida y fragmentación del hábitat, la cacería, los atropellamientos y los conflictos socioambientales. En los últimos años se han fortalecido iniciativas nacionales de investigación y conservación; sin embargo, persisten vacíos críticos de información sobre distribución, genética, salud poblacional, conectividad del paisaje y adaptación al cambio climático.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="perezosos.js"></script>

@@ -1,0 +1,74 @@
+---
+title: "Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - c1_interacciones_bioticas_mamiferos.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Cursos</a>
+<span class="separator">›</span>
+<span class="current">Interacciones bióticas de mamíferos</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/c1_interacciones_bioticas_mamiferos.jpg" alt="Capacidades analíticas aplicadas al estudio de redes ecológicas.">
+<div class="pie-foto">
+📷 Capacidades analíticas aplicadas al estudio de redes ecológicas.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Kevin González Gutiérrez</li>
+<li>Alejandro Rodriguez Villa</li>
+<li>John Harold Castaño Salazar</li>
+</ul>
+<div class="badge-simposio">Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Proporcionar a los participantes fundamentos conceptuales y herramientas metodológicas para el estudio de las interacciones bióticas de mamíferos, mediante el análisis y visualización de redes ecológicas, con énfasis en su aplicación a la investigación, conservación y manejo de la biodiversidad.</li>
+<li>Comprender los principales conceptos ecológicos relacionados con las interacciones bióticas entre mamíferos, plantas y otros animales, incluyendo mutualismo, depredación, herbivoría y dispersión de semillas.</li>
+<li>Introducir los fundamentos de la teoría de redes y su aplicación al estudio de las interacciones ecológicas.</li>
+<li>Capacitar a los participantes en la construcción, manejo y visualización de redes de interacción utilizando herramientas especializadas como R y Gephi.</li>
+<li>Analizar métricas estructurales de redes ecológicas, tales como anidamiento, modularidad y centralidad, para identificar patrones ecológicos y especies clave.</li>
+<li>Interpretar la estructura y dinámica de las interacciones bióticas en relación con procesos ecológicos como coexistencia, especialización, coevolución y resiliencia de comunidades.</li>
+<li>Evaluar el efecto de perturbaciones ambientales, incluyendo cambio climático e invasiones biológicas, sobre la organización de las redes ecológicas.</li>
+<li>Aplicar los conocimientos adquiridos a estudios de caso reales relacionados con la conservación, restauración y manejo de ecosistemas.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Las interacciones bióticas constituyen un componente fundamental para comprender la estructura y el funcionamiento de los ecosistemas. En los mamíferos, relaciones como la polinización, dispersión de semillas, depredación, herbivoría y competencia influyen directamente en la dinámica de las comunidades y en el mantenimiento de la biodiversidad. En las últimas décadas, el análisis de redes ecológicas se ha consolidado como una herramienta conceptual y metodológica que permite representar, visualizar y cuantificar estas interacciones, facilitando la identificación de patrones ecológicos y especies clave. El curso “Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos” ofrece una introducción teórico-práctica al estudio de las interacciones ecológicas desde una perspectiva integradora. Se abordarán los principales tipos de interacciones biológicas, los fundamentos de la teoría de redes y los procesos ecológicos y evolutivos que estructuran las comunidades. Asimismo, los participantes aprenderán a construir, visualizar e interpretar redes de interacción mediante el uso de herramientas computacionales como R y Gephi. A través de ejemplos empíricos, estudios de caso y ejercicios prácticos, se explorarán métricas de redes como conectancia, anidamiento, modularidad y roles de las especies, así como su aplicación en preguntas relacionadas con coexistencia, especialización, resiliencia y conservación. El curso busca fortalecer las capacidades analíticas de estudiantes e investigadores interesados en comprender y evaluar la importancia de las interacciones bióticas en contextos de investigación, conservación y manejo de la biodiversidad.</p>
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los cursos</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="c1_interacciones_bioticas_mamiferos.js"></script>

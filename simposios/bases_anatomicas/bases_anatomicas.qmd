@@ -1,0 +1,67 @@
+---
+title: "Simposio Bases Anatómicas de la Biodiversidad en Mamíferos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - bases_anatomicas.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Bases Anatómicas de la Biodiversidad en Mamíferos</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/bases_anatomicas.jpg" alt="Anatomía comparada y nuevas tecnologías para el estudio morfológico de mamíferos.">
+<div class="pie-foto">
+📷 Anatomía comparada y nuevas tecnologías para el estudio morfológico de mamíferos.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Nicolas Reyes-Amaya</li>
+<li>Alejandra Pardo</li>
+<li>Paula Calambas Pizo</li>
+<li>Maria Antonia Montilla</li>
+</ul>
+<div class="badge-simposio">Simposio Bases Anatómicas de la Biodiversidad en Mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Simposio Bases Anatómicas de la Biodiversidad en Mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Promover la creación de espacios de diálogo en la comunidad académica y científica, relacionados con la anatomía de mamíferos, desde la morfogénesis, anatomía funcional, procesos evolutivos y otras aproximaciones que abarcan una amplia gama de técnicas como la histomorfología, la morfometría tradicional, la morfometría geométrica, la morfología por tomografía computarizada (CT) y el modularidad. Este enfoque multidisciplinario de tipo bottom-up permite una comprensión más precisa de los mecanismos y causas de la disparidad y la especiación en los mamíferos, desde individuos hasta poblaciones, y desde partes específicas hasta interacciones modulares y sistémicas dentro de los organismos. En conjunto, un simposio dedicado exclusivamente al cambio morfológico en mamíferos resulta pertinente a la luz de la rica diversidad anatómica de este grupo a lo largo de su historia evolutiva; por ello, este simposio se centrará, aunque no de manera exclusiva, en investigaciones sobre la variación fenotípica de la anatomía de los mamíferos, abarcando tanto escalas poblacionales como macroevolutivas, e incluyendo especies tanto extintas como actuales. </p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El estudio de la anatomía de los mamíferos vivos ha sido una herramienta fundamental para clasificarlos, comprenderlos y reflexionar sobre su naturaleza y evolución. En las últimas décadas, la anatomía comparada ha experimentado una nueva revolución científica, en gran medida debido al desarrollo exponencial de nuevas tecnologías y métodos que permiten formas más precisas y detalladas de visualizar y analizar la estructura externa e interna de los animales desde una perspectiva integradora. En este sentido, la interacción recíproca entre la ecología y la evolución asociada a cambios morfológicos es un área de estudio necesaria para la conservación y la salud pública.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="bases_anatomicas.js"></script>

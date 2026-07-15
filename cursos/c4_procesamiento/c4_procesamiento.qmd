@@ -1,0 +1,65 @@
+---
+title: "Procesamiento, visualización y análisis de datos espaciales en R."
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - c4_procesamiento.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Cursos</a>
+<span class="separator">›</span>
+<span class="current">Procesamiento, visualización y análisis de datos espaciales en R.</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/c4_procesamiento.jpg" alt="Análisis de datos espaciales de mamíferos con herramientas R.">
+<div class="pie-foto">
+📷 Análisis de datos espaciales de mamíferos con herramientas R
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Diego J. Lizcano</li>
+<li>Andrés Felipe Suárez Castro</li>
+</ul>
+<div class="badge-simposio">Procesamiento, visualización y análisis de datos espaciales en R.</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Procesamiento, visualización y análisis de datos espaciales en R.</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Proporcionar capacitación en el procesamiento, visualización y mapeo de datos espaciales utilizando R. El curso se centra en un pequeño conjunto de paquetes populares para estas tareas, muchos de los cuales pertenecen a una colección de paquetes denominada tidyverse. Mediante el uso de un estudio de caso con mamíferos neotropicales, los participantes de este aprenderán herramientas básicas sobre cómo convertir fácilmente sus datos en un formato "ordenado", lo que facilita la verificación y el análisis de errores. También crearemos algunos gráficos para resumir los datos y exploraremos varias opciones para la creación de mapas.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Durante el curso, se presentarán diferentes estrategias que facilitan la detección de errores, la creación de gráficos y el resumen de grandes bases de datos para el análisis de biodiversidad. Además, se mostrarán ejemplos utilizando datos del Global Biodiversity Information Facility (GBIF) explicando los paquetes disponibles para agilizar el procesamiento de estos datos.Todos estos temas estarán soportados con ejemplos relevantes para el mundo de la mastozoología, pero que podrán ser extrapolados a otros grupos y a temas relevantes en ecología y conservación.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los cursos</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="c4_procesamiento.js"></script>

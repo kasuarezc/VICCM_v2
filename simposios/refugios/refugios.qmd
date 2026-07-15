@@ -1,0 +1,77 @@
+---
+title: "Refugios de Murcielagos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - refugios.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Refugios de Murciélagos</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/refugios.jpeg" alt="Refugios quiropteros: espacios vitales para la conservación y la ciencia colaborativa.">
+<div class="pie-foto">
+📷 Refugios quiropteros: espacios vitales para la conservación y la ciencia colaborativa.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Liceth Margarita Suárez Payares</li>
+<li>Tomás Villada-Cadavid</li>
+<li>Melquisedec Gamba-Ríos</li>
+<li>Sandra Bernal</li>
+<li>Yesyca Andrea López Bolaños</li>
+<li>Ana María Ávila García</li>
+<li>Diana Carina Vallejo Cardozo</li>
+</ul>
+<div class="badge-simposio">I Simposio de Refugios de Murciélagos en Colombia</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>I Simposio de Refugios de Murciélagos en Colombia</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Avanzar en la identificación del estado actual del estudio de los refugios de murciélagos en Colombia.</li>
+<li>Identificar los actores que tienen incidencia actual, en el estudio, el abordaje, y la gestión de los refugios de murciélagos en Colombia, y establecer estrategias de colaboración entre investigadores y entidades involucradas.</li>
+<li>Presentar un panorama reciente acerca del estudio de los refugios de murciélagos en Colombia, y su realidad en América Latina y el Caribe</li>
+<li>Proponer nuevas perspectivas en el estudio de los refugios de murciélagos en Colombia</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Bastaron dos décadas para percatarnos acerca de lo imperativo de proponer nuevas estrategias para el estudio de los refugios de murciélagos en Colombia.</p>
+
+<p>Los refugios en ecosistemas rurales, periurbanos y urbanos son ambientes críticos, en donde los murciélagos llevan a cabo procesos biológicos, fisiológicos y ecológicos esenciales, que no ocurren en otros entornos, y para los que no han sido dotados evolutivamente, a ser llevados a cabo de otra manera. Aun así, los esfuerzos que se han venido adelantando, por su estudio y conservación, han sido construidos de manera fragmentada y aislada, que aún resultan insuficientes frente al aumento de las amenazas ambientales actuales: transformación del paisaje, perturbaciones antrópicas, exclusiones, o el cambio climático, volviendo prioritario profundizar en su estudio y estado de conservación.</p>
+<p>Siendo Colombia, un epicentro global para la quiropterofauna, históricamente el interés científico se ha centrado en la taxonomía y la ecología general, viéndose reflejado en eventos científicos de trascendencia nacional, en donde la importancia de los refugios, como componente determinante para la persistencia de las poblaciones, y para la toma de decisiones en diferentes áreas estratégicas y de gestión del país, ha sido relegada. En este contexto, proponemos el I Simposio de Refugios de Murciélagos en Colombia, en el marco del VI Congreso Colombiano de Mastozoología; espacio que será fundamental para estandarizar criterios técnicos, evaluar la salud de los ecosistemas, y priorizar la investigación básica, al fomentar la comunicación directa entre investigadores, y consolidar redes de colaboración estratégica.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="refugios.js"></script>

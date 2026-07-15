@@ -1,0 +1,74 @@
+---
+title: "Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - fronteras_movimiento.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Fronteras en Movimiento...</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/fronteras_movimiento.jpg" alt="Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos">
+<div class="pie-foto">
+📷 Ciencia y tecnología para el monitoreo y al servicio de la conservación de ecosistemas estratégicos.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Heliot Zarza</li>
+<li>Andrés Arias-Alzate</li>
+<li>Laura X. Mendoza</li>
+<li>Cuauhtémoc Chávez</li>
+<li>Karla Pelz</li>
+<li>Rurik List</li>
+<li>José F. González Maya</li>
+</ul>
+<div class="badge-simposio">Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Realizar un ejercicio de prospectiva (horizon scanning) para identificar las tendencias y tecnologías emergentes que marcarán la agenda de conservación hacia el 2030</li>
+<li>Analizar estudios de caso donde la aplicación de ciencia de punta haya escalado de resultados académicos a impactos reales y medibles en el terreno.</li>
+<li>Debatir los factores de éxito y las barreras para la transferencia tecnológica entre la academia, las ongs y los gestores territoriales. .</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Este simposio surge de la necesidad crítica de transformar la ciencia de frontera en herramientas operativas que generen cambios tangibles en la conservación de los mamíferos y sus ecosistemas. Mientras que la innovación tecnológica y conceptual avanza a un ritmo acelerado, la implementación en territorio suele enfrentar brechas de conocimiento, recursos y política. La justificación de este espacio radica en evaluar no solo qué innovaciones están en el horizonte (IA, genómica avanzada, monitoreo satelital de alta resolución), sino cómo estas están siendo integradas exitosamente en la toma de decisiones y el manejo de biodiversidad en Latinoamérica..</p>
+<p>Al centrarse en la eficacia de la implementación, el simposio ofrece una visión pragmática y esperanzadora de la mastozoología moderna, promoviendo una conservación más ágil, resiliente y basada en evidencia de vanguardia.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="fronteras_movimiento.js"></script>

@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("simposios.js cargado"); // Para verificar que se ejecuta
+
   const botonesFiltro = document.querySelectorAll(".filtro-btn");
   const cards = document.querySelectorAll(".simposio-card");
   const inputBusqueda = document.getElementById("busquedaInput");
   const newsletterBtn = document.querySelector(".newsletter-btn");
-  const pageItems = document.querySelectorAll(".page-item");
 
   botonesFiltro.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -63,11 +64,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  pageItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      pageItems.forEach((p) => p.classList.remove("active"));
-      item.classList.add("active");
+  // ===== PAGINACIÓN CORREGIDA =====
+  // Selecciona todos los enlaces dentro del contenedor .paginacion
+  const paginationLinks = document.querySelectorAll('.paginacion a, .paginacion ul li a');
+  console.log("Enlaces de paginación encontrados:", paginationLinks.length);
+
+  paginationLinks.forEach((link) => {
+    link.addEventListener('click', function (e) {
+      // No prevenimos el comportamiento por defecto para permitir la navegación
+      // Solo actualizamos la clase active
+      console.log("Clic en enlace de paginación:", this.href);
+
+      // Quitamos la clase active de todos los enlaces de paginación
+      document.querySelectorAll('.paginacion a, .paginacion ul li a').forEach((l) => l.classList.remove('active'));
+      // Añadimos la clase active al enlace clickeado
+      this.classList.add('active');
+
+      // El navegador seguirá el enlace automáticamente
+      // No llamamos a e.preventDefault()
     });
   });
 });

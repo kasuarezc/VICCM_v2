@@ -1,0 +1,78 @@
+[
+    {
+        "titulo":"Inicio",
+        "descripcion":"Página principal del Congreso",
+        "categoria":"Inicio",
+        "url":"index.html"
+    },
+
+    {
+        "titulo":"Comités",
+        "descripcion":"Comité Organizador y Comité Científico",
+        "categoria":"Comités",
+        "url":"comites.html"
+    },
+
+    {
+        "titulo":"Noticias",
+        "descripcion":"Noticias del Congreso",
+        "categoria":"Noticias",
+        "url":"noticias.html"
+    },
+
+    {
+        "titulo":"Simposios",
+        "descripcion":"Simposios del Congreso",
+        "categoria":"Simposios",
+        "url":"simposios.html"
+    },
+
+    {
+        "titulo":"Cursos",
+        "descripcion":"Cursos del Congreso",
+        "categoria":"Cursos",
+        "url":"cursos.html"
+    },
+
+    {
+        "titulo":"Sede",
+        "descripcion":"Información de la sede",
+        "categoria":"Sede",
+        "url":"sede.html"
+    },
+
+    {
+        "titulo":"Contacto",
+        "descripcion":"Contáctenos",
+        "categoria":"Contacto",
+        "url":"contacto.html"
+    },
+
+    {
+        "titulo":"Concurso de Diseño",
+        "descripcion":"Noticias",
+        "categoria":"Noticias",
+        "url":"noticias/2026-04-06_concurso_diseno/index.html"
+    },
+
+    {
+        "titulo":"Primera Circular",
+        "descripcion":"Noticias",
+        "categoria":"Noticias",
+        "url":"noticias/2026-01-28_primera_circular/index.html"
+    },
+
+    {
+        "titulo":"Segunda Circular",
+        "descripcion":"Noticias",
+        "categoria":"Noticias",
+        "url":"noticias/2026-02-01_segunda_circular/index.html"
+    },
+
+    {
+        "titulo":"Fototrampeo",
+        "descripcion":"Simposio",
+        "categoria":"Simposios",
+        "url":"simposios/fototrampeo/index.html"
+    }
+]

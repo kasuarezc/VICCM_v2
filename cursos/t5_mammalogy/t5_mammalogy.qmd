@@ -1,0 +1,61 @@
+---
+title: "Publique su Manuscrito en Mammalogy Notes"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - t5_mammalogy.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Talleres</a>
+<span class="separator">›</span>
+<span class="current">Publique su Manuscrito en Mammalogy Notes</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/t5_mammalogy.png" alt="Escribir ciencia es el primer paso para transformar la conservación.">
+<div class="pie-foto">
+📷  Escribir ciencia es el primer paso para transformar la conservación.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Diego J. Lizcano</li>
+<li>Mauricio Vela</li>
+</ul>
+<div class="badge-simposio">Publique su Manuscrito en Mammalogy Notes</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Publique su Manuscrito en Mammalogy Notes</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>En la divulgación de resultados de investigación de mamíferos, la palabra escrita —en particular la literatura revisada por pares— sigue siendo fundamental. Ya que hay que comunicar las ideas y hallazgos de manera sucinta, informativa e interesante.</p>
+<p>Este taller busca apoyar a los estudiantes en este esfuerzo de publicación en Mammalogy Notes, brindándole orientación, tanto general como específica, para ayudarlos a publicar sus hallazgos de la manera estructurada y con el estilo requerido para la comunicación científica en Mammalogy Notes, y así ayudarlos a alcanzar sus objetivos comunicacionales.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="t5_mammalogy.js"></script>

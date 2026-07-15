@@ -1,0 +1,68 @@
+---
+title: "Avances en el estudio de la mastofauna del Caribe colombiano"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - mastofauna_caribe.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Avances en el estudio de la mastofauna del Caribe colombiano</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/mastofauna_caribe.jpg" alt="Avances en el estudio de la mastofauna del Caribe colombiano">
+<div class="pie-foto">
+📷 Avances en el estudio de la mastofauna del Caribe colombiano.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Julio Javier Chacón Pacheco</li>
+<li>Angie Natally Tinoco Sotomayor</li>
+<li>Gerson Andrés Salcedo Rivera</li>
+<li>María Isabel Maya Aguirre</li>
+<li>Julián David Ruiz Gómez</li>
+</ul>
+<div class="badge-simposio">Avances en el estudio de la mastofauna del Caribe colombiano</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Avances en el estudio de la mastofauna del Caribe colombiano</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>consolidar un espacio académico de intercambio, análisis y proyección del conocimiento científico sobre los mamíferos de la región Caribe. Se busca visibilizar los estudios recientes, identificar vacíos de información y reconocer los aportes históricos que han contribuido al desarrollo de la mastozoología en este territorio. Asimismo, el simposio pretende fortalecer la articulación entre investigadores nacionales e internacionales, promoviendo el diálogo intergeneracional entre expertos consolidados, jóvenes investigadores y estudiantes. A través de presentaciones magistrales y un conversatorio con investigadores de trayectoria, se espera reconstruir la línea de tiempo de la investigación mastozoológica en la región, destacando hitos, metodologías y cambios en los enfoques de estudio.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la colaboración científica y generar alianzas estratégicas que impulsen nuevas agendas de investigación, conservación y manejo de la mastofauna del Caribe colombiano. Este simposio contribuirá a fortalecer la identidad científica regional, promover la apropiación social del conocimiento y sentar bases para futuras iniciativas interdisciplinarias que respondan a los retos actuales de conservación de la biodiversidad.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="mastofauna_caribe.js"></script>

@@ -1,0 +1,74 @@
+---
+title: "Tapires neotropicales: investigación y desafíos para su conservación"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - tapires_neotropicales.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Tapires neotropicales</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/tapires_neotropicales.jpg" alt="Especie clave para la conservación de los bosques neotropicales.">
+<div class="pie-foto">
+📷 Especie clave para la conservación de los bosques neotropicales.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Federico Mosquera Guerra</li>
+<li>Diego Lizcano</li>
+<li>Carlos Saavedra</li>
+</ul>
+<div class="badge-simposio">Tapires neotropicales: investigación y desafíos para su conservación</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Tapires neotropicales: investigación y desafíos para su conservación</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Generar un espacio académico e interdisciplinario para el intercambio de conocimientos sobre el estado actual de la investigación de los tapires neotropicales, promoviendo la discusión de avances científicos, experiencias de manejo y estrategias de conservación en Colombia y América Latina.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Socializar investigaciones recientes sobre ecología, distribución, genética, comportamiento, salud, conectividad y monitoreo de los tapires neotropicales</li>
+<li>Identificar las principales amenazas que afectan sus poblaciones, entre ellas la pérdida y fragmentación del hábitat, la cacería, el cambio climático y los conflictos socioambientales.</li>
+<li>Fortalecer el diálogo entre investigadores, comunidades locales, organizaciones ambientales e instituciones gubernamentales. </li>
+<li>Promover la articulación de iniciativas regionales y nacionales dirigidas al manejo, monitoreo y conservación de los tapires en paisajes estratégicos del país.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Los tapires neotropicales desempeñan un rol fundamental en el funcionamiento de los ecosistemas, al actuar como dispersores de semillas y modeladores de la dinámica de los bosques tropicales. Sin embargo, sus poblaciones enfrentan una disminución progresiva causada por la transformación del paisaje, la pérdida de conectividad ecológica y diversas presiones antrópicas que comprometen su permanencia a largo plazo.</p>
+<p>Colombia contiene la mayor diversidad de especies de tapires en el Neotrópico; no obstante, persisten vacíos de información y desafíos relacionados con su monitoreo, manejo y conservación. En este contexto, el simposio “Tapires neotropicales: investigación y desafíos para su conservación”, en el marco del Congreso Colombiano de Mastozoología, busca consolidar un espacio de reflexión científica y articulación institucional que permita integrar experiencias, metodologías y perspectivas desarrolladas en distintas regiones del país y de América Latina. Asimismo, el evento contribuirá al fortalecimiento de redes de colaboración y a la construcción de estrategias de conservación basadas en evidencia científica y enfoques participativos, resaltando el papel de los tapires como especies clave frente a los desafíos del cambio global.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="tapires_neotropicales.js"></script>

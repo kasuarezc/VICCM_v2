@@ -304,6 +304,101 @@ h1.title{
   color: white;
 }
 
+.page-item2 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-item2.active,
+.page-item2:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.page-item3 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-item3.active,
+.page-item3:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.page-item4 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-item4.active,
+.page-item4:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.page-item5 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-item5.active,
+.page-item5:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.page-item6 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-item6.active,
+.page-item6:hover {
+  background: var(--secondary);
+  color: white;
+}
+
 .newsletter-section {
   background: linear-gradient(135deg, #a7d0b0, #e8d7b5);
   padding: 4rem 1rem;

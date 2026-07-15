@@ -1,0 +1,74 @@
+---
+title: "Innovación educativa y herramientas didácticas para la conservación de mamíferos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - t4_innovacion.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Talleres</a>
+<span class="separator">›</span>
+<span class="current">Innovación educativa y herramientas ...</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/t4_innovacion.jpg" alt=" Herramientas didácticas que construyen puentes entre la ciencia y las comunidades">
+<div class="pie-foto">
+📷  Herramientas didácticas que construyen puentes entre la ciencia y las comunidades.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Laura Suárez Ramírez </li>
+<li>María Angélica Contreras</li>
+<li>Ginna Ruiz Burbano</li>
+<li>Hernan Dario Granda Rodriguez</li>
+<li>Johana Alejandra Villota Mogollón</li>
+</ul>
+<div class="badge-simposio">Innovación educativa y herramientas didácticas para la conservación de mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Innovación educativa y herramientas didácticas para la conservación de mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos de Aprendizaje</h2>
+<ul class="lista-objetivos">
+<li>Identificar y aplicar herramientas didácticas innovadoras para la enseñanza sobre mamíferos y su conservación.</li>
+<li>Diseñar actividades educativas participativas que promuevan la apropiación social del conocimiento sobre la mastofauna.</li>
+<li>Fortalecer el intercambio de experiencias entre participantes sobre estrategias de educación ambiental en conservación de mamíferos.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>La educación ambiental ha dejado de ser un contenido complementario en la conservación de la biodiversidad en Colombia para consolidarse como un eje estratégico en la construcción de territorios sostenibles y en el fortalecimiento de comunidades locales comprometidas y apropiadas de la biodiversidad que las rodea. En este contexto, la conservación de la mastofauna requiere no solo la generación de conocimiento científico, sino también estrategias efectivas para su divulgación y apropiación social.</p>
+<p>Actualmente, existen brechas significativas: la falta de herramientas pedagógicas prácticas, el bajo conocimiento sobre la fauna local, y la desconexión entre la investigación científica y las comunidades locales dificultan que los procesos educativos impacten directamente en la conservación de los mamíferos. Por ello, resulta fundamental desarrollar recursos y metodologías que faciliten la enseñanza sobre la diversidad y conservación de mamíferos en contextos educativos formales y no formales.</p>
+<p>El uso de herramientas prácticas y metodologías replicables ha demostrado que los procesos de conservación pueden trascender los espacios académicos, fortaleciendo el liderazgo comunitario y la apropiación social del conocimiento, elementos clave para la gestión efectiva del territorio.En este marco, el taller se justifica como un espacio formativo diseñado para fortalecer las capacidades de estudiantes, educadores ambientales e investigadores en el uso de herramientas didácticas y pedagógicas aplicadas a la conservación de mamíferos, con énfasis en contextos rurales y territorios del Piedemonte Andino-Amazónico y de Colombia en general. Además, promueve metodologías participativas y replicables, fomentando el intercambio de experiencias y la construcción colectiva de estrategias educativas orientadas a la conservación de la biodiversidad.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="t4_innovacion.js"></script>

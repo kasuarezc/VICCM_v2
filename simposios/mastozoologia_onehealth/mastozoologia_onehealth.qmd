@@ -1,0 +1,65 @@
+---
+title: "La mastozoología en la era One health"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - mastozoologia_onehealth.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">La mastozoología en la era One health</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/mastozoologia_onehealth.jpg" alt="La mastozoología en la era One health.">
+<div class="pie-foto">
+📷 La mastozoología en la era One health. 
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Hugo Mantilla-Meluk</li>
+<li>Nicolás Rafael Reyes-Amaya</li>
+</ul>
+<div class="badge-simposio">La mastozoología en la era One health</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>La mastozoología en la era One health</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>promover una agenda nacional consensuada sobre Una Sola Salud desde la mastozoología y la creación de una mesa de trabajo que mantenga el flujo de información y facilite la coordinación, Dada la participación en la organización de asociaciones científicas con injerencia en la toma de decisiones a diferentes niveles, (Academia Colombiana de Ciencias Exactas Físicas Naturales de Colombia, ACCEFYN; Asociación Colombiana de Infectología, ACIN; Asociación Colombiana de Zoología, ACZ e instituto Alexander von Humboldt) </p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>En consonancia con el Marco Global de Biodiversidad de Kunming-Montreal, que promueve la implementación del esquema de Una Salud, para enfrentar los retos de la interconexión salud-biodiversidad, el objetivo del Simposio es promover un diálogo informado y participativo sobre el rol de la mastozoología en el esquema nacional y global de Una Sola Salud (One Health), a fin de socializar los desarrollos, generar una transferencia de capacidades, armonizar lenguajes y promover sinergias para el trabajo sobre la temática.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="mastozoologia_onehealth.js"></script>

@@ -1,0 +1,59 @@
+---
+title: "Mastogami: Animalitos en papel"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - t7_mastogami.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Talleres</a>
+<span class="separator">›</span>
+<span class="current">Mastogami: Animalitos en papel</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/t7_mastogami.jpg" alt="Plegar la ciencia para divulgar la mastofauna con arte y precisión.">
+<div class="pie-foto">
+📷  Plegar la ciencia para divulgar la mastofauna con arte y precisión.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Carolina López Castañeda</li>
+</ul>
+<div class="badge-simposio">Mastogami: Animalitos en papel</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Mastogami: Animalitos en papel</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El primer taller de Mastozoogami Busca crear un espacio creativo,  inmersión dinámica entre el papel y la morfología básica de los mamíferos a través de la precisión del plegado. Mediante la intersección de ciencia y arte (STEAM), los participantes lograrán visualmente estructuras biológicas complejas y convertirlas en esculturas de papel, dominando una herramienta de divulgación científica de alto impacto y bajo costo. Es la oportunidad perfecta para romper la rigidez académica, estimular la síntesis creativa y dotar a los investigadores de un recurso pedagógico innovador que cautiva a todas las audiencias. Haremos un mamífero terreste, uno acuático y un volador¡Pleguemos la ciencia y demos vida al papel!.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="t7_mastogami.js"></script>

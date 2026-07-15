@@ -1,0 +1,75 @@
+---
+title: "VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - pequenos_carnivoros.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Pequeños carnívoros en Colombia</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/pequenos_carnivoros.jpg" alt="Pequeños Carnívoros.">
+<div class="pie-foto">
+📷 Pequeños Carnívoros: hacia la coexistencia y conservación integral en Colombia.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>José F. González Maya</li>
+<li>Leonardo Lemus-Mejía</li>
+<li>Mauricio Vela Vargas</li>
+<li>Angela P. Hurtado-Moreno</li>
+<li>Camilo A. Paredes-Casas</li>
+<li>Heliot Zarza</li>
+<li>Cuauhtémoc Chávez</li>
+<li>Andrés Arias-Alzate</li>
+<li>Diego A. Zárrate-Charry</li>
+</ul>
+<div class="badge-simposio">VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Evaluar los avances científicos y técnicos en el estudio de pequeños carnívoros, actualizando los lineamientos y puntos de referencia establecidos en versiones previas.</li>
+<li>Socializar nuevas aproximaciones y estrategias innovadoras para la conservación de grandes carnívoros, enfocándose en la mitigación de amenazas y la coexistencia.</li>
+<li>Consolidar una plataforma de colaboración transdisciplinaria que involucre a la academia, instituciones ambientales y actores territoriales para generar acciones de manejo integrales y multisectoriales.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>La conservación de los carnívoros en Colombia es una prioridad debido a su rol crucial en la regulación de poblaciones de presas, el equilibrio trófico y el mantenimiento de la biodiversidad. No obstante, este grupo enfrenta desafíos críticos derivados de actividades antrópicas, especialmente en ecosistemas fragmentados, donde las interacciones y los conflictos con los humanos son constantes.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="pequenos_carnivoros.js"></script>

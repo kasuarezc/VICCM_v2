@@ -1,0 +1,75 @@
+---
+title: "V Simposio de conectividad ecológica y V Simposio de distribución de especies"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - conectividad_ecologica.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Conectividad ecológica y distribución de especies</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/conectividad_ecologica.jpg" alt="Modelos y territorios: conectando ciencia para la planificación responsable.">
+<div class="pie-foto">
+📷 Modelos y territorios: conectando ciencia para la planificación responsable.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Ángela P. Hurtado-Moreno</li>
+<li>Diego A. Zárrate Charry</li>
+<li>José F. González-Maya</li>
+<li>Leonardo Lemus-Mejia</li>
+<li>Carlos Eduardo Ortiz Yusty</li>
+<li>María Gabriela Aduén Espinosa</li>
+<li>Camilo Andrés Correa Ayram</li>
+<li>Elkin Noguera</li>
+<li>Maria Camila Machado-Aguilera</li>
+</ul>
+<div class="badge-simposio">V Simposio de conectividad ecológica y V Simposio de distribución de especies</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>V Simposio de conectividad ecológica y V Simposio de distribución de especies</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Identificar retos técnicos y de comunicación que limitan la integración de modelos de conectividad y de distribución de especies de mamíferos en los instrumentos de planificación territorial.</li>
+<li>Analizar casos de éxito y lecciones aprendidas para llevar estas aproximaciones investigativas a la planificación del paisaje usando mamíferos como especies focales en escenarios actuales y futuros.</li>
+<li>Fomentar la co-creación de lineamientos y recomendaciones técnicas que faciliten la integración de estas aproximaciones en políticas públicas, planes de manejo y estrategias de conservación de mamíferos, asegurando su manejo responsable.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Las aproximaciones de investigación direccionadas a entender cómo se distribuye una especie en el espacio y cómo se mueve a través de un paisaje permiten tener un marco conceptual y metodológico robusto para orientar la toma de decisiones en el ordenamiento territorial. Sin embargo, existe una brecha significativa entre los avances científicos para modelar y evaluar la distribución y la conectividad para mamíferos y su incorporación efectiva en instrumentos de planificación y la toma de decisiones. En esta ocasión nuevamente se unen la quinta versión del Simposio de Conectividad Ecológica con la quinta versión del Simposio de Modelación de Distribución de Especies, planteando como un espacio estratégico para dar continuidad al diálogo entre investigadores, tomadores de decisión y actores territoriales para promover e impulsar la transferencia del conocimiento científico sobre distribución de especies y conectividad ecológica, y como estas deben ser usadas de manera correcta para ser integradas de manera responsable y eficiente en las herramientas de alto impacto para la gestión territorial en Colombia.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="conectividad_ecologica.js"></script>

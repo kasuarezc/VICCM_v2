@@ -2,8 +2,11 @@ project:
   type: website
   output-dir: docs
 
+   
+
 website:
   title: "VICCM 2026"
+  
 
 format:
   html:
@@ -17,12 +20,14 @@ format:
       - /css/footer.css
       - /css/home.css
       - /css/responsive.css
+      
     include-in-header:
      - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     include-before-body:
       - partials/header.html
+      
     include-after-body:
       - partials/footer.html
       - text: |
@@ -35,6 +40,7 @@ format:
           <script src="/js/sede.js"></script>
           <script src="/js/contacto.js"></script>
            <script src="/js/home.js"></script>
+          
       
   
 

@@ -1,0 +1,74 @@
+---
+title: "Interacciones"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - interacciones.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Interacciones</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/interacciones.jpeg" alt="Un viaje visual desde el néctar hasta el depredador">
+<div class="pie-foto">
+📷 Un viaje visual desde el néctar hasta el depredador, que refleja la urgencia de comprender las redes tróficas para la conservación de los mamíferos en Colombia.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Kevin González Gutiérrez</li>
+<li>John Harold Castaño Salazar</li>
+</ul>
+<div class="badge-simposio">I Simposio Interacciones troficas en mamiferos: de flores a depredadores</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Interacciones troficas en mamiferos: de flores a depredadores</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Generar un espacio de discusión académica sobre las interacciones tróficas en mamíferos, desde las relaciones mamífero-planta hasta mamífero-vertebrado, con el fin de identificar avances, retos, vacíos de conocimiento y perspectivas futuras en el contexto de Colombia y su contribución a la ciencia global.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Analizar el papel de las interacciones tróficas en la comprensión de procesos ecológicos, comportamentales, evolutivos y de transformación del paisaje en mamíferos.</li>
+<li>Discutir cómo los cambios ambientales y las presiones antrópicas afectan las relaciones tróficas y la conservación de los mamíferos en distintos ecosistemas colombianos.</li>
+<li>Identificar vacíos de conocimiento y nuevas preguntas de investigación relacionadas con interacciones mamífero-planta y mamífero-vertebrado.</li>
+<li>Promover el intercambio de experiencias entre investigadores consolidados y nuevas generaciones de científicos, fortaleciendo redes de colaboración académica.</li>
+<li>Visibilizar el aporte de la investigación desarrollada en Colombia al entendimiento de las interacciones ecológicas y su relevancia en el contexto internacional.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Las interacciones tróficas son fundamentales para comprender procesos ecológicos a nivel de individuo, especie, población y comunidad, ya que permiten analizar aspectos comportamentales, metabólicos, fenológicos, geográficos y dependientes de la escala en la transformación del paisaje. En Colombia, país tropical y megadiverso, la gran variedad de ecosistemas y su alta riqueza florística generan múltiples escenarios donde las interacciones mamífero-planta y mamífero-vertebrado son especialmente dinámicas, desde morichales y playas hasta bosques de niebla. Sin embargo, estos ecosistemas enfrentan fuertes procesos de transformación derivados de distintas presiones humanas, lo que hace urgente comprender mejor estas relaciones ecológicas. Reconocer las interacciones tróficas no solo fortalece el conocimiento de la historia natural de las especies, sino que también permite una reflexión crítica sobre los territorios y los desafíos que enfrentan los mamíferos en el contexto nacional.</p>
+
+<p>En este marco, el simposio “Interacciones tróficas en mamíferos: de flores a depredadores” busca generar un espacio de discusión sobre avances, retos y vacíos de conocimiento, así como sobre las perspectivas futuras y la contribución de Colombia a la ciencia mundial. Se convocan trabajos que aborden desde interacciones mamífero-planta hasta relaciones mamífero-vertebrado, promoviendo el intercambio de ideas, la visibilización de nuevas generaciones de investigadores y el fortalecimiento de alianzas científicas.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="interacciones.js"></script>

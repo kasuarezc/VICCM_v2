@@ -1,0 +1,66 @@
+---
+title: "Evaluaciones de Amenazas"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - evaluaciones_amenazas.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Evaluaciones de Amenazas...</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/evaluaciones_amenazas.jpg" alt="Evaluación de amenazas: ciencia local para decisiones globales.">
+<div class="pie-foto">
+📷 Evaluación de amenazas: ciencia local para decisiones globales.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Maria Alejandra Hurtado Materon</li>
+<li>Baltazar Gonzalez</li>
+<li>José F. González-Maya</li>
+</ul>
+<div class="badge-simposio">Evaluaciones de amenazas: de lo global a lo local</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Evaluaciones de amenazas: de lo global a lo local</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Sensibilizar a la comunidad sobre la importancia de estas evaluaciones como insumos críticos para la toma de decisiones en políticas públicas, la planificación territorial y el cumplimiento de compromisos internacionales, como el Marco Mundial de Biodiversidad. Finalmente, esta actividad se proyecta como un foro para reflexionar sobre los desafíos actuales en macroecología y conservación, promoviendo buenas prácticas y estableciendo pautas para futuras evaluaciones. Al integrar a estudiantes y profesionales jóvenes, se busca garantizar la formación de capacidades y la consolidación de redes de colaboración a largo plazo, fortaleciendo así la base científica necesaria para una conservación efectiva, conectada y escalable de los mamíferos en el contexto global.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El simposio propuesto se establece como un espacio de vanguardia para el intercambio académico y práctico sobre la evaluación de mamíferos, trascendiendo la escala nacional para entender cómo los contextos locales informan las metas globales de biodiversidad. En un escenario de crisis climática y pérdida de hábitat, la aplicación rigurosa de las Listas Roja y Verde de la UICN no solo permite diagnosticar el riesgo, sino también medir el éxito de la recuperación de las especies. El objetivo central es fomentar un diálogo técnico-científico entre investigadores, conservacionistas y gestores sobre metodologías y estrategias que permitan estandarizar criterios y reducir las brechas de conocimiento que limitan nuestra capacidad de respuesta ante la extinción de mamíferos.A través del análisis de experiencias exitosas en la recopilación de datos y el análisis de riesgos, este encuentro busca fortalecer la capacidad de producir evaluaciones que sean científicamente robustas y comparables a nivel internacional. Se pretende que estas herramientas dejen de ser interpretadas como simples catálogos de amenaza para convertirse en motores de articulación política.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="evaluaciones_amenazas.js"></script>

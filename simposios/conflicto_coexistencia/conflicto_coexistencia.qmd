@@ -1,0 +1,76 @@
+---
+title: "II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - conflicto_coexistencia.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Conflicto y Coexistencia</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/conflicto_coexistencia.jpg" alt="Coexistencia entre humanos y fauna en el paisaje productivo colombiano.">
+<div class="pie-foto">
+📷 Coexistencia entre humanos y fauna en el paisaje productivo colombiano.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Mauricio Vela Vargas</li>
+<li>Camilo A. Paredes-Casas</li>
+<li>Juan Camilo Rubiano</li>
+<li>Laura X. Mendoza</li>
+<li>Angela P. Hurtado-Moreno</li>
+<li>Diego A. Zárrate-Charry</li>
+<li>José F. González Maya</li>
+</ul>
+<div class="badge-simposio">II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Este simposio tiene como propósito principal posicionar la coexistencia como el paradigma central para la gestión de las interacciones entre humanos y mamíferos en Colombia, superando la visión tradicional centrada exclusivamente en el conflicto.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Identificar y analizar los factores determinantes que facilitan la tolerancia y generan escenarios de coexistencia humanos - vida silvestre en comunidades rurales y urbanas.</li>
+<li>Evaluar la efectividad de herramientas preventivas y de manejo que promuevan paisajes productivos biodiversos; y</li>
+<li>Proponer lineamientos técnicos que fortalezcan el marco normativo nacional bajo un enfoque de armonización entre el bienestar humano y la conservación.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>A través de la socialización de experiencias exitosas, se pretende fomentar un cambio de narrativa donde la fauna silvestre sea vista como un componente integral del desarrollo territorial. El evento busca consolidar una red de colaboración entre la academia, instituciones ambientales de nivel nacional, regional y local además de sumar actores locales para desarrollar estrategias de monitoreo participativo y mecanismos de compensación que mitiguen las externalidades de las interacciones negativas. En última instancia, el simposio aspira a generar recomendaciones prácticas basadas en evidencia científica y saberes locales que permitan reducir la vulnerabilidad de las poblaciones humanas, asegurando al mismo tiempo la viabilidad poblacional de la mastofauna colombiana en el largo plazo.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="conflicto_coexistencia.js"></script>

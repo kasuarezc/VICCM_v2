@@ -1,0 +1,68 @@
+---
+title: "VI Simposio de Fototrampeo en Colombia"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - fototrampeo_colombia.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Fototrampeo en Colombia</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/fototrampeo_colombia.jpg" alt="Fototrampeo en Colombia.">
+<div class="pie-foto">
+📷 Fototrampeo: monitoreo científico para la gestión y conservación de la fauna. 
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Angélica Diaz-Pulido</li>
+<li>Diego J. Lizcano</li>
+<li>Lain Pardo</li>
+<li>Leonor Valenzuela</li>
+</ul>
+<div class="badge-simposio">VI Simposio de Fototrampeo en Colombia</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>VI Simposio de Fototrampeo en Colombia</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Visibilizar los avances metodológicos, analíticos y conceptuales asociados al uso del fototrampeo como técnica de muestreo de mamíferos, así como destacar cómo los datos derivados de cámaras trampa han potenciado la generación de nuevo conocimiento ecológico, biogeográfico y de conservación.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El fototrampeo se ha convertido en una herramienta central para el estudio y monitoreo de la mastofauna en Colombia, permitiendo evaluar patrones de ocupación, abundancia relativa, comportamiento, interacciones interespecíficas y respuestas a la transformación del paisaje. En un país megadiverso y con amplias brechas de información, fortalecer este campo resulta estratégico para la toma de decisiones en conservación y manejo. Adicionalmente, el simposio invita a presentar experiencias sobre el uso de cámaras trampa en contextos educativos y de apropiación social del conocimiento, así como en ejercicios de ciencia participativa que involucren comunidades locales, reservas privadas, instituciones educativas y colectivos ciudadanos. Reconocer estos procesos amplía el alcance del fototrampeo más allá de la investigación académica, posicionándolo como una herramienta para democratizar el conocimiento, fortalecer capacidades locales y fomentar una cultura de conservación basada en evidencia científica.</p>
+<p>El simposio busca consolidarse como un espacio de intercambio entre investigadores, estudiantes, organizaciones ambientales y actores comunitarios, promoviendo el diálogo sobre innovaciones en diseño de muestreo, análisis estadístico, inteligencia artificial, integración de escalas espaciales y uso de plataformas colaborativas.</p>
+
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="fototrampeo_colombia.js"></script>

@@ -1,0 +1,68 @@
+---
+title: "Mamiferos en paisajes"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - mamiferos_paisajes.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Mamiferos en paisajes</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/mamiferos_paisajes.png" alt="Mamiferos en paisajes">
+<div class="pie-foto">
+📷 Mamiferos en paisajes productivos de Colombia
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Freddy Gamboa Avellaneda</li>
+<li>Natalia Rodríguez Santa</li>
+</ul>
+<div class="badge-simposio">Mamíferos en paisajes productivos de Colombia: enfoques, experiencias y retos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Mamíferos en paisajes productivos de Colombia: enfoques, experiencias y retos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Presentar y discutir estudios sobre mamíferos en paisajes productivos de Colombia, integrando diferentes enfoques de investigación y contextos regionales.</li>
+<li>Identificar y discutir iniciativas de apropiación social del conocimiento y sus aportes a la conservación y al fortalecimiento de las relaciones entre actores sociales y fauna silvestre en paisajes productivos de Colombia.</li>
+<li>Explorar el potencial de territorios emergentes para la investigación y conservación de los mamíferos en Colombia.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Este simposio reúne experiencias, investigaciones y enfoques interdisciplinarios sobre mamíferos en paisajes productivos de Colombia, así como el potencial de territorios emergentes para la investigación. Asimismo, se destacan iniciativas de apropiación social del conocimiento y sus aportes a la conservación y al fortalecimiento de las relaciones entre comunidades y fauna silvestre. A través del intercambio entre academia, comunidades, sector productivo e instituciones, el simposio busca aportar a la comprensión de los retos en la conservación de mamíferos en paisajes productivos y al desarrollo de estrategias contextualizadas para su manejo en distintos territorios del país. </p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="mamiferos_paisajes.js"></script>

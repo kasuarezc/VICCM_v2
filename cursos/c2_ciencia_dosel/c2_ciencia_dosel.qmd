@@ -1,0 +1,67 @@
+---
+title: "Investigación de Ciencia del Dosel para la conservación de mamíferos"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - c2_ciencia_dosel.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Cursos</a>
+<span class="separator">›</span>
+<span class="current">Investigación de Ciencia del Dosel para la conservación de mamíferos</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/c2_ciencia_dosel.jpg" alt="Monitoreo y conservación de mamíferos en el dosel tropica.">
+<div class="pie-foto">
+📷 Monitoreo y conservación de mamíferos en el dosel tropica.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Juan Lucas Capa Procel</li>
+<li>Ollie Thomas</li>
+<li>Laura Suárez Ramírez</li>
+<li>Alexis Ruiz Burbano</li>
+</ul>
+<div class="badge-simposio">Investigación de Ciencia del Dosel para la conservación de mamíferos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Investigación de Ciencia del Dosel para la conservación de mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivo</h2>
+<p>Desarrollar capacidades conceptuales y metodológicas para el estudio de la fauna del dosel en bosques tropicales, mediante la implementación/instalación de cámaras trampa y la aplicación de investigación orientados a la generación de información ecológica y la conservación de la biodiversidad.</p>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>El curso Investigación de Ciencia del Dosel para la Conservación de Mamíferos tiene como objetivo principal fortalecer las capacidades técnicas y científicas de jóvenes, estudiantes y actores vinculados a la conservación, mediante la apropiación de herramientas básicas para la investigación del dosel. Es prioritario la formación de investigadores locales en el dosel, especialmente en regiones de alta biodiversidad, donde existe una limitada participación de jóvenes en procesos científicos especializados. La pérdida acelerada de cobertura vegetal y los efectos del cambio climático hacen urgente la generación de capacidades locales que permitan el monitoreo y la conservación de especies que habitan en el dosel, muchas de ellas poco estudiadas. En este contexto, promover espacios de formación práctica contribuye a reducir brechas en el acceso al conocimiento científico, fortalecer el liderazgo juvenil y fomentar la apropiación territorial de la conservación desde un enfoque participativo e intergeneracional.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los cursos</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="c2_ciencia_dosel.js"></script>

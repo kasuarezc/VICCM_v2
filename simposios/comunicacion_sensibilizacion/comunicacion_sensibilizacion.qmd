@@ -1,0 +1,83 @@
+---
+title: "Comunicacion, Sensibilizacion y Enseñanza"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - comunicacion_sensibilizacion.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Comunicación, Sensibilización y Enseñanza para la Conservación de Mamiferos</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/comunicacion_sensibilizacion.jpeg" alt="Educación y diálogo: tejiendo conservación desde los territorios">
+<div class="pie-foto">
+📷 Educación y diálogo: tejiendo conservación desde los territorios.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Catalina Rodriguez</li>
+<li>César Rojano</li>
+<li>Mónica Peñuela Salgado</li>
+<li>Juan Camilo Rubiano Pérez</li>
+<li>Mariana Zanotti Tavares de Oliveira</li>
+<li>Ginna Gómez Junco</li>
+<li>Diana Alejandra Moncada Garzón</li>
+<li>Katherine Pérez Gómez</li>
+<li>Angie Tinoco Sotomayor</li>
+<li>Luisa Fernanda Blanco Uribe</li>
+<li>Carlos Ágamez López</li>
+<li>Oscar Ducuara</li>
+<li>Mariana Vélez Orozco</li>
+<li>María Camila Machado Aguilar</li>
+</ul>
+<div class="badge-simposio">Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>1.	Promover la construcción transdisciplinar entre actores públicos, privados y comunitarios a través del intercambio de saberes, avances y estrategias en comunicación, sensibilización y educación para fortalecer la gestión, el manejo y la conservación de mamíferos en diferentes contextos territoriales.</li>
+<li>2.	Analizar el papel de los procesos de comunicación, sensibilización y enseñanza en la transformación de percepciones, prácticas y relaciones entre las comunidades, la academia, las instituciones y la fauna silvestre, como eje transversal para el alcance de los objetivos en programas de conservación de mamíferos en el territorio nacional.</li>
+<li>3.	Reflexionar sobre los retos, oportunidades y aprendizajes derivados de la implementación de estrategias educativas, comunicativas y formativas en mastozoología</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>La conservación de los mamíferos depende no solo de la generación de conocimiento científico, sino también de la capacidad de comunicarlo, enseñarlo y transformarlo en acciones concretas que fortalezcan la relación entre las personas y la fauna silvestre. En este contexto, la sensibilización, la comunicación de la biodiversidad y la enseñanza de la mastozoología constituyen dimensiones complementarias que contribuyen a ampliar el impacto de las estrategias de conservación en diferentes escenarios académicos, comunitarios y territoriales.</p>
+<p>Este simposio busca generar un espacio de encuentro e intercambio entre investigadores, docentes, estudiantes, organizaciones e iniciativas que desarrollan procesos de comunicación, sensibilización y enseñanza relacionados con la conservación de mamíferos. A través de la presentación de experiencias, estrategias y metodologías implementadas en diversos contextos, se promoverá la reflexión sobre los aportes, aprendizajes y desafíos que enfrentan quienes trabajan en la formación, divulgación y apropiación social del conocimiento mastozoológico.</p>
+<p>Las ponencias abordarán aspectos como los objetivos, métodos, resultados y principales retos de las iniciativas presentadas, así como las estrategias desarrolladas para superarlos y su contribución al fortalecimiento del campo. Adicionalmente, el simposio incluirá un espacio de discusión colectiva orientado a identificar oportunidades de articulación, promover el intercambio de experiencias y fomentar la construcción de redes de colaboración.</p>
+<p>Se espera que este espacio contribuya al fortalecimiento de procesos integrales de conservación de mamíferos, favoreciendo el diálogo entre la academia, las organizaciones y los actores territoriales, y promoviendo nuevas alianzas que amplíen el alcance e impacto de estas iniciativas.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="comunicacion_sensibilizacion.js"></script>

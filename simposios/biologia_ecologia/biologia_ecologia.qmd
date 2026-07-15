@@ -1,0 +1,71 @@
+---
+title: "I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - biologia_ecologia.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../simposios.html">Simposios</a>
+<span class="separator">›</span>
+<span class="current">Biología, Ecología y Conservación de Marsupiales...</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/biologia_ecologia.jpg" alt="Marsupiales colombianos frente a amenazas subestimadas">
+<div class="pie-foto">
+📷 Marsupiales colombianos frente a amenazas subestimadas
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Juan Camilo Rubiano Pérez</li>
+<li>William Bonell</li>
+<li>Ivan Mauricio Vela Vargas</li>
+<li>Ginna Gómez Junco</li>
+<li>Francisco Stiven Gómez Castañeda</li>
+</ul>
+<div class="badge-simposio">I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos</h2>
+<ul class="lista-objetivos">
+<li>Presentar y discutir avances en materia de conocimiento sobre historia natural y conservación de marsupiales de Colombia y el neotrópico.</li>
+<li>Compilar la línea base de investigadores cuyos trabajos estén aportando actualmente a ampliar el conocimiento de los marsupiales colombianos.</li>
+<li>Propiciar intercambio de experiencias y contactos para el establecimiento de una red de trabajo interinstitucional sobre marsupiales en Colombia. </li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>Actualmente, Colombia cuenta con 41 especies de marsupiales registradas para el territorio, lo que representa aproximadamente el 7,4% de la riqueza de los mamíferos del país. Aunque este porcentaje es considerable respecto a otros grupos taxonómicos (excluyendo roedores y quirópteros), aun se desconoce bastante acerca de la historia natural de muchas especies de este grupo, y el foco de investigación generalmente se concentra en los grandes marsupiales como zarigüeyas (Didelphis, Caluromys, Metachirus, etc), siendo igualmente grupos poco estudiados. Aunque solo el 10% aproximadamente de este grupo taxonómico se encuentra bajo alguna categoría de amenaza, muchos de los riesgos y presiones aun son subestimados y no se ha cuantificado el efecto real de las presiones sobre los marsupiales, de hecho, las zarigüeyas son el grupo de vertebrados con mayor frecuencia de atropellamientos en carreteras según la Red Colombiana de Seguimiento a Fauna Atropellada (RECOSFA). Dicho esto, esta propuesta de simposio se hace pertinente en un escenario idóneo para la difusión del conocimiento como lo es el Congreso Colombiano de Mastozoología, con el fin de discutir los avances en materia de conocimiento sobre los marsupiales, para propiciar a su vez redes de difusión que permitan aunar esfuerzos a escala nacional de diferentes investigadores e instituciones que se encuentren trabajando con este grupo taxonómico.</p>
+</div>
+
+<a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="biologia_ecologia.js"></script>

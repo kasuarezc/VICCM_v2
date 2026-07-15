@@ -1,0 +1,72 @@
+---
+title: "Tejiendo la conservación: arte y mamíferos en peligro"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - t1_tejiendo_conservacion.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Talleres</a>
+<span class="separator">›</span>
+<span class="current">Tejiendo la conservación</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/t1_tejiendo_conservacion.jpg" alt="El tejido como puente entre la comunidad y la conservación.">
+<div class="pie-foto">
+📷 El tejido como puente entre la comunidad y la conservación.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Leidy Laura Ocampo López</li>
+</ul>
+<div class="badge-simposio">Tejiendo la conservación: arte y mamíferos en peligro</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Tejiendo la conservación: arte y mamíferos en peligro</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Fortalecer capacidades en educación para la conservación de mamíferos mediante el uso del tejido como herramienta pedagógica y comunitaria.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Reconocer el estado de conservación y las principales amenazas de algunos mamíferos en Colombia.</li>
+<li>Aprender fundamentos básicos del tejido en miyuki aplicados a la representación de fauna.</li>
+<li>Desarrollar habilidades para diseñar y replicar piezas artesanales con enfoque educativo.</li>
+<li>Comprender el potencial del arte como herramienta de educación ambiental y generación de ingresos en comunidades.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>La conservación de los mamíferos en Colombia enfrenta desafíos que van más allá del ámbito biológico, incluyendo la pérdida de hábitat, los conflictos humano-fauna y la desconexión entre las comunidades y la biodiversidad. En este contexto, es fundamental fortalecer estrategias educativas innovadoras que integren el conocimiento científico con enfoques sensibles, participativos y territorialmente pertinentes.</p>
+<p>Este taller propone el tejido con técnica miyuki como una herramienta pedagógica, comunicativa y productiva para la conservación. A través de la creación de representaciones de mamíferos en peligro de extinción, se busca generar vínculos afectivos con las especies, facilitar el diálogo de saberes y promover procesos educativos replicables en contextos comunitarios. Asimismo, se plantea el arte como una alternativa de generación de ingresos que puede contribuir a la sostenibilidad de iniciativas locales y a la disminución de presiones sobre la fauna silvestre</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="t1_tejiendo_conservacion.js"></script>

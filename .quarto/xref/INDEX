@@ -52,5 +52,155 @@
   },
   "acustica.qmd": {
     "acustica.html": "37e9ed0c"
+  },
+  "simposios/interacciones/interacciones.qmd": {
+    "interacciones.html": "d70f6008"
+  },
+  "simposios/estrategias/estrategias.qmd": {
+    "estrategias.html": "680e68a6"
+  },
+  "simposios/refugios/refugios.qmd": {
+    "refugios.html": "f5beaded"
+  },
+  "simposios/perezosos/perezosos.qmd": {
+    "perezosos.html": "66414a13"
+  },
+  "simposios/primatologia/primatologia.qmd": {
+    "primatologia.html": "3b28f79d"
+  },
+  "simposios/gestion_adaptativa/gestion_adaptativa.qmd": {
+    "gestion_adaptativa.html": "d6420577"
+  },
+  "simposios/comunicacion_sensibilizacion/comunicacion_sensibilizacion.qmd": {
+    "comunicacion_sensibilizacion.html": "b2f974a9"
+  },
+  "simposios_2.qmd": {
+    "simposios_2.html": "ed3483ec"
+  },
+  "simposios_3.qmd": {
+    "simposios_3.html": "bf48b077"
+  },
+  "simposios_4.qmd": {
+    "simposios_4.html": "ec66b256"
+  },
+  "simposios_5.qmd": {
+    "simposios_5.html": "b5bb0c44"
+  },
+  "simposios2.qmd": {
+    "simposios2.html": "3dfb8017"
+  },
+  "simposios/simposios_2.qmd": {
+    "simposios_2.html": "b8731025"
+  },
+  "simposiospagdos.qmd": {
+    "simposiospagdos.html": "40ae3622"
+  },
+  "simposios/evaluaciones_amenazas/evaluaciones_amenazas.qmd": {
+    "evaluaciones_amenazas.html": "e0ae636f"
+  },
+  "simposios/quiropterologia/quiropterologia.qmd": {
+    "quiropterologia.html": "8ebf6a99"
+  },
+  "simposios/mamiferos_paisajes/mamiferos_paisajes.qmd": {
+    "mamiferos_paisajes.html": "03331ca4"
+  },
+  "simposios/mastozoologia_onehealth/mastozoologia_onehealth.qmd": {
+    "mastozoologia_onehealth.html": "d30b4b62"
+  },
+  "simposios/conectividad_ecologica/conectividad_ecologica.qmd": {
+    "conectividad_ecologica.html": "404b11a4"
+  },
+  "simposios/conflicto_coexistencia/conflicto_coexistencia.qmd": {
+    "conflicto_coexistencia.html": "c686a0de"
+  },
+  "simposios/pequenos_carnivoros/pequenos_carnivoros.qmd": {
+    "pequenos_carnivoros.html": "6fb1f0b2"
+  },
+  "simposios/fototrampeo_colombia/fototrampeo_colombia.qmd": {
+    "fototrampeo_colombia.html": "a8d8eddc"
+  },
+  "simposios/fronteras_movimiento/fronteras_movimiento.qmd": {
+    "fronteras_movimiento.html": "0e34d541"
+  },
+  "simposios/bioacustica_mamiferos/bioacustica_mamiferos.qmd": {
+    "bioacustica_mamiferos.html": "04b7c0f0"
+  },
+  "simposios/datos_atipicos/datos_atipicos.qmd": {
+    "datos_atipicos.html": "5c270eb2"
+  },
+  "simposios/bases_anatomicas/bases_anatomicas.qmd": {
+    "bases_anatomicas.html": "962e2bc7"
+  },
+  "simposios/biologia_ecologia/biologia_ecologia.qmd": {
+    "biologia_ecologia.html": "120b7cfc"
+  },
+  "simposios/genetica_genomica/genetica_genomica.qmd": {
+    "genetica_genomica.html": "86702696"
+  },
+  "simposios/investigacion_mastozoologica/investigacion_mastozoologica.qmd": {
+    "investigacion_mastozoologica.html": "67885ec2"
+  },
+  "simposios/mamiferos_acuaticos/mamiferos_acuaticos.qmd": {
+    "mamiferos_acuaticos.html": "56ae6361"
+  },
+  "simposios/mastofauna_caribe/mastofauna_caribe.qmd": {
+    "mastofauna_caribe.html": "0766a3b3"
+  },
+  "simposios/tapires_neotropicales/tapires_neotropicales.qmd": {
+    "tapires_neotropicales.html": "7e369b3d"
+  },
+  "cursos - copia.qmd": {
+    "cursos - copia.html": "fb06ea84"
+  },
+  "cursos/c1_interacciones_bioticas_mamiferos/c1_interacciones_bioticas_mamiferos.qmd": {
+    "c1_interacciones_bioticas_mamiferos.html": "edf38dfb"
+  },
+  "cursos/t1_tejiendo_conservacion/t1_tejiendo_conservacion.qmd": {
+    "t1_tejiendo_conservacion.html": "8ac1552c"
+  },
+  "cursos/c2_ciencia_dosel/c2_ciencia_dosel.qmd": {
+    "c2_ciencia_dosel.html": "a6995360"
+  },
+  "cursos/c3_modelamiento_conectividad/c3_modelamiento_conectividad.qmd": {
+    "c3_modelamiento_conectividad.html": "8a63ce32"
+  },
+  "cursos/c4_procesamiento/c4_procesamiento.qmd": {
+    "c4_procesamiento.html": "9b113f18"
+  },
+  "cursos/c5_colecciones/c5_colecciones.qmd": {
+    "c5_colecciones.html": "37beccf3"
+  },
+  "cursos/c6_basico/c6_basico.qmd": {
+    "c6_basico.html": "7fdcfd01"
+  },
+  "cursos/t2_murcielagos/t2_murcielagos.qmd": {
+    "t2_murcielagos.html": "7af23edf"
+  },
+  "cursos/t3_murcielloween/t3_murcielloween.qmd": {
+    "t3_murcielloween.html": "042237fe"
+  },
+  "cursos/t4_innovacion/t4_innovacion.qmd": {
+    "t4_innovacion.html": "f422edcb"
+  },
+  "cursos/t5_mammalogy/t5_mammalogy.qmd": {
+    "t5_mammalogy.html": "ca170741"
+  },
+  "cursos/t6_conozcamonos/t6_conozcamonos.qmd": {
+    "t6_conozcamonos.html": "1862b24f"
+  },
+  "cursos/t7_mastogami/t7_mastogami.qmd": {
+    "t7_mastogami.html": "cd7bbc7b"
+  },
+  "cursos/t8_guardianes/t8_guardianes.qmd": {
+    "t8_guardianes.html": "96175b88"
+  },
+  "cursos/t9_dato/t9_dato.qmd": {
+    "t9_dato.html": "44dfca34"
+  },
+  "noticias/2026-07-14_Ganador_Logo/ganador_logo.qmd": {
+    "ganador_logo.html": "21b2062c"
+  },
+  "noticias/2026-07-14_tercera_circular/tercera_circular.qmd": {
+    "tercera_circular.html": "21c6df8d"
   }
 }

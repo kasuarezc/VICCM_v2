@@ -1,0 +1,74 @@
+---
+title: "Curso básico teórico-práctico de morfometría geométrica aplicada usando MorphoJ"
+format:
+  html:
+    css:
+      - ../../css/main.css
+      - ../../css/responsive.css
+      - c6_basico.css
+---
+
+```{=html}
+<section class="simposio-detalle-container">
+
+<div class="detalle-breadcrumb">
+<a href="../../index.html">⌂</a>
+<span class="separator">›</span>
+<a href="../../cursos.html">Cursos</a>
+<span class="separator">›</span>
+<span class="current">Básico teórico-práctico de morfometría</span>
+</div>
+
+<article class="detalle-card">
+<div class="detalle-grid">
+
+<div class="col-izquierda">
+<div class="imagen-card">
+<img src="images/c6_basico.jpg" alt="Morfometría geométrica para el estudio de la forma en mamíferos.">
+<div class="pie-foto">
+📷 Morfometría geométrica para el estudio de la forma en mamíferos.
+</div>
+</div>
+
+<div class="organizadores-info">
+<h3>Organizan</h3>
+<ul class="lista-organizadores">
+<li>Nicolas Reyes-Amaya</li>
+<li>Alejandra Pardo</li>
+<li>Paula Calambas Pizo</li>
+</ul>
+<div class="badge-simposio">Curso básico teórico-práctico de morfometría geométrica aplicada usando MorphoJ</div>
+</div>
+</div>
+
+<div class="col-derecha">
+<h1>Curso básico teórico-práctico de morfometría geométrica aplicada usando MorphoJ</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+
+<div class="objetivos">
+<h2>Objetivos General</h2>
+<p>Capacitar a los participantes en los fundamentos teóricos y prácticos de la morfometría geométrica basada en landmarks, mediante el uso del software MorphoJ, para el análisis preliminar de la variación de la forma en mamíferos.</p>
+<h2>Objetivos Especifícos</h2>
+<ul class="lista-objetivos">
+<li>Introducir los conceptos básicos de la morfometría geométrica y la importancia del estudio de la forma en organismos biológicos.</li>
+<li>Enseñar la adquisición de datos mediante digitalización de landmarks y la construcción del dataset para análisis morfométricos.</li>
+<li>Desarrollar el flujo básico de análisis en MorphoJ, incluyendo alineación Procrustes, detección de outliers, generación de matrices de covarianza y análisis multivariados (PCA y CVA).</li>
+<li>Evaluar la variación de la forma mediante análisis de alometría, cálculo de formas promedio y visualización de cambios morfológicos con wireframes.</li>
+<li>Introducir el análisis preliminar de simetría, así como conceptos básicos de integración y modularidad morfológica a partir de configuraciones de landmarks.</li>
+</ul>
+</div>
+
+<div class="resumen">
+<h2>Resumen</h2>
+<p>la morfometría geométrica ha emergido como un enfoque robusto para cuantificar y analizar la variación morfológica a partir de coordenadas espaciales, facilitando la separación entre tamaño y forma y permitiendo interpretar los cambios morfológicos de manera gráfica y estadísticamente sustentada. Estas herramientas han ampliado las posibilidades de análisis en estudios mastozoológicos, incluyendo la evaluación de patrones de variación, la comparación entre grupos y el abordaje preliminar de aspectos como simetría, integración y modularidad morfológica. Además, la morfometría geométrica se ha consolidado como una metodología accesible y reproducible, adecuada para estudios comparativos de biodiversidad.</p>
+
+</div>
+
+<a href="../../cursos.html" class="btn-volver">← Volver a todos los cursos</a>
+</div>
+
+</div>
+</article>
+</section>
+```
+<script src="c6_basico.js"></script>
