@@ -73,6 +73,8 @@ format:
  
 </section>
 
+
+
 <section class="home-news section-block">
   <div class="section-shell">
     <div class="section-header reveal">
@@ -82,6 +84,20 @@ format:
     </div>
 
     <div class="news-grid">
+    
+    
+     <article class="news-card reveal">
+        <div class="news-image">
+          <img src="noticias/2026-07-17_Concurso_Fotografia/images/ConcursoFotografia.jpg" alt="Tercera Circular">
+        </div>
+        <div class="news-content">
+          <span class="news-date">17 Julio 2026</span>
+          <h3>Concurso de Fotografía</h3>
+          <p>Con tus fotografías, puedes contribuir a que los mamíferos se conozcan mejor y a conservar nuestra fauna.</p>
+          <a href="noticias/2026-07-17_Concurso_Fotografia/concurso_fotografia.html" class="news-link">Leer más</a>
+        </div>
+      </article>
+      
     
      <article class="news-card reveal">
         <div class="news-image">
@@ -95,6 +111,7 @@ format:
         </div>
       </article>
 
+
       <article class="news-card reveal">
         <div class="news-image">
           <img src="noticias/2026-07-14_Ganador_Logo/images/Horizontal_logo_Ganador.png" alt="Ganador del Logo">
@@ -107,17 +124,8 @@ format:
         </div>
       </article>
     
-      <article class="news-card reveal">
-        <div class="news-image">
-          <img src="noticias/2026-04-06_Concurso_Diseno/images/Concurso_Diseno.png" alt="Concurso de Diseno">
-        </div>
-        <div class="news-content">
-          <span class="news-date">06 Abril 2026</span>
-          <h3>Concurso de Diseño</h3>
-          <p>Consúlten las bases del concurso de Diseno para participar en el VICCM 2026.</p>
-          <a href="noticias/2026-04-06_Concurso_Diseno/concurso_diseno.html" class="news-link">Leer más</a>
-        </div>
-      </article>
+
+
 
      
     </div>

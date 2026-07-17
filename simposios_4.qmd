@@ -24,7 +24,7 @@ format:
 <button class="filtro-btn" data-categoria="ecologia" type="button">Ecología</button>
 <button class="filtro-btn" data-categoria="primates" type="button">Primates</button>
 <button class="filtro-btn" data-categoria="genetica" type="button">Genética</button>
-<button class="filtro-btn" data-categoria="quirópteros" type="button">Quirópteros</button>
+<button class="filtro-btn" data-categoria="quiropteros" type="button">Quirópteros</button>
 <button class="filtro-btn" data-categoria="estrategias" type="button">Estrategias</button>
 <button class="filtro-btn" data-categoria="xenartros" type="button">Xenartros</button>
 <button class="filtro-btn" data-categoria="gestion adaptativa" type="button">Gestión Adaptativa</button>
@@ -40,7 +40,7 @@ format:
 
 
 <div class="simposio-card"
-data-categoria="conservacion"
+data-categoria="ecologia"
 data-titulo="Interacciones troficas en mamiferos: de flores a depredadores"
 data-organizadores="Kevin González Gutiérrez, John Harold Castaño Salazar">
 <div class="simposio-badge">Organizan</div>
@@ -58,7 +58,6 @@ Las interacciones tróficas son fundamentales para comprender procesos ecológic
 </p>
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
 <span class="tema-tag">Método</span>
 </div>
 <a href="simposios/interacciones/interacciones.html" class="simposio-btn">
@@ -88,7 +87,6 @@ data-organizadores="Miguel E. Rodríguez-Posada, Dora Catalina Concha Osbahr, Bi
 Recientemente se ha incrementado la participación de actores sociales, especialmente las comunidades locales, en las estrategias de gestión y conservación de la biodiversidad en sus territorios para garantizar su efectividad bajo su propia gobernanza.
 </p>
 <div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Monitoreo Comunitario</span>
 <span class="tema-tag">Gobernanza</span>
@@ -101,7 +99,7 @@ Ver Simposio Completo →
 
 
 <div class="simposio-card"
-data-categoria="quirópteros"
+data-categoria="quiropteros"
 data-titulo="I Simposio de Refugios de Murciélagos en Colombia"
 data-organizadores="Liceth Margarita Suárez Payares, Tomás Villada-Cadavid, Melquisedec Gamba-Ríos, Sandra Bernal, Yesyca Andrea López Bolaños, Ana María Ávila García, Diana Carina Vallejo Cardozo">
 <div class="simposio-badge">Organizan</div>
@@ -123,7 +121,6 @@ data-organizadores="Liceth Margarita Suárez Payares, Tomás Villada-Cadavid, Me
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
-<span class="tema-tag">Quirópteros</span>
 <span class="tema-tag">Murciélagos</span>
 </div>
 <a href="simposios/refugios/refugios.html" class="simposio-btn">
@@ -154,7 +151,6 @@ data-organizadores="Carlos Aya Cuero, Maria Jose Andrade, Julio Chacón Pacheco,
 <p class="simposio-descripcion"> El VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros da continuidad a los cinco encuentros previos que han consolidado un espacio técnico y científico dedicado al estudio y conservación de los xenartros en el país.</p>
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
 <span class="tema-tag">Xenartros</span>
 <span class="tema-tag">Perezosos</span>
 </div>
@@ -187,7 +183,6 @@ data-organizadores="Carlos Aya Cuero, Maria Jose Andrade, Julio Chacón Pacheco,
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
-<span class="tema-tag">Primatología</span>
 <span class="tema-tag">Primates</span>
 </div>
 <a href="simposios/primatologia/primatologia.html" class="simposio-btn">
@@ -256,7 +251,6 @@ data-organizadores="Catalina Rodriguez, César Rojano, Mónica Peñuela Salgado,
 <h3 class="simposio-titulo">Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</h3>
 <p class="simposio-descripcion">Este simposio busca generar un espacio de encuentro e intercambio entre investigadores, docentes, estudiantes, organizaciones e iniciativas que desarrollan procesos de comunicación, sensibilización y enseñanza relacionados con la conservación de mamíferos.</p>
 <div class="simposio-temas">
-<span class="tema-tag">Naturaleza</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Comunicación</span>
 <span class="tema-tag">Enseñanza</span>
@@ -268,62 +262,8 @@ Ver Simposio Completo →
 </div>
 
 
-<div class="simposio-card"
-data-categoria="fototrampeo"
-data-titulo="Fototrampeo: Avances y Aplicaciones en Mastozoología"
-data-organizadores="Angelica Díaz Pulido, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/fototrampeo.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Angelica Díaz Pulido</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Fototrampeo: Avances y Aplicaciones en Mastozoología</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de fototrampeo, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos en ecosistemas tropicales.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/fototrampeo.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
-<div class="simposio-card"
-data-categoria="acustica"
-data-titulo="Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación"
-data-organizadores="Daniela Martínez, Francisco Sánchez, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/acustica.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Daniela Martínez</span>
-<span class="simposio-organizador">Francisco Sánchez</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de Bioacústica, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/acustica.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
+
 
 
 <div class="simposio-placeholder">

@@ -268,62 +268,7 @@ Ver Simposio Completo →
 </div>
 
 
-<div class="simposio-card"
-data-categoria="fototrampeo"
-data-titulo="Fototrampeo: Avances y Aplicaciones en Mastozoología"
-data-organizadores="Angelica Díaz Pulido, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/fototrampeo.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Angelica Díaz Pulido</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Fototrampeo: Avances y Aplicaciones en Mastozoología</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de fototrampeo, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos en ecosistemas tropicales.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/fototrampeo.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
-<div class="simposio-card"
-data-categoria="acustica"
-data-titulo="Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación"
-data-organizadores="Daniela Martínez, Francisco Sánchez, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/acustica.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Daniela Martínez</span>
-<span class="simposio-organizador">Francisco Sánchez</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de Bioacústica, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/acustica.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
 <div class="simposio-placeholder">

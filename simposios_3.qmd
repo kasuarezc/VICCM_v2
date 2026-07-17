@@ -19,15 +19,10 @@ format:
 <div class="filtros-container">
 <div class="filtros-categorias">
 <button class="filtro-btn active" data-categoria="todos" type="button">Todos</button>
-<button class="filtro-btn" data-categoria="fototrampeo" type="button">Fototrampeo</button>
 <button class="filtro-btn" data-categoria="conservacion" type="button">Conservación</button>
 <button class="filtro-btn" data-categoria="ecologia" type="button">Ecología</button>
-<button class="filtro-btn" data-categoria="primates" type="button">Primates</button>
-<button class="filtro-btn" data-categoria="genetica" type="button">Genética</button>
-<button class="filtro-btn" data-categoria="quirópteros" type="button">Quirópteros</button>
-<button class="filtro-btn" data-categoria="estrategias" type="button">Estrategias</button>
-<button class="filtro-btn" data-categoria="xenartros" type="button">Xenartros</button>
-<button class="filtro-btn" data-categoria="genomica" type="button">Genómica</button>
+<button class="filtro-btn" data-categoria="mamiferos" type="button">Mamíferos</button>
+
 </div>
 
 <div class="busqueda-wrapper">
@@ -39,188 +34,16 @@ format:
 <div class="simposios-grid" id="simposiosGrid">
 
 
-<div class="simposio-card"
-data-categoria="conservacion"
-data-titulo="Avances en el estudio de la mastofauna del Caribe colombiano"
-data-organizadores="Julio Javier Chacón Pacheco, Angie Natally Tinoco Sotomayor, Gerson Andrés Salcedo Rivera, María Isabel Maya Aguirre, Julián David Ruiz Gómez">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/mastofauna_caribe/images/mastofauna_caribe.jpg" alt="Mastofauna del Caribe">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Julio Javier Chacón Pacheco</span>
-<span class="simposio-organizador">Angie Natally Tinoco Sotomayor</span>
-<span class="simposio-organizador">Gerson Andrés Salcedo Rivera</span>
-<span class="simposio-organizador">María Isabel Maya Aguirre</span>
-<span class="simposio-organizador">Julián David Ruiz Gómez</span>
-</div>
-<h3 class="simposio-titulo">Avances en el estudio de la mastofauna del Caribe colombiano</h3>
-<p class="simposio-descripcion">
-Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la colaboración científica y generar alianzas estratégicas que impulsen nuevas agendas de investigación...
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/mastofauna_caribe/mastofauna_caribe.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
-<div class="simposio-card"
-data-categoria="mamiferos"
-data-titulo="I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas"
-data-organizadores="Juan Camilo Rubiano Pérez, William Bonell, Ivan Mauricio Vela Vargas, Ginna Gómez Junco, Francisco Stiven Gómez Castañeda">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/biologia_ecologia/images/biologia_ecologia.jpg" alt="Marsupiales colombianos frente a amenazas subestimadas">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Juan Camilo Rubiano Pérez</span>
-<span class="simposio-organizador">William Bonell</span>
-<span class="simposio-organizador">Ivan Mauricio Vela Vargas</span>
-<span class="simposio-organizador">Ginna Gómez Junco</span>
-<span class="simposio-organizador">Francisco Stiven Gómez Castañeda</span>
-</div>
-<h3 class="simposio-titulo">I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas</h3>
-<p class="simposio-descripcion">
-Actualmente, Colombia cuenta con 41 especies de marsupiales registradas para el territorio, lo que representa aproximadamente el 7,4% de la riqueza de los mamíferos del país.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Mamiferos</span>
-<span class="tema-tag">Marsupiales</span>
-</div>
-<a href="simposios/biologia_ecologia/biologia_ecologia.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
-<div class="simposio-card"
-data-categoria="genomica"
-data-titulo="II Simposio de Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación"
-data-organizadores="Alejandra Bonilla-Sánchez, Paola Pulido-Santacruz, Laura M. Aramendiz-Macías, Sergio Penagos, Alejandra Niño-Reyes, Gabriel Pantoja">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/genetica_genomica/images/genetica_genomica.jpg" alt="Genómica y conservación: el ADN de los mamíferos colombianos.">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Alejandra Bonilla-Sánchez</span>
-<span class="simposio-organizador">Paola Pulido-Santacruz</span>
-<span class="simposio-organizador">Laura M. Aramendiz-Macías</span>
-<span class="simposio-organizador">Sergio Penagos</span>
-<span class="simposio-organizador">Alejandra Niño-Reyes</span>
-<span class="simposio-organizador">Gabriel Pantoja</span>
-</div>
-<h3 class="simposio-titulo">II Simposio de Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación</h3>
-<p class="simposio-descripcion"> El simposio “Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación 2026” será un espacio de intercambio científico enfocado en los avances recientes de la genética y la genómica aplicadas al estudio de los mamíferos colombianos.</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Genómica</span>
-</div>
-<a href="simposios/genetica_genomica/genetica_genomica.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
-<div class="simposio-card"
-data-categoria="conservacion"
-data-titulo="Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas"
-data-organizadores="Natalia Atuesta-Dimian, Mónica Peñuela, Javier García, Hugo Fernando López-Arévalo, Catalina Cárdenas">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/investigacion_mastozoologica/images/investigacion_mastozoologica.jpg" alt="Mastozoologia en la Amazonia">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Natalia Atuesta-Dimian</span>
-<span class="simposio-organizador">Mónica Peñuela</span>
-<span class="simposio-organizador">Javier García</span>
-<span class="simposio-organizador">Hugo Fernando López-Arévalo</span>
-<span class="simposio-organizador">Catalina Cárdenas</span>
-
-</div>
-<h3 class="simposio-titulo">Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas</h3>
-<p class="simposio-descripcion">La Panamazonia es una de las regiones más ricas en mamíferos del mundo y, a nivel nacional, se estima que la región alberga una alta diversidad de mastofauna, así como algunas de las poblaciones en mejor estado de conservación.</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Mamiferos</span>
-</div>
-<a href="simposios/investigacion_mastozoologica/investigacion_mastozoologica.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
-<div class="simposio-card"
-data-categoria="conservacion"
-data-titulo="Simposio Bases Anatómicas de la Biodiversidad en Mamíferos"
-data-organizadores="Nicolas Reyes-Amaya, Alejandra Pardo, Paula Calambas Pizo, Maria Antonia Montilla">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/bases_anatomicas/images/bases_anatomicas.jpg" alt="Anatomía comparada y nuevas tecnologías para el estudio morfológico de mamíferos.">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Nicolas Reyes-Amaya</span>
-<span class="simposio-organizador">Alejandra Pardo</span>
-<span class="simposio-organizador">Paula Calambas Pizo</span>
-<span class="simposio-organizador">Maria Antonia Montilla</span>
-</div>
-<h3 class="simposio-titulo">Simposio Bases Anatómicas de la Biodiversidad en Mamíferos</h3>
-<p class="simposio-descripcion"> El estudio de la anatomía de los mamíferos vivos ha sido una herramienta fundamental para clasificarlos, comprenderlos y reflexionar sobre su naturaleza y evolución.</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Mamiferos</span>
-</div>
-<a href="simposios/bases_anatomicas/bases_anatomicas.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
-<div class="simposio-card"
-data-categoria="conservacion"
-data-titulo="Tapires neotropicales: investigación y desafíos para su conservación"
-data-organizadores="Federico Mosquera Guerra, Diego Lizcano, Carlos Saavedra">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/tapires_neotropicales/images/tapires_neotropicales.jpg" alt="Especie clave para la conservación de los bosques neotropicales.">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Federico Mosquera Guerra</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-<span class="simposio-organizador">Carlos Saavedra</span>
-</div>
-<h3 class="simposio-titulo">Tapires neotropicales: investigación y desafíos para su conservación</h3>
-<p class="simposio-descripcion"> Los tapires neotropicales desempeñan un rol fundamental en el funcionamiento de los ecosistemas, al actuar como dispersores de semillas y modeladores de la dinámica de los bosques tropicales.</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Tapires</span>
-</div>
-<a href="simposios/tapires_neotropicales/tapires_neotropicales.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
 <div class="simposio-card"
@@ -240,9 +63,9 @@ data-organizadores="Federico Mosquera Guerra, Fernando Trujillo, Carlos Saavedra
 <h3 class="simposio-titulo">Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</h3>
 <p class="simposio-descripcion">El simposio abordará avances recientes en ecología, distribución, monitoreo, amenazas emergentes, restauración de hábitats y conservación de cetáceos, sirénidos, nutrias y otros mamíferos asociados a ecosistemas acuáticos.</p>
 <div class="simposio-temas">
-<span class="tema-tag">Naturaleza</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Mamiferos</span>
+<span class="tema-tag">Ecología</span>
 </div>
 <a href="simposios/mamiferos_acuaticos/mamiferos_acuaticos.html" class="simposio-btn">
 Ver Simposio Completo →
@@ -251,62 +74,7 @@ Ver Simposio Completo →
 </div>
 
 
-<div class="simposio-card"
-data-categoria="fototrampeo"
-data-titulo="Fototrampeo: Avances y Aplicaciones en Mastozoología"
-data-organizadores="Angelica Díaz Pulido, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/fototrampeo.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Angelica Díaz Pulido</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Fototrampeo: Avances y Aplicaciones en Mastozoología</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de fototrampeo, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos en ecosistemas tropicales.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/fototrampeo.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
-<div class="simposio-card"
-data-categoria="acustica"
-data-titulo="Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación"
-data-organizadores="Daniela Martínez, Francisco Sánchez, Diego Lizcano">
-<div class="simposio-badge">Organizan</div>
-<div class="simposio-img">
-<img src="simposios/images/acustica.jpg" alt="Fototrampeo">
-</div>
-<div class="simposio-content">
-<div class="simposio-organizadores">
-<span class="simposio-organizador">Daniela Martínez</span>
-<span class="simposio-organizador">Francisco Sánchez</span>
-<span class="simposio-organizador">Diego Lizcano</span>
-</div>
-<h3 class="simposio-titulo">Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</h3>
-<p class="simposio-descripcion">
-Este simposio aborda los últimos avances en técnicas de Bioacústica, análisis de datos con inteligencia artificial, y aplicaciones para el monitoreo de mamíferos.
-</p>
-<div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
-<span class="tema-tag">Método</span>
-</div>
-<a href="simposios/fototrampeo/acustica.html" class="simposio-btn">
-Ver Simposio Completo →
-</a>
-</div>
-</div>
 
 
 

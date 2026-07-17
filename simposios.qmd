@@ -19,15 +19,14 @@ format:
 <div class="filtros-container">
 <div class="filtros-categorias">
 <button class="filtro-btn active" data-categoria="todos" type="button">Todos</button>
-<button class="filtro-btn" data-categoria="fototrampeo" type="button">Fototrampeo</button>
 <button class="filtro-btn" data-categoria="conservacion" type="button">Conservación</button>
 <button class="filtro-btn" data-categoria="ecologia" type="button">Ecología</button>
 <button class="filtro-btn" data-categoria="primates" type="button">Primates</button>
-<button class="filtro-btn" data-categoria="genetica" type="button">Genética</button>
 <button class="filtro-btn" data-categoria="quiropteros" type="button">Quirópteros</button>
 <button class="filtro-btn" data-categoria="estrategias" type="button">Estrategias</button>
 <button class="filtro-btn" data-categoria="xenartros" type="button">Xenartros</button>
-<button class="filtro-btn" data-categoria="gestion adaptativa" type="button">Gestión Adaptativa</button>
+<button class="filtro-btn" data-categoria="gestion" type="button">Gestión Adaptativa</button>
+<button class="filtro-btn" data-categoria="salud" type="button">Salud</button>
 </div>
 
 <div class="busqueda-wrapper">
@@ -40,7 +39,7 @@ format:
 
 
 <div class="simposio-card"
-data-categoria="conservacion"
+data-categoria="ecologia"
 data-titulo="Interacciones troficas en mamiferos: de flores a depredadores"
 data-organizadores="Kevin González Gutiérrez, John Harold Castaño Salazar">
 <div class="simposio-badge">Organizan</div>
@@ -58,7 +57,6 @@ Las interacciones tróficas son fundamentales para comprender procesos ecológic
 </p>
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
-<span class="tema-tag">Conservación</span>
 <span class="tema-tag">Método</span>
 </div>
 <a href="simposios/interacciones/interacciones.html" class="simposio-btn">
@@ -88,7 +86,6 @@ data-organizadores="Miguel E. Rodríguez-Posada, Dora Catalina Concha Osbahr, Bi
 Recientemente se ha incrementado la participación de actores sociales, especialmente las comunidades locales, en las estrategias de gestión y conservación de la biodiversidad en sus territorios para garantizar su efectividad bajo su propia gobernanza.
 </p>
 <div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Monitoreo Comunitario</span>
 <span class="tema-tag">Gobernanza</span>
@@ -187,7 +184,6 @@ data-organizadores="Carlos Aya Cuero, Maria Jose Andrade, Julio Chacón Pacheco,
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
-<span class="tema-tag">Primatología</span>
 <span class="tema-tag">Primates</span>
 </div>
 <a href="simposios/primatologia/primatologia.html" class="simposio-btn">
@@ -198,7 +194,7 @@ Ver Simposio Completo →
 
 
 <div class="simposio-card"
-data-categoria="gestion adaptativa"
+data-categoria="gestion, estrategias"
 data-titulo="Gestión Adaptativa y Alianzas Estratégicas: El Rol de los Zoológicos en la Mastozoología Moderna"
 data-organizadores="Dave Wehdeking, Catalina Rodríguez Álvarez, Sandra Marcela Gómez, Carlos Andrés Galvis, Leonardo Arias Bernal">
 <div class="simposio-badge">Organizan</div>
@@ -216,7 +212,6 @@ data-organizadores="Dave Wehdeking, Catalina Rodríguez Álvarez, Sandra Marcela
 <h3 class="simposio-titulo">Gestión Adaptativa y Alianzas Estratégicas: El Rol de los Zoológicos en la Mastozoología Moderna</h3>
 <p class="simposio-descripcion"> La conservación de los mamíferos enfrenta desafíos cada vez más complejos que requieren enfoques integrados y una colaboración efectiva entre múltiples actores.</p>
 <div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Gestión Adaptativa</span>
 <span class="tema-tag">Zoológicos</span>
@@ -256,7 +251,6 @@ data-organizadores="Catalina Rodriguez, César Rojano, Mónica Peñuela Salgado,
 <h3 class="simposio-titulo">Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</h3>
 <p class="simposio-descripcion">Este simposio busca generar un espacio de encuentro e intercambio entre investigadores, docentes, estudiantes, organizaciones e iniciativas que desarrollan procesos de comunicación, sensibilización y enseñanza relacionados con la conservación de mamíferos.</p>
 <div class="simposio-temas">
-<span class="tema-tag">Naturaleza</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Comunicación</span>
 <span class="tema-tag">Enseñanza</span>
@@ -287,7 +281,6 @@ data-organizadores="Maria Alejandra Hurtado Materon, Baltazar Gonzalez, José F.
 El simposio propuesto se establece como un espacio de vanguardia para el intercambio académico y práctico sobre la evaluación de mamíferos, trascendiendo la escala nacional para entender cómo los contextos locales informan las metas globales de biodiversidad.
 </p>
 <div class="simposio-temas">
-<span class="tema-tag">Ecología</span>
 <span class="tema-tag">Conservación</span>
 <span class="tema-tag">Método</span>
 </div>
@@ -317,12 +310,105 @@ Los murciélagos constituyen uno de los grupos de mamíferos más diversos y eco
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
 <span class="tema-tag">quiropteros</span>
-<span class="tema-tag">Método</span>
+<span class="tema-tag">Murciélagos</span>
 </div>
 <a href="simposios/quiropterologia/quiropterologia.html" class="simposio-btn">
 Ver Simposio Completo →</a>
 </div>
 </div>
+
+
+
+<div class="simposio-card"
+data-categoria="estrategias"
+data-titulo="Mamíferos en paisajes productivos de Colombia: enfoques, experiencias y retos"
+data-organizadores="Freddy Gamboa Avellaneda, Natalia Rodríguez Santa">
+<div class="simposio-badge">Organizan</div>
+<div class="simposio-img">
+<img src="simposios/mamiferos_paisajes/images/mamiferos_paisajes.png" alt="Mamiferos en paisajes">
+</div>
+<div class="simposio-content">
+<div class="simposio-organizadores">
+<span class="simposio-organizador">Freddy Gamboa Avellaneda</span>
+<span class="simposio-organizador">Natalia Rodríguez Santa</span>
+</div>
+<h3 class="simposio-titulo">Mamíferos en paisajes productivos de Colombia: enfoques, experiencias y retos</h3>
+<p class="simposio-descripcion">
+Este simposio reúne experiencias, investigaciones y enfoques interdisciplinarios sobre mamíferos en paisajes productivos de Colombia, así como el potencial de territorios emergentes para la investigación.
+</p>
+<div class="simposio-temas">
+<span class="tema-tag">Ecología</span>
+<span class="tema-tag">Estrategias</span>
+</div>
+<a href="simposios/mamiferos_paisajes/mamiferos_paisajes.html" class="simposio-btn">
+Ver Simposio Completo →
+</a>
+</div>
+</div>
+
+
+
+<div class="simposio-card"
+data-categoria="salud"
+data-titulo="La mastozoología en la era One health"
+data-organizadores="Hugo Mantilla-Meluk, Nicolás Rafael Reyes-Amaya">
+<div class="simposio-badge">Organizan</div>
+<div class="simposio-img">
+<img src="simposios/mastozoologia_onehealth/images/mastozoologia_onehealth.jpg" alt="La mastozoología en la era One health">
+</div>
+<div class="simposio-content">
+<div class="simposio-organizadores">
+<span class="simposio-organizador">Hugo Mantilla-Meluk</span>
+<span class="simposio-organizador">Nicolás Rafael Reyes-Amaya</span>
+</div>
+<h3 class="simposio-titulo">La mastozoología en la era One health</h3>
+<p class="simposio-descripcion">
+En consonancia con el Marco Global de Biodiversidad de Kunming-Montreal, que promueve la implementación del esquema de Una Salud.
+</p>
+<div class="simposio-temas">
+<span class="tema-tag">Conservación</span>
+<span class="tema-tag">Salud</span>
+</div>
+<a href="simposios/mastozoologia_onehealth/mastozoologia_onehealth.html" class="simposio-btn">
+Ver Simposio Completo →
+</a>
+</div>
+</div>
+
+
+<div class="simposio-card"
+data-categoria="ecologia"
+data-titulo="V Simposio de conectividad ecológica y V Simposio de distribución de especies"
+data-organizadores="Ángela P. Hurtado-Moreno, Diego A. Zárrate Charry, José F. González-Maya, Leonardo Lemus-Mejia, Carlos Eduardo Ortiz Yusty, María Gabriela Aduén Espinosa, Camilo Andrés Correa Ayram, Elkin Noguera, Maria Camila Machado-Aguilera">
+<div class="simposio-badge">Organizan</div>
+<div class="simposio-img">
+<img src="simposios/conectividad_ecologica/images/conectividad_ecologica.jpg" alt="Modelos y territorios: conectando ciencia para la planificación responsable">
+</div>
+<div class="simposio-content">
+<div class="simposio-organizadores">
+<span class="simposio-organizador">Ángela P. Hurtado-Moreno</span>
+<span class="simposio-organizador">Diego A. Zárrate Charry</span>
+<span class="simposio-organizador">José F. González-Maya</span>
+<span class="simposio-organizador">Leonardo Lemus-Mejia</span>
+<span class="simposio-organizador">Carlos Eduardo Ortiz Yusty</span>
+<span class="simposio-organizador">María Gabriela Aduén Espinosa</span>
+<span class="simposio-organizador">Camilo Andrés Correa Ayram</span>
+<span class="simposio-organizador">Elkin Noguera</span>
+<span class="simposio-organizador">Maria Camila Machado-Aguilera</span>
+</div>
+<h3 class="simposio-titulo">V Simposio de conectividad ecológica y V Simposio de distribución de especies</h3>
+<p class="simposio-descripcion"> Las aproximaciones de investigación direccionadas a entender cómo se distribuye una especie en el espacio y cómo se mueve a través de un paisaje permiten tener un marco conceptual y metodológico robusto para orientar la toma de decisiones en el ordenamiento territorial.</p>
+<div class="simposio-temas">
+<span class="tema-tag">Ecología</span>
+<span class="tema-tag">Conservación</span>
+</div>
+<a href="simposios/conectividad_ecologica/conectividad_ecologica.html" class="simposio-btn">
+Ver Simposio Completo →
+</a>
+</div>
+</div>
+
+
 
 
 </div>
