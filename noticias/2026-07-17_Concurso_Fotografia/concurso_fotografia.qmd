@@ -77,7 +77,7 @@ Historia: ¿Qué hacía el animal? ¿Cuánto tiempo esperaste? ¿Qué sentiste?
 
 
 <p>Tamaño: menor a 6 MB.  
-Dimensiones: entre 1000 x 1000  y  5000 x 5000 pixeles.  
+Dimensiones: entre 1500 x 1500  y  5000 x 5000 pixeles.  
 Formato: JPG (más ligero) o PNG si necesitas transparencia o TIF para alta calidad.  
 Sin ninguna marca de agua.  
 Sin elementos de Inteligencia Artificial (Nano-banana, DALL-E, Midjourney, etc.)
@@ -107,7 +107,7 @@ Sin elementos de Inteligencia Artificial (Nano-banana, DALL-E, Midjourney, etc.)
 
 <p>Se valorará muy positivamente la originalidad de la fotografía, la excelencia o nivel técnico, la composición, el impacto y el mérito artístico.
 
-La Sociedad Colombiana de Mastozoología-SCMas se reserva el derecho de rechazar cualquier imagen adicional que no cumpla las bases del concurso. Al participar, usted reconoce y acepta incondicionalmente las normas de este concurso y las decisiones de la Sociedad Colombiana de Mastozoología-SCMas, que son definitivas y vinculantes. Usted no podrá ganar un premio a menos que cumpla todos los requisitos acá presentados.</p>
+La Sociedad Colombiana de Mastozoología-SCMas se reserva el derecho de rechazar cualquier imagen adicional que no cumpla las bases del concurso. Al participar, usted reconoce y acepta incondicionalmente las normas y los detalles del reglamento del concurso y las decisiones de la Sociedad Colombiana de Mastozoología (SCMas), que son definitivas y vinculantes. Usted no podrá ganar un premio a menos que cumpla todos los requisitos presentados en el reglamento.</p>
 
 
 <h2>Jurado</h2>
@@ -127,7 +127,7 @@ La Sociedad Colombiana de Mastozoología-SCMas se reserva el derecho de rechazar
 <span>Envía tu Fotografía</span>
 </a>
 
-<a href="noticias/2026-07-17_Concurso_Fotografia/files/ConcursoFotografia.pdf" target="_blank" rel="noopener noreferrer" class="btn-animado btn-descargar">
+<a href="https://mamiferoscolombia.org/VICCM/noticias/2026-07-17_Concurso_Fotografia/files/ConcursoFotografia.pdf" target="_blank" rel="noopener noreferrer" class="btn-animado btn-descargar">
 <span>📄</span>
 <span>Descarga los Detalles y el Reglamento</span>
 </a>
