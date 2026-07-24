@@ -37,14 +37,14 @@ format:
 
 <div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Concurso de Fotografía" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">17 Jul</div>
-<div class="noticia-img"><img src="noticias/2026-07-17_Concurso_Fotografia/images/ConcursoFotografia.jpg" alt="Concurso de Fotografía"></div>
+<div class="noticia-img"><img src="noticias/2026-07-17_Concurso_Fotografia/images/ConcursoPortada.png" alt="Concurso de Fotografía"></div>
 <div class="noticia-content">
 <div class="noticia-meta">
 <span class="noticia-fecha">17 Julio 2026</span>
 <span class="noticia-hora">2:00 p.m</span>
 </div>
 <div class="noticia-autores">
-<span class="noticia-autor">Diego J. Lizcanor</span>
+<span class="noticia-autor">Diego J. Lizcano</span>
 <span class="noticia-autor">Catalina Concha-Osbahr</span>
 <span class="noticia-autor">Javier García-Villalba</span>
 </div>
