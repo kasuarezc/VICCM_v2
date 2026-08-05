@@ -486,3 +486,18 @@ h1.title{
     box-shadow: var(--shadow);
   }
 }
+
+.simposio-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.simposio-logos img {
+  height: 80px ;
+  width: 80px;
+  object-fit: contain;
+
+}

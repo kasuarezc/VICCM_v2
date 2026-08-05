@@ -4,219 +4,165 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    //-----------------------------------
-    // Elementos
-    //-----------------------------------
-
     const searchBtn = document.getElementById("searchBtn");
     const overlay = document.getElementById("searchOverlay");
     const input = document.getElementById("searchInput");
     const results = document.getElementById("searchResults");
     const closeBtn = document.getElementById("closeSearch");
 
+    if (!overlay || !input || !results) {
+        return;
+    }
+
     let pages = [];
+    let searchIndexBaseUrl = null;
 
-    //-----------------------------------
-    // Cargar JSON
-    //-----------------------------------
+    function renderPlaceholder() {
+        results.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-search fa-2x"></i>
+                <p>Escriba para comenzar la búsqueda.</p>
+            </div>
+        `;
+    }
 
-    fetch(`${window.location.origin}${window.location.pathname.includes("/noticias/") || window.location.pathname.includes("/simposios/") ? "../../data/search-index.json" : "data/search-index.json"}`)
-        .then(response => response.json())
-        .then(data => {
+    function normalizeEntry(entry) {
+        return {
+            title: entry.title || entry.titulo || entry.Title || "Sin título",
+            text: entry.text || entry.descripcion || entry.description || entry.summary || "",
+            category: entry.section || entry.categoria || entry.category || "Página",
+            href: entry.href || entry.url || entry.link || "#"
+        };
+    }
 
-            pages = data;
+    function resolveHref(href) {
+        if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("/")) {
+            return href;
+        }
 
-        })
-        .catch(error => {
+        return new URL(href, searchIndexBaseUrl || window.location.href).href;
+    }
 
-            console.error("No se pudo cargar el índice de búsqueda.");
+    async function loadSearchIndex() {
+        const candidates = [];
+        const baseUrl = new URL("./", window.location.href);
+        let currentDir = baseUrl;
 
-        });
+        for (let i = 0; i < 6; i += 1) {
+            candidates.push(new URL("search.json", currentDir));
+            currentDir = new URL("../", currentDir);
+        }
 
-    //-----------------------------------
-    // Abrir
-    //-----------------------------------
+        const fallbackCandidates = [
+            new URL("./data/search-index.json", window.location.href),
+            new URL("../data/search-index.json", window.location.href),
+            new URL("../../data/search-index.json", window.location.href)
+        ];
 
-    function openSearch(){
+        for (const candidate of [...candidates, ...fallbackCandidates]) {
+            try {
+                const response = await fetch(candidate.href);
+                if (!response.ok) {
+                    continue;
+                }
 
+                const data = await response.json();
+                searchIndexBaseUrl = new URL(".", candidate.href);
+                return Array.isArray(data) ? data.map(normalizeEntry) : [];
+            } catch (error) {
+                continue;
+            }
+        }
+
+        return [];
+    }
+
+    function openSearch() {
         overlay.classList.add("active");
-
-        input.value="";
-
-        results.innerHTML="";
-
+        input.value = "";
+        renderPlaceholder();
         input.focus();
-
     }
 
-    //-----------------------------------
-    // Cerrar
-    //-----------------------------------
-
-    function closeSearch(){
-
+    function closeSearch() {
         overlay.classList.remove("active");
-
     }
 
-    //-----------------------------------
-    // Eventos
-    //-----------------------------------
+    function runSearch() {
+        const text = input.value.toLowerCase().trim();
 
-    if(searchBtn){
-
-        searchBtn.addEventListener("click",openSearch);
-
-    }
-
-    if(closeBtn){
-
-        closeBtn.addEventListener("click",closeSearch);
-
-    }
-
-    //-----------------------------------
-    // Click fuera
-    //-----------------------------------
-
-    overlay.addEventListener("click",(e)=>{
-
-        if(e.target===overlay){
-
-            closeSearch();
-
-        }
-
-    });
-
-    //-----------------------------------
-    // ESC
-    //-----------------------------------
-
-    document.addEventListener("keydown",(e)=>{
-
-        if(e.key==="Escape"){
-
-            closeSearch();
-
-        }
-
-    });
-
-    //-----------------------------------
-    // CTRL + K
-    //-----------------------------------
-
-    document.addEventListener("keydown",(e)=>{
-
-        if(e.ctrlKey && e.key.toLowerCase()==="k"){
-
-            e.preventDefault();
-
-            openSearch();
-
-        }
-
-    });
-
-    //-----------------------------------
-    // Buscar
-    //-----------------------------------
-
-    input.addEventListener("keyup",()=>{
-
-        const text=input.value.toLowerCase().trim();
-
-        results.innerHTML="";
-
-        if(text===""){
-
+        if (text.length < 2) {
+            renderPlaceholder();
             return;
-
         }
 
-        const encontrados=pages.filter(item=>{
-
-            return(
-
-                item.titulo.toLowerCase().includes(text)
-
-                ||
-
-                item.descripcion.toLowerCase().includes(text)
-
-                ||
-
-                item.categoria.toLowerCase().includes(text)
-
-            );
-
+        const encontrados = pages.filter((item) => {
+            const haystack = `${item.title} ${item.text} ${item.category} ${item.href}`.toLowerCase();
+            return haystack.includes(text);
         });
 
-        //----------------------------------
-
-        if(encontrados.length===0){
-
-            results.innerHTML=`
-
+        if (encontrados.length === 0) {
+            results.innerHTML = `
                 <div class="no-results">
-
                     <i class="fas fa-search fa-2x"></i>
-
                     <p>No se encontraron resultados.</p>
-
                 </div>
-
             `;
-
             return;
-
         }
 
-        //----------------------------------
+        const fragment = document.createDocumentFragment();
 
-        encontrados.forEach(item=>{
-
-            results.innerHTML+=`
-
-                <div class="result-item" data-url="${item.url}">
-
-                    <div class="result-title">
-
-                        ${item.titulo}
-
-                    </div>
-
-                    <div class="result-category">
-
-                        ${item.categoria}
-
-                    </div>
-
-                    <div class="result-description">
-
-                        ${item.descripcion}
-
-                    </div>
-
-                </div>
-
+        encontrados.forEach((item) => {
+            const card = document.createElement("div");
+            card.className = "result-item";
+            card.innerHTML = `
+                <div class="result-title">${item.title}</div>
+                <div class="result-category">${item.category}</div>
+                <div class="result-description">${item.text}</div>
             `;
-
-        });
-
-        //----------------------------------
-
-        document.querySelectorAll(".result-item").forEach(card=>{
-
-            card.addEventListener("click",()=>{
-
-                window.location.href=card.dataset.url;
-
+            card.addEventListener("click", () => {
+                window.location.href = resolveHref(item.href);
             });
-
+            fragment.appendChild(card);
         });
 
+        results.innerHTML = "";
+        results.appendChild(fragment);
+    }
+
+    if (searchBtn) {
+        searchBtn.addEventListener("click", openSearch);
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeSearch);
+    }
+
+    overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) {
+            closeSearch();
+        }
     });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeSearch();
+        }
+
+        if (event.ctrlKey && event.key.toLowerCase() === "k") {
+            event.preventDefault();
+            openSearch();
+        }
+    });
+
+    input.addEventListener("input", runSearch);
+
+    loadSearchIndex().then((data) => {
+        pages = data;
+    });
+
+    window.openSiteSearch = openSearch;
+});
 
 });

@@ -19,6 +19,7 @@ format:
       - /css/header.css
       - /css/footer.css
       - /css/home.css
+      - /css/search.css
       - /css/responsive.css
       
     include-in-header:
@@ -29,8 +30,10 @@ format:
       - partials/header.html
       
     include-after-body:
+      - partials/search.html
       - partials/footer.html
       - text: |
+          <script src="/js/search.js"></script>
           <script src="/js/main.js"></script>
           <script src="/js/menu.js"></script>
           <script src="/js/slider.js"></script>

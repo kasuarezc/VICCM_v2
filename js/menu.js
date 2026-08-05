@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (searchBtn) {
         searchBtn.addEventListener("click", () => {
-            alert("Aquí aparecerá el buscador del sitio.");
+            if (window.openSiteSearch) {
+                window.openSiteSearch();
+            }
         });
     }
 

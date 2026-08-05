@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {
-      alert("La función de búsqueda estará disponible próximamente.");
+      if (window.openSiteSearch) {
+        window.openSiteSearch();
+      }
     });
   }
 });

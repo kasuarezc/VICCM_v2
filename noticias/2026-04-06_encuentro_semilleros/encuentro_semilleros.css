@@ -1,0 +1,105 @@
+.noticia-container {
+  width: min(1000px, 94%);
+  margin: 2rem auto 4rem;
+}
+
+.detalle-breadcrumb {
+  background: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.detalle-breadcrumb a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.detalle-breadcrumb .current {
+  color: var(--secondary);
+}
+
+.noticia-card {
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.noticia-header {
+  background: linear-gradient(135deg, var(--primary), #1a5a4a);
+  padding: 3rem;
+  color: white;
+}
+
+.noticia-titulo {
+  font-size: 2.5rem;
+}
+
+.noticia-body {
+  padding: 2rem;
+}
+
+.imagen-destacada img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.lista-viñetas {
+  margin-left: 1rem;
+}
+
+.lista-numerada {
+  margin-left: 1rem;
+}
+
+.cronograma {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.cronograma div {
+  background: #f2f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.invitacion {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.detalle-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}

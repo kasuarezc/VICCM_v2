@@ -95,8 +95,18 @@ ul.task-list li input[type="checkbox"] {
         <a href="./contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        <button class="search-btn" id="searchBtn" type="button" aria-label="Buscar en el sitio">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <span>Buscar</span>
+
+          
+
+
+<div id="contenido">
 
       </nav>
 
@@ -122,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
     </p>
 
     <div class="hero-actions reveal">
-      <a href="https://mamiferoscolombia.org/Membresia/" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-primary">
+      <a href="https://forms.gle/XxFNRAio8Wap7W3W6" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-primary">
         Inscríbete
       </a>
       <a href="noticias.html" class="hero-btn hero-btn-secondary">
@@ -140,8 +150,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="section-shell intro-shell">
     <div class="intro-copy reveal">
       <span class="section-kicker">Bienvenidos</span>
-      <h2 class="section-heading anchored">La mastozoología colombiana se encuentra en la Amazonía</h2>
-      <p>
+      <h2 class="section-heading anchored">La mastozoologia se da cita en Florencia, Caquetá, Puerta de Oro de la Amazonia Colombiana.</h2>
+      <p >
         El Congreso Colombiano de Mastozoología se celebra cada dos años y sus sedes se alternan de manera itinerante en distintas regiones biogeográficas de Colombia, con el propósito de visibilizar la riqueza natural y cultural de cada territorio, así como fortalecer el desarrollo de las distintas formas de construcción de conocimiento y de gestión de la biodiversidad de mamíferos.
       </p>
       <p>
@@ -160,8 +170,8 @@ ul.task-list li input[type="checkbox"] {
     </div>
      <div class="objetivos">
     <h2 class="anchored">Objetivos</h2>
-    <p>El VICCM tiene como propósito consolidar un espacio dinámico de intercambio académico, científico y cultural en torno al conocimiento de los mamíferos, fortaleciendo la investigación, el diálogo interdisciplinar, intergeneracional e intercultural, así como la divulgación del conocimiento sobre la mastofauna del país. Asimismo, busca fomentar la integración entre la ciencia, la cultura y la sociedad, generando un escenario que promueva la construcción colectiva de saberes y el fortalecimiento de acciones orientadas a la investigación, la conservación y manejo de los mamíferos en el territorio colombiano.</p>
-    <p>En este sentido, se busca:</p>
+    <p style="line-height: 2.2;">El VICCM tiene como propósito consolidar un espacio dinámico de intercambio académico, científico y cultural en torno al conocimiento de los mamíferos, fortaleciendo la investigación, el diálogo interdisciplinar, intergeneracional e intercultural, así como la divulgación del conocimiento sobre la mastofauna del país. Asimismo, busca fomentar la integración entre la ciencia, la cultura y la sociedad, generando un escenario que promueva la construcción colectiva de saberes y el fortalecimiento de acciones orientadas a la investigación, la conservación y manejo de los mamíferos en el territorio colombiano.</p>
+    <p style="margin: 1.5em 0em;">En este sentido, se busca:</p>
     <ul class="lista-objetivos">
     <li>Facilitar un espacio para el intercambio de experiencias, la construcción de conocimiento sobre diferentes ramas y saberes sobre los mamíferos desde lo local a lo global.</li>
     <li>Incentivar y fortalecer las redes de colaboración entre personas, grupos, comunidades, colectivos y organizaciones que investigan, estudian, y se interesan o desarrollan experiencias en la gestión de la biodiversidad de mamíferos.</li>
@@ -204,10 +214,10 @@ ul.task-list li input[type="checkbox"] {
     
      <article class="news-card reveal">
         <div class="news-image">
-          <img src="noticias/2026-07-14_tercera_circular/images/tercera_circular.jpg" alt="Tercera Circular">
+          <img src="noticias/2026-07-14_tercera_circular/images/tercera_circular2.jpg" alt="Tercera Circular">
         </div>
         <div class="news-content">
-          <span class="news-date">15 Julio 2026</span>
+          <span class="news-date">18 Junio 2026</span>
           <h3 class="anchored">Tercera Circular</h3>
           <p>Ya está disponible la tercera circular con información actualizada del congreso.</p>
           <a href="noticias/2026-07-14_tercera_circular/tercera_circular.html" class="news-link">Leer más</a>
@@ -220,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
           <img src="noticias/2026-07-14_Ganador_Logo/images/Horizontal_logo_Ganador.png" alt="Ganador del Logo">
         </div>
         <div class="news-content">
-          <span class="news-date">14 Julio 2026</span>
+          <span class="news-date">04 Junio 2026</span>
           <h3 class="anchored">Ganador del Logo</h3>
           <p>Conoce el ganador del concurso del mejor logo del VI Congreso Colombiano de Mastozoología.</p>
           <a href="noticias/2026-07-14_Ganador_Logo/ganador_logo.html" class="news-link">Leer más</a>
@@ -234,19 +244,47 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <div class="quick-icons reveal">
-      <div class="quick-icon-card">
+      <div class="quick-icon-card" style="cursor: pointer;">
         <div class="quick-icon">🎤</div>
         <span>Conferencistas</span>
       </div>
+      
       <a href="noticias/2026-07-14_tercera_circular/tercera_circular.html#fechas-claves"><div class="quick-icon-card">
-        <div class="quick-icon">📅</div>
-        <span>Fechas clave</span>
+      <div class="quick-icon">📅</div>
+      <span>Fechas clave</span>
       </div></a>
-      <div class="quick-icon-card">
-        <div class="quick-icon">🌿</div>
+     
+      <div class="quick-icon-card" style="cursor: pointer;" >
+        <div class="quick-icon" >🌿</div>
         <span>Eventos</span>
       </div>
-    </div>
+
+      </div>
+
+      <dialog id="modal-proximamente">
+  <p>Próximamente más información</p>
+  <button id="btn-cerrar">Cerrar</button>
+</dialog>
+</div>
+
+
+
+<script>
+ // Selecciona todas las tarjetas que deben mostrar la alerta
+const tarjetasAlerta = document.querySelectorAll('.quick-icon-card');
+
+// Asigna el evento click a cada una de ellas
+tarjetasAlerta.forEach(tarjeta => {
+  tarjeta.addEventListener('click', () => {
+    alert('Próximamente más información');
+  });
+});
+
+</script>
+
+
+
+
   </div>
 </section>
 
@@ -265,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="abstract-icon">📝</div>
         <h3 class="anchored">Preparar Resumen</h3>
         <p>Guías y plantillas para preparar correctamente tu propuesta académica.</p>
-        <a href="https://mamiferoscolombia.org/openconf/openconf.php" target="_blank" rel="noopener noreferrer" class="abstract-btn">
+        <a href="noticias/2026-07-14_tercera_circular/tercera_circular.html#fechas-claves" target="_blank" rel="noopener noreferrer" class="abstract-btn">
           Preparar
         </a>
       </div>
@@ -288,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="register-icon">✍️</div>
       <h2 class="anchored">¡Inscríbete Ahora!</h2>
       <p>Asegura tu participación en el congreso más importante de mastozoología en Colombia.</p>
-      <a href="https://mamiferoscolombia.org/Membresia/" target="_blank" rel="noopener noreferrer" class="register-btn">
+      <a href="https://forms.gle/XxFNRAio8Wap7W3W6" target="_blank" rel="noopener noreferrer" class="register-btn">
         INSCRÍBETE AQUÍ
       </a>
     </div>
@@ -390,9 +428,9 @@ ul.task-list li input[type="checkbox"] {
 
         <p class="footer-description">
 
-          VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
+          VI Congreso Colombiano de Mastozoología Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras"</span>
+          <span class="footer-quote style="margin-top: 10rem;">"Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento."</span>
 
         </p>
 

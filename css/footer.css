@@ -49,18 +49,23 @@
 }
 
 .footer-description {
-  font-size: 0.95rem;
+  font-size: 90px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 1.5rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  
 }
 
 .footer-quote {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 90px;
   color: var(--accent);
-  display: block;
-  margin-top: 0.5rem;
+  display: inline-block;
+  margin-top: 100px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+    line-height: 1.6;
 }
 
 .footer-social {

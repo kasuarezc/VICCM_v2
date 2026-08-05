@@ -4,6 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputBusqueda = document.getElementById("busquedaInput");
   const newsletterBtn = document.querySelector(".newsletter-btn");
   const pageItems = document.querySelectorAll(".page-item");
+  const abrir = document.getElementById("abrirModal");
+const modal = document.getElementById("modal");
+const cerrar = document.getElementById("cerrarModal");
+
+abrir.addEventListener("click", () => {
+    modal.classList.add("active");
+});
+
+cerrar.addEventListener("click", () => {
+    modal.classList.remove("active");
+});
+
+// Cerrar haciendo clic fuera del contenido
+modal.addEventListener("click", (e) => {
+    if(e.target === modal){
+        modal.classList.remove("active");
+    }
+});
 
   botonesFiltro.forEach((btn) => {
     btn.addEventListener("click", () => {

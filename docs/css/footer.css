@@ -49,19 +49,21 @@
 }
 
 .footer-description {
-  font-size: 0.95rem;
-  line-height: 1.7;
+
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 1.5rem;
+  margin: 1rem ;
 }
 
 .footer-quote {
   font-style: italic;
   font-size: 0.9rem;
   color: var(--accent);
-  display: block;
   margin-top: 0.5rem;
+  max-width: 100%;
+ 
+
 }
+
 
 .footer-social {
   display: flex;
@@ -237,10 +239,12 @@
 }
 
 .sponsor-logo {
-  height: 50px;
+  height: 120px;
   width: auto;
   transition: var(--transition);
 }
+
+
 
 .sponsor-logo:hover {
   transform: scale(1.06);

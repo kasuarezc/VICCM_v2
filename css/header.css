@@ -42,18 +42,39 @@
   flex-wrap: wrap;
 }
 
-.main-nav a,
-.search-btn {
+.main-nav a {
   color: var(--primary);
   font-weight: 600;
   padding: 0.5rem 0.7rem;
-  border: none;
-  background: none;
+  transition: var(--transition);
+}
+
+.search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--primary);
+  font-weight: 700;
+  padding: 0.6rem 0.95rem;
+  border: 1px solid rgba(11, 59, 47, 0.16);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
   cursor: pointer;
   transition: var(--transition);
 }
 
+
 .main-nav a:hover,
 .search-btn:hover {
   color: var(--secondary);
+  transform: translateY(-1px);
 }
+
+.search-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+/* ESTILO BOTON BUSCAR */
+
