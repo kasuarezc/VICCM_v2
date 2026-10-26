@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/refugios.jpeg" alt="Refugios quiropteros: espacios vitales para la conservación y la ciencia colaborativa.">
+<img src="/images/S3_/Banner.JPG" alt="Refugios quiropteros: espacios vitales para la conservación y la ciencia colaborativa.">
 <div class="pie-foto">
 📷 Refugios quiropteros: espacios vitales para la conservación y la ciencia colaborativa.
 </div>
@@ -43,11 +43,28 @@ format:
 </ul>
 <div class="badge-simposio">I Simposio de Refugios de Murciélagos en Colombia</div>
 </div>
+<div class="simposio-logos" >
+<img   src="/images/S3_/1000234008.jpg" alt="Refugios de Murciélagos">
+<img   src="/images/S3_/19_BCI_LOGO_ALTERNATE_CIRCULAR_RGB_FULL_COLOR.webp" alt="Estrategias comunitarias">
+<img   src="/images/S3_/Ecosonu.png" alt="Estrategias comunitarias">
+<img  " src="/images/S3_/hie-logos.png" alt="Refugios de Murciélagos">
+<img   src="/images/S3_/Logo Amarillo.png" alt="Estrategias comunitarias">
+<img   src="/images/S3_/Logo ECOREMUNE Negro.png" alt="Estrategias comunitarias">
+<img   src="/simposios/refugios/images/Logo Fundación Bioteco VI CCM.png">
+<img   src="/images/S3_/Logo I Simposio de Refugios.png" alt="Estrategias comunitarias">
+<img   src="/images/S3_/Logo Roosting Ecology VI CCM.png" alt="Estrategias comunitarias">
+<img   src="/images/S3_/logo_PCMCo.jpg" alt="Refugios de Murciélagos">
+<img   src="/images/S3_/m_biologando logo.png" alt="Estrategias comunitarias">
+<img   src="/images/S3_/RELCOM.jpg" alt="Estrategias comunitarias">
+<img  " src="/images/S3_/MuseoCNS.png" alt="Estrategias comunitarias">
+<img   src="/images/S3_/LogoCB.png" alt="Estrategias comunitarias">
+</div>
+
 </div>
 
 <div class="col-derecha">
 <h1>I Simposio de Refugios de Murciélagos en Colombia</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

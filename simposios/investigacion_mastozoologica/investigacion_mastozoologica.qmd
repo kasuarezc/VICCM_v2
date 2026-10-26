@@ -34,18 +34,26 @@ format:
 <h3>Organizan</h3>
 <ul class="lista-organizadores">
 <li>Natalia Atuesta-Dimian</li>
-<li>Mónica Peñuela</li>
-<li>Javier García</li>
+<li>Mónica María Peñuela-Salgado </li>
+<li>Javier García-Villalba </li>
 <li>Hugo Fernando López-Arévalo</li>
 <li>Catalina Cárdenas</li>
+<li>Ángela Milena Melo Beltrán </li>
 </ul>
 <div class="badge-simposio">Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas</div>
 </div>
+
+<div class="simposio-logos" >
+<img  src="/images/S23_/Imagen institucional Universidad Nacional de Colombia/LOGOSIMBOLO EN COLORES/LOGOSIMBOLO CENTRAL EN COLORES-02.png" alt="Refugios de Murciélagos">
+<img  src="/images/S23_/Logos Parques Nacionales/Versiones en PNG/Logo Parques Vertical.png" alt="">
+<img  src="/images/S23_/Marca SINCHI/PNG/marca SINCHI 2026_sim negro hor.png">
+</div>
+
 </div>
 
 <div class="col-derecha">
 <h1>Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>

@@ -14,6 +14,576 @@ h1.title{
   overflow: hidden;
 }
 
+.anchorjs-link {
+  display: none !important;
+}
+
+/* -----------Ventana modal ---------------*/
+ /* ---------- Estilos generales de ejemplo (bórralos si ya tienes tu propio CSS) ---------- */
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+  }
+  .contenido-demo {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+ 
+  /* ---------- MODAL DE AVISO IMPORTANTE ---------- */
+  .aviso-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 15, 20, 0.72);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    padding: 20px;
+  }
+ 
+  .aviso-overlay.activo {
+    opacity: 1;
+    pointer-events: auto;
+    animation: avisoFondoFade 0.35s ease forwards;
+  }
+ 
+  @keyframes avisoFondoFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+ 
+  .aviso-caja {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    overflow: hidden;
+    opacity: 0;
+  }
+ 
+  .aviso-overlay.activo .aviso-caja {
+    animation: avisoEntrada 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+ 
+  @keyframes avisoEntrada {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px) scale(0.9);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(4px) scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .aviso-overlay.activo,
+    .aviso-overlay.activo .aviso-caja {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+ 
+  .aviso-encabezado {
+    background: #8B3A2A;
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+ 
+  .aviso-encabezado h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+ 
+  .aviso-cerrar {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: opacity 0.15s, background 0.15s;
+  }
+ 
+  .aviso-cerrar:hover {
+    opacity: 1;
+    background: rgba(255,255,255,0.15);
+  }
+ 
+/* ================Ventana modal ================ */
+
+.aviso-pestanas {
+  display: flex;
+  background: #fbf2df;
+  border-bottom: 1px solid #e9dcc0;
+}
+
+.aviso-pestana-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 13px 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #9c8360;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.aviso-pestana-btn:hover {
+  background: #f3e6c8;
+}
+
+.aviso-pestana-btn.activo {
+  color: #8B3A2A;
+  border-bottom-color: #C49A1A;
+  background: #fff;
+}
+
+
+/* ---- Paneles (contenido de cada pestaña) ---- */
+.aviso-panel {
+  display: none;
+}
+
+.aviso-panel.activo {
+  display: block;
+}
+
+
+/* Scroll interno solo para el panel de tarifas, que es más largo */
+.aviso-panel-scroll {
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* ---- Tarifas: títulos de grupo (Solino / Cerrillos) ---- */
+.aviso-tarifa-grupo-titulo {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #8B3A2A;
+  margin: 18px 0 8px 0;
+}
+
+.aviso-tarifa-grupo-titulo:first-of-type {
+  margin-top: 0;
+}
+
+/* ---- Tarifas: etiqueta Socios / No socios ---- */
+.aviso-tarifa-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #26707B;
+  background: #e7f1f0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin: 2px 0 6px 0;
+}
+
+/* ---- Tarifas: contenedor de tabla con scroll horizontal propio ---- */
+.aviso-tarifa-scroll {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #eee0c4;
+  margin-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.aviso-tarifa-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  min-width: 420px;
+}
+
+.aviso-tarifa-scroll thead th {
+  background: #C49A1A;
+  color: #fff;
+  text-align: left;
+  padding: 7px 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.aviso-tarifa-scroll tbody td {
+  padding: 7px 9px;
+  border-bottom: 1px solid #f1e6cc;
+  white-space: nowrap;
+}
+
+.aviso-tarifa-scroll tbody tr:nth-child(odd) {
+  background: #fffaf0;
+}
+
+.aviso-tarifa-fila-nombre {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.aviso-tarifa-hint {
+  font-size: 0.72rem;
+  color: #a08e6d;
+  margin-top: 6px;
+  text-align: center;
+}
+
+
+
+  .aviso-cuerpo {
+    padding: 24px;
+    color: #1f2937;
+    line-height: 1.55;
+    font-size: 0.98rem;
+  }
+ 
+  .aviso-cuerpo p {
+    margin: 0 0 14px 0;
+  }
+ 
+  .aviso-cuerpo p:last-child {
+    margin-bottom: 0;
+  }
+ 
+  .aviso-etiqueta {
+    display: inline-block;
+    background: #f7e9c8;
+    color: #8B3A2A;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+ 
+  /* Bloques de fecha destacados */
+  .aviso-fecha-bloque {
+    background: #fbf2df;
+    border-left: 4px solid #C49A1A;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+  }
+ 
+  .aviso-fecha-titulo {
+    margin: 0 0 4px 0;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #8B3A2A;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+ 
+  .aviso-fecha-dato {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #8B3A2A;
+    line-height: 1.2;
+  }
+ 
+  .aviso-urgencia {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #8B3A2A;
+    margin: 18px 0 20px 0;
+    animation: avisoPulso 1.4s ease-in-out infinite;
+  }
+ 
+  @keyframes avisoPulso {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .aviso-urgencia { animation: none; }
+  }
+ 
+  /* Botones de acción */
+  .aviso-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .aviso-boton-accion {
+    display: block;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 9px 16px;
+    border-radius: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+ 
+  .aviso-boton-accion:hover {
+    transform: translateY(-2px);
+  }
+ 
+  .aviso-boton-inscribete {
+    background: #26707B;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(38,112,123,0.35);
+    width: 50%;
+  }
+ 
+  .aviso-boton-inscribete:hover {
+    background: #1e5a63;
+    box-shadow: 0 6px 16px rgba(38,112,123,0.45);
+  }
+ 
+  .aviso-boton-someter {
+    background: #C49A1A;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(196,154,26,0.35);
+    width: 50%;
+    align-content: center;
+  }
+ 
+  .aviso-boton-someter:hover {
+    background: #a67f15;
+    box-shadow: 0 6px 16px rgba(196,154,26,0.45);
+  }
+ 
+  .aviso-pie {
+    padding: 16px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+  }
+ 
+  .aviso-boton {
+    background: #8B3A2A;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    
+   
+  }
+ 
+  .aviso-boton:hover {
+    background: #722f22;
+  }
+ 
+  @media (max-width: 480px) {
+    .aviso-encabezado h2 { font-size: 1.05rem; }
+    .aviso-cuerpo { font-size: 0.92rem; }
+    .aviso-pestana-btn {
+    font-size: 0.78rem;
+    padding: 11px 6px;
+  }
+  }
+/* -----------Ventana modal ---------------*/
+
+
+
+ /* ================= WIDGET FLOTANTE (siempre visible) ================= */
+  
+  
+  .fc-card{
+    position:static;
+    right:26px;
+    bottom:26px;
+    z-index:9999;
+    width:310px;
+    max-width:calc(100vw - 32px);
+    border-radius:22px;
+    padding:22px 22px 18px;
+    color:#fff;
+    overflow:hidden;
+    isolation:isolate;
+    background:linear-gradient(135deg, var(--primary), #184b3e);
+    box-shadow:0 18px 40px rgba(11, 59, 47, 0.18);
+    animation:
+      fc-enter .6s cubic-bezier(.2,.8,.2,1) both,
+      fc-breathe 5s ease-in-out 1s infinite;
+  }
+ 
+  @keyframes fc-enter{
+    from{opacity:0; transform:translateY(24px) scale(.94);}
+    to{opacity:1; transform:translateY(0) scale(1);}
+  }
+ 
+  /* Sombra que respira muy sutilmente: da vida sin mover la tarjeta */
+  @keyframes fc-breathe{
+    0%,100%{box-shadow:0 22px 45px rgba(20,15,10,.28), 0 0 0 0 rgba(217,164,65,0);}
+    50%{box-shadow:0 24px 50px rgba(20,15,10,.32), 0 0 26px 2px rgba(217,164,65,.16);}
+  }
+ 
+  /* Brillo diagonal que recorre la tarjeta, tipo tarjeta premium */
+  .fc-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+    background:linear-gradient(
+      115deg,
+      transparent 40%,
+      rgba(255,255,255,.16) 50%,
+      transparent 60%
+    );
+    background-size:250% 250%;
+    background-position:-40% -40%;
+    animation:fc-sheen 5s ease-in-out 1.6s infinite;
+  }
+  @keyframes fc-sheen{
+    0%,30%{background-position:-40% -40%;}
+    55%,100%{background-position:140% 140%;}
+  }
+ 
+  .fc-card > *{position:relative; z-index:2;}
+ 
+  
+ 
+  .fc-eyebrow{
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:1.2px;
+    color:#C49A1A;
+    text-transform:uppercase;
+    margin:0 0 4px;
+  }
+  .fc-title{
+    font-size:16px;
+    font-weight:700;
+    margin:0 0 14px;
+  }
+ 
+  .fc-timeline{
+    position:relative;
+    list-style:none;
+    margin:0;
+    padding:0 0 0 20px;
+    border-left:2px solid rgba(255,255,255,.25);
+  }
+  .fc-timeline li{
+    position:relative;
+    padding-bottom:14px;
+    opacity:0;
+    transform:translateX(-6px);
+    animation:fc-item-in .45s ease both;
+  }
+  .fc-timeline li:nth-child(1){animation-delay:.35s;}
+  .fc-timeline li:nth-child(2){animation-delay:.45s;}
+  .fc-timeline li:nth-child(3){animation-delay:.55s;}
+  .fc-timeline li:nth-child(4){animation-delay:.65s; padding-bottom:0;}
+ 
+  @keyframes fc-item-in{
+    to{opacity:1; transform:translateX(0);}
+  }
+ 
+  .fc-timeline li::before{
+    content:"";
+    position:absolute;
+    left:-25px;
+    top:3px;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    /*background:#C49A1A;*/
+    border:2px solid #C49A1A;
+  }
+  .fc-timeline li.is-done::before{
+    background:#C49A1A;
+    border-color:#C49A1A;
+  }
+ 
+ /* Anillo de pulso sobre la PRÓXIMA fecha, para dirigir la atención */
+  .fc-timeline li.is-next::after{
+    content:"";
+    position:absolute;
+    left:-27.5px;
+    top:1.5px;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    border:1.5px solid #C49A1A;
+    animation:fc-pulse 2.2s ease-out infinite;
+  }
+  @keyframes fc-pulse{
+    0%{transform:scale(1); opacity:.9;}
+    100%{transform:scale(2.1); opacity:0;}
+  }
+  .fc-date{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:1px;
+  }
+  .fc-desc{
+    display:block;
+    font-size:12.5px;
+    color:#fff;
+    line-height:1.35;
+  }
+ 
+  /* ================= MÓVIL ================= */
+  @media (max-width:480px){
+    .fc-card{
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      max-width:100%;
+      border-radius:18px;
+      padding:18px 20px calc(16px + env(safe-area-inset-bottom,0px));
+      animation:fc-enter-mobile .5s cubic-bezier(.2,.8,.2,1) both;
+    }
+  @keyframes fc-enter-mobile{
+      from{opacity:0; transform:translateY(100%);}
+      to{opacity:1; transform:translateY(0);}
+    }
+    .fc-title{font-size:15px;margin-bottom:12px;}
+    .fc-timeline{padding-left:18px;}
+  }
+ 
+  @media (prefers-reduced-motion:reduce){
+    .fc-card, .fc-card::after{animation:none !important;}
+    .fc-timeline li, .fc-timeline li::after{animation:none !important; opacity:1; transform:none;}
+  }
+
+ /* ================= WIDGET FLOTANTE (siempre visible) ================= */
+
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -53,7 +623,7 @@ h1.title{
 }
 
 .hero-subtitle {
-  max-width: 760px;
+  max-width: 700px;
   margin: 0 auto;
   font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.8;
@@ -165,7 +735,7 @@ p.hero-subtitle.reveal.is-visible{
   text-transform: uppercase;
   color: var(--secondary);
   font-weight: 700;
-  margin-bottom: 0.8rem;
+ 
 }
 
 .section-kicker.light {
@@ -197,31 +767,67 @@ p.hero-subtitle.reveal.is-visible{
 .intro-shell {
   display: grid;
   grid-template-columns: 1.4fr 0.9fr;
-  gap: 2rem;
+  
   align-items: center;
 }
 
 .intro-copy p {
   color: #41515f;
   line-height: 1.9;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-copy h2 {
+  
+  margin-bottom: 0.5rem;
 }
 
 .intro-highlight {
-  display: flex;
-  justify-content: center;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;           /* separación entre tarjetas */
+  
 }
 
 .highlight-card {
   width: 100%;
-  max-width: 360px;
+  max-width: 350px;
   background: linear-gradient(135deg, var(--primary), #184b3e);
   color: #fff;
   border-radius: 28px;
-  padding: 2rem;
+  padding: 1.2rem;
   box-shadow: 0 18px 40px rgba(11, 59, 47, 0.18);
   position: relative;
   overflow: hidden;
+}
+
+.highlight-card::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+/*  background: rgba(255, 255, 255, 0.06);*/
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(11, 59, 47, 0.28);
+}
+
+.highlight-card:nth-child(2) { animation-delay: 0.12s; }
+.highlight-card:nth-child(3) { animation-delay: 0.24s; }
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .highlight-card { animation: none; transition: none; }
 }
 
 .highlight-card::before {
@@ -364,9 +970,8 @@ p.hero-subtitle.reveal.is-visible{
 }
 
 .home-abstracts {
-  background:
-    linear-gradient(135deg, rgba(11, 59, 47, 0.94), rgba(24, 75, 62, 0.94)),
-    url("images/banners/Florencia_Caqueta6.jpg") center/cover no-repeat;
+  background:    #8B3A2A;
+   
 }
 
 .abstracts-shell {
@@ -413,7 +1018,7 @@ p.hero-subtitle.reveal.is-visible{
 .abstract-btn {
   display: inline-block;
   margin-top: 1rem;
-  background: var(--secondary);
+  background: #C49A1A;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -424,7 +1029,7 @@ p.hero-subtitle.reveal.is-visible{
 
 .abstract-btn:hover {
   transform: translateY(-4px);
-  background: #c75f29;
+  background:#C49A1A;
 }
 
 .home-register {
@@ -460,7 +1065,7 @@ p.hero-subtitle.reveal.is-visible{
 
 .register-btn {
   display: inline-block;
-  background: var(--secondary);
+  background: #C49A1A;
   color: #fff;
   text-decoration: none;
   font-weight: 800;
@@ -472,7 +1077,7 @@ p.hero-subtitle.reveal.is-visible{
 
 .register-btn:hover {
   transform: translateY(-4px);
-  background: #c75f29;
+  background: #C49A1A;
 }
 
 .venue-grid {
@@ -530,7 +1135,7 @@ p.hero-subtitle.reveal.is-visible{
 }
 
 .venue-dot.active {
-  background: var(--secondary);
+  background: #C49A1A;
   transform: scale(1.2);
 }
 
@@ -633,6 +1238,74 @@ p.hero-subtitle.reveal.is-visible{
   justify-content: center;
   font-weight: 700;
 }
+
+
+
+/*-----------MENSAJE FLOTANTE---------------------/*/
+
+#mensaje-flotante {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FAF0D7;
+    border-left: 5px solid #C79A1E;
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8B3A2E;
+    letter-spacing: 0.2px;
+    max-width: 260px;
+    box-shadow: 0 8px 22px rgba(139, 58, 46, 0.25);
+    animation: entrada 0.5s ease-out, flotar 2.5s ease-in-out 0.5s infinite;
+
+}
+
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes entrada {
+    from { opacity: 0; transform: scale(0.7) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  #mf-icono {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+/*-----------MENSAJE FLOTANTE---------------------/*/
+@media (max-width: 768px) {
+  #mensaje-flotante {
+    position: fixed;
+    bottom: 1px;
+    right: 5px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background: #FAF0D7;
+    border-left: 5px solid #C79A1E;
+    border-radius: 12px;
+    padding: 5px 12px;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8B3A2E;
+    letter-spacing: 0.2px;
+    max-width: 176px;
+  }
+  
+  
+}
+
 
 @media (max-width: 992px) {
   .intro-shell,

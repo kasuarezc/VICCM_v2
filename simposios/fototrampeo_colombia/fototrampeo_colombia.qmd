@@ -37,14 +37,24 @@ format:
 <li>Diego J. Lizcano</li>
 <li>Lain Pardo</li>
 <li>Leonor Valenzuela</li>
+<li>Mauricio Vela</li>
 </ul>
 <div class="badge-simposio">VI Simposio de Fototrampeo en Colombia</div>
 </div>
+
+<div class="simposio-logos" >
+<img  class="imagen-logo-simposio" src="/images/S15_/humboldt-logo.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S15_/LOGO Neotropical Innovation BLACK.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S15_/logo REDCOL FOTOTRAMPEO negro.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S15_/WWF_Logo_Medium_RGB_72dpi.jpg.jpeg" alt=" ">
+<img  class="imagen-logo-simposio" src="/simposios/fototrampeo_colombia/images/WCS.png" alt=" ">
+</div>
+
 </div>
 
 <div class="col-derecha">
 <h1>VI Simposio de Fototrampeo en Colombia</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

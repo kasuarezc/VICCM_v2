@@ -73,11 +73,11 @@ Ver Simposio Completo →
 
 <div class="simposio-card"
 data-categoria="conservacion"
-data-titulo="VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia"
+data-titulo="VI Simposio de Pequeños Carnívoros en Colombia & II Simposio Nuevas Aproximaciones a la Conservación de Carnívoros de Colombia."
 data-organizadores="José F. González Maya, Leonardo Lemus-Mejía, Mauricio Vela Vargas, Angela P. Hurtado-Moreno, Camilo A. Paredes-Casas, Heliot Zarza, Cuauhtémoc Chávez, Andrés Arias-Alzate, Diego A. Zárrate-Charry">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
-<img src="simposios/pequenos_carnivoros/images/pequenos_carnivoros.jpg" alt="Pequeños carnivoros">
+<img src="simposios/pequenos_carnivoros/images/pequenos_carnivoros.jpeg" alt="Pequeños carnivoros">
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -91,7 +91,7 @@ data-organizadores="José F. González Maya, Leonardo Lemus-Mejía, Mauricio Vel
 <span class="simposio-organizador">Andrés Arias-Alzate</span>
 <span class="simposio-organizador">Diego A. Zárrate-Charry</span>
 </div>
-<h3 class="simposio-titulo">VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia</h3>
+<h3 class="simposio-titulo">VI Simposio de Pequeños Carnívoros en Colombia & II Simposio Nuevas Aproximaciones a la Conservación de Carnívoros de Colombia.</h3>
 <p class="simposio-descripcion"> La conservación de los carnívoros en Colombia es una prioridad debido a su rol crucial en la regulación de poblaciones de presas, el equilibrio trófico y el mantenimiento de la biodiversidad.</p>
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
@@ -146,7 +146,7 @@ data-titulo="II Simposio conflicto y coexistencia entre humanos y vida silvestre
 data-organizadores="Mauricio Vela Vargas, Camilo A. Paredes-Casas, Juan Camilo Rubiano, Laura X. Mendoza, Angela P. Hurtado-Moreno, Diego A. Zárrate-Charry, José F. González Maya">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
-<img src="simposios/conflicto_coexistencia/images/conflicto_coexistencia.jpg" alt="Conflicto y Coexistencia">
+<img src="simposios/conflicto_coexistencia/images/conflicto_coexistencia.jpeg" alt="Conflicto y Coexistencia">
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -158,7 +158,7 @@ data-organizadores="Mauricio Vela Vargas, Camilo A. Paredes-Casas, Juan Camilo R
 <span class="simposio-organizador">Diego A. Zárrate-Charry</span>
 <span class="simposio-organizador">José F. González Maya</span>
 </div>
-<h3 class="simposio-titulo">II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia</h3>
+<h3 class="simposio-titulo">II Simposio Conflicto y Coexistencia entre Humanos y Vida Silvestre en Colombia</h3>
 <p class="simposio-descripcion"> A través de la socialización de experiencias exitosas, se pretende fomentar un cambio de narrativa donde la fauna silvestre sea vista como un componente integral del desarrollo territorial.</p>
 <div class="simposio-temas">
 <span class="tema-tag">Conservación</span>
@@ -179,7 +179,7 @@ data-titulo="Fronteras en movimiento: ciencia de vanguardia e impacto real en la
 data-organizadores="Heliot Zarza, Andrés Arias-Alzate, Laura X. Mendoza, Cuauhtémoc Chávez, Karla Pelz, Rurik List, José F. González Maya">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
-<img src="simposios/fronteras_movimiento/images/fronteras_movimiento.jpg" alt="Fronteras en movimiento">
+<img src="simposios/fronteras_movimiento/images/fronteras_movimiento.jpeg" alt="Fronteras en movimiento">
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -191,7 +191,7 @@ data-organizadores="Heliot Zarza, Andrés Arias-Alzate, Laura X. Mendoza, Cuauht
 <span class="simposio-organizador">Rurik List</span>
 <span class="simposio-organizador">José F. González Maya</span>
 </div>
-<h3 class="simposio-titulo">Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos</h3>
+<h3 class="simposio-titulo">Fronteras en Movimiento: Ciencia de Vanguardia e Impacto Real en la Conservación de Mamíferos</h3>
 <p class="simposio-descripcion">Este simposio surge de la necesidad crítica de transformar la ciencia de frontera en herramientas operativas que generen cambios tangibles en la conservación de los mamíferos y sus ecosistemas.</p>
 <div class="simposio-temas">
 <span class="tema-tag">Conservación</span>
@@ -210,7 +210,7 @@ Ver Simposio Completo →
 
 <div class="simposio-card"
 data-categoria="mamiferos"
-data-titulo="Datos atípicos en mamíferos"
+data-titulo="Datos Atípicos en Mamíferos"
 data-organizadores="Carolina López Castañeda">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
@@ -220,7 +220,7 @@ data-organizadores="Carolina López Castañeda">
 <div class="simposio-organizadores">
 <span class="simposio-organizador">Carolina López Castañeda</span>
 </div>
-<h3 class="simposio-titulo">Datos atípicos en mamíferos</h3>
+<h3 class="simposio-titulo">Datos Atípicos en Mamíferos </h3>
 <p class="simposio-descripcion">
 En ocasiones los mamíferos resultan ser un grupo difícil de estudiar por sus hábitos nocturnos, bajas densidades poblacionales o simplemente por que evitan estar cerca de los humanos...
 </p>
@@ -237,7 +237,7 @@ Ver Simposio Completo →
 
 <div class="simposio-card"
 data-categoria="ecologia"
-data-titulo="Avances en el estudio de la mastofauna del Caribe colombiano"
+data-titulo="Avances en el Estudio de la Mastofauna del Caribe Colombiano"
 data-organizadores="Julio Javier Chacón Pacheco, Angie Natally Tinoco Sotomayor, Gerson Andrés Salcedo Rivera, María Isabel Maya Aguirre, Julián David Ruiz Gómez">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
@@ -251,7 +251,7 @@ data-organizadores="Julio Javier Chacón Pacheco, Angie Natally Tinoco Sotomayor
 <span class="simposio-organizador">María Isabel Maya Aguirre</span>
 <span class="simposio-organizador">Julián David Ruiz Gómez</span>
 </div>
-<h3 class="simposio-titulo">Avances en el estudio de la mastofauna del Caribe colombiano</h3>
+<h3 class="simposio-titulo">Avances en el Estudio de la Mastofauna del Caribe Colombiano</h3>
 <p class="simposio-descripcion">
 Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la colaboración científica y generar alianzas estratégicas que impulsen nuevas agendas de investigación...
 </p>
@@ -273,7 +273,7 @@ data-titulo="I Simposio de Biología, Ecología y Conservación de Marsupiales, 
 data-organizadores="Juan Camilo Rubiano Pérez, William Bonell, Ivan Mauricio Vela Vargas, Ginna Gómez Junco, Francisco Stiven Gómez Castañeda">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
-<img src="simposios/biologia_ecologia/images/biologia_ecologia.jpg" alt="Marsupiales colombianos frente a amenazas subestimadas">
+<img src="simposios/biologia_ecologia/images/biologia_ecologia.jpeg" alt="Marsupiales colombianos frente a amenazas subestimadas">
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -360,7 +360,7 @@ Ver Simposio Completo →
 
 <div class="simposio-card"
 data-categoria="conservacion"
-data-titulo="Tapires neotropicales: investigación y desafíos para su conservación"
+data-titulo="Tapires Neotropicales: Investigación y Desafíos para su Conservación "
 data-organizadores="Federico Mosquera Guerra, Diego Lizcano, Carlos Saavedra">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
@@ -372,7 +372,7 @@ data-organizadores="Federico Mosquera Guerra, Diego Lizcano, Carlos Saavedra">
 <span class="simposio-organizador">Diego Lizcano</span>
 <span class="simposio-organizador">Carlos Saavedra</span>
 </div>
-<h3 class="simposio-titulo">Tapires neotropicales: investigación y desafíos para su conservación</h3>
+<h3 class="simposio-titulo">Tapires Neotropicales: Investigación y Desafíos para su Conservación </h3>
 <p class="simposio-descripcion"> Los tapires neotropicales desempeñan un rol fundamental en el funcionamiento de los ecosistemas, al actuar como dispersores de semillas y modeladores de la dinámica de los bosques tropicales.</p>
 <div class="simposio-temas">
 <span class="tema-tag">Ecología</span>
@@ -389,11 +389,11 @@ Ver Simposio Completo →
 
 <div class="simposio-card"
 data-categoria="genetica"
-data-titulo="II Simposio de Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación"
+data-titulo="II Simposio de Genética y Genómica de Mamíferos Colombianos: Diversidad, Evolución y Conservación"
 data-organizadores="Alejandra Bonilla-Sánchez, Paola Pulido-Santacruz, Laura M. Aramendiz-Macías, Sergio Penagos, Alejandra Niño-Reyes, Gabriel Pantoja">
 <div class="simposio-badge">Organizan</div>
 <div class="simposio-img">
-<img src="simposios/genetica_genomica/images/genetica_genomica.jpg" alt="Genómica y conservación: el ADN de los mamíferos colombianos.">
+<img src="simposios/genetica_genomica/images/genetica_genomica.png" alt="Genómica y conservación: el ADN de los mamíferos colombianos.">
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -416,10 +416,6 @@ Ver Simposio Completo →
 </a>
 </div>
 </div>
-
-
-
-
 
 </div>
 

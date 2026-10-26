@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.warn("No se encontró la estructura del modal en la página.");
     return;
   }
+  
+  
 
   /* =========================
      NAVEGACIÓN LATERAL
@@ -52,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  
+ 
 
   /* =========================
      APERTURA DE MODAL CON EVENT DELEGATION

@@ -25,7 +25,7 @@ format:
 <div class="noticia-header-content">
 <h1 class="noticia-titulo">Tercera Circular</h1>
 <div class="noticia-meta">
-<span>15 Julio 2026</span>
+<span>18 Junio de 2026</span>
 <span>5:00 p.m</span>
 </div>
 </div>
@@ -126,7 +126,7 @@ format:
 <p><strong>IMPORTANTE:</strong> Las solicitudes de cesión o reembolso parcial se recibirán hasta el 23 de octubre de 2026 . Por otro lado,
 een caso de algún requerimiento especial o solicitud de información, por favor comuníquese al correo
 <a class="enlace-destacado" href="mailto:congresomastozoologiacol@gmail.com">congresomastozoologiacol@gmail.com</a></p>
-<h2>Envío de Resúmenes</h2>
+<h2 id="envio-resumenes2" >Envío de Resúmenes</h2>
 <h3>Envío de resúmenes a través de OpenConf</h3>
 <div class="criterios-box">
 <p>El Comité Organizador y el Comité Científico del VI Congreso Colombiano de Mastozoología (VICCM 2026) han adoptado la <a class="enlace-destacado" href="https://mamiferoscolombia.org/openconf/openconf.php" target="_blank">plataforma OpenConf</a> para la recepción, gestión y evaluación de los resúmenes que se presentarán en el Congreso.</p>

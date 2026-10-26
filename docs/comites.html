@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
 <link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="./css/search.css">
 <link rel="stylesheet" href="./css/responsive.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/comites.css">
@@ -60,23 +61,37 @@ ul.task-list li input[type="checkbox"] {
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
+        <img style="  margin-top: 10px;" src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
 
       </a>
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
+        <img style="height: 68px; width: 75px;  margin: auto;" src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
 
       </a>
 
     </div>
 
+    
 
+     <!-- 👇 NUEVO: botón hamburguesa -->
 
-    <div class="header-right">
+     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
 
-      <nav class="main-nav">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+     <!-- 👇 NUEVO: botón hamburguesa -->
+
+    
+
+      <nav class="main-nav" id="mainNav">
 
         <a href="./index.html" title="Inicio"><i class="fa-solid fa-house"></i></a>
 
@@ -90,19 +105,291 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="./sede.html">Sede</a>
 
+        <a href="./pagos.html">Pagos</a>
+
         <a href="https://mamiferoscolombia.org/" target="_blank" title="Sociedad Colombiana de Mastozoología"><i class="fa-solid fa-paw"></i></a>
 
         <a href="./contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        
+
+<style>
+
+      /* ---------- CONTENEDOR DEL BUSCADOR ---------- */
+
+ .search-wrapper {
+
+    position: relative;
+
+  }
+
+
+
+  .search-shell {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    width: 50px;                 /* estado inicial: solo botón */
+
+    background: #8B3A2A;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: width 0.35s cubic-bezier(.4,0,.2,1),
+
+                background-color 0.35s ease;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .search-shell.open {
+
+    width: 260px;                /* estado final: barra expandida */
+
+    background: #8B3A2A;
+
+    border: 0.5px solid#8B3A2A;
+
+    cursor: default;
+
+  }
+
+
+
+  .search-icon-btn {
+
+    flex: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: color 0.25s ease;
+
+  }
+
+
+
+  .search-shell.open .search-icon-btn {
+
+    color: #FAF0D7;
+
+  }
+
+
+
+  .search-shell input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 12px;
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease 0.1s;
+
+  }
+
+
+
+  .search-shell.open input {
+
+    opacity: 1;
+
+  }
+
+
+
+  /* ---------- RESULTADOS FLOTANTES ---------- */
+
+  /* position:absolute respecto al wrapper -> no empuja al header */
+
+  .search-results {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 300px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px #5f6b66;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    z-index: 50;
+
+  }
+
+
+
+  .search-results.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+  }
+
+
+
+  .search-results ul { list-style: none; margin: 0; padding: 6px; }
+
+
+
+  .search-results li {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+  }
+
+
+
+  .search-results li:hover { background: #f1f5f9; }
+
+
+
+  .search-results li .tag {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: blue;
+
+    background: #eef2ff;
+
+    padding: 1px 6px;
+
+    border-radius: 4px;
+
+    flex: none;
+
+  }
+
+
+
+  .search-results .empty {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #0b3b2f;
+
+  }
+
+  /* ---------- CONTENIDO DE EJEMPLO ---------- */
+
+ 
+
+</style>
+
+
+
+<div class="search-wrapper">
+
+    <div class="search-shell" id="searchShell">
+
+      <button class="search-icon-btn" id="searchToggleBtn" aria-label="Buscar">
+
+        <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="11" cy="11" r="7"></circle>
+
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+        </svg>
+
+      </button>
+
+      <input type="text" id="searchInput" placeholder="Buscar en la página...">
+
+    </div>
+
+
+
+    <div class="search-results" id="searchResults">
+
+      <ul id="resultsList"></ul>
+
+    </div>
+
+  </div>
+
+  
 
       </nav>
 
     </div>
 
-  </div>
+  
+
+ 
 
 </header>
 
@@ -119,7 +406,7 @@ ul.task-list li input[type="checkbox"] {
 <p><span>👥</span> <span>Comités VICCM</span></p>
 </div>
 <nav class="comites-nav">
-<a href="#organizador" class="comite-nav-item active"><span>📅</span><span>Organizador</span><span class="badge">5</span></a> <a href="#cientifico" class="comite-nav-item"><span>🧪</span><span>Científico</span><span class="badge">3</span></a> <a href="#logistico" class="comite-nav-item"><span>🚚</span><span>Logístico</span><span class="badge">1</span></a> <a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">3</span></a> <a href="#financiero" class="comite-nav-item"><span>🪙</span><span>Financiero</span><span class="badge">2</span></a> <a href="#diversidad" class="comite-nav-item"><span>🌎</span><span>Diversidad</span><span class="badge">2</span></a>
+<a href="#organizador" class="comite-nav-item active"><span>📅</span><span>Organizador</span><span class="badge">5</span></a> <a href="#cientifico" class="comite-nav-item"><span>🧪</span><span>Científico</span><span class="badge">3</span></a> <a href="#logistico" class="comite-nav-item"><span>🚚</span><span>Logístico</span><span class="badge">1</span></a> <a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">3</span></a> <a href="#financiero" class="comite-nav-item"><span>💰</span><span>Financiero</span><span class="badge">2</span></a> <a href="#diversidad" class="comite-nav-item"><span>🌎</span><span>Diversidad</span><span class="badge">2</span></a>
 </nav>
 </aside>
 <main class="content-area"><header id="title-block-header" class="quarto-title-block"><h1 class="title">Comités</h1></header>
@@ -142,7 +429,7 @@ Comité Organizador
 <p>Es responsable de definir el desarrollo a medio y largo plazo de la serie de conferencias y de garantizar que esta mantenga un alto nivel organizativo. El congreso suele tener una duración de una semana (de lunes a viernes) en noviembre 2026.</p>
 </div>
 <div class="miembros-grid">
-<div class="miembro-card" data-nombre="Javier García-Villalba" data-rol="Presidente" data-img="comites/Javier_Garcia/images/Javier_Garcia.jpg" data-comite="Comité Organizador" data-biografia="Javier es biólogo de la Universidad Nacional de Colombia, su experiencia se ha concentrado en la Amazonía colombiana, particularmente en proyectos de educación ambiental, zoología, ecología y biología de la conservación. Ha desarrollado inventarios de mastofauna y cuenta con un sólido conocimiento taxonómico de la fauna silvestre amazónica, con énfasis en la conservación de primates y el estudio de mamíferos medianos y grandes. Es especialista en Gerencia del Talento Humano de la Universidad de la Amazonia y miembro fundador de la Asociación Colombiana de Zoología, la Sociedad Colombiana de Mastozoología y la Asociación Primatológica Colombiana, de la cual fue vicepresidente. Ha participado en la organización de eventos académicos, entre ellos el I Simposio Nacional de Jóvenes Investigadores de la Región Centro-Sur (Florencia, Caquetá, 2023)." data-rol-viccm="Javier está encargado de la organización general del congreso." data-enlaces="[{&quot;tipo&quot;:&quot;google-scholar&quot;,&quot;url&quot;:&quot;https://scholar.google.com/citations?user=0d6gVY0AAAAJ&amp;hl=es&quot;,&quot;texto&quot;:&quot;Google Scholar&quot;}]">
+<div class="miembro-card" data-nombre="Javier García-Villalba" data-rol="Presidente" data-img="/images/pagos/img/bbva.png" data-comite="Comité Organizador" data-biografia="Javier es biólogo de la Universidad Nacional de Colombia, su experiencia se ha concentrado en la Amazonía colombiana, particularmente en proyectos de educación ambiental, zoología, ecología y biología de la conservación. Ha desarrollado inventarios de mastofauna y cuenta con un sólido conocimiento taxonómico de la fauna silvestre amazónica, con énfasis en la conservación de primates y el estudio de mamíferos medianos y grandes. Es especialista en Gerencia del Talento Humano de la Universidad de la Amazonia y miembro fundador de la Asociación Colombiana de Zoología, la Sociedad Colombiana de Mastozoología y la Asociación Primatológica Colombiana, de la cual fue vicepresidente. Ha participado en la organización de eventos académicos, entre ellos el I Simposio Nacional de Jóvenes Investigadores de la Región Centro-Sur (Florencia, Caquetá, 2023)." data-rol-viccm="Javier está encargado de la organización general del congreso." data-enlaces="[{&quot;tipo&quot;:&quot;google-scholar&quot;,&quot;url&quot;:&quot;https://scholar.google.com/citations?user=0d6gVY0AAAAJ&amp;hl=es&quot;,&quot;texto&quot;:&quot;Google Scholar&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Javier_Garcia/images/Javier_Garcia.jpg" alt="Javier García Villalba"></p>
 </div>
@@ -248,7 +535,7 @@ Comité Científico
 </div>
 </div>
 </div>
-<div class="miembro-card" data-nombre="Adriana C. Acero-Murcia" data-rol="Comité Científico" data-img="comites/Adriana_Acero/images/Adriana_Acero.jpg" data-comite="Comité Científico" data-biografia="Adriana es licenciada en Biología de la Universidad Distrital Francisco José de Caldas, magíster en Ecología y Evolución en la Universidad Federal de São Paulo y doctora en Ecología y Conservación en la Universidad Federal de Mato Grosso do Sul (Brasil). Su investigación se enfoca en la ecología de mamíferos, con énfasis en primatología y quiropterología, integrando bioacústica, etología, morfometría geométrica y ecología de comunidades. Actualmente profundiza en ciencias de la computación para aplicar machine learning al análisis de grandes volúmenes de datos acústicos. Cuenta con experiencia en investigación, docencia y divulgación científica en Colombia y Brasil. Posee una sólida trayectoria editorial como revisora en revistas científicas, incluyendo Community Ecology, Mammal Species, PeerJ, Caldasia y Mammalogy Notes." data-rol-viccm="Adriana apoya el comité científico." data-enlaces="[{&quot;tipo&quot;:&quot;researchgate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/Adriana-Acero-Murcia&quot;,&quot;texto&quot;:&quot;ResearchGate&quot;},{&quot;tipo&quot;:&quot;orcid&quot;,&quot;url&quot;:&quot;https://orcid.org/0000-0002-3376-5099&quot;,&quot;texto&quot;:&quot;ORCID&quot;},{&quot;tipo&quot;:&quot;linkedin&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/adriana-acero-murcia-9290b9a9/&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
+<div class="miembro-card" data-nombre="Adriana C. Acero-Murcia" data-rol="Comité Científico" data-img="/comites/Adriana_Acero/images/Adriana_Acero2.jpg" data-comite="Comité Científico" data-biografia="Adriana es licenciada en Biología de la Universidad Distrital Francisco José de Caldas, magíster en Ecología y Evolución en la Universidad Federal de São Paulo y doctora en Ecología y Conservación en la Universidad Federal de Mato Grosso do Sul (Brasil). Su investigación se enfoca en la ecología de mamíferos, con énfasis en primatología y quiropterología, integrando bioacústica, etología, morfometría geométrica y ecología de comunidades. Actualmente profundiza en ciencias de la computación para aplicar machine learning al análisis de grandes volúmenes de datos acústicos. Cuenta con experiencia en investigación, docencia y divulgación científica en Colombia y Brasil. Posee una sólida trayectoria editorial como revisora en revistas científicas, incluyendo Community Ecology, Mammal Species, PeerJ, Caldasia y Mammalogy Notes." data-rol-viccm="Adriana apoya el comité científico." data-enlaces="[{&quot;tipo&quot;:&quot;researchgate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/Adriana-Acero-Murcia&quot;,&quot;texto&quot;:&quot;ResearchGate&quot;},{&quot;tipo&quot;:&quot;orcid&quot;,&quot;url&quot;:&quot;https://orcid.org/0000-0002-3376-5099&quot;,&quot;texto&quot;:&quot;ORCID&quot;},{&quot;tipo&quot;:&quot;linkedin&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/adriana-acero-murcia-9290b9a9/&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Adriana_Acero/images/Adriana_Acero2.jpg" alt="Adriana C. Acero Murcia"></p>
 </div>
@@ -317,7 +604,7 @@ Comité de Comunicaciones
 <p>Lidera la divulgación y posicionamiento del Congreso a nivel local, nacional e internacional. Gestiona la comunicación oficial mediante el envío y publicación oportuna de noticias, convocatorias y contenidos audiovisuales.</p>
 </div>
 <div class="miembros-grid">
-<div class="miembro-card" data-nombre="Erick D. Cardona" data-rol="Comunicaciones" data-img="comites/Erick_Cardona/images/Erick_Cardona.jpg" data-comite="Comité de Comunicaciones" data-biografia="Estudiante de Biología de la Universidad de la Amazonia. Integrante del Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA) de la Universidad de la Amazonia. Cuenta con experiencia en el desarrollo de piezas audiovisuales, cortometrajes, reels, teaser y demás elementos para la difusión de información a través de páginas web y redes sociales." data-rol-viccm="Erick está encargado de los elementos de divulgación." data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;https://web.facebook.com/erick.cardona.540667?_rdc=1&amp;_rdr#&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com/erickdacar/&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=CKl_GKncaes&quot;,&quot;texto&quot;:&quot;YouTube&quot;}]">
+<div class="miembro-card" data-nombre="Erick D. Cardona" data-rol="Comunicaciones" data-img="comites/Erick_Cardona/images/Erick_Cardona2.jpg" data-comite="Comité de Comunicaciones" data-biografia="Estudiante de Biología de la Universidad de la Amazonia. Integrante del Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA) de la Universidad de la Amazonia. Cuenta con experiencia en el desarrollo de piezas audiovisuales, cortometrajes, reels, teaser y demás elementos para la difusión de información a través de páginas web y redes sociales." data-rol-viccm="Erick está encargado de los elementos de divulgación." data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;https://web.facebook.com/erick.cardona.540667?_rdc=1&amp;_rdr#&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com/erickdacar/&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=CKl_GKncaes&quot;,&quot;texto&quot;:&quot;YouTube&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Erick_Cardona/images/Erick_Cardona2.jpg" alt="Erick D. Cardona"></p>
 </div>
@@ -343,7 +630,7 @@ Periodista
 </div>
 </div>
 </div>
-<div class="miembro-card" data-nombre="Monica Maria Penuela" data-rol="Biólogo" data-img="comites/Monica_Penuela/images/Monica_Penuela.jpeg" data-comite="Comité de Comunicaciones" data-biografia="Bióloga, especialista en Educación y Gerencia Ambiental, y magíster en Ciencias Biológicas de la Pontificia Universidad Javeriana. Cuenta con experiencia en investigación, mastozoología, educación ambiental, divulgación científica y trabajo territorial en diferentes regiones de Colombia." data-rol-viccm="Monica está encargada de construir narrativas visuales, cercanas y estratégicas que fortalezcan la conexión entre la ciencia, territorio y comunidad" data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;https://www.facebook.com/&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https://www.youtube.com&quot;,&quot;texto&quot;:&quot;YouTube&quot;}]">
+<div class="miembro-card" data-nombre="Monica Maria Penuela" data-rol="Biólogo" data-img="comites/Monica_Penuela/images/Monica_Penuela2.jpeg" data-comite="Comité de Comunicaciones" data-biografia="Bióloga, especialista en Educación y Gerencia Ambiental, y magíster en Ciencias Biológicas de la Pontificia Universidad Javeriana. Cuenta con experiencia en investigación, mastozoología, educación ambiental, divulgación científica y trabajo territorial en diferentes regiones de Colombia." data-rol-viccm="Monica está encargada de construir narrativas visuales, cercanas y estratégicas que fortalezcan la conexión entre la ciencia, territorio y comunidad" data-enlaces="[{&quot;tipo&quot;:&quot;LinkedIn&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/momapesa?originalSubdomain=co&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;},{&quot;tipo&quot;:&quot;ResearchGate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/Monica-Penuela&quot;,&quot;texto&quot;:&quot;ResearchGate&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Monica_Penuela/images/Monica_Penuela2.jpeg" alt="Monica Penuela"></p>
 </div>
@@ -371,7 +658,7 @@ Comité Financiero
 <p>Está a cargo de la planeación financiera del Congreso y de contribuir a su sostenibilidad. Apoya la búsqueda y gestión de recursos, patrocinios y apoyos.</p>
 </div>
 <div class="miembros-grid">
-<div class="miembro-card" data-nombre="Mauricio Vela" data-rol="Tesorero" data-img="comites/Mauricio_Vela/images/Mauricio_Vela.jpg" data-comite="Comité Financiero" data-biografia="Biólogo de la Pontificia Universidad Javeriana de Bogotá, Maestro en Ciencias biológicas de la misma universidad y doctor en Manejo y conservación de fauna silvestre en la Universidad de Arizona (Arizona-Estados Unidos de América). Mauricio ha estudiado las dinámicas de las poblaciones de mamíferos en matrices de paisaje heterogéneas con grupos bioindicadores. Además de lo anterior, su trabajo se ha centrado en el estudio de la ecología espacial de grandes carnívoros neotropicales y sus interacciones con comunidades humanas en diferentes regiones de Colombia y el neotrópico. Mauricio ha estado vinculado a la SCMas desde 2009, y participó como organizador del II Congreso Colombiano de Mastozoología y III Congreso Latinoamericano de Mastozoología realizados en el año 2018 en Bogotá. Mauricio ha sido parte del cuerpo editorial de la Revista Mammalogy Notes desde su creación." data-rol-viccm="Mauricio está encargado de los aspectos financieros." data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;https://web.facebook.com/mauricio.vela.3150&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com/imauriciovela/&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;linkedin&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/i-mauricio-vela-vargas-b62a9448/&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
+<div class="miembro-card" data-nombre="Mauricio Vela" data-rol="Tesorero" data-img="comites/Mauricio_Vela/images/Mauricio_Vela.jpg" data-comite="Comité Financiero" data-biografia="Biólogo de la Pontificia Universidad Javeriana de Bogotá, Maestro en Ciencias biológicas de la misma universidad y doctor en Manejo y conservación de fauna silvestre en la Universidad de Arizona (Arizona-Estados Unidos de América). Mauricio ha estudiado las dinámicas de las poblaciones de mamíferos en matrices de paisaje heterogéneas con grupos bioindicadores. Además de lo anterior, su trabajo se ha centrado en el estudio de la ecología espacial de grandes carnívoros neotropicales y sus interacciones con comunidades humanas en diferentes regiones de Colombia y el neotrópico. Mauricio ha estado vinculado a la SCMas desde 2009, y participó como organizador del II Congreso Colombiano de Mastozoología y III Congreso Latinoamericano de Mastozoología realizados en el año 2018 en Bogotá. Mauricio ha sido parte del cuerpo editorial de la Revista Mammalogy Notes desde su creación." data-rol-viccm="Mauricio está encargado de los aspectos financieros." data-enlaces="[{&quot;tipo&quot;:&quot;LinkedIn&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/i-mauricio-vela-vargas-b62a9448/&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;},{&quot;tipo&quot;:&quot;ScholarGoogle&quot;,&quot;url&quot;:&quot;https://scholar.google.com/citations?user=tDaK3YAAAAAJ&amp;hl=es&quot;,&quot;texto&quot;:&quot;ScholarGoogle&quot;},{&quot;tipo&quot;:&quot;Researchgate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/I-Vela-Vargas&quot;,&quot;texto&quot;:&quot;Researchgate&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Mauricio_Vela/images/Mauricio_Vela.jpg" alt="Mauricio Vela"></p>
 </div>
@@ -412,20 +699,20 @@ Comité de Diversidad e Integración Científica
 <p>Promueve un Congreso diverso, incluyente y representativo. Favorece la participación amplia de regiones, instituciones y diferentes trayectorias académicas.</p>
 </div>
 <div class="miembros-grid">
-<div class="miembro-card" data-nombre="Bibiana Gómez-Valencia" data-rol="Bióloga" data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg" data-comite="Comité de Diversidad e Integración Científica" data-biografia="Bióloga y Magíster en Ciencias Biológicas de la Universidad Nacional de Colombia. Doctora en Ciencias Biológicas en la Universidad de Buenos Aires. Actualmente es investigadora del Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Su trabajo se ha enfocado en la biología de la conservación, el monitoreo de mamíferos, la ecología de poblaciones y la evaluación del riesgo de extinción de especies en Colombia. Ha participado activamente en iniciativas científicas orientadas a la conservación de la mastofauna colombiana y fue presidenta de la Sociedad Colombiana de Mastozoología durante el periodo 2021–2023." data-rol-viccm="Bibiana Líder de Representatividad Científica" data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;####&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;###&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;linkedin&quot;,&quot;url&quot;:&quot;####&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
+<div class="miembro-card" data-nombre="Bibiana Gómez-Valencia" data-rol="Bióloga" data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez2.jpeg" data-comite="Comité de Diversidad e Integración Científica" data-biografia="Bióloga y Magíster en Ciencias Biológicas de la Universidad Nacional de Colombia. Doctora en Ciencias Biológicas en la Universidad de Buenos Aires. Actualmente es investigadora del Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Su trabajo se ha enfocado en la biología de la conservación, el monitoreo de mamíferos, la ecología de poblaciones y la evaluación del riesgo de extinción de especies en Colombia. Ha participado activamente en iniciativas científicas orientadas a la conservación de la mastofauna colombiana y fue presidenta de la Sociedad Colombiana de Mastozoología durante el periodo 2021–2023." data-rol-viccm="Líder de Representatividad Científica" data-enlaces="[{&quot;tipo&quot;:&quot;Instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com/bibianagomez/&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;Researchgate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/Bibiana-Gomez-Valencia&quot;,&quot;texto&quot;:&quot;Researchgate&quot;},{&quot;tipo&quot;:&quot;Scholar&quot;,&quot;url&quot;:&quot;https://scholar.google.es/citations?user=CnQnaXkAAAAJ&amp;hl=es&quot;,&quot;texto&quot;:&quot;Scholar&quot;},{&quot;tipo&quot;:&quot;Orcid&quot;,&quot;url&quot;:&quot;https://orcid.org/0000-0002-5963-0221&quot;,&quot;texto&quot;:&quot;Orcid&quot;}]">
 <div class="miembro-img">
-<p><img  src="comites/Bibiana_Gomez/images/Bibiana_Gomez2.jpeg" alt="Bibiana Gómez"></p>
+<p><img src="comites/Bibiana_Gomez/images/Bibiana_Gomez2.jpeg" alt="Bibiana Gomez"></p>
 </div>
 <div class="miembro-info">
 <h3 class="anchored">
-Bibiana Gómez Valencia
+Bibiana Gomez Valencia
 </h3>
 <div class="miembro-rol">
 Bióloga
 </div>
 </div>
 </div>
-<div class="miembro-card" data-nombre="Daniela Martínez Medina" data-rol="Bióloga" data-img="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" data-comite="Comité de Diversidad e Integración Científica" data-biografia="Bióloga de la Universidad Javeriana con una maestría en Ciencias en Ecología Aplicada de la Universidad de Kiel, Alemania. Especializada en acústica de murciélagos y análisis acústico de la biodiversidad, así como en el impacto de factores externos sobre esta. Experiencia en el manejo de repositorios acústicos de biodiversidad, en grabación direccional y en proyectos con monitoreo acústico pasivo. Desde 2021, se desempeña como investigadora en la Colección de Sonidos Ambientales del Instituto Humboldt." data-rol-viccm="Daniela, Líder de Interdisciplinariedad e Innovación" data-enlaces="[{&quot;tipo&quot;:&quot;facebook&quot;,&quot;url&quot;:&quot;####&quot;,&quot;texto&quot;:&quot;Facebook&quot;},{&quot;tipo&quot;:&quot;instagram&quot;,&quot;url&quot;:&quot;###&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;linkedin&quot;,&quot;url&quot;:&quot;####&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
+<div class="miembro-card" data-nombre="Daniela Martínez Medina" data-rol="Bióloga" data-img="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" data-comite="Comité de Diversidad e Integración Científica" data-biografia="Bióloga de la Universidad Javeriana con una maestría en Ciencias en Ecología Aplicada de la Universidad de Kiel, Alemania. Especializada en acústica de murciélagos y análisis acústico de la biodiversidad, así como en el impacto de factores externos sobre esta. Experiencia en el manejo de repositorios acústicos de biodiversidad, en grabación direccional y en proyectos con monitoreo acústico pasivo. Desde 2021, se desempeña como investigadora en la Colección de Sonidos Ambientales del Instituto Humboldt." data-rol-viccm="Líder de Interdisciplinariedad e Innovación" data-enlaces="[{&quot;tipo&quot;:&quot;Instagram&quot;,&quot;url&quot;:&quot;https://www.instagram.com/danielammo016/&quot;,&quot;texto&quot;:&quot;Instagram&quot;},{&quot;tipo&quot;:&quot;Scholar&quot;,&quot;url&quot;:&quot;https://scholar.google.com/citations?user=50THG7IAAAAJ&amp;hl=en&quot;,&quot;texto&quot;:&quot;Scholar&quot;},{&quot;tipo&quot;:&quot;Researchgate&quot;,&quot;url&quot;:&quot;https://www.researchgate.net/profile/Daniela-Martinez-Medina&quot;,&quot;texto&quot;:&quot;Researchgate&quot;},{&quot;tipo&quot;:&quot;LinkedIn&quot;,&quot;url&quot;:&quot;https://www.linkedin.com/in/daniela-martinez-medina/&quot;,&quot;texto&quot;:&quot;LinkedIn&quot;}]">
 <div class="miembro-img">
 <p><img src="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" alt="Daniela Martínez Medina"></p>
 </div>
@@ -460,15 +747,16 @@ Perfil del Miembro
 </div>
 
 
+
 <footer class="custom-footer">
 
   <div class="footer-wave">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320" aria-hidden="true">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">-->
 
       <path fill="var(--primary)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 
-    </svg>
+    
 
   </div>
 
@@ -482,9 +770,9 @@ Perfil del Miembro
 
         <div class="footer-logo-container">
 
-          <img src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
+          <img style="height: 80px; width: 170px;" src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
 
-          <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
+          <img style="height: 90px; width: 80px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
 
         </div>
 
@@ -494,7 +782,7 @@ Perfil del Miembro
 
           VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento."</span>
+          <span class="footer-quote">“Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento.” </span>
 
         </p>
 
@@ -548,7 +836,7 @@ Perfil del Miembro
 
           <li>
 
-            <span class="event-date">14 Ago 2026</span>
+            <span class="event-date">28 Ago 2026</span>
 
             <span class="event-name">Límite envío resúmenes</span>
 
@@ -556,7 +844,7 @@ Perfil del Miembro
 
           <li>
 
-            <span class="event-date">11 Sep 2026</span>
+            <span class="event-date">18 Sep 2026</span>
 
             <span class="event-name">Notificación aceptación</span>
 
@@ -628,9 +916,9 @@ Perfil del Miembro
 
       <div class="sponsors-grid">
 
-        <img src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
+        <img style="height: 100px; width: 250px;" src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
 
-        <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
+        <img style="height: 100px; width: 100px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
 
       </div>
 
@@ -661,6 +949,14 @@ Perfil del Miembro
         </p>
 
       </div>
+
+      <div id="mensaje-flotante">
+
+  <span id="mf-icono">📢</span>
+
+  <span>¡El pago de la membresía a la SCMas no es la inscripción al evento!</span>
+
+</div>
 
     </div>
 
@@ -1072,6 +1368,7 @@ Perfil del Miembro
   });
   </script>
 <script src="./js/main.js"></script>
+<script src="./js/search.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/comites.js"></script>

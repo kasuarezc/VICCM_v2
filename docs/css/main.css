@@ -1,6 +1,6 @@
 :root {
-  --primary: #0b3b2f;
-  --secondary: #d96c2f;
+  --primary: #8B3A2A;
+  --secondary: #C49A1A;
   --accent: #e8d7b5;
   --light: #f7f7f5;
   --white: #ffffff;
@@ -27,7 +27,7 @@ body {
   background: var(--light);
   color: var(--text);
   line-height: 1.6;
-  padding-top: 92px;
+  /*padding-top: 92px;*/
 }
 
 a {
@@ -39,6 +39,8 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
 
 .container {
   width: min(var(--container), 92%);

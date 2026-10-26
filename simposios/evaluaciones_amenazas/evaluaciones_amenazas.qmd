@@ -36,14 +36,26 @@ format:
 <li>Maria Alejandra Hurtado Materon</li>
 <li>Baltazar Gonzalez</li>
 <li>José F. González-Maya</li>
+<li>Natalya Zapata-Mesa</li>
 </ul>
 <div class="badge-simposio">Evaluaciones de amenazas: de lo global a lo local</div>
+</div>
+
+<div class="simposio-logos" >
+<img  class="imagen-logo-simposio" src="/images/S8_/EEB TAMU_1.png" alt="Evaluaciones de Amenazas">
+<img  class="imagen-logo-simposio" src="/images/S8_/logo_procat_vertical_color_col.jpg" alt="Evaluaciones de Amenazas">
+<img  class="imagen-logo-simposio" src="/images/S8_/SMSG logo xl.png" alt="Evaluaciones de Amenazas">
+<img  class="imagen-logo-simposio" src="/images/S8_/variacion5Ler.png" alt="Evaluaciones de Amenazas">
+<img   style="width: 40%; height: 38%;" class="imagen-logo-simposio" src="/simposios/evaluaciones_amenazas/images/ECCB_Logos_RGB_LightBGStacked.png" alt="Evaluaciones de Amenazas">
+<img  class="imagen-logo-simposio" src="/simposios/evaluaciones_amenazas/images/Logo University of Regensburg_logo.png" alt="Evaluaciones de Amenazas">
+<img  class="imagen-logo-simposio" src="/simposios/evaluaciones_amenazas/images/UCMLogos_RGB_StackedCat.png" alt="Evaluaciones de Amenazas">
+
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>Evaluaciones de amenazas: de lo global a lo local</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

@@ -35,13 +35,13 @@ format:
 <ul class="lista-organizadores">
 <li>Carolina López Castañeda</li>
 </ul>
-<div class="badge-simposio">Datos atípicos en mamíferos</div>
+<div class="badge-simposio">Datos Atípicos en Mamíferos </div>
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>Datos atípicos en mamíferos</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

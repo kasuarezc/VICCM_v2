@@ -1,5 +1,5 @@
 ---
-title: "Del dato a la imagen: infografías narrativas con contexto territorial para la conservación de mamíferos"
+title: "Del Dato a la Imagen: Infografías Narrativas con Contexto Territorial para la Conservación de Mamíferos"
 format:
   html:
     css:
@@ -40,14 +40,19 @@ format:
 <li>Jhonny Rosero</li>
 <li>Janssen Byron Sevilla Tintinago</li>
 <li>Adrian Pazu Passu</li>
+<li>Yomira Perez Ceron</li>
+<li>Karen Solis</li>
 </ul>
 <div class="badge-simposio">Del dato a la imagen: infografías narrativas con contexto territorial para la conservación de mamíferos</div>
+</div>
+<div class="simposio-logos" >
+<img  src="/cursos/t9_dato/images/1.biologando logo Letras Negras.png" alt="">
 </div>
 </div>
 
 <div class="col-derecha">
-<h1>Del dato a la imagen: infografías narrativas con contexto territorial para la conservación de mamíferos</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<h1>Del Dato a la Imagen: Infografías Narrativas con Contexto Territorial para la Conservación de Mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>
@@ -65,6 +70,8 @@ format:
 <h2>Resumen</h2>
 <p>En el contexto actual, uno de los principales retos de la mastozoología es lograr que el conocimiento científico trascienda de los espacios académicos y se conecte con diversos públicos de manera accesible, significativa y contextualizada. Si bien la divulgación científica es un punto de partida, este taller pretende presentar la comunicación visual como un recurso pedagógico para articularse a procesos de educación ambiental de la biodiversidad y fomentar la apropiación social del conocimiento. </p>
 <p>Este taller propone integrar la ilustración naturalista con la construcción de infografías narrativas que incorporen no sólo información biológica, sino también elementos del contexto territorial en el que habitan las especies. De esta manera, se busca visibilizar las dinámicas socioambientales que afectan a los mamíferos, promoviendo una mirada más crítica, situada y sensible frente a la conservación.</p>
+
+
 
 </div>
 

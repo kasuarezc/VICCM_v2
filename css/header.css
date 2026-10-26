@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(232, 215, 181, 0.96);
+  background: #8b3a2a;
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -43,7 +43,7 @@
 }
 
 .main-nav a {
-  color: var(--primary);
+  color: #FAF0D7;
   font-weight: 600;
   padding: 0.5rem 0.7rem;
   transition: var(--transition);
@@ -78,3 +78,158 @@
 
 /* ESTILO BOTON BUSCAR */
 
+/* ===== Botón hamburguesa (oculto en escritorio) ===== */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FAF0D7;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* Header en modo "scrolled" (fondo claro): las líneas cambian a oscuro */
+.site-header.scrolled .nav-toggle span {
+  background: #8b3a2a;
+}
+
+/* Animación a "X" cuando el menú está abierto */
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Responsive: menú vertical desplegable ===== */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FAF0D7;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* Header en modo "scrolled" (fondo claro): las líneas cambian a oscuro */
+.site-header.scrolled .nav-toggle span {
+  background: #8b3a2a;
+}
+
+/* Animación a "X" cuando el menú está abierto */
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Responsive: menú vertical desplegable ===== */
+@media (max-width: 900px) {
+  .header-container {
+    flex-wrap: nowrap;     
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: flex;
+    order: 2;               
+    margin-left: auto;       
+  }
+
+  .header-left {
+    order: 1;
+  }
+
+  .main-nav {
+    order: 3;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    background: #8b3a2a;
+    box-shadow: var(--shadow);
+
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .site-header.scrolled .main-nav {
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .main-nav.nav-open {
+    max-height: calc(100vh - 72px);
+    padding: 0.5rem 0;
+    overflow-y: auto;
+  }
+
+  .main-nav a {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid rgba(250, 240, 215, 0.12);
+  }
+
+  .main-nav a:last-of-type {
+    border-bottom: none;
+  }
+
+  /* La barra de búsqueda ocupa todo el ancho en móvil */
+  .search-wrapper {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .search-shell,
+  .search-shell.open {
+    width: 100%;
+  }
+
+  .search-results {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}

@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
 <link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="./css/search.css">
 <link rel="stylesheet" href="./css/responsive.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/simposios.css">
@@ -60,23 +61,37 @@ ul.task-list li input[type="checkbox"] {
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
+        <img style="  margin-top: 10px;" src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
 
       </a>
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
+        <img style="height: 68px; width: 75px;  margin: auto;" src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
 
       </a>
 
     </div>
 
+    
 
+     <!-- 👇 NUEVO: botón hamburguesa -->
 
-    <div class="header-right">
+     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
 
-      <nav class="main-nav">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+     <!-- 👇 NUEVO: botón hamburguesa -->
+
+    
+
+      <nav class="main-nav" id="mainNav">
 
         <a href="./index.html" title="Inicio"><i class="fa-solid fa-house"></i></a>
 
@@ -90,19 +105,291 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="./sede.html">Sede</a>
 
+        <a href="./pagos.html">Pagos</a>
+
         <a href="https://mamiferoscolombia.org/" target="_blank" title="Sociedad Colombiana de Mastozoología"><i class="fa-solid fa-paw"></i></a>
 
         <a href="./contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        
+
+<style>
+
+      /* ---------- CONTENEDOR DEL BUSCADOR ---------- */
+
+ .search-wrapper {
+
+    position: relative;
+
+  }
+
+
+
+  .search-shell {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    width: 50px;                 /* estado inicial: solo botón */
+
+    background: #8B3A2A;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: width 0.35s cubic-bezier(.4,0,.2,1),
+
+                background-color 0.35s ease;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .search-shell.open {
+
+    width: 260px;                /* estado final: barra expandida */
+
+    background: #8B3A2A;
+
+    border: 0.5px solid#8B3A2A;
+
+    cursor: default;
+
+  }
+
+
+
+  .search-icon-btn {
+
+    flex: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: color 0.25s ease;
+
+  }
+
+
+
+  .search-shell.open .search-icon-btn {
+
+    color: #FAF0D7;
+
+  }
+
+
+
+  .search-shell input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 12px;
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease 0.1s;
+
+  }
+
+
+
+  .search-shell.open input {
+
+    opacity: 1;
+
+  }
+
+
+
+  /* ---------- RESULTADOS FLOTANTES ---------- */
+
+  /* position:absolute respecto al wrapper -> no empuja al header */
+
+  .search-results {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 300px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px #5f6b66;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    z-index: 50;
+
+  }
+
+
+
+  .search-results.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+  }
+
+
+
+  .search-results ul { list-style: none; margin: 0; padding: 6px; }
+
+
+
+  .search-results li {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+  }
+
+
+
+  .search-results li:hover { background: #f1f5f9; }
+
+
+
+  .search-results li .tag {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: blue;
+
+    background: #eef2ff;
+
+    padding: 1px 6px;
+
+    border-radius: 4px;
+
+    flex: none;
+
+  }
+
+
+
+  .search-results .empty {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #0b3b2f;
+
+  }
+
+  /* ---------- CONTENIDO DE EJEMPLO ---------- */
+
+ 
+
+</style>
+
+
+
+<div class="search-wrapper">
+
+    <div class="search-shell" id="searchShell">
+
+      <button class="search-icon-btn" id="searchToggleBtn" aria-label="Buscar">
+
+        <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="11" cy="11" r="7"></circle>
+
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+        </svg>
+
+      </button>
+
+      <input type="text" id="searchInput" placeholder="Buscar en la página...">
+
+    </div>
+
+
+
+    <div class="search-results" id="searchResults">
+
+      <ul id="resultsList"></ul>
+
+    </div>
+
+  </div>
+
+  
 
       </nav>
 
     </div>
 
-  </div>
+  
+
+ 
 
 </header>
 
@@ -175,40 +462,33 @@ Organizan
 <h3 class="simposio-titulo anchored">
 VI Simposio de Fototrampeo en Colombia
 </h3>
-<p style="text-align: justify;"  class="simposio-descripcion">
+<p class="simposio-descripcion">
 “El fototrampeo se ha convertido en una herramienta y un metodo fundamental para el estudio y monitoreo de los mamíferos en Colombia, permitiendo evaluar patrones de ocupación, abundancia relativa, comportamiento, interacciones ecológicas y respuestas a la transformación del paisaje.
 </p>
-<div class="simposio-temas" style="margin-bottom: 25px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span> <span class="tema-tag">Fototrampeo</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S15_/humboldt-logo.png">
-<img  class="imagen-logo-simposio" src="/images/S15_/LOGO Neotropical Innovation BLACK.png">
-<img  class="imagen-logo-simposio" src="/images/S15_/logo REDCOL FOTOTRAMPEO negro.png">
-<img  class="imagen-logo-simposio" src="/images/S15_/WCS.png">
-<img  class="imagen-logo-simposio" src="/images/S15_/WWF_Logo_Medium_RGB_72dpi.jpg.jpeg">
 </div>
 <p><a href="simposios/fototrampeo_colombia/fototrampeo_colombia.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
 </div>
-<div class="simposio-card" data-categoria="conservacion" data-titulo="VI Simposio de pequeños carnívoros en Colombia &amp; II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia" data-organizadores="José F. González Maya, Leonardo Lemus-Mejía, Mauricio Vela Vargas, Angela P. Hurtado-Moreno, Camilo A. Paredes-Casas, Heliot Zarza, Cuauhtémoc Chávez, Andrés Arias-Alzate, Diego A. Zárrate-Charry">
+<div class="simposio-card" data-categoria="conservacion" data-titulo="VI Simposio de Pequeños Carnívoros en Colombia &amp; II Simposio Nuevas Aproximaciones a la Conservación de Carnívoros de Colombia." data-organizadores="José F. González Maya, Leonardo Lemus-Mejía, Mauricio Vela Vargas, Angela P. Hurtado-Moreno, Camilo A. Paredes-Casas, Heliot Zarza, Cuauhtémoc Chávez, Andrés Arias-Alzate, Diego A. Zárrate-Charry">
 <div class="simposio-badge">
 Organizan
 </div>
 <div class="simposio-img">
-<p><img src="simposios/pequenos_carnivoros/images/pequenos_carnivoros.jpg" alt="Pequeños carnivoros"></p>
+<p><img src="simposios/pequenos_carnivoros/images/pequenos_carnivoros.jpeg" alt="Pequeños carnivoros"></p>
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
 <p><span class="simposio-organizador">José F. González Maya</span> <span class="simposio-organizador">Leonardo Lemus-Mejía</span> <span class="simposio-organizador">Mauricio Vela Vargas</span> <span class="simposio-organizador">Angela P. Hurtado-Moreno</span> <span class="simposio-organizador">Camilo A. Paredes-Casas</span> <span class="simposio-organizador">Heliot Zarza</span> <span class="simposio-organizador">Cuauhtémoc Chávez</span> <span class="simposio-organizador">Andrés Arias-Alzate</span> <span class="simposio-organizador">Diego A. Zárrate-Charry</span></p>
 </div>
 <h3 class="simposio-titulo anchored">
-VI Simposio de pequeños carnívoros en Colombia &amp; II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia
+VI Simposio de Pequeños Carnívoros en Colombia &amp; II Simposio Nuevas Aproximaciones a la Conservación de Carnívoros de Colombia.
 </h3>
-<p  style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 La conservación de los carnívoros en Colombia es una prioridad debido a su rol crucial en la regulación de poblaciones de presas, el equilibrio trófico y el mantenimiento de la biodiversidad.
 </p>
-<div class="simposio-temas" style="margin-bottom: 120px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span></p>
 </div>
 <p><a href="simposios/pequenos_carnivoros/pequenos_carnivoros.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
@@ -226,18 +506,13 @@ Organizan
 <p><span class="simposio-organizador">Daniela Martínez-Medina</span> <span class="simposio-organizador">Francisco Sánchez</span> <span class="simposio-organizador">Diego Lizcano</span> <span class="simposio-organizador">Víctor Martínez-Arias</span> <span class="simposio-organizador">Jefferson Sánchez</span> <span class="simposio-organizador">Andrea Martínez-Bulla</span> <span class="simposio-organizador">Miguel E. Rodríguez-Posada</span></p>
 </div>
 <h3 class="simposio-titulo anchored">
-IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación 
+IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación
 </h3>
-<p  style="text-align: justify;" class="simposio-descripcion" >
+<p class="simposio-descripcion">
 La acústica se ha convertido en un metodo de gran éxito. En las versiones anteriores de este simposio se ha avanzado en la consolidación y la apropiación de las herramientas acústicas, fortaleciendo el desarrollo de la mastozoología.
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Método</span> <span class="tema-tag">Acústica</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S13_/logo_procat_vertical_color_col.jpg">
-<img  class="imagen-logo-simposio" src="/images/S13_/variacion5Ler.png">
-
 </div>
 <p><a href="simposios/bioacustica_mamiferos/bioacustica_mamiferos.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
@@ -247,7 +522,7 @@ La acústica se ha convertido en un metodo de gran éxito. En las versiones ante
 Organizan
 </div>
 <div class="simposio-img">
-<p><img src="simposios/conflicto_coexistencia/images/conflicto_coexistencia.jpg" alt="Conflicto y Coexistencia"></p>
+<p><img src="simposios/conflicto_coexistencia/images/conflicto_coexistencia.jpeg" alt="Conflicto y Coexistencia"></p>
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -256,15 +531,11 @@ Organizan
 <h3 class="simposio-titulo anchored">
 II Simposio Conflicto y Coexistencia entre Humanos y Vida Silvestre en Colombia
 </h3>
-<p  style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 A través de la socialización de experiencias exitosas, se pretende fomentar un cambio de narrativa donde la fauna silvestre sea vista como un componente integral del desarrollo territorial.
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Conservación</span> <span class="tema-tag">Gobernanza</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S14_/logo_procat_vertical_color_col.png">
-<img  class="imagen-logo-simposio" src="/images/S14_/variacion5.png">
 </div>
 <p><a href="simposios/conflicto_coexistencia/conflicto_coexistencia.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
@@ -274,7 +545,7 @@ A través de la socialización de experiencias exitosas, se pretende fomentar un
 Organizan
 </div>
 <div class="simposio-img">
-<p><img src="simposios/fronteras_movimiento/images/fronteras_movimiento.jpg" alt="Fronteras en movimiento"></p>
+<p><img src="simposios/fronteras_movimiento/images/fronteras_movimiento.jpeg" alt="Fronteras en movimiento"></p>
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -283,20 +554,16 @@ Organizan
 <h3 class="simposio-titulo anchored">
 Fronteras en Movimiento: Ciencia de Vanguardia e Impacto Real en la Conservación de Mamíferos
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 Este simposio surge de la necesidad crítica de transformar la ciencia de frontera en herramientas operativas que generen cambios tangibles en la conservación de los mamíferos y sus ecosistemas.
 </p>
-<div class="simposio-temas" style="margin-bottom: 10px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Conservación</span> <span class="tema-tag">Mamiferos</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S16_/logo_procat_vertical_color_col.jpg">
-<img  class="imagen-logo-simposio" src="/images/S16_/variacion5.png">
 </div>
 <p><a href="simposios/fronteras_movimiento/fronteras_movimiento.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
 </div>
-<div class="simposio-card" data-categoria="mamiferos" data-titulo="Datos atípicos en mamíferos" data-organizadores="Carolina López Castañeda">
+<div class="simposio-card" data-categoria="mamiferos" data-titulo="Datos Atípicos en Mamíferos" data-organizadores="Carolina López Castañeda">
 <div class="simposio-badge">
 Organizan
 </div>
@@ -308,21 +575,18 @@ Organizan
 <p><span class="simposio-organizador">Carolina López Castañeda</span></p>
 </div>
 <h3 class="simposio-titulo anchored">
-Datos Atípicos en Mamíferos 
+Datos Atípicos en Mamíferos
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 En ocasiones los mamíferos resultan ser un grupo difícil de estudiar por sus hábitos nocturnos, bajas densidades poblacionales o simplemente por que evitan estar cerca de los humanos…
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Mamíferos</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-
 </div>
 <p><a href="simposios/datos_atipicos/datos_atipicos.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
 </div>
-<div class="simposio-card" data-categoria="ecologia" data-titulo="Avances en el estudio de la mastofauna del Caribe colombiano" data-organizadores="Julio Javier Chacón Pacheco, Angie Natally Tinoco Sotomayor, Gerson Andrés Salcedo Rivera, María Isabel Maya Aguirre, Julián David Ruiz Gómez">
+<div class="simposio-card" data-categoria="ecologia" data-titulo="Avances en el Estudio de la Mastofauna del Caribe Colombiano" data-organizadores="Julio Javier Chacón Pacheco, Angie Natally Tinoco Sotomayor, Gerson Andrés Salcedo Rivera, María Isabel Maya Aguirre, Julián David Ruiz Gómez">
 <div class="simposio-badge">
 Organizan
 </div>
@@ -333,22 +597,14 @@ Organizan
 <div class="simposio-organizadores">
 <p><span class="simposio-organizador">Julio Javier Chacón Pacheco</span> <span class="simposio-organizador">Angie Natally Tinoco Sotomayor</span> <span class="simposio-organizador">Gerson Andrés Salcedo Rivera</span> <span class="simposio-organizador">María Isabel Maya Aguirre</span> <span class="simposio-organizador">Julián David Ruiz Gómez</span></p>
 </div>
-<h3 style="text-align: justify;" class="simposio-titulo anchored">
+<h3 class="simposio-titulo anchored">
 Avances en el Estudio de la Mastofauna del Caribe Colombiano
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la colaboración científica y generar alianzas estratégicas que impulsen nuevas agendas de investigación…
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Método</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S20_/Escudo-unicordoba-2025.png">
-<img  class="imagen-logo-simposio" src="/images/S20_/Logo ECOCO.png">
-
-<img  class="imagen-logo-simposio" src="/images/S20_/MAPACHE COLOMBIA PREFERENCIAL-SOBRE-BLANCO@3x.png">
-<img  style="margin: 10px;" class="imagen-logo-simposio" src="/images/S20_/WhatsApp Image 2026-07-14 at 2.05.04 PM.jpeg">
-
 </div>
 <p><a href="simposios/mastofauna_caribe/mastofauna_caribe.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
@@ -358,7 +614,7 @@ Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la
 Organizan
 </div>
 <div class="simposio-img">
-<p><img src="simposios/biologia_ecologia/images/biologia_ecologia.jpg" alt="Marsupiales colombianos frente a amenazas subestimadas"></p>
+<p><img src="simposios/biologia_ecologia/images/biologia_ecologia.jpeg" alt="Marsupiales colombianos frente a amenazas subestimadas"></p>
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
@@ -367,10 +623,10 @@ Organizan
 <h3 class="simposio-titulo anchored">
 I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 Actualmente, Colombia cuenta con 41 especies de marsupiales registradas para el territorio, lo que representa aproximadamente el 7,4% de la riqueza de los mamíferos del país.
 </p>
-<div class="simposio-temas" style="margin-bottom: 130px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span> <span class="tema-tag">Marsupiales</span></p>
 </div>
 <p><a href="simposios/biologia_ecologia/biologia_ecologia.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
@@ -390,17 +646,11 @@ Organizan
 <h3 class="simposio-titulo anchored">
 Investigación mastozoológica en la Amazonía Colombiana: Avances y perspectivas
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 La Panamazonia es una de las regiones más ricas en mamíferos del mundo y, a nivel nacional, se estima que la región alberga una alta diversidad de mastofauna, así como algunas de las poblaciones en mejor estado de conservación.
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span> <span class="tema-tag">Mamíferos</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S23_/Imagen institucional Universidad Nacional de Colombia/LOGOSIMBOLO CENTRAL/PNG_LOGOSIMBOLO CENTRAL NEGRO-02.png">
-<img  class="imagen-logo-simposio" src="/images/S23_/Marca SINCHI/PNG/marca SINCHI 2026_com negro ver.png">
-<img  style="width: 100px; height: auto;" class="imagen-logo-simposio" src="/images/S23_/Logos Parques Nacionales/Versiones en PNG/Logo Parques Vertical.png">
-
 </div>
 <p><a href="simposios/investigacion_mastozoologica/investigacion_mastozoologica.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
@@ -419,20 +669,16 @@ Organizan
 <h3 class="simposio-titulo anchored">
 Simposio Bases Anatómicas de la Biodiversidad en Mamíferos
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 El estudio de la anatomía de los mamíferos vivos ha sido una herramienta fundamental para clasificarlos, comprenderlos y reflexionar sobre su naturaleza y evolución.
 </p>
-<div class="simposio-temas" style="margin-bottom: 10px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Mamíferos</span> <span class="tema-tag">Anatomía</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S24_/Logo HUMBOLDT_fondo claro.png">
-
 </div>
 <p><a href="simposios/bases_anatomicas/bases_anatomicas.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
 </div>
-<div class="simposio-card" data-categoria="conservacion" data-titulo="Tapires neotropicales: investigación y desafíos para su conservación" data-organizadores="Federico Mosquera Guerra, Diego Lizcano, Carlos Saavedra">
+<div class="simposio-card" data-categoria="conservacion" data-titulo="Tapires Neotropicales: Investigación y Desafíos para su Conservación " data-organizadores="Federico Mosquera Guerra, Diego Lizcano, Carlos Saavedra">
 <div class="simposio-badge">
 Organizan
 </div>
@@ -446,42 +692,34 @@ Organizan
 <h3 class="simposio-titulo anchored">
 Tapires Neotropicales: Investigación y Desafíos para su Conservación
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 Los tapires neotropicales desempeñan un rol fundamental en el funcionamiento de los ecosistemas, al actuar como dispersores de semillas y modeladores de la dinámica de los bosques tropicales.
 </p>
-<div class="simposio-temas" style="margin-bottom: 150px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span> <span class="tema-tag">Tapires</span></p>
 </div>
 <p><a href="simposios/tapires_neotropicales/tapires_neotropicales.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
 </div>
-<div class="simposio-card" data-categoria="genetica" data-titulo="II Simposio de Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación" data-organizadores="Alejandra Bonilla-Sánchez, Paola Pulido-Santacruz, Laura M. Aramendiz-Macías, Sergio Penagos, Alejandra Niño-Reyes, Gabriel Pantoja">
+<div class="simposio-card" data-categoria="genetica" data-titulo="II Simposio de Genética y Genómica de Mamíferos Colombianos: Diversidad, Evolución y Conservación" data-organizadores="Alejandra Bonilla-Sánchez, Paola Pulido-Santacruz, Laura M. Aramendiz-Macías, Sergio Penagos, Alejandra Niño-Reyes, Gabriel Pantoja">
 <div class="simposio-badge">
 Organizan
 </div>
 <div class="simposio-img">
-<p><img src="simposios/genetica_genomica/images/genetica_genomica.jpg" alt="Genómica y conservación: el ADN de los mamíferos colombianos."></p>
+<p><img src="simposios/genetica_genomica/images/genetica_genomica.png" alt="Genómica y conservación: el ADN de los mamíferos colombianos."></p>
 </div>
 <div class="simposio-content">
 <div class="simposio-organizadores">
 <p><span class="simposio-organizador">Alejandra Bonilla-Sánchez</span> <span class="simposio-organizador">Paola Pulido-Santacruz</span> <span class="simposio-organizador">Laura M. Aramendiz-Macías</span> <span class="simposio-organizador">Sergio Penagos</span> <span class="simposio-organizador">Alejandra Niño-Reyes</span> <span class="simposio-organizador">Gabriel Pantoja</span></p>
 </div>
-<h3   class="simposio-titulo anchored">
-II Simposio de Genética y Genómica de Mamíferos Colombianos: Diversidad, Evolución y Conservación
+<h3 class="simposio-titulo anchored">
+II Simposio de Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación
 </h3>
-<p style="text-align: justify;" class="simposio-descripcion">
+<p class="simposio-descripcion">
 El simposio “Genética y genómica de mamíferos colombianos: diversidad, evolución y conservación 2026” será un espacio de intercambio científico enfocado en los avances recientes de la genética y la genómica aplicadas al estudio de los mamíferos colombianos.
 </p>
-<div class="simposio-temas" style="margin-bottom: 20px;">
+<div class="simposio-temas">
 <p><span class="tema-tag">Ecología</span> <span class="tema-tag">Conservación</span> <span class="tema-tag">Genética</span></p>
-</div>
-<div class="simposio-logos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
-<img  class="imagen-logo-simposio" src="/images/S22_/logo BCEI.png">
-<img  class="imagen-logo-simposio" src="/images/S22_/Logo Mamíferos UDEA.jpeg">
-<img  class="imagen-logo-simposio" src="/images/S22_/Logo Universidad del Rosario.png">
-<img  class="imagen-logo-simposio" src="/images/S22_/logo-pucrs.webp">
-<img  class="imagen-logo-simposio" src="/images/S22_/Logo_Mam_AltaMontaña.jpg">
-
 </div>
 <p><a href="simposios/genetica_genomica/genetica_genomica.html" class="simposio-btn"> Ver Simposio Completo → </a></p>
 </div>
@@ -519,15 +757,16 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 </section>
 
 
+
 <footer class="custom-footer">
 
   <div class="footer-wave">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320" aria-hidden="true">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">-->
 
       <path fill="var(--primary)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 
-    </svg>
+    
 
   </div>
 
@@ -541,9 +780,9 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
         <div class="footer-logo-container">
 
-          <img src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
+          <img style="height: 80px; width: 170px;" src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
 
-          <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
+          <img style="height: 90px; width: 80px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
 
         </div>
 
@@ -553,7 +792,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras"</span>
+          <span class="footer-quote">“Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento.” </span>
 
         </p>
 
@@ -607,7 +846,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           <li>
 
-            <span class="event-date">14 Ago 2026</span>
+            <span class="event-date">28 Ago 2026</span>
 
             <span class="event-name">Límite envío resúmenes</span>
 
@@ -615,7 +854,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           <li>
 
-            <span class="event-date">11 Sep 2026</span>
+            <span class="event-date">18 Sep 2026</span>
 
             <span class="event-name">Notificación aceptación</span>
 
@@ -687,9 +926,9 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
       <div class="sponsors-grid">
 
-        <img src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
+        <img style="height: 100px; width: 250px;" src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
 
-        <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
+        <img style="height: 100px; width: 100px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
 
       </div>
 
@@ -720,6 +959,14 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
         </p>
 
       </div>
+
+      <div id="mensaje-flotante">
+
+  <span id="mf-icono">📢</span>
+
+  <span>¡El pago de la membresía a la SCMas no es la inscripción al evento!</span>
+
+</div>
 
     </div>
 
@@ -1131,6 +1378,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
   });
   </script>
 <script src="./js/main.js"></script>
+<script src="./js/search.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/comites.js"></script>

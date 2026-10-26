@@ -38,13 +38,30 @@ format:
 <li>Bibiana Gómez-Valencia</li>
 <li>Andrea Natalia Martínez Bulla</li>
 </ul>
-<div class="badge-simposio">III Simposio: Estrategias comunitarias en gestión del conocimiento y conservación de mamíferos</div>
+<div class="badge-simposio">III Simposio: Estrategias Comunitarias en Gestión del Conocimiento y Conservación de Mamíferos</div>
 </div>
+<h4 style="font-weight: 800;"class="simposio-titulo anchored">
+Instagram <a   href="https://www.instagram.com/arasari.ci" target="_blank" rel="noopener noreferrer">@arasari.ci</a></h4>
+
+
+
+<div class="simposio-logos"> 
+  
+<img  src="/simposios/estrategias/images/Arasari Logo sin fondo.png" alt="Estrategias comunitarias">
+<img  src="/images/S2_/IAvH/HUMBOLDT_fondo claro.png" alt="Estrategias comunitarias">
+<img  src="/images/S2_/La Palmita/logo_palmita_ci (1).png" alt="Estrategias comunitarias">
+</div>
+
+
+
+
+
+
 </div>
 
 <div class="col-derecha">
 <h1>III Simposio: Estrategias comunitarias en gestión del conocimiento y conservación de mamíferos</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

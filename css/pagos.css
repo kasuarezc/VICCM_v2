@@ -1,0 +1,70 @@
+.pago-seccion, .pago-seccion * { box-sizing: border-box; }
+.pago-seccion { width: 100%; max-width: 960px; margin: 5% auto; padding: 56px 20px 64px; text-align: center; font-family: inherit; }
+.pago-seccion p { margin: 0; }
+
+/* Encabezado */
+.pago-seccion .pago-encabezado { margin-bottom: 32px; }
+.pago-seccion .pago-titulo { margin: 0 0 6px 0; font-size: 2rem; font-weight: 800; color: #8B3A2A; line-height: 1.2; }
+.pago-seccion .pago-subtitulo { font-style: italic; color: #666; font-size: 1rem; }
+.pago-seccion .pago-linea { width: 64px; height: 4px; border-radius: 2px; background: #C49A1A; margin: 14px auto 0; }
+
+/* Cuentas: 2 columnas iguales, mismo ancho que la cuadrícula */
+.pago-seccion .pago-cuentas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; margin: 0 auto 20px; }
+.pago-seccion .pago-cuenta-card { background: #fbf2df; border-top: 4px solid #C49A1A; border-radius: 10px; padding: 18px 16px; text-align: center; }
+.pago-seccion .pago-cuenta-banco { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #8B3A2A; margin-bottom: 4px; }
+.pago-seccion .pago-cuenta-tipo { font-size: 0.85rem; color: #6b5a3c; margin-bottom: 4px; }
+.pago-seccion .pago-cuenta-numero { font-size: 1.3rem; font-weight: 800; color: #1f2937; letter-spacing: 0.02em; word-break: break-word; }
+
+/* Titular e instrucción */
+.pago-seccion .pago-titular { color: #555; font-size: 0.95rem; margin: 0 auto 6px; }
+.pago-seccion .pago-instruccion { color: #1f2937; font-weight: 600; margin: 0 auto 28px; max-width: 620px; }
+
+/* Cuadrícula de métodos: 4 columnas iguales */
+.pago-seccion .pago-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; width: 100%; margin: 0 auto; }
+.pago-seccion .pago-metodo { background: #fff; border: 1px solid #eee0c4; border-radius: 12px; padding: 22px 12px; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform .15s ease, box-shadow .15s ease; }
+.pago-seccion .pago-metodo:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,0.09); }
+.pago-seccion .pago-icono { font-size: 1.8rem; color: #26707B; }
+.pago-seccion .pago-metodo-num { width: 24px; height: 24px; line-height: 24px; border-radius: 50%; background: #C49A1A; color: #fff; font-size: 0.78rem; font-weight: 700; }
+.pago-seccion .pago-metodo-texto { font-size: 0.88rem; color: #1f2937; line-height: 1.4; }
+.pago-seccion .pago-metodo-destacado { border-color: #26707B; background: #f2f8f8; }
+
+@media (max-width: 900px) {
+  .pago-seccion .pago-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .pago-seccion { padding: 40px 16px 48px; }
+  .pago-seccion .pago-cuentas { grid-template-columns: 1fr; }
+  .pago-seccion .pago-titulo { font-size: 1.6rem; }
+  .pago-seccion .pago-cuenta-numero { font-size: 1.1rem; }
+}
+@media (max-width: 380px) {
+  .pago-seccion .pago-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Tarjetas clicables + modal QR ---- */
+.pago-seccion .pago-clic { cursor: pointer; position: relative; }
+.pago-seccion .pago-clic:focus-visible { outline: 3px solid #26707B; outline-offset: 2px; }
+.pago-seccion .pago-accion-escritorio { font-size: 0.75rem; font-weight: 700; color: #26707B; text-transform: uppercase; letter-spacing: 0.05em; }
+.pago-seccion .pago-accion-movil { display: none; }
+
+.pago-modal-fondo { position: fixed; inset: 0; background: rgba(20,12,8,0.6); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 5000; }
+.pago-modal-fondo.abierto { display: flex; }
+.pago-modal { background: #fff; border-radius: 14px; width: 100%; max-width: 380px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6); font-family: inherit; }
+.pago-modal-cabecera { background: #8B3A2A; color: #fff; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.pago-modal-titulo { margin: 0; font-size: 1rem; font-weight: 700; }
+.pago-modal-cerrar { background: none; border: none; color: #fff; font-size: 1.3rem; line-height: 1; cursor: pointer; padding: 4px; }
+.pago-modal-cuerpo { padding: 22px 20px 24px; text-align: center; }
+.pago-modal-qr { width: 100%; max-width: 260px; aspect-ratio: 1 / 1; margin: 0 auto 14px; border: 1px solid #eee0c4; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.pago-modal-qr img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.pago-modal-qr-vacio { font-size: 0.85rem; color: #9c8360; padding: 16px; }
+.pago-modal-nota { margin: 0 0 14px 0; font-size: 0.85rem; color: #555; }
+.pago-modal-enlace { display: inline-block; background: #26707B; color: #fff; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 10px 20px; border-radius: 8px; }
+.pago-modal-enlace:hover { background: #1e5a63; color: #fff; }
+
+/* ---- Vista móvil: sin modal, con enlace directo ---- */
+@media (max-width: 767px) {
+  .pago-seccion .pago-clic { cursor: default; }
+  .pago-seccion .pago-accion-escritorio { display: none; }
+  .pago-seccion .pago-accion-movil { display: inline-block; margin-top: 4px; background: #26707B; color: #fff; text-decoration: none; font-weight: 700; font-size: 0.8rem; padding: 8px 14px; border-radius: 8px; }
+  .pago-seccion .pago-accion-movil.sin-enlace { display: none; }
+}

@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/gestion_adaptativa.jpg" alt="Zoologico de Cali">
+<img src="images/gestion_adaptativa.jpeg" alt="Zoologico de Cali">
 <div class="pie-foto">
 📷 Zoológico de Cali
 </div>
@@ -41,11 +41,17 @@ format:
 </ul>
 <div class="badge-simposio">Gestión Adaptativa y Alianzas Estratégicas: El Rol de los Zoológicos en la Mastozoología Moderna</div>
 </div>
+
+<div class="simposio-logos" >
+<img   src="/simposios/gestion_adaptativa/images/Logo Fundación Parque Jaime Duque.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/gestion_adaptativa/images/Logo Uniagraria2.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/gestion_adaptativa/images/Logos Zoologico de Cali policromia-outline-03.png" alt="Refugios de Murciélagos">
+</div>
 </div>
 
 <div class="col-derecha">
 <h1>Gestión Adaptativa y Alianzas Estratégicas: El Rol de los Zoológicos en la Mastozoología Moderna</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

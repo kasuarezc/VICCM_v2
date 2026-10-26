@@ -1,168 +1,81 @@
 /*=========================================
 =        BUSCADOR GLOBAL VICCM            =
 =========================================*/
+// ====== PÁGINAS DEL SITIO ======
+const PAGES = [
+  "index.html",
+  "comites.html",
+  "noticias.html",
+  "simposios.html",
+  "cursos.html",
+  "sede.html",
+  // ...agrega todas las páginas
+];
 
-document.addEventListener("DOMContentLoaded", () => {
+let index = [];
+let indexPromise = null;
 
-    const searchBtn = document.getElementById("searchBtn");
-    const overlay = document.getElementById("searchOverlay");
-    const input = document.getElementById("searchInput");
-    const results = document.getElementById("searchResults");
-    const closeBtn = document.getElementById("closeSearch");
+function indexDocument(doc, url, pageTitle) {
+  const clone = doc.body.cloneNode(true);
+  clone.querySelectorAll("script, style, noscript, .search-wrapper").forEach((n) => n.remove());
 
-    if (!overlay || !input || !results) {
-        return;
+  const headings = clone.querySelectorAll("h1, h2, h3");
+  const pageName = pageTitle || doc.title || url;
+
+  headings.forEach((h) => {
+    const title = h.textContent.replace(/\s+/g, " ").trim();
+    if (!title) return;
+
+    let body = "";
+    let node = h.nextElementSibling;
+    while (node && !node.matches("h1, h2, h3") && !node.querySelector("h1, h2, h3")) {
+      body += " " + node.textContent;
+      node = node.nextElementSibling;
     }
+    body = body.replace(/\s+/g, " ").trim();
 
-    let pages = [];
-    let searchIndexBaseUrl = null;
-
-    function renderPlaceholder() {
-        results.innerHTML = `
-            <div class="no-results">
-                <i class="fas fa-search fa-2x"></i>
-                <p>Escriba para comenzar la búsqueda.</p>
-            </div>
-        `;
-    }
-
-    function normalizeEntry(entry) {
-        return {
-            title: entry.title || entry.titulo || entry.Title || "Sin título",
-            text: entry.text || entry.descripcion || entry.description || entry.summary || "",
-            category: entry.section || entry.categoria || entry.category || "Página",
-            href: entry.href || entry.url || entry.link || "#"
-        };
-    }
-
-    function resolveHref(href) {
-        if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("/")) {
-            return href;
-        }
-
-        return new URL(href, searchIndexBaseUrl || window.location.href).href;
-    }
-
-    async function loadSearchIndex() {
-        const candidates = [];
-        const baseUrl = new URL("./", window.location.href);
-        let currentDir = baseUrl;
-
-        for (let i = 0; i < 6; i += 1) {
-            candidates.push(new URL("search.json", currentDir));
-            currentDir = new URL("../", currentDir);
-        }
-
-        const fallbackCandidates = [
-            new URL("./data/search-index.json", window.location.href),
-            new URL("../data/search-index.json", window.location.href),
-            new URL("../../data/search-index.json", window.location.href)
-        ];
-
-        for (const candidate of [...candidates, ...fallbackCandidates]) {
-            try {
-                const response = await fetch(candidate.href);
-                if (!response.ok) {
-                    continue;
-                }
-
-                const data = await response.json();
-                searchIndexBaseUrl = new URL(".", candidate.href);
-                return Array.isArray(data) ? data.map(normalizeEntry) : [];
-            } catch (error) {
-                continue;
-            }
-        }
-
-        return [];
-    }
-
-    function openSearch() {
-        overlay.classList.add("active");
-        input.value = "";
-        renderPlaceholder();
-        input.focus();
-    }
-
-    function closeSearch() {
-        overlay.classList.remove("active");
-    }
-
-    function runSearch() {
-        const text = input.value.toLowerCase().trim();
-
-        if (text.length < 2) {
-            renderPlaceholder();
-            return;
-        }
-
-        const encontrados = pages.filter((item) => {
-            const haystack = `${item.title} ${item.text} ${item.category} ${item.href}`.toLowerCase();
-            return haystack.includes(text);
-        });
-
-        if (encontrados.length === 0) {
-            results.innerHTML = `
-                <div class="no-results">
-                    <i class="fas fa-search fa-2x"></i>
-                    <p>No se encontraron resultados.</p>
-                </div>
-            `;
-            return;
-        }
-
-        const fragment = document.createDocumentFragment();
-
-        encontrados.forEach((item) => {
-            const card = document.createElement("div");
-            card.className = "result-item";
-            card.innerHTML = `
-                <div class="result-title">${item.title}</div>
-                <div class="result-category">${item.category}</div>
-                <div class="result-description">${item.text}</div>
-            `;
-            card.addEventListener("click", () => {
-                window.location.href = resolveHref(item.href);
-            });
-            fragment.appendChild(card);
-        });
-
-        results.innerHTML = "";
-        results.appendChild(fragment);
-    }
-
-    if (searchBtn) {
-        searchBtn.addEventListener("click", openSearch);
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeSearch);
-    }
-
-    overlay.addEventListener("click", (event) => {
-        if (event.target === overlay) {
-            closeSearch();
-        }
+    index.push({
+      title,
+      text: body || title,
+      norm: normalize(title + " " + body),
+      page: pageName,
+      url,
+      id: h.id || null,
     });
+  });
 
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            closeSearch();
+  // Si la página no tiene encabezados, se indexa todo su texto
+  if (!headings.length) {
+    const text = clone.textContent.replace(/\s+/g, " ").trim();
+    index.push({ title: pageName, text, norm: normalize(text), page: pageName, url, id: null });
+  }
+}
+
+function buildIndex() {
+  if (indexPromise) return indexPromise; // se construye una sola vez
+
+  indexPromise = (async () => {
+    index = [];
+    const current = location.pathname.split("/").pop() || "index.html";
+
+    await Promise.all(PAGES.map(async (url) => {
+      try {
+        if (url === current) {
+          // La página actual se lee del DOM vivo (incluye contenido dinámico)
+          indexDocument(document, url, document.title);
+          return;
         }
+        const res = await fetch(url);
+        if (!res.ok) return;
+        const html = await res.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        indexDocument(doc, url);
+      } catch (err) {
+        console.warn("No se pudo indexar", url, err);
+      }
+    }));
+  })();
 
-        if (event.ctrlKey && event.key.toLowerCase() === "k") {
-            event.preventDefault();
-            openSearch();
-        }
-    });
+  return indexPromise;
+}
 
-    input.addEventListener("input", runSearch);
-
-    loadSearchIndex().then((data) => {
-        pages = data;
-    });
-
-    window.openSiteSearch = openSearch;
-});
-
-});

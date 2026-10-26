@@ -63,6 +63,20 @@
   transition: var(--transition);
 }
 
+.simposio-logos{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;
+  justify-content: center;  
+  
+}
+
+.simposio-logos img{
+  height: 120px;
+  min-width: 100px; 
+  object-fit: object-fit;
+}
+
 .imagen-card:hover {
   transform: scale(1.02);
   box-shadow: 0 18px 34px rgba(0,0,0,0.14);

@@ -1,5 +1,5 @@
 ---
-title: "Tapires neotropicales: investigación y desafíos para su conservación"
+title: "Tapires Neotropicales: Investigación y Desafíos para su Conservación "
 format:
   html:
     css:
@@ -36,14 +36,29 @@ format:
 <li>Federico Mosquera Guerra</li>
 <li>Diego Lizcano</li>
 <li>Carlos Saavedra</li>
+<li>Nicolas Reyes-Amaya </li>
+<li>Karen Pérez Albarracín </li>
+<li>Alexander Velásquez </li>
+<li>Hugo Mantilla Meluk </li>
 </ul>
 <div class="badge-simposio">Tapires neotropicales: investigación y desafíos para su conservación</div>
+</div>
+<div class="simposio-logos" >
+<img  src="/simposios/mamiferos_acuaticos/images/Inbianam.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/LOGO FOB 1X0 COLOR.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/Logo-f-omacha.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/logoHumbolt.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/cibipaz.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/Recurso.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/vidasilvestre.jpeg" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/wcs.jpeg" alt="sociedad colombiana de mastozoología">
+
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>Tapires neotropicales: investigación y desafíos para su conservación</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>
@@ -62,7 +77,18 @@ format:
 <p>Los tapires neotropicales desempeñan un rol fundamental en el funcionamiento de los ecosistemas, al actuar como dispersores de semillas y modeladores de la dinámica de los bosques tropicales. Sin embargo, sus poblaciones enfrentan una disminución progresiva causada por la transformación del paisaje, la pérdida de conectividad ecológica y diversas presiones antrópicas que comprometen su permanencia a largo plazo.</p>
 <p>Colombia contiene la mayor diversidad de especies de tapires en el Neotrópico; no obstante, persisten vacíos de información y desafíos relacionados con su monitoreo, manejo y conservación. En este contexto, el simposio “Tapires neotropicales: investigación y desafíos para su conservación”, en el marco del Congreso Colombiano de Mastozoología, busca consolidar un espacio de reflexión científica y articulación institucional que permita integrar experiencias, metodologías y perspectivas desarrolladas en distintas regiones del país y de América Latina. Asimismo, el evento contribuirá al fortalecimiento de redes de colaboración y a la construcción de estrategias de conservación basadas en evidencia científica y enfoques participativos, resaltando el papel de los tapires como especies clave frente a los desafíos del cambio global.</p>
 
+
+<h2>Ponente Magistral</h2>
+<img style="width: 30%; height: auto;" src="images/federico.jpg" alt="">
+
+<p style="font-weight: 500; margin-bottom: 10px;"  class="anchored">Federico Mosquera Guerra, Wildlife Conservation Society - Colombia. </p>
+
+<p style="text-align: justify; margin-bottom: 8px; ">Biólogo con estudios de maestría, doctorado y dos estancias postdoctorales, con más de 15 años de experiencia como investigador, consultor y coordinador de proyectos en conservación de la biodiversidad. Su trayectoria académica se ha enfocado en el estudio y manejo de poblaciones de grandes mamíferos amenazados en la región Neotropical, integrando evidencia científica, análisis espaciales y gestión de información para apoyar la toma de decisiones. Ha contribuido a procesos estratégicos como la declaratoria del Parque Nacional Natural Serranía de Chiribiquete como Patrimonio Mixto de la Humanidad, la nominación de sitios Ramsar en Colombia y la designación de OMEC ante la UNEP-WCMC. Ha participado en proyectos GEF de alcance regional y en la formulación de más de 20 planes de manejo y programas de conservación. Su producción incluye artículos científicos, libros, capítulos y presentaciones en escenarios nacionales e internacionales.</p>
+
+
 </div>
+
+
 
 <a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
 </div>

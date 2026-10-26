@@ -67,4 +67,61 @@ document.addEventListener("DOMContentLoaded", () => {
     goToSlide(0);
     startAuto();
   }
+
+  // ===== Aviso emergente (fechas / tarifas) =====
+  const overlay = document.getElementById('avisoOverlay');
+  const btnX = document.getElementById('avisoCerrarX');
+  const btnOk = document.getElementById('avisoCerrarBtn');
+
+  if (overlay && btnX && btnOk) {
+
+    function abrirAviso() {
+      overlay.classList.add('activo');
+    }
+
+    function cerrarAviso() {
+      overlay.classList.remove('activo');
+    }
+
+    abrirAviso();
+
+    btnX.addEventListener('click', cerrarAviso);
+    btnOk.addEventListener('click', cerrarAviso);
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) cerrarAviso();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') cerrarAviso();
+    });
+
+  } else {
+    console.warn('Aviso: no se encontró avisoOverlay/avisoCerrarX/avisoCerrarBtn en esta página.');
+  }
+
+  /* =====================================================================
+     NOTA: el bloque del menú hamburguesa (navToggle / mainNav) se ELIMINÓ
+     de este archivo porque ya se registra globalmente en main.js.
+     Tenerlo aquí también causaba un doble addEventListener sobre el mismo
+     botón, lo que anulaba el toggle (se abría y cerraba en el mismo clic).
+     ===================================================================== */
+
+  // ===== Ventana modal (pestañas del aviso: fechas / tarifas) =====
+  const botonesTab = document.querySelectorAll('.aviso-pestana-btn');
+  const paneles = document.querySelectorAll('.aviso-panel');
+
+  botonesTab.forEach(function (boton) {
+    boton.addEventListener('click', function () {
+      const destino = boton.getAttribute('data-aviso-tab');
+
+      botonesTab.forEach(function (b) { b.classList.remove('activo'); });
+      paneles.forEach(function (p) { p.classList.remove('activo'); });
+
+      boton.classList.add('activo');
+      const panelDestino = document.querySelector('.aviso-panel[data-aviso-panel="' + destino + '"]');
+      if (panelDestino) panelDestino.classList.add('activo');
+    });
+  });
+
 });

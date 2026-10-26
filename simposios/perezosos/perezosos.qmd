@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/perezosos.jpeg" alt="Xenartros amazónicos: ingenieros del ecosistema ante la transformación del paisaje.">
+<img src="/simposios/perezosos/images/perezosos.png" alt="perezosos.">
 <div class="pie-foto">
 📷 Xenartros amazónicos: ingenieros del ecosistema ante la transformación del paisaje.
 </div>
@@ -37,16 +37,25 @@ format:
 <li>Maria Jose Andrade</li>
 <li>Julio Chacón Pacheco</li>
 <li>Catalina Perez</li>
-<li>Nathalia Niño</li>
+<li>Nathalia Moreno Niño</li>
 <li>Cesar Rojano</li>
 </ul>
 <div class="badge-simposio">VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros</div>
+
+</div>
+<div class="simposio-logos" >
+<img  src="/images/S4_/9bc6c984de93d682437275cd8c12889d.png" alt="Refugios de Murciélagos">
+<img   src="/images/S4_/CBCFULL.png" alt="Estrategias comunitarias">
+<img   src="/images/S4_/Escudo-unicordoba-2025-1.png" alt="Refugios de Murciélagos">
+<img   src="/images/S4_/Logo Kurupira_Final.png" alt="Estrategias comunitarias">
+<img   src="/images/S4_/WhatsApp Image 2026-05-22 at 3.04.32 PM.jpeg" alt="Estrategias comunitarias">
+<img   src="/images/S4_/WhatsApp Image 2026-05-22 at 5.55.03 PM.jpeg">
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>VI Simposio Colombiano de Perezosos, Armadillos y Hormigueros</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>
@@ -60,7 +69,11 @@ format:
 </div>
 
 <a href="../../simposios.html" class="btn-volver">← Volver a todos los simposios</a>
+
 </div>
+
+
+
 
 </div>
 </article>

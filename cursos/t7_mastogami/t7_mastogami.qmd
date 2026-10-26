@@ -49,6 +49,46 @@ format:
 
 </div>
 
+ <!-- ==== fin instructor 1 ==== -->
+<div class="wrap">
+  <h1 class="section-title">Instructores</h1>
+ 
+  <div class="list">
+    <details class="instructor">
+      <summary class="row">
+        <div class="row-text">
+          <p class="name">Carolina López Castañeda </p>
+          <p class="role">PhD. Universidad Surcolombiana. Colombia</p>
+        </div>
+      </summary>
+      <div class="panel-inner">
+        <div class="expand-card">
+          <div class="card-top">
+            <div class="avatar">
+              <img src="/cursos/t7_mastogami/images/carolina lopez.jpg" alt="Carolina López Castañeda">
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="name">Carolina López Castañeda</p>
+            <p class="role"> </p>
+ 
+            <div class="credential-row">
+              <span class="credential"> </span>
+              <span class="credential"></span>
+            </div>
+             <p class="bio">
+             Carolina López Castañeda es Bióloga con mención en zoología y Doctora en Ciencias Biológicas de la Universidad del Valle. Como profesional ha sido investigadora, docente universitaria, coordinadora ambiental y consultora en biología de la conservación con especialización en ecología, sistemas de información geográfica  y el  estudio de los murciélagos. Adicional a su experiencia académica, ha practicado origami desde su infancia y ha participado en cursos nacionales. En los últimos años ha usado el origami como una herramienta pedagógica innovadora para enseñar conceptos de biología, ecología y  biogeografía. Además de explorar sus aplicaciones en bisutería y decoración. En esta edición del Congreso Colombiano de Mastozoología habrá un taller diseñado para inspirar y conectar a investigadores, estudiantes y al público general con la biodiversidad mediante la creación de una figura de mamífero terrestre, así como uno acuático y otro volador. Esta actividad incluirá material.
+            </p>
+             <div class="tools">
+              </div>
+            </div>
+        </div>
+      </div>
+    </details>
+    </div>
+    </div>
+    <!-- ==== fin instructor 1 ==== -->
+
 <a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>
 </div>
 

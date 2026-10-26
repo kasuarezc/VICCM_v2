@@ -1,5 +1,5 @@
 ---
-title: "Tejiendo la conservación: arte y mamíferos en peligro"
+title: "Tejiendo la Conservación: Arte y Mamíferos en Peligro"
 format:
   html:
     css:
@@ -40,8 +40,8 @@ format:
 </div>
 
 <div class="col-derecha">
-<h1>Tejiendo la conservación: arte y mamíferos en peligro</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<h1>Tejiendo la Conservación: Arte y Mamíferos en Peligro</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>

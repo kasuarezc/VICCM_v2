@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/header.css">
 <link rel="stylesheet" href="../../css/footer.css">
 <link rel="stylesheet" href="../../css/home.css">
+<link rel="stylesheet" href="../../css/search.css">
 <link rel="stylesheet" href="../../css/responsive.css">
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/responsive.css">
@@ -60,23 +61,37 @@ ul.task-list li input[type="checkbox"] {
 
       <a href="../../index.html" class="header-logo-link">
 
-        <img src="../../images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
+        <img style="  margin-top: 10px;" src="../../images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
 
       </a>
 
       <a href="../../index.html" class="header-logo-link">
 
-        <img src="../../images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
+        <img style="height: 68px; width: 75px;  margin: auto;" src="../../images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
 
       </a>
 
     </div>
 
+    
 
+     <!-- 👇 NUEVO: botón hamburguesa -->
 
-    <div class="header-right">
+     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
 
-      <nav class="main-nav">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+     <!-- 👇 NUEVO: botón hamburguesa -->
+
+    
+
+      <nav class="main-nav" id="mainNav">
 
         <a href="../../index.html" title="Inicio"><i class="fa-solid fa-house"></i></a>
 
@@ -90,19 +105,291 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="../../sede.html">Sede</a>
 
+        <a href="../../pagos.html">Pagos</a>
+
         <a href="https://mamiferoscolombia.org/" target="_blank" title="Sociedad Colombiana de Mastozoología"><i class="fa-solid fa-paw"></i></a>
 
         <a href="../../contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        
+
+<style>
+
+      /* ---------- CONTENEDOR DEL BUSCADOR ---------- */
+
+ .search-wrapper {
+
+    position: relative;
+
+  }
+
+
+
+  .search-shell {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    width: 50px;                 /* estado inicial: solo botón */
+
+    background: #8B3A2A;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: width 0.35s cubic-bezier(.4,0,.2,1),
+
+                background-color 0.35s ease;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .search-shell.open {
+
+    width: 260px;                /* estado final: barra expandida */
+
+    background: #8B3A2A;
+
+    border: 0.5px solid#8B3A2A;
+
+    cursor: default;
+
+  }
+
+
+
+  .search-icon-btn {
+
+    flex: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: color 0.25s ease;
+
+  }
+
+
+
+  .search-shell.open .search-icon-btn {
+
+    color: #FAF0D7;
+
+  }
+
+
+
+  .search-shell input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 12px;
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease 0.1s;
+
+  }
+
+
+
+  .search-shell.open input {
+
+    opacity: 1;
+
+  }
+
+
+
+  /* ---------- RESULTADOS FLOTANTES ---------- */
+
+  /* position:absolute respecto al wrapper -> no empuja al header */
+
+  .search-results {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 300px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px #5f6b66;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    z-index: 50;
+
+  }
+
+
+
+  .search-results.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+  }
+
+
+
+  .search-results ul { list-style: none; margin: 0; padding: 6px; }
+
+
+
+  .search-results li {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+  }
+
+
+
+  .search-results li:hover { background: #f1f5f9; }
+
+
+
+  .search-results li .tag {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: blue;
+
+    background: #eef2ff;
+
+    padding: 1px 6px;
+
+    border-radius: 4px;
+
+    flex: none;
+
+  }
+
+
+
+  .search-results .empty {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #0b3b2f;
+
+  }
+
+  /* ---------- CONTENIDO DE EJEMPLO ---------- */
+
+ 
+
+</style>
+
+
+
+<div class="search-wrapper">
+
+    <div class="search-shell" id="searchShell">
+
+      <button class="search-icon-btn" id="searchToggleBtn" aria-label="Buscar">
+
+        <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="11" cy="11" r="7"></circle>
+
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+        </svg>
+
+      </button>
+
+      <input type="text" id="searchInput" placeholder="Buscar en la página...">
+
+    </div>
+
+
+
+    <div class="search-results" id="searchResults">
+
+      <ul id="resultsList"></ul>
+
+    </div>
+
+  </div>
+
+  
 
       </nav>
 
     </div>
 
-  </div>
+  
+
+ 
 
 </header>
 
@@ -119,7 +406,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="separator">›</span>
 <a href="../../simposios.html">Simposios</a>
 <span class="separator">›</span>
-<span class="current">Avances en el estudio de la mastofauna del Caribe colombiano</span>
+<span class="current">Avances en el Estudio de la Mastofauna del Caribe Colombiano</span>
 </div>
 
 <article class="detalle-card">
@@ -144,20 +431,45 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="badge-simposio">Avances en el estudio de la mastofauna del Caribe colombiano</div>
 </div>
+
+<div class="simposio-logos">
+<img src="../../images/S20_/Escudo-unicordoba-2025.png" alt=" ">
+<img src="../../images/S20_/Logo ECOCO.png" alt=" ">
+<img src="../../images/S20_/WhatsApp Image 2026-07-14 at 2.05.04 PM.jpeg" alt=" ">
+</div>
+
 </div>
 
 <div class="col-derecha">
-<h1>Avances en el estudio de la mastofauna del Caribe colombiano</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<h1>Avances en el Estudio de la Mastofauna del Caribe Colombiano</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
-<h2 class="anchored">Objetivo</h2>
-<p>consolidar un espacio académico de intercambio, análisis y proyección del conocimiento científico sobre los mamíferos de la región Caribe. Se busca visibilizar los estudios recientes, identificar vacíos de información y reconocer los aportes históricos que han contribuido al desarrollo de la mastozoología en este territorio. Asimismo, el simposio pretende fortalecer la articulación entre investigadores nacionales e internacionales, promoviendo el diálogo intergeneracional entre expertos consolidados, jóvenes investigadores y estudiantes. A través de presentaciones magistrales y un conversatorio con investigadores de trayectoria, se espera reconstruir la línea de tiempo de la investigación mastozoológica en la región, destacando hitos, metodologías y cambios en los enfoques de estudio.</p>
+<h2 class="anchored">Objetivo General</h2>
+<p>Fortalecer el conocimiento, la articulación y la proyección de la investigación sobre la mastofauna del Caribe colombiano mediante un espacio de intercambio científico que reúna a investigadores, estudiantes e instituciones para socializar avances, reconocer la trayectoria de la disciplina y promover alianzas orientadas a la conservación y el desarrollo de nuevas iniciativas de investigación.</p>
+
+<h2 class="anchored">Objetivos Especificos</h2>
+<ul class="lista-objetivos">
+<li>Socializar los avances científicos más recientes sobre la diversidad, ecología, conservación y manejo de la mastofauna del Caribe colombiano, a través de la presentación de investigaciones desarrolladas en la región.</li>
+
+<li>Reconstruir y visibilizar la trayectoria histórica de la mastozoología en el Caribe colombiano, destacando los principales investigadores, proyectos e hitos que han contribuido al conocimiento de los mamíferos de la región.</li>
+
+<li>Promover el intercambio de experiencias y conocimientos entre investigadores nacionales e internacionales, estudiantes y profesionales, fortaleciendo el diálogo intergeneracional y la construcción de redes de colaboración.</li>
+
+<li>Fomentar la vinculación de estudiantes y jóvenes investigadores a la mastozoología mediante espacios de interacción, discusión científica y acercamiento con investigadores de amplia trayectoria.</li>
+
+<li>Impulsar la generación de alianzas estratégicas y la formulación de propuestas colaborativas que fortalezcan la investigación, el monitoreo y la conservación de la mastofauna del Caribe colombiano, identificando retos y oportunidades para el desarrollo futuro de esta disciplina en la región.</li>
+</ul>
 </div>
 
 <div class="resumen">
 <h2 class="anchored">Resumen</h2>
-<p>Este espacio radica en la necesidad de integrar esfuerzos dispersos, fomentar la colaboración científica y generar alianzas estratégicas que impulsen nuevas agendas de investigación, conservación y manejo de la mastofauna del Caribe colombiano. Este simposio contribuirá a fortalecer la identidad científica regional, promover la apropiación social del conocimiento y sentar bases para futuras iniciativas interdisciplinarias que respondan a los retos actuales de conservación de la biodiversidad.</p>
+<p>El simposio “Avances en la investigación de la mastofauna del Caribe colombiano” se propone como un espacio académico para reunir a investigadores, estudiantes, profesionales e instituciones interesados en el estudio y la conservación de los mamíferos de la región Caribe. Su propósito es socializar los avances científicos más recientes, visibilizar el trabajo desarrollado por diferentes grupos de investigación y fortalecer la articulación entre quienes han contribuido al conocimiento de la mastofauna regional desde diversas disciplinas y enfoques.</p>
+
+<p>El evento incluirá ponencias sobre investigaciones recientes en ecología, taxonomía, conservación, monitoreo y manejo de mamíferos, así como un conversatorio con investigadores de trayectoria que permita reconstruir la historia de la mastozoología en el Caribe colombiano, identificar los principales hitos de esta disciplina y reflexionar sobre los desafíos y oportunidades para su desarrollo. Este diálogo intergeneracional favorecerá el intercambio de experiencias entre investigadores consolidados, jóvenes científicos y estudiantes, promoviendo la construcción de redes de colaboración y el fortalecimiento de nuevas capacidades.</p>
+
+<p>Además de difundir el conocimiento científico generado en la región, el simposio busca identificar vacíos de investigación, fomentar alianzas entre universidades, centros de investigación, organizaciones ambientales y entidades gubernamentales, e impulsar iniciativas colaborativas que contribuyan a la conservación de la biodiversidad. De esta manera, el simposio pretende consolidarse como un escenario de referencia para la integración de la comunidad mastozoológica del Caribe colombiano y para la definición de una agenda conjunta que fortalezca la investigación, el monitoreo y la conservación de la mastofauna regional.
+</p>
 
 </div>
 
@@ -170,15 +482,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="mastofauna_caribe.js"></script>
 
 
+
 <footer class="custom-footer">
 
   <div class="footer-wave">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320" aria-hidden="true">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">-->
 
       <path fill="var(--primary)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 
-    </svg>
+    
 
   </div>
 
@@ -192,9 +505,9 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="footer-logo-container">
 
-          <img src="../../images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
+          <img style="height: 80px; width: 170px;" src="../../images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
 
-          <img src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
+          <img style="height: 90px; width: 80px;" src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
 
         </div>
 
@@ -204,7 +517,7 @@ ul.task-list li input[type="checkbox"] {
 
           VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras"</span>
+          <span class="footer-quote">“Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento.” </span>
 
         </p>
 
@@ -258,7 +571,7 @@ ul.task-list li input[type="checkbox"] {
 
           <li>
 
-            <span class="event-date">14 Ago 2026</span>
+            <span class="event-date">28 Ago 2026</span>
 
             <span class="event-name">Límite envío resúmenes</span>
 
@@ -266,7 +579,7 @@ ul.task-list li input[type="checkbox"] {
 
           <li>
 
-            <span class="event-date">11 Sep 2026</span>
+            <span class="event-date">18 Sep 2026</span>
 
             <span class="event-name">Notificación aceptación</span>
 
@@ -338,9 +651,9 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="sponsors-grid">
 
-        <img src="../../images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
+        <img style="height: 100px; width: 250px;" src="../../images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
 
-        <img src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
+        <img style="height: 100px; width: 100px;" src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
 
       </div>
 
@@ -371,6 +684,14 @@ ul.task-list li input[type="checkbox"] {
         </p>
 
       </div>
+
+      <div id="mensaje-flotante">
+
+  <span id="mf-icono">📢</span>
+
+  <span>¡El pago de la membresía a la SCMas no es la inscripción al evento!</span>
+
+</div>
 
     </div>
 
@@ -782,6 +1103,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 <script src="../../js/main.js"></script>
+<script src="../../js/search.js"></script>
 <script src="../../js/menu.js"></script>
 <script src="../../js/slider.js"></script>
 <script src="../../js/comites.js"></script>

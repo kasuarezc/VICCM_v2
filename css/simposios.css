@@ -142,6 +142,30 @@ h1.title{
   height: 100%;
 }
 
+.simposio-logos{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;
+  justify-content: center;  
+  
+}
+
+.simposio-logos img{
+ 
+  max-width: 100%;
+  height: 20px  
+  width: 20px 
+  object-fit: auto;
+}
+
+.imagen-logo-simposio{
+  height: 10px ;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
 .simposio-badge {
   position: absolute;
   top: 1rem;
@@ -207,7 +231,7 @@ h1.title{
 .simposio-titulo {
   font-size: 1.3rem;
   color: var(--primary);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .simposio-descripcion {
@@ -222,6 +246,12 @@ h1.title{
   flex-wrap: wrap;
   margin-bottom: 1.3rem;
 }
+
+
+
+
+
+
 
 .tema-tag {
   background: var(--accent);

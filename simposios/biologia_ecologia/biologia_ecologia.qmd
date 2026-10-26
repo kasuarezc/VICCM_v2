@@ -24,11 +24,12 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/biologia_ecologia.jpg" alt="Marsupiales colombianos frente a amenazas subestimadas">
+<img src="images/biologia_ecologia.jpeg" alt="Marsupiales colombianos frente a amenazas subestimadas">
 <div class="pie-foto">
 📷 Marsupiales colombianos frente a amenazas subestimadas
 </div>
 </div>
+
 
 <div class="organizadores-info">
 <h3>Organizan</h3>
@@ -41,11 +42,16 @@ format:
 </ul>
 <div class="badge-simposio">I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas</div>
 </div>
+<div class="simposio-logos" >
+<img   src="/simposios/biologia_ecologia/images/logo_procat_vertical_color_col.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/biologia_ecologia/images/vnBx0OE1_400x400.jpg" alt="Refugios de Murciélagos">
+<img   src="/simposios/biologia_ecologia/images/Logo proyecto.jpeg" alt="Refugios de Murciélagos">
+</div>
 </div>
 
 <div class="col-derecha">
 <h1>I Simposio de Biología, Ecología y Conservación de Marsupiales, Roedores y Musarañas</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

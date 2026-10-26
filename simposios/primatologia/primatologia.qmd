@@ -42,11 +42,22 @@ format:
 </ul>
 <div class="badge-simposio">VII Simposio Colombiano de Primatología</div>
 </div>
+<div class="simposio-logos" >
+<img   src="/simposios/gestion_adaptativa/images/Logo Fundación Parque Jaime Duque.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/gestion_adaptativa/images/Logo Uniagraria2.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/gestion_adaptativa/images/Logos Zoologico de Cali policromia-outline-03.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/primatologia/images/logo lebtyp.jpg" alt="Refugios de Murciélagos">
+<img   src="/simposios/primatologia/images/Logo_MCPP.png" alt="Refugios de Murciélagos">
+<img   src="/simposios/primatologia/images/LogoAPC1.png" alt="Refugios de Murciélagos">
+
+</div>
+
+
 </div>
 
 <div class="col-derecha">
 <h1>VII Simposio Colombiano de Primatología</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

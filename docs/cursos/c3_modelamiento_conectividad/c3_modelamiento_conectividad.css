@@ -63,6 +63,21 @@
   transition: var(--transition);
 }
 
+.simposio-logos{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;
+  justify-content: center;  
+  
+}
+
+.simposio-logos img{
+  height: 70px;
+  min-width: 70px; 
+  object-fit: object-fit;
+}
+
+
 .imagen-card:hover {
   transform: scale(1.02);
   box-shadow: 0 18px 34px rgba(0,0,0,0.14);
@@ -211,6 +226,212 @@
   transform: translateY(-3px);
 }
 
+
+
+/*----------------Etiquetas Instructores----------*/
+
+ :root{
+    --paper:#F5F6F1;
+    --card:#FFFFFF;
+    --ink:#1C2B22;
+    --ink-soft:#64735F;
+    --canopy:#8B3A2A;
+    --canopy-deep:#16241D;
+    --ochre:#C08A34;
+    --line:#DEE1D5;
+  }
+ 
+  
+ 
+ 
+  .wrap{ max-width:640px; margin:2% auto; }
+ 
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--canopy);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:8px;
+  }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--canopy); }
+ 
+  h1.section-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(28px,5vw,36px);
+    margin:0 0 32px 0;
+    color:var(--canopy-deep);
+  }
+ 
+  /* ---- Lista (contenedor) ---- */
+  .list{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+  }
+ 
+  /* ---- Cada instructor es un <details> ---- */
+  details.instructor{
+    border-bottom:1px solid var(--line);
+  }
+  details.instructor:last-child{ border-bottom:none; }
+ 
+  /* Quita la flechita por defecto del navegador */
+  details.instructor summary{
+    list-style:none;
+  }
+  details.instructor summary::-webkit-details-marker{
+    display:none;
+  }
+ 
+  /* Fila visible (nombre + profesión) */
+  summary.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:18px 22px;
+    cursor:pointer;
+  }
+  summary.row:hover{ background:#FAFBF8; }
+ 
+  .row-text .name{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:17px;
+    margin:0 0 2px 0;
+    color:var(--ink);
+  }
+  .row-text .role{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+ 
+  /* Flecha personalizada, gira con CSS al abrir */
+  summary.row::after{
+    content:"";
+    width:9px;
+    height:9px;
+    border-right:2px solid var(--canopy);
+    border-bottom:2px solid var(--canopy);
+    transform:rotate(45deg);
+    flex-shrink:0;
+    transition:transform 0.2s ease;
+  }
+  details.instructor[open] summary.row::after{
+    transform:rotate(225deg);
+  }
+ 
+  /* ---- Contenido desplegado (tarjeta) ---- */
+  .panel-inner{
+    padding:0 20px 24px 20px;
+  }
+ 
+  .expand-card{
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    background:var(--card);
+  }
+ 
+  .card-top{
+    position:relative;
+    background:var(--canopy);
+    height:96px;
+  }
+ 
+  .avatar{
+    width:110px; height:110px;
+    border-radius:50%;
+    border:4px solid var(--card);
+    overflow:hidden;
+    position:absolute;
+    left:50%; top:40px;
+    transform:translateX(-50%);
+    background:var(--canopy-deep);
+  }
+  .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+ 
+  .card-body{
+    padding:58px 26px 26px 26px;
+    text-align:center;
+  }
+ 
+  .card-body .name{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 2px 0;
+    color:var(--canopy-deep);
+  }
+  .card-body .role{
+    font-size:13.5px;
+    color:var(--canopy);
+    margin:0 0 16px 0;
+    font-weight:600;
+  }
+ 
+  .credential-row{
+    display:flex; flex-wrap:wrap; justify-content:center;
+    gap:7px;
+    margin-bottom:16px;
+  }
+  .credential{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    color:var(--canopy-deep);
+    background:#EEF1E9;
+    border:1px solid var(--line);
+    border-radius:2px;
+    padding:4px 8px;
+  }
+ 
+  .bio{
+    font-size:14px;
+    line-height:1.68;
+    color:var(--ink);
+    text-align:left;
+    margin:0 0 18px 0;
+  }
+ 
+  .tools{
+    display:flex; flex-wrap:wrap; justify-content:center;
+    gap:8px; margin-bottom:22px;
+  }
+  .tools span{
+    font-size:12px; color:var(--ink-soft);
+    display:flex; align-items:center; gap:5px;
+  }
+  .tools span::before{
+    content:""; width:5px; height:5px; border-radius:50%;
+    background:var(--ochre); display:inline-block;
+  }
+ 
+  .contact-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--canopy-deep);
+    color:#F4F2E8;
+    font-family:'Source Sans 3', sans-serif;
+    font-size:14px;
+    font-weight:600;
+    border:none;
+    border-radius:8px;
+    padding:11px 22px;
+    text-decoration:none;
+  }
+  .contact-btn:hover{ background:var(--canopy); }
+
+
+
+/*----------------Etiquetas Instructores----------*/
+
+
 @media (max-width: 992px) {
   .detalle-grid {
     grid-template-columns: 1fr;
@@ -239,3 +460,93 @@
     font-size: 1.8rem;
   }
 }
+
+
+
+/*----------Botones ----------------*/
+ :root {
+    --forest-dark: #24392C;
+    --amber: #B5793A;
+    --amber-dark: #96602A;
+    --line: rgba(30, 42, 34, 0.12);
+  }
+ 
+ .boton {
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    margin-top: 6%;
+  }
+ 
+ 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3%;
+  }
+ 
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: 1px solid transparent;
+  }
+ 
+  .btn:hover { transform: translateY(-2px); }
+ 
+  .btn-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+ 
+  .btn-desc {
+    font-size: 13px;
+    opacity: 0.85;
+  }
+ 
+  .btn-arrow {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+ 
+  .btn-primary {
+    background: transparent;
+    color: #26707B;
+    box-shadow: 0 5px 5px rgba(47, 74, 58, 0.25);
+    border: 1px solid rgba(47, 74, 58, 0.25);
+  }
+  .btn-primary:hover {
+    background: var(--forest-dark);
+    box-shadow: 0 10px 22px rgba(47, 74, 58, 0.32);
+    color: #ffc003;
+  }
+
+ 
+  .btn-secondary {
+    background: transparent;
+    color: var(--amber-dark);
+    border: 1.5px solid var(--amber);
+  }
+  .btn-secondary:hover {
+    background: var(--amber);
+    color: #fff;
+  }
+ 
+  .foot {
+    margin-top: 28px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    color: #7C8A80;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+/*----------Botones ----------------*/

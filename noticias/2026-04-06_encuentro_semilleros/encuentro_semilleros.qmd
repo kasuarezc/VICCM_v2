@@ -5,7 +5,7 @@ format:
     css:
       - ../../css/main.css
       - ../../css/responsive.css
-      - concurso_diseno.css
+      - encuentro_semilleros.css
 ---
 
 ```{=html}
@@ -22,17 +22,19 @@ format:
 <article class="noticia-card">
 
 <div class="noticia-header">
-<h1 class="noticia-titulo">Concurso para el diseño del logo oficial del VICCM 2026</h1>
+<h1 class="noticia-titulo">II Encuentro de Semilleros de Mastozoología Colombiana</h1>
 <div class="noticia-meta">
-<span>📅 06 Abril 2026</span>
+<span>04 Julio de 2026</span>
+
 </div>
 </div>
 
 <div class="noticia-body">
-
+<!-- ################################################################################
 <div class="imagen-destacada">
 <img src="images/Concurso_Diseno.png">
 </div>
+
 
 <p>La Sociedad Colombiana de Mastozoología (SCMas) y la Universidad de la Amazonia invitan a participar en el concurso para el diseño del logo oficial del VI Congreso Colombiano de Mastozoología (VICCM).</p>
 
@@ -86,6 +88,81 @@ format:
 <div class="title">Formulario</div>
 </a>
 </div>
+----------------------------------------------------------------------------------------------------------->
+
+<div class="noticia-header">
+<div class="noticia-meta">
+  <p style="text-align: justify;">El II Encuentro de Semilleros de Mastozoología Colombiana se realizará en el marco del VI Congreso Colombiano de Mastozoología, del 2 al 6 de noviembre de 2026 en Florencia, Caquetá. Esta iniciativa es liderada por el Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA), la Red Colombiana de Estudiantes de Mastozoología (RECMas) y la representación estudiantil de la Sociedad Colombiana de Mastozoología (SCMas). </p>
+  <p>El encuentro busca consolidarse como un espacio de integración, formación e intercambio académico para estudiantes interesados en el estudio de los mamíferos de Colombia. Reunirá semilleros de investigación, grupos estudiantiles, docentes, investigadores y profesionales con el propósito de fortalecer la colaboración entre instituciones, visibilizar los procesos de investigación liderados por estudiantes y promover nuevas iniciativas para el conocimiento y la conservación de la mastofauna colombiana. </p>
+  
+</div>
+
+</div>
+
+
+<div class="noticia-body">
+
+<h2 class="anchored">📢 ¡Las preinscripciones ya están abiertas!</h2>
+  <p style="margin-bottom: 10px; >Si haces parte de un semillero de investigación, un grupo estudiantil o estás interesado(a) en vincularte a la comunidad de mastozoología en Colombia, te invitamos a realizar tu preinscripción al II Encuentro de Semilleros de Mastozoología Colombiana.</p>
+<h2 class="anchored">Formulario de Preinscripción</h2>
+<pstyle="margin-bottom: 10px; ><a href="https://docs.google.com/forms/d/e/1FAIpQLSemggxAosN6qnqk91aK3ey-QbN7yiYnrdo7dELdv3Chr6QMew/viewform " target="_blank" class="btn-primary">Realizar Preinscripción</a></p>
+
+<h2 class="anchored">🎯 Objetivo</h2>
+<p style="margin-bottom: 10px;>Crear la imagen institucional del VICCM 2026 que represente la biodiversidad amazónica y la mastozoología colombiana.</p>
+
+<h2 style="margin-bottom: 10px; class="anchored">¿Quiénes pueden participar?</h2>
+<p>El encuentro está dirigido a:</p>
+<ul class="lista-viñetas">
+<li>Integrantes de semilleros de investigación y grupos estudiantiles. </li>
+<li>Jóvenes investigadores.</li>
+<li>Docentes e investigadores interesados en la formación de nuevos mastozoólogos</li>
+<li>Personas interesadas en vincularse a un semillero o grupo de estudio en mastozoología.</li>
+</ul>
+
+<h2 style="margin-bottom: 10px; class="anchored">💡 ¿Qué encontrarás en el encuentro?</h2>
+<p>Durante la jornada se desarrollarán actividades orientadas al fortalecimiento de la comunidad estudiantil de mastozoología, entre ellas:</p>
+<ul style="margin-bottom: 10px;  class="lista-numerada">
+<li>	Presentación de los semilleros participantes y sus líneas de trabajo.</li>
+<li>	Socialización de experiencias exitosas y procesos de investigación estudiantil.</li>
+<li>  Presentación de los semilleros ganadores del concurso realizado durante el V Congreso Colombiano de Mastozoología.</li>
+<li>	Concurso de propuestas de investigación estudiantil.</li>
+<li>	Espacios de diálogo sobre los retos y oportunidades de los semilleros de mastozoología en Colombia.</li>
+<li>	Actividades de articulación para fortalecer la Red Colombiana de Estudiantes de Mastozoología (RECMas) y promover la vinculación de nuevos integrantes.</li>
+</ul>
+
+<h2 style="margin-bottom: 10px; class="anchored">¿Por qué participar?</h2>
+<p>Participar en el II Encuentro de Semilleros de Mastozoología Colombiana te permitirá:</p>
+<ul style="margin-bottom: 10px;" class="lista-numerada">
+<li>	Compartir experiencias y resultados de investigación con estudiantes de diferentes regiones del país.</li>
+<li>	Fortalecer tu formación científica y tus habilidades para comunicar proyectos de investigación.</li>
+<li>	Establecer redes de colaboración con otros semilleros, investigadores e instituciones.</li>
+<li>	Conocer iniciativas innovadoras en investigación y conservación de mamíferos.</li>
+<li>	Acceder a oportunidades de financiación para proyectos liderados por estudiantes.</li>
+<li>	Vincularte a la Red Colombiana de Estudiantes de Mastozoología (RECMas) y fortalecer tu participación en la comunidad mastozoológica nacional.</li>
+</ul>
+
+
+<h2 style="margin-bottom: 10px; class="anchored">🏆 Concurso de Investigación para Semilleros</h2>
+<h3>¿Tu semillero desarrolla proyectos sobre los mamíferos de Colombia? </h3>
+<p style="margin-bottom: 10px; >Esta es una oportunidad para llevar tu investigación al siguiente nivel.</p>
+<p style="text-align: justify;">En el marco del II Encuentro de Semilleros de Mastozoología Colombiana, se abrirá una convocatoria para que semilleros, grupos de estudio e iniciativas estudiantiles postulen propuestas de investigación orientadas al conocimiento, monitoreo y conservación de la mastofauna colombiana.</p>
+<p style="text-align: justify;">Las propuestas serán evaluadas por especialistas de la SCMas mediante la revisión del documento escrito y una sustentación oral en formato Flash Talk durante el encuentro. Las iniciativas mejor calificadas recibirán apoyo económico para el desarrollo de sus proyectos, fortaleciendo así los procesos de investigación liderados por estudiantes y promoviendo la generación de nuevo conocimiento sobre los mamíferos de Colombia. Además del apoyo financiero, los proyectos ganadores recibirán acompañamiento académico y deberán socializar sus resultados durante el siguiente Congreso Colombiano de Mastozoología y en otros espacios promovidos por la SCMas y la RECMas.</p>
+<h4>¡Anímate a participar y convierte tu idea de investigación en un proyecto con impacto para la mastozoología colombiana!</h4>
+<p>Próximamente se publicarán las bases de la convocatoria, el cronograma y los requisitos para la postulación de propuestas.</p>
+<h2 class="anchored">🤲¡Te esperamos!</h2>
+
+<p style="margin-bottom: 10px;>El II Encuentro de Semilleros de Mastozoología Colombiana será un espacio para compartir experiencias, fortalecer capacidades, generar alianzas y construir el futuro de la mastozoología colombiana desde la investigación estudiantil.</p>
+<p>Realiza tu preinscripción y haz parte de esta red nacional de estudiantes comprometidos con el conocimiento y la conservación de los mamíferos de Colombia.</p>
+<h2>¡Síguenos y no te pierdas ninguna actualización!</h2>
+<h2>Instagram</h2>
+<p><a href="https://www.instagram.com/@recmasto" target="_blank" rel="noopener noreferrer" class="btn-primary">RECMas</a></p>
+<p style="margin-bottom: 10px" ><a href="https://www.instagram.com/@sibiama.udla" target="_blank" rel="noopener noreferrer" class="btn-primary">SIBIAMA</a></p>
+<p><a href="https://www.instagram.com/@mastozoologiacolombia" target="_blank" rel="noopener noreferrer" class="btn-primary">SCMas</a></p>
+
+
+
+
+
 
 </div>
 </article>

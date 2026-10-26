@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
 <link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="./css/search.css">
 <link rel="stylesheet" href="./css/responsive.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/noticias.css">
@@ -60,23 +61,37 @@ ul.task-list li input[type="checkbox"] {
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
+        <img style="  margin-top: 10px;" src="./images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
 
       </a>
 
       <a href="./index.html" class="header-logo-link">
 
-        <img src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
+        <img style="height: 68px; width: 75px;  margin: auto;" src="./images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
 
       </a>
 
     </div>
 
+    
 
+     <!-- 👇 NUEVO: botón hamburguesa -->
 
-    <div class="header-right">
+     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
 
-      <nav class="main-nav">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+     <!-- 👇 NUEVO: botón hamburguesa -->
+
+    
+
+      <nav class="main-nav" id="mainNav">
 
         <a href="./index.html" title="Inicio"><i class="fa-solid fa-house"></i></a>
 
@@ -90,19 +105,291 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="./sede.html">Sede</a>
 
+        <a href="./pagos.html">Pagos</a>
+
         <a href="https://mamiferoscolombia.org/" target="_blank" title="Sociedad Colombiana de Mastozoología"><i class="fa-solid fa-paw"></i></a>
 
         <a href="./contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        
+
+<style>
+
+      /* ---------- CONTENEDOR DEL BUSCADOR ---------- */
+
+ .search-wrapper {
+
+    position: relative;
+
+  }
+
+
+
+  .search-shell {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    width: 50px;                 /* estado inicial: solo botón */
+
+    background: #8B3A2A;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: width 0.35s cubic-bezier(.4,0,.2,1),
+
+                background-color 0.35s ease;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .search-shell.open {
+
+    width: 260px;                /* estado final: barra expandida */
+
+    background: #8B3A2A;
+
+    border: 0.5px solid#8B3A2A;
+
+    cursor: default;
+
+  }
+
+
+
+  .search-icon-btn {
+
+    flex: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: color 0.25s ease;
+
+  }
+
+
+
+  .search-shell.open .search-icon-btn {
+
+    color: #FAF0D7;
+
+  }
+
+
+
+  .search-shell input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 12px;
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease 0.1s;
+
+  }
+
+
+
+  .search-shell.open input {
+
+    opacity: 1;
+
+  }
+
+
+
+  /* ---------- RESULTADOS FLOTANTES ---------- */
+
+  /* position:absolute respecto al wrapper -> no empuja al header */
+
+  .search-results {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 300px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px #5f6b66;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    z-index: 50;
+
+  }
+
+
+
+  .search-results.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+  }
+
+
+
+  .search-results ul { list-style: none; margin: 0; padding: 6px; }
+
+
+
+  .search-results li {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+  }
+
+
+
+  .search-results li:hover { background: #f1f5f9; }
+
+
+
+  .search-results li .tag {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: blue;
+
+    background: #eef2ff;
+
+    padding: 1px 6px;
+
+    border-radius: 4px;
+
+    flex: none;
+
+  }
+
+
+
+  .search-results .empty {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #0b3b2f;
+
+  }
+
+  /* ---------- CONTENIDO DE EJEMPLO ---------- */
+
+ 
+
+</style>
+
+
+
+<div class="search-wrapper">
+
+    <div class="search-shell" id="searchShell">
+
+      <button class="search-icon-btn" id="searchToggleBtn" aria-label="Buscar">
+
+        <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="11" cy="11" r="7"></circle>
+
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+        </svg>
+
+      </button>
+
+      <input type="text" id="searchInput" placeholder="Buscar en la página...">
+
+    </div>
+
+
+
+    <div class="search-results" id="searchResults">
+
+      <ul id="resultsList"></ul>
+
+    </div>
+
+  </div>
+
+  
 
       </nav>
 
     </div>
 
-  </div>
+  
+
+ 
 
 </header>
 
@@ -146,7 +433,7 @@ Código de Conducta
 </div>
 </div>
 <div id="noticiasGrid" class="noticias-grid">
-<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="II Encuentro de Semilleros de Mastozoología Colombiana" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba">
+<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Concurso de Fotografía" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">
 17 Jul
 </div>
@@ -169,50 +456,16 @@ Con tus fotografías, puedes ayudar a dar a conocer y conservar nuestra fauna. T
 <p><a href="noticias/2026-07-17_Concurso_Fotografia/concurso_fotografia.html" class="noticia-btn">Ver Noticia Completa →</a></p>
 </div>
 </div>
-
-
-
-
-
-
-
-<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="II Encuentro de Semilleros de Mastozoología Colombiana" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba">
-<div class="noticia-badge">
-04 Jul
-</div>
-<div class="noticia-img">
-<img src="noticias/2026-04-06_encuentro_semilleros/images/encuentro semilleros.png" alt="II Encuentro de Semilleros de Mastozoología Colombiana">
-</div>
-<div class="noticia-content">
-<div class="noticia-meta">
-<p><span class="noticia-fecha">04 Julio 2026</span> <span class="noticia-hora">2:00 p.m</span></p>
-</div>
-<div class="noticia-autores">
-<p> <span class="noticia-autor">Catalina Concha-Osbahr</span> <span class="noticia-autor">Javier García-Villalba</span></p>
-</div>
-<h3 class="noticia-titulo anchored">
-II Encuentro de Semilleros de Mastozoología Colombiana
-</h3>
-<p class="noticia-descripcion" style="text-align: justify;">
-El II Encuentro de Semilleros de Mastozoología Colombiana se realizará en el marco del VI Congreso Colombiano de Mastozoología, del 2 al 6 de noviembre de 2026 en Florencia, Caquetá. Esta iniciativa es liderada por el Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA), la Red Colombiana de Estudiantes de Mastozoología (RECMas) y la representación estudiantil de la Sociedad Colombiana de Mastozoología (SCMas). 
-</p>
-<p><a href="noticias/2026-04-06_encuentro_semilleros/encuentro_semilleros.html" class="noticia-btn">Ver Noticia Completa →</a></p>
-</div>
-</div>
-
-
-
-
 <div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Tercera Circular" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">
-15 Jul
+18 Jun
 </div>
 <div class="noticia-img">
 <img src="noticias/2026-07-14_tercera_circular/images/tercera_circular2.jpg" alt="Tercera circular">
 </div>
 <div class="noticia-content">
 <div class="noticia-meta">
-<p><span class="noticia-fecha">15 Julio 2026</span> <span class="noticia-hora">5:00 p.m</span></p>
+<p><span class="noticia-fecha">18 Junio 2026</span> <span class="noticia-hora">5:00 p.m</span></p>
 </div>
 <div class="noticia-autores">
 <p><span class="noticia-autor">Catalina Concha-Osbahr</span> <span class="noticia-autor">Javier García-Villalba</span></p>
@@ -226,6 +479,29 @@ La Tercera Circular del VI Congreso Colombiano de Mastozoología (VICCM 2026) an
 <p><a href="noticias/2026-07-14_tercera_circular/tercera_circular.html" class="noticia-btn">Ver Noticia Completa →</a></p>
 </div>
 </div>
+<div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Tercera Circular" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
+<div class="noticia-badge">
+04 Jul
+</div>
+<div class="noticia-img">
+<img src="noticias/2026-04-06_encuentro_semilleros/images/encuentro_semillero.png" alt="encuentro_semilleros">
+</div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<p><span class="noticia-fecha">04 Julio 2026</span> <span class="noticia-hora">5:00 p.m</span></p>
+</div>
+<div class="noticia-autores">
+<p><span class="noticia-autor">Catalina Concha-Osbahr</span> <span class="noticia-autor">Javier García-Villalba</span></p>
+</div>
+<h3 class="noticia-titulo anchored">
+II Encuentro de semillero de Mastozoología Colombiana
+</h3>
+<p class="noticia-descripcion">
+El II Encuentro de Semilleros de Mastozoología Colombiana se realizará en el marco del VI Congreso Colombiano de Mastozoología, del 2 al 6 de noviembre de 2026 en Florencia, Caquetá. Esta iniciativa es liderada por el Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA), la Red Colombiana de Estudiantes de Mastozoología (RECMas) y la representación estudiantil de la Sociedad Colombiana de Mastozoología (SCMas).
+</p>
+<p><a href="noticias/2026-04-06_encuentro_semilleros/encuentro_semilleros.html" class="noticia-btn">Ver Noticia Completa →</a></p>
+</div>
+</div>
 <div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Ganador Concurso de Diseño" data-autor="Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">
 14 Jul
@@ -235,16 +511,16 @@ La Tercera Circular del VI Congreso Colombiano de Mastozoología (VICCM 2026) an
 </div>
 <div class="noticia-content">
 <div class="noticia-meta">
-<p><span class="noticia-fecha">14 Julio 2026</span> <span class="noticia-hora">5:00 p.m</span></p>
+<p><span class="noticia-fecha">04 Junio 2026</span> <span class="noticia-hora">5:00 p.m</span></p>
 </div>
 <div class="noticia-autores">
 <p><span class="noticia-autor">Catalina Concha-Osbahr</span> <span class="noticia-autor">Javier García-Villalba</span></p>
 </div>
 <h3 class="noticia-titulo anchored">
-Resultado concurso logo
+Ganador Logo Concurso de Diseño
 </h3>
 <p class="noticia-descripcion">
-Ganador del concurso de diseño del logo Oficial del VICCM
+Resultados del concurso de diseño del logo Oficial de VICCM .
 </p>
 <p><a href="noticias/2026-07-14_Ganador_Logo/ganador_logo.html" class="noticia-btn">Ver Noticia Completa →</a></p>
 </div>
@@ -264,10 +540,10 @@ Ganador del concurso de diseño del logo Oficial del VICCM
 <p><span class="noticia-autor">Catalina Concha-Osbahr</span> <span class="noticia-autor">Javier García-Villalba</span></p>
 </div>
 <h3 class="noticia-titulo anchored">
-Concurso de Diseño
+Concurso de Diseño del Logo
 </h3>
 <p class="noticia-descripcion">
-Consúlten las bases del concurso de Diseño para participar en el VICCM 2026.
+Consúlten las bases del concurso de diseño para participar en el VICCM 2026.
 </p>
 <p><a href="noticias/2026-04-06_Concurso_Diseno/concurso_diseno.html" class="noticia-btn">Ver Noticia Completa →</a></p>
 </div>
@@ -420,15 +696,16 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 </section>
 
 
+
 <footer class="custom-footer">
 
   <div class="footer-wave">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320" aria-hidden="true">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">-->
 
       <path fill="var(--primary)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 
-    </svg>
+    
 
   </div>
 
@@ -442,9 +719,9 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
         <div class="footer-logo-container">
 
-          <img src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
+          <img style="height: 80px; width: 170px;" src="./images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
 
-          <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
+          <img style="height: 90px; width: 80px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
 
         </div>
 
@@ -454,7 +731,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras"</span>
+          <span class="footer-quote">“Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento.” </span>
 
         </p>
 
@@ -508,7 +785,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           <li>
 
-            <span class="event-date">14 Ago 2026</span>
+            <span class="event-date">28 Ago 2026</span>
 
             <span class="event-name">Límite envío resúmenes</span>
 
@@ -516,7 +793,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
           <li>
 
-            <span class="event-date">11 Sep 2026</span>
+            <span class="event-date">18 Sep 2026</span>
 
             <span class="event-name">Notificación aceptación</span>
 
@@ -588,9 +865,9 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
 
       <div class="sponsors-grid">
 
-        <img src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
+        <img style="height: 100px; width: 250px;" src="./images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
 
-        <img src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
+        <img style="height: 100px; width: 100px;" src="./images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
 
       </div>
 
@@ -621,6 +898,14 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
         </p>
 
       </div>
+
+      <div id="mensaje-flotante">
+
+  <span id="mf-icono">📢</span>
+
+  <span>¡El pago de la membresía a la SCMas no es la inscripción al evento!</span>
+
+</div>
 
     </div>
 
@@ -1032,6 +1317,7 @@ Suscríbete para recibir las últimas actualizaciones del congreso directamente 
   });
   </script>
 <script src="./js/main.js"></script>
+<script src="./js/search.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/comites.js"></script>

@@ -36,14 +36,27 @@ format:
 <li>Federico Mosquera Guerra</li>
 <li>Fernando Trujillo</li>
 <li>Carlos Saavedra</li>
+<li>Karen Pérez Albarracín </li>
 </ul>
 <div class="badge-simposio">Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</div>
+</div>
+
+<div class="simposio-logos" >
+<img  src="/simposios/mamiferos_acuaticos/images/Inbianam.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/LOGO FOB 1X0 COLOR.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/Logo-f-omacha.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/logoHumbolt.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/cibipaz.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/Recurso.png" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/vidasilvestre.jpeg" alt="sociedad colombiana de mastozoología">
+<img  src="/simposios/mamiferos_acuaticos/images/wcs.jpeg" alt="sociedad colombiana de mastozoología">
+
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>Conservación de Mamíferos Acuáticos y Asociados al Agua en el Neotrópico</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>
@@ -53,6 +66,53 @@ format:
 <div class="resumen">
 <h2>Resumen</h2>
 <p>El simposio abordará avances recientes en ecología, distribución, monitoreo, amenazas emergentes, restauración de hábitats y conservación de cetáceos, sirénidos, nutrias y otros mamíferos asociados a ecosistemas acuáticos. Asimismo, propiciará la discusión sobre los efectos del cambio climático, la contaminación, la pérdida de conectividad ecológica, la pesca incidental y la transformación de los ecosistemas acuáticos en el Neotrópico. La realización de este espacio responde a la importancia ecológica de estos mamíferos como reguladores tróficos, dispersores de nutrientes e indicadores de la salud ecosistémica, así como a la necesidad de reducir los vacíos de información y fortalecer la articulación entre investigación, manejo y conservación. Finalmente, el simposio contribuirá a visibilizar experiencias regionales, identificar prioridades de investigación y promover la construcción colectiva de estrategias para la conservación de los mamíferos acuáticos y los ecosistemas asociados en el Neotrópico.</p>
+
+
+<!-- ==== fin instructor 1 ==== -->
+<div class="wrap">
+  <h1 class="section-title">Ponente Magistral</h1>
+ 
+  <div class="list">
+    <details class="instructor">
+      <summary class="row">
+        <div class="row-text">
+          <p class="name">Fernando Trujillo Gonzalez</p>
+          <p class="role">Fundación Omacha - Colombia</p>
+        </div>
+      </summary>
+      <div class="panel-inner">
+        <div class="expand-card">
+          <div class="card-top">
+            <div class="avatar">
+              <img src="images/fernando.jpg" alt="Fernando Trujillo Gonzalez">
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="name">Fernando Trujillo Gonzalez</p>
+            <p class="role">Fundador de la Fundación Omacha </p>
+ 
+            <div class="credential-row">
+              <span class="credential">Biólogo Marino de la Universidad Jorge Tadeo Lozano</span>
+              <span class="credential">Mg. Ciencias Ambientales en la Universidad de Greenwich (Londres, Reino Unido)</span>
+              <span class="credential">PhD. Zoología en la Universidad de Aberdeen (Escocia)</span>
+              
+            </div>
+             <p class="bio">
+              Socio fundador de la Fundación Omacha, Biólogo Marino de la Universidad Jorge Tadeo Lozano, con Maestría en Ciencias Ambientales en la Universidad de Greenwich (Londres, Reino Unido) y Doctorado en Zoología en la Universidad de Aberdeen (Escocia). Su especialidad es la ecología acuática con énfasis en vertebrados acuáticos. De experiencia reconocida en el desarrollo de Planes de Manejo de Áreas Protegidas y Especies Amenazadas, en monitoreo de fauna y evaluaciones de impacto ambiental, acuerdos y ordenamiento pesquero, y tóxicos en sistemas acuáticos y humedales.
+
+A recibido muchos premios y reconocimientos entre los que se destaca el Whitley Gold Award 2007, uno más prestigiosos reconocimientos ambientales en el ámbito internacional, por su trabajo a favor de la conservación de los delfines de río; el cual recibió en la Real Sociedad Geográfica de Londres (Inglaterra).
+
+En el año 2024, fue nombrado como Explorador del Año Rolex National Geographic
+            </p>
+             <div class="tools">
+              </div>
+            </div>
+        </div>
+      </div>
+    </details>
+    </div>
+    </div>
+    <!-- ==== fin instructor 1 ==== -->
 
 </div>
 

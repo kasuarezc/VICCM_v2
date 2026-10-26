@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/t2_murcielagos.png" alt="Refugios de Murciélagos">
+<img src="images/banner.jpg" alt="Refugios de Murciélagos">
 <div class="pie-foto">
 📷 Refugios de Murciélagos
 </div>
@@ -41,7 +41,7 @@ format:
 
 <div class="col-derecha">
 <h1>Introducción al Estudio de los Refugios de Murciélagos en Colombia</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>
@@ -63,6 +63,45 @@ format:
 <h2>Resumen</h2>
 <p>Los refugios de murciélagos son elementos cruciales en la dinámica ecosistémica neotropical, su estudio y comprensión permite el acercamiento a escala fina, de fenómenos que escapan, en muchas ocasiones, de nuestra vista, pero que podrían tener un impacto al alcance de todos. Es por ello, que consideramos de suma importancia el avance, la permanencia, y la periodicidad de su estudio en el país, y presentamos, para ser llevado a cabo en el marco del VI Congreso Colombiano de Mastozoología, el I Taller de Introducción al Estudio de los Refugios de Murciélagos Neotropicales en Colombia, espacio que considerará aspectos generales acerca de estos sitios, qué ha sido de su estudio en el país, desde las primeras publicaciones de las cuales se tiene registro, y su importancia y relevancia para la toma de decisiones y para el alcance de objetivos globales para reducir la pérdida de biodiversidad. </p>
 
+<!-- ==== fin instructor 1 ==== -->
+<div class="wrap">
+  <h1 class="section-title">Instructores</h1>
+ 
+  <div class="list">
+    <details class="instructor">
+      <summary class="row">
+        <div class="row-text">
+          <p class="name">Liceth Margarita Suárez Payares</p>
+          <p class="role">Fundación Bioteco </p>
+        </div>
+      </summary>
+      <div class="panel-inner">
+        <div class="expand-card">
+          <div class="card-top">
+            <div class="avatar">
+              <img src="images/liceth.jpg" alt="Liceth Margarita Suárez Payares">
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="name">Liceth Margarita Suárez Payares</p>
+            <p class="role">Biodiversidad, Territorio y Comunidad. Colombia </p>
+ 
+            <div class="credential-row">
+              <span class="credential">Biólogo de la Universidad Industrial de Santander (Colombia) </span>
+              <span class="credential">PhD en Ciencias Biológicas </span>
+            </div>
+             <p class="bio">
+              Liceth Margarita Suárez Payares, bióloga de la Universidad de Pamplona (2010), con siete años de experiencia en uso de biodiversidad y conservación, y ocho años de experiencia en Ecología del Refugio de Murciélagos. Diplomada en Formación Pedagógica para la Educación Superior, Gestión Ambiental Urbana, Formulación y Evaluación de Proyectos Empresariales, y Bioeconomía, ha participado en diferentes reuniones científicas del ámbito nacional e internacional, realizó su trabajo de grado entre 2009 y 2010 estudiando refugios de murciélagos en el Área Natural Única Los Estoraques, se desempeñó como docente CLIL (Content and Language Integrated Learning), de ciencias, entre 2015 y 2023, y desde 2018 trabaja por el conocimiento y la conservación de los Refugios de Murciélagos, en el Proyecto de Conservación de Refugios de Murciélagos Neotropicales y su sitio de divulgación científica, Roosting Ecology of Neotropical Bats. Actualmente es la directora de la Fundación Bioteco – Biodiversidad, Territorio y Comunidad.
+            </p>
+             <div class="tools">
+              </div>
+            </div>
+        </div>
+      </div>
+    </details>
+    </div>
+    </div>
+    <!-- ==== fin instructor 1 ==== -->
 </div>
 
 <a href="../../cursos.html" class="btn-volver">← Volver a todos los talleres</a>

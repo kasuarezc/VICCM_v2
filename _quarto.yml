@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - images/generales/*
 
    
 
@@ -32,9 +34,10 @@ format:
     include-after-body:
       - partials/search.html
       - partials/footer.html
+      
       - text: |
-          <script src="/js/search.js"></script>
           <script src="/js/main.js"></script>
+          <script src="/js/search.js"></script>
           <script src="/js/menu.js"></script>
           <script src="/js/slider.js"></script>
           <script src="/js/comites.js"></script>

@@ -230,12 +230,12 @@
 }
 
 .ganadora-avatar {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  overflow: auto;
   flex-shrink: 0;
-  border: 5px solid var(--secondary);
+  border: 3px solid var(--secondary);
 }
 
 .ganadora-avatar img {

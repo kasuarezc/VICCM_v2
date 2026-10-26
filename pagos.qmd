@@ -1,0 +1,139 @@
+---
+title: "Pagos"
+format:
+  html:
+    css:
+      - css/main.css
+      - css/pagos.css
+      - css/responsive.css
+      
+---
+ 
+
+<div class="pago-seccion">
+
+<div class="pago-encabezado">
+<h1 class="pago-titulo">💳 Información de pago</h1>
+<p class="pago-subtitulo">Cómo realizar el pago de tu inscripción</p>
+<div class="pago-linea"></div>
+</div>
+
+<div class="pago-cuentas">
+<div class="pago-cuenta-card">
+<p class="pago-cuenta-banco">BBVA</p>
+<p class="pago-cuenta-tipo">Cuenta de ahorros No.</p>
+<p class="pago-cuenta-numero">0013-0390-26-0200229243</p>
+</div>
+<div class="pago-cuenta-card">
+<p class="pago-cuenta-banco">DaviBank</p>
+<p class="pago-cuenta-tipo">Cuenta de ahorros No.</p>
+<p class="pago-cuenta-numero">6-852-009-516</p>
+</div>
+</div>
+
+<p class="pago-titular">A nombre de la <strong>Sociedad Colombiana de Mastozoología</strong> · NIT: 900407083-4</p>
+
+<p class="pago-instruccion">Realiza el pago de la categoría correspondiente a cualquiera de las dos cuentas, mediante cualquiera de las siguientes modalidades:</p>
+
+<div class="pago-grid">
+<div class="pago-metodo"><i class="fas fa-building-columns pago-icono"></i><p class="pago-metodo-num">1</p><p class="pago-metodo-texto">Depósito directo en BBVA o DaviBank</p></div>
+<div class="pago-metodo"><i class="fas fa-right-left pago-icono"></i><p class="pago-metodo-num">2</p><p class="pago-metodo-texto">Transferencia bancaria a BBVA o DaviBank</p></div>
+
+
+
+<div class="pago-metodo pago-clic" data-titulo="Llave BreB BBVA · 0092876006" data-qr="bbva.png" data-link="" tabindex="0" role="button"><i class="fas fa-key pago-icono"></i><p class="pago-metodo-num">3</p><p class="pago-metodo-texto">Transferencia por llave BreB<br><strong>0092876006</strong> (BBVA)</p><span class="pago-accion-escritorio">Ver QR</span><a class="pago-accion-movil" href="#" target="_blank" rel="noopener noreferrer">Ir a pagar</a></div>
+
+
+
+<div class="pago-metodo pago-clic" data-titulo="Llave BreB DaviBank · 0092973240" data-qr="PagoDavivienda.png" data-link="" tabindex="0" role="button"><i class="fas fa-key pago-icono"></i><p class="pago-metodo-num">4</p><p class="pago-metodo-texto">Transferencia por llave BreB<br><strong>0092973240</strong> (DaviBank)</p><span class="pago-accion-escritorio">Ver QR</span><a class="pago-accion-movil" href="#" target="_blank" rel="noopener noreferrer">Ir a pagar</a></div>
+
+
+</div>
+
+</div>
+
+<div class="pago-modal-fondo" id="pagoModalFondo" aria-hidden="true">
+<div class="pago-modal" role="dialog" aria-modal="true" aria-labelledby="pagoModalTitulo">
+<div class="pago-modal-cabecera">
+<h3 class="pago-modal-titulo" id="pagoModalTitulo"></h3>
+<button type="button" class="pago-modal-cerrar" id="pagoModalCerrar" aria-label="Cerrar">&times;</button>
+</div>
+<div class="pago-modal-cuerpo">
+<div class="pago-modal-qr" id="pagoModalQr"></div>
+<p class="pago-modal-nota">Escanea el código QR con tu app bancaria</p>
+<a class="pago-modal-enlace" id="pagoModalEnlace" href="#" target="_blank" rel="noopener noreferrer">Ir a la pasarela de pago</a>
+</div>
+</div>
+</div>
+
+<script>
+(function () {
+  // Carpeta donde están los QR. Ajústala según lo que veas en Network (ver abajo).
+  var QR_BASE = 'images/generales/';
+
+  var esMovil = function () { return window.matchMedia('(max-width: 767px)').matches; };
+  var fondo = document.getElementById('pagoModalFondo');
+  var titulo = document.getElementById('pagoModalTitulo');
+  var qrBox = document.getElementById('pagoModalQr');
+  var enlace = document.getElementById('pagoModalEnlace');
+  var cerrar = document.getElementById('pagoModalCerrar');
+  var ultimo = null;
+
+  document.body.appendChild(fondo); // evita problemas de apilamiento con el navbar
+
+  // Enlaces directos (vista móvil): se llenan desde data-link
+  document.querySelectorAll('.pago-clic').forEach(function (card) {
+    var link = card.getAttribute('data-link');
+    var a = card.querySelector('.pago-accion-movil');
+    if (link) { a.href = link; } else { a.classList.add('sin-enlace'); a.removeAttribute('href'); }
+    a.addEventListener('click', function (e) { e.stopPropagation(); });
+  });
+
+  function mostrarSinQr() {
+    qrBox.innerHTML = '<span class="pago-modal-qr-vacio">Código QR no disponible por ahora. Usa el depósito, la transferencia o la llave BreB.</span>';
+  }
+
+  function abrir(card) {
+    if (esMovil()) return; // en móvil no hay modal, se usa el enlace directo
+    ultimo = card;
+    var nombre = card.getAttribute('data-titulo');
+    titulo.textContent = nombre;
+    qrBox.innerHTML = '';
+    var archivo = card.getAttribute('data-qr');
+    if (archivo) {
+      var img = new Image();
+      img.alt = 'Código QR: ' + nombre;
+      img.onerror = mostrarSinQr; // sin fallback a QR de otro banco
+      img.src = /^(\/|https?:)/.test(archivo) ? archivo : QR_BASE + archivo;
+      qrBox.appendChild(img);
+    } else {
+      mostrarSinQr();
+    }
+    var link = card.getAttribute('data-link');
+    if (link) { enlace.href = link; enlace.style.display = ''; } else { enlace.style.display = 'none'; }
+    fondo.classList.add('abierto');
+    fondo.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    cerrar.focus();
+  }
+
+  function cerrarModal() {
+    fondo.classList.remove('abierto');
+    fondo.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (ultimo) ultimo.focus();
+  }
+
+  document.querySelectorAll('.pago-clic').forEach(function (card) {
+    card.addEventListener('click', function () { abrir(card); });
+    card.addEventListener('keydown', function (e) {
+      if (e.target !== card) return; // no interferir con el enlace interno
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(card); }
+    });
+  });
+  cerrar.addEventListener('click', cerrarModal);
+  fondo.addEventListener('click', function (e) { if (e.target === fondo) cerrarModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && fondo.classList.contains('abierto')) cerrarModal(); });
+  window.addEventListener('resize', function () { if (esMovil() && fondo.classList.contains('abierto')) cerrarModal(); });
+})();
+</script>

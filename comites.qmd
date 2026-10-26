@@ -6,7 +6,9 @@ format:
       - css/main.css
       - css/comites.css
       - css/responsive.css
+      
 ---
+ 
 
 <section class="comites-page">
 <div class="main-container">
@@ -16,12 +18,12 @@ format:
 <span>Comités VICCM</span>
 </div>
 
-<nav class="comites-nav">
+<nav class="comites-nav" >
 <a href="#organizador" class="comite-nav-item active"><span>📅</span><span>Organizador</span><span class="badge">5</span></a>
 <a href="#cientifico" class="comite-nav-item"><span>🧪</span><span>Científico</span><span class="badge">3</span></a>
 <a href="#logistico" class="comite-nav-item"><span>🚚</span><span>Logístico</span><span class="badge">1</span></a>
 <a href="#comunicaciones" class="comite-nav-item"><span>📣</span><span>Comunicaciones</span><span class="badge">3</span></a>
-<a href="#financiero" class="comite-nav-item"><span>🪙</span><span>Financiero</span><span class="badge">2</span></a>
+<a href="#financiero" class="comite-nav-item"><span>💰</span><span>Financiero</span><span class="badge">2</span></a>
 <a href="#diversidad" class="comite-nav-item"><span>🌎</span><span>Diversidad</span><span class="badge">2</span></a>
 </nav>
 </aside>
@@ -43,7 +45,7 @@ Es responsable de definir el desarrollo a medio y largo plazo de la serie de con
 <div class="miembro-card"
 data-nombre="Javier García-Villalba"
 data-rol="Presidente"
-data-img="comites/Javier_Garcia/images/Javier_Garcia.jpg"
+data-img="/images/pagos/img/bbva.png"
 data-comite="Comité Organizador"
 data-biografia="Javier es biólogo de la Universidad Nacional de Colombia, su experiencia se ha concentrado en la Amazonía colombiana, particularmente en proyectos de educación ambiental, zoología, ecología y biología de la conservación. Ha desarrollado inventarios de mastofauna y cuenta con un sólido conocimiento taxonómico de la fauna silvestre amazónica, con énfasis en la conservación de primates y el estudio de mamíferos medianos y grandes. Es especialista en Gerencia del Talento Humano de la Universidad de la Amazonia y miembro fundador de la Asociación Colombiana de Zoología, la Sociedad Colombiana de Mastozoología y la Asociación Primatológica Colombiana, de la cual fue vicepresidente. Ha participado en la organización de eventos académicos, entre ellos el I Simposio Nacional de Jóvenes Investigadores de la Región Centro-Sur (Florencia, Caquetá, 2023)."
 data-rol-viccm="Javier está encargado de la organización general del congreso."
@@ -177,13 +179,13 @@ data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profil
 <div class="miembro-card"
 data-nombre="Adriana C. Acero-Murcia"
 data-rol="Comité Científico"
-data-img="comites/Adriana_Acero/images/Adriana_Acero.jpg"
+data-img="/comites/Adriana_Acero/images/Adriana_Acero2.jpg"
 data-comite="Comité Científico"
 data-biografia="Adriana es licenciada en Biología de la Universidad Distrital Francisco José de Caldas, magíster en Ecología y Evolución en la Universidad Federal de São Paulo y doctora en Ecología y Conservación en la Universidad Federal de Mato Grosso do Sul (Brasil). Su investigación se enfoca en la ecología de mamíferos, con énfasis en primatología y quiropterología, integrando bioacústica, etología, morfometría geométrica y ecología de comunidades. Actualmente profundiza en ciencias de la computación para aplicar machine learning al análisis de grandes volúmenes de datos acústicos. Cuenta con experiencia en investigación, docencia y divulgación científica en Colombia y Brasil. Posee una sólida trayectoria editorial como revisora en revistas científicas, incluyendo Community Ecology, Mammal Species, PeerJ, Caldasia y Mammalogy Notes."
 data-rol-viccm="Adriana apoya el comité científico."
 data-enlaces='[{"tipo":"researchgate","url":"https://www.researchgate.net/profile/Adriana-Acero-Murcia","texto":"ResearchGate"},{"tipo":"orcid","url":"https://orcid.org/0000-0002-3376-5099","texto":"ORCID"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/adriana-acero-murcia-9290b9a9/","texto":"LinkedIn"}]'>
 <div class="miembro-img">
-<img src="comites/Adriana_Acero/images/Adriana_Acero.jpg" alt="Adriana C. Acero Murcia">
+<img src="comites/Adriana_Acero/images/Adriana_Acero2.jpg" alt="Adriana C. Acero Murcia">
 </div>
 <div class="miembro-info">
 <h3>Adriana C. Acero-Murcia</h3>
@@ -245,13 +247,13 @@ Lidera la divulgación y posicionamiento del Congreso a nivel local, nacional e 
 <div class="miembro-card"
 data-nombre="Erick D. Cardona"
 data-rol="Comunicaciones"
-data-img="comites/Erick_Cardona/images/Erick_Cardona.jpg"
+data-img="comites/Erick_Cardona/images/Erick_Cardona2.jpg"
 data-comite="Comité de Comunicaciones"
 data-biografia="Estudiante de Biología de la Universidad de la Amazonia. Integrante del Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA) de la Universidad de la Amazonia. Cuenta con experiencia en el desarrollo de piezas audiovisuales, cortometrajes, reels, teaser y demás elementos para la difusión de información a través de páginas web y redes sociales."
 data-rol-viccm="Erick está encargado de los elementos de divulgación."
 data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/erick.cardona.540667?_rdc=1&_rdr#","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/erickdacar/","texto":"Instagram"},{"tipo":"youtube","url":"https://www.youtube.com/watch?v=CKl_GKncaes","texto":"YouTube"}]'>
 <div class="miembro-img">
-<img src="comites/Erick_Cardona/images/Erick_Cardona.jpg" alt="Erick D. Cardona">
+<img src="comites/Erick_Cardona/images/Erick_Cardona2.jpg" alt="Erick D. Cardona">
 </div>
 <div class="miembro-info">
 <h3>Erick D. Cardona</h3>
@@ -280,13 +282,13 @@ data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/YOHAYSAP","tex
 <div class="miembro-card"
 data-nombre="Monica Maria Penuela"
 data-rol="Biólogo"
-data-img="comites/Monica_Penuela/images/Monica_Penuela.jpeg"
+data-img="comites/Monica_Penuela/images/Monica_Penuela2.jpeg"
 data-comite="Comité de Comunicaciones"
 data-biografia="Bióloga, especialista en Educación y Gerencia Ambiental, y magíster en Ciencias Biológicas de la Pontificia Universidad Javeriana. Cuenta con experiencia en investigación, mastozoología, educación ambiental, divulgación científica y trabajo territorial en diferentes regiones de Colombia."
 data-rol-viccm="Monica está encargada de construir narrativas visuales, cercanas y estratégicas que fortalezcan la conexión entre la ciencia, territorio y comunidad"
-data-enlaces='[{"tipo":"facebook","url":"https://www.facebook.com/","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com","texto":"Instagram"},{"tipo":"youtube","url":"https://www.youtube.com","texto":"YouTube"}]'>
+data-enlaces='[{"tipo":"LinkedIn","url":"https://www.linkedin.com/in/momapesa?originalSubdomain=co","texto":"LinkedIn"},{"tipo":"ResearchGate","url":"https://www.researchgate.net/profile/Monica-Penuela","texto":"ResearchGate"}]'>
 <div class="miembro-img">
-<img src="comites/Monica_Penuela/images/Monica_Penuela.jpeg" alt="Monica Penuela">
+<img src="comites/Monica_Penuela/images/Monica_Penuela2.jpeg" alt="Monica Penuela">
 </div>
 <div class="miembro-info">
 <h3>Monica Maria peñuela</h3>
@@ -314,7 +316,7 @@ data-img="comites/Mauricio_Vela/images/Mauricio_Vela.jpg"
 data-comite="Comité Financiero"
 data-biografia="Biólogo de la Pontificia Universidad Javeriana de Bogotá, Maestro en Ciencias biológicas de la misma universidad y doctor en Manejo y conservación de fauna silvestre en la Universidad de Arizona (Arizona-Estados Unidos de América). Mauricio ha estudiado las dinámicas de las poblaciones de mamíferos en matrices de paisaje heterogéneas con grupos bioindicadores. Además de lo anterior, su trabajo se ha centrado en el estudio de la ecología espacial de grandes carnívoros neotropicales y sus interacciones con comunidades humanas en diferentes regiones de Colombia y el neotrópico. Mauricio ha estado vinculado a la SCMas desde 2009, y participó como organizador del II Congreso Colombiano de Mastozoología y III Congreso Latinoamericano de Mastozoología realizados en el año 2018 en Bogotá. Mauricio ha sido parte del cuerpo editorial de la Revista Mammalogy Notes desde su creación."
 data-rol-viccm="Mauricio está encargado de los aspectos financieros."
-data-enlaces='[{"tipo":"facebook","url":"https://web.facebook.com/mauricio.vela.3150","texto":"Facebook"},{"tipo":"instagram","url":"https://www.instagram.com/imauriciovela/","texto":"Instagram"},{"tipo":"linkedin","url":"https://www.linkedin.com/in/i-mauricio-vela-vargas-b62a9448/","texto":"LinkedIn"}]'>
+data-enlaces='[{"tipo":"LinkedIn","url":"https://www.linkedin.com/in/i-mauricio-vela-vargas-b62a9448/","texto":"LinkedIn"},{"tipo":"ScholarGoogle","url":"https://scholar.google.com/citations?user=tDaK3YAAAAAJ&hl=es","texto":"ScholarGoogle"},{"tipo":"Researchgate","url":"https://www.researchgate.net/profile/I-Vela-Vargas","texto":"Researchgate"}]'>
 <div class="miembro-img">
 <img src="comites/Mauricio_Vela/images/Mauricio_Vela.jpg" alt="Mauricio Vela">
 </div>
@@ -357,13 +359,13 @@ Promueve un Congreso diverso, incluyente y representativo. Favorece la participa
 <div class="miembro-card"
 data-nombre="Bibiana Gómez-Valencia"
 data-rol="Bióloga"
-data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg"
+data-img="comites/Bibiana_Gomez/images/Bibiana_Gomez2.jpeg"
 data-comite="Comité de Diversidad e Integración Científica"
 data-biografia="Bióloga y Magíster en Ciencias Biológicas de la Universidad Nacional de Colombia. Doctora en Ciencias Biológicas en la Universidad de Buenos Aires. Actualmente es investigadora del Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Su trabajo se ha enfocado en la biología de la conservación, el monitoreo de mamíferos, la ecología de poblaciones y la evaluación del riesgo de extinción de especies en Colombia. Ha participado activamente en iniciativas científicas orientadas a la conservación de la mastofauna colombiana y fue presidenta de la Sociedad Colombiana de Mastozoología durante el periodo 2021–2023."
-data-rol-viccm="Bibiana Líder de Representatividad Científica"
-data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
+data-rol-viccm="Líder de Representatividad Científica"
+data-enlaces='[{"tipo":"Instagram","url":"https://www.instagram.com/bibianagomez/","texto":"Instagram"},{"tipo":"Researchgate","url":"https://www.researchgate.net/profile/Bibiana-Gomez-Valencia","texto":"Researchgate"},{"tipo":"Scholar","url":"https://scholar.google.es/citations?user=CnQnaXkAAAAJ&hl=es","texto":"Scholar"},{"tipo":"Orcid","url":"https://orcid.org/0000-0002-5963-0221","texto":"Orcid"}]'>
 <div class="miembro-img">
-<img src="comites/Bibiana_Gomez/images/Bibiana_Gomez.jpeg" alt="Bibiana Gomez">
+<img src="comites/Bibiana_Gomez/images/Bibiana_Gomez2.jpeg" alt="Bibiana Gomez">
 </div>
 <div class="miembro-info">
 <h3>Bibiana Gomez Valencia</h3>
@@ -377,8 +379,8 @@ data-rol="Bióloga"
 data-img="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg"
 data-comite="Comité de Diversidad e Integración Científica"
 data-biografia="Bióloga de la Universidad Javeriana con una maestría en Ciencias en Ecología Aplicada de la Universidad de Kiel, Alemania. Especializada en acústica de murciélagos y análisis acústico de la biodiversidad, así como en el impacto de factores externos sobre esta. Experiencia en el manejo de repositorios acústicos de biodiversidad, en grabación direccional y en proyectos con monitoreo acústico pasivo. Desde 2021, se desempeña como investigadora en la Colección de Sonidos Ambientales del Instituto Humboldt."
-data-rol-viccm="Daniela, Líder de Interdisciplinariedad e Innovación"
-data-enlaces='[{"tipo":"facebook","url":"####","texto":"Facebook"},{"tipo":"instagram","url":"###","texto":"Instagram"},{"tipo":"linkedin","url":"####","texto":"LinkedIn"}]'>
+data-rol-viccm="Líder de Interdisciplinariedad e Innovación"
+data-enlaces='[{"tipo":"Instagram","url":"https://www.instagram.com/danielammo016/","texto":"Instagram"},{"tipo":"Scholar","url":"https://scholar.google.com/citations?user=50THG7IAAAAJ&hl=en","texto":"Scholar"},{"tipo":"Researchgate","url":"https://www.researchgate.net/profile/Daniela-Martinez-Medina","texto":"Researchgate"},{"tipo":"LinkedIn","url":"https://www.linkedin.com/in/daniela-martinez-medina/","texto":"LinkedIn"}]'>
 <div class="miembro-img">
 <img src="comites/Daniela_Martinez/images/Daniela_Martinez.jpeg" alt="Daniela Martínez Medina">
 </div>

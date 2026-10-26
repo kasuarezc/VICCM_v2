@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/conflicto_coexistencia.jpg" alt="Coexistencia entre humanos y fauna en el paisaje productivo colombiano.">
+<img src="images/conflicto_coexistencia.jpeg" alt="Coexistencia entre humanos y fauna en el paisaje productivo colombiano.">
 <div class="pie-foto">
 📷 Coexistencia entre humanos y fauna en el paisaje productivo colombiano.
 </div>
@@ -40,14 +40,19 @@ format:
 <li>Angela P. Hurtado-Moreno</li>
 <li>Diego A. Zárrate-Charry</li>
 <li>José F. González Maya</li>
+<li>Maria Alejandra Parrado</li>
 </ul>
 <div class="badge-simposio">II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia</div>
+</div>
+<div class="simposio-logos"> 
+<img    src="/images/S14_/logo_procat_vertical_color_col.png" alt="">
+<img    src="/images/S14_/variacion7.png" alt="">
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>II Simposio conflicto y coexistencia entre humanos y vida silvestre en Colombia</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos General</h2>

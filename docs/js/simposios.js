@@ -66,22 +66,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== PAGINACIÓN CORREGIDA =====
   // Selecciona todos los enlaces dentro del contenedor .paginacion
-  const paginationLinks = document.querySelectorAll('.paginacion a, .paginacion ul li a');
-  console.log("Enlaces de paginación encontrados:", paginationLinks.length);
+ document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.paginacion');
+  const actual = location.pathname.split('/').pop() || 'simposios.html';
 
-  paginationLinks.forEach((link) => {
-    link.addEventListener('click', function (e) {
-      // No prevenimos el comportamiento por defecto para permitir la navegación
-      // Solo actualizamos la clase active
-      console.log("Clic en enlace de paginación:", this.href);
-
-      // Quitamos la clase active de todos los enlaces de paginación
-      document.querySelectorAll('.paginacion a, .paginacion ul li a').forEach((l) => l.classList.remove('active'));
-      // Añadimos la clase active al enlace clickeado
-      this.classList.add('active');
-
-      // El navegador seguirá el enlace automáticamente
-      // No llamamos a e.preventDefault()
-    });
+  links.forEach((link) => {
+    const destino = link.getAttribute('href').split('/').pop();
+    link.classList.toggle('active', destino === actual);
   });
+});
 });

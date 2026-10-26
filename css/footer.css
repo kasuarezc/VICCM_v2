@@ -1,5 +1,5 @@
 .custom-footer {
-  background: linear-gradient(135deg, var(--primary) 0%, #0a2e25 100%);
+  background: linear-gradient(135deg, #8b3a2a 0%, #8b3a2ae0 100%);
   color: white;
   position: relative;
   margin-top: 4rem;
@@ -49,23 +49,21 @@
 }
 
 .footer-description {
-  font-size: 90px;
+  font-size: 0.95rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
-  max-width: 100%;
-  overflow-wrap: anywhere;
+  margin-bottom: 1.5rem;
+  
   
 }
 
 .footer-quote {
   font-style: italic;
-  font-size: 90px;
+  font-size: 0.95rem;
   color: var(--accent);
-  display: inline-block;
-  margin-top: 100px;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-    line-height: 1.6;
+  display: block;
+  margin-top: 0.5rem;
+    
 }
 
 .footer-social {

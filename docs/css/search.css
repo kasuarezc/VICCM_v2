@@ -1,0 +1,44 @@
+/*==========================================
+=            SEARCH MODAL VICCM            =
+==========================================*/
+.search-wrapper { position: relative; }
+
+.search-shell input {
+  width: 0; opacity: 0; padding: 0; border: 0;
+  transition: width .3s, opacity .3s;
+}
+.search-shell.active input {
+  width: 220px; opacity: 1; padding: 6px 10px;
+}
+
+.search-results {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 320px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  z-index: 1000;
+}
+.search-results.visible { display: block; }
+
+#resultsList { list-style: none; margin: 0; padding: 0; }
+#resultsList li { padding: 12px 16px; cursor: pointer; border-bottom: 1px solid #eee; }
+#resultsList li:hover { background: #f3f3f3; }
+#resultsList li strong { display: block; margin-bottom: 4px; }
+#resultsList li span { font-size: .85rem; color: #555; }
+#resultsList .no-results { color: #888; cursor: default; }
+#resultsList .result-page {
+  display: inline-block;
+  font-style: normal;
+  font-size: .72rem;
+  color: #fff;
+  background: #2e7d4f;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}

@@ -42,6 +42,8 @@ format:
 </ul>
 <div class="badge-simposio">De las Colecciones a la Comunidad: Taxidermia como Herramienta de Educación Ambiental para la Conservación Biológica</div>
 </div>
+
+
 </div>
 
 <div class="col-derecha">
@@ -65,6 +67,61 @@ format:
 <p>El estudio y conservación de los mamíferos requiere fortalecer procesos donde las colecciones biológicas sean un recurso fundamental para comprender la ecología, distribución y cambios de las especies en el tiempo (Bakker et al., 2020).</p>
 <p>En este sentido, el uso de ejemplares preservados bajo estándares éticos y legales fortalece los procesos pedagógicos al integrar experiencias de aprendizaje sensoriales y directas, contribuyendo a la construcción de conocimiento y a la sensibilización ambiental, aspectos clave para la conservación (Ardoin et al., 2020; Cárdenas-González et al., 2021).</p>
 <p>Este taller integra técnicas básicas de taxidermia de estudio con estrategias de comunicación científica para fortalecer la apropiación social del conocimiento sobre la mastofauna colombiana. De esta manera, se resalta el papel de las colecciones biológicas de museos como herramientas clave para la investigación, la educación y la conservación de la biodiversidad en el país.</p>
+
+
+    <!-- ==== fin instructor 1 ==== -->
+<div class="wrap">
+  <h1 class="section-title">Instructores</h1>
+ 
+  <div class="list">
+    <details class="instructor">
+      <summary class="row">
+        <div class="row-text">
+          <p class="name">Jaime Ramirez Mosquera</p>
+          <p class="role"></p>
+        </div>
+      </summary>
+      <div class="panel-inner">
+        <div class="expand-card">
+          <div class="card-top">
+            <div class="avatar">
+              <img src="">
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="name">Jaime Ramirez Mosquera</p>
+            <p class="role"> </p>
+ 
+            <div class="credential-row">
+              <span class="credential"> </span>
+              <span class="credential"></span>
+            </div>
+             <p class="bio">
+              Es especialista en taxidermia con más de 65 años de experiencia en la preservación, restauración y montaje científico de fauna silvestre. A lo largo de su trayectoria ha estado vinculado al Museo de Historia Natural de la Universidad del Cauca, donde ha contribuido al fortalecimiento de las colecciones biológicas y a la formación de estudiantes. Paralelamente, ha participado en importantes proyectos para museos, zoológicos e instituciones nacionales e internacionales, entre ellos la osteotecnia de elefantes y cebras para el Bioparque Ukumarí, el montaje de un rinoceronte y un tigre de Bengala para INCIVA, y el procesamiento de delfines de profundidad en Sevilla, España. También ha desarrollado réplicas hiperrealistas de especies como la danta y el oso de anteojos, además de numerosos dioramas y montajes museográficos. Su experiencia ha sido compartida mediante cursos y asesorías dirigidos a estudiantes universitarios y profesionales, consolidándose como uno de los taxidermistas con mayor trayectoria y reconocimiento en Colombia.
+            </p>
+             <div class="tools">
+              </div>
+            </div>
+        </div>
+      </div>
+    </details>
+    </div>
+    </div>
+    <!-- ==== fin instructor 1 ==== -->
+    
+    
+<h2>Instagram</h2>
+ <div class="redes-iconos">
+
+                <a href="https://www.instagram.com/arte_de_la_taxidermia " class="red-social instagram"
+                   target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.instagram.com/semillero_ciencias_ambientales" class="red-social instagram"
+                   target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
 
 </div>
 

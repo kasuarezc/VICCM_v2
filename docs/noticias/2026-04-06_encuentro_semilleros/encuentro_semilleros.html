@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>II Encuentro Semilleros – VICCM 2026</title>
+<title>Concurso de Diseño – VICCM 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../css/header.css">
 <link rel="stylesheet" href="../../css/footer.css">
 <link rel="stylesheet" href="../../css/home.css">
+<link rel="stylesheet" href="../../css/search.css">
 <link rel="stylesheet" href="../../css/responsive.css">
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/responsive.css">
@@ -60,23 +61,37 @@ ul.task-list li input[type="checkbox"] {
 
       <a href="../../index.html" class="header-logo-link">
 
-        <img src="../../images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
+        <img style="  margin-top: 10px;" src="../../images/logos/VICCM_logo.png" alt="Sociedad Colombiana de Mastozoología" class="header-logo">
 
       </a>
 
       <a href="../../index.html" class="header-logo-link">
 
-        <img src="../../images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
+        <img style="height: 68px; width: 75px;  margin: auto;" src="../../images/logos/Simple_negativo.png" alt="Universidad de la Amazonia" class="header-logo">
 
       </a>
 
     </div>
 
+    
 
+     <!-- 👇 NUEVO: botón hamburguesa -->
 
-    <div class="header-right">
+     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
 
-      <nav class="main-nav">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+     <!-- 👇 NUEVO: botón hamburguesa -->
+
+    
+
+      <nav class="main-nav" id="mainNav">
 
         <a href="../../index.html" title="Inicio"><i class="fa-solid fa-house"></i></a>
 
@@ -90,24 +105,296 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="../../sede.html">Sede</a>
 
+        <a href="../../pagos.html">Pagos</a>
+
         <a href="https://mamiferoscolombia.org/" target="_blank" title="Sociedad Colombiana de Mastozoología"><i class="fa-solid fa-paw"></i></a>
 
         <a href="../../contacto.html" title="Contacto"><i class="fa-solid fa-address-book"></i></a>
 
         <a href="https://github.com/SCMas/VICCM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
 
-        <button class="search-btn" id="searchBtn" type="button">Buscar</button>
+        
 
-      </nav>
+<style>
+
+      /* ---------- CONTENEDOR DEL BUSCADOR ---------- */
+
+ .search-wrapper {
+
+    position: relative;
+
+  }
+
+
+
+  .search-shell {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    width: 50px;                 /* estado inicial: solo botón */
+
+    background: #8B3A2A;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: width 0.35s cubic-bezier(.4,0,.2,1),
+
+                background-color 0.35s ease;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .search-shell.open {
+
+    width: 260px;                /* estado final: barra expandida */
+
+    background: #8B3A2A;
+
+    border: 0.5px solid#8B3A2A;
+
+    cursor: default;
+
+  }
+
+
+
+  .search-icon-btn {
+
+    flex: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: color 0.25s ease;
+
+  }
+
+
+
+  .search-shell.open .search-icon-btn {
+
+    color: #FAF0D7;
+
+  }
+
+
+
+  .search-shell input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 12px;
+
+    opacity: 0;
+
+    transition: opacity 0.25s ease 0.1s;
+
+  }
+
+
+
+  .search-shell.open input {
+
+    opacity: 1;
+
+  }
+
+
+
+  /* ---------- RESULTADOS FLOTANTES ---------- */
+
+  /* position:absolute respecto al wrapper -> no empuja al header */
+
+  .search-results {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 0;
+
+    width: 300px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px #5f6b66;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    z-index: 50;
+
+  }
+
+
+
+  .search-results.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+  }
+
+
+
+  .search-results ul { list-style: none; margin: 0; padding: 6px; }
+
+
+
+  .search-results li {
+
+    padding: 9px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+  }
+
+
+
+  .search-results li:hover { background: #f1f5f9; }
+
+
+
+  .search-results li .tag {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: blue;
+
+    background: #eef2ff;
+
+    padding: 1px 6px;
+
+    border-radius: 4px;
+
+    flex: none;
+
+  }
+
+
+
+  .search-results .empty {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #0b3b2f;
+
+  }
+
+  /* ---------- CONTENIDO DE EJEMPLO ---------- */
+
+ 
+
+</style>
+
+
+
+<div class="search-wrapper">
+
+    <div class="search-shell" id="searchShell">
+
+      <button class="search-icon-btn" id="searchToggleBtn" aria-label="Buscar">
+
+        <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <circle cx="11" cy="11" r="7"></circle>
+
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+        </svg>
+
+      </button>
+
+      <input type="text" id="searchInput" placeholder="Buscar en la página...">
+
+    </div>
+
+
+
+    <div class="search-results" id="searchResults">
+
+      <ul id="resultsList"></ul>
 
     </div>
 
   </div>
 
+  
+
+      </nav>
+
+    </div>
+
+  
+
+ 
+
 </header>
 
 <header id="title-block-header">
-<h1 class="title">II Encuentro Semilleros </h1>
+<h1 class="title">Concurso de Diseño</h1>
 
 </header>
 
@@ -119,146 +406,170 @@ ul.task-list li input[type="checkbox"] {
 <span class="separator">›</span>
 <a href="../../noticias.html">Noticias</a>
 <span class="separator">›</span>
-<span class="current"> II Encuentro Semilleros</span>
+<span class="current">Concurso de diseño</span>
 </div>
 
 <article class="noticia-card">
 
 <div class="noticia-header">
-<div class="noticia-header-content">
-<h1 class="noticia-titulo">II Encuentro Semilleros</h1>
+<h1 class="noticia-titulo">II Encuentro de Semilleros de Mastozoología Colombiana</h1>
 <div class="noticia-meta">
-<span>04 de Julio de 2026</span>
-<span></span>
-</div>
+<span>04 Julio de 2026</span>
+
 </div>
 </div>
 
 <div class="noticia-body">
+<!-- ################################################################################
+<div class="imagen-destacada">
+<img src="images/Concurso_Diseno.png">
+</div>
 
-<a class="autor-destacado" href="../../comites.html">
-<div class="autor-avatar">
-<img src="../../comites/Catalina_Concha/images/Catalina_Concha.jpg" alt="Catalina Concha Osbahr">
+
+<p>La Sociedad Colombiana de Mastozoología (SCMas) y la Universidad de la Amazonia invitan a participar en el concurso para el diseño del logo oficial del VI Congreso Colombiano de Mastozoología (VICCM).</p>
+
+<h2>🎯 Objetivo</h2>
+<p>Crear la imagen institucional del VICCM 2026 que represente la biodiversidad amazónica y la mastozoología colombiana.</p>
+
+<h2>📋 Lineamientos</h2>
+<ul class="lista-viñetas">
+<li>El logo debe ser original e inédito.</li>
+<li>No debe infringir derechos de autor.</li>
+<li>Debe ser adaptable a distintos formatos.</li>
+<li>No debe contener contenido ofensivo o comercial.</li>
+</ul>
+
+<h2>💡 Especificaciones</h2>
+<ul class="lista-numerada">
+<li>Formato vectorial (.AI, .EPS o .SVG)</li>
+<li>Versión a color y monocromática</li>
+<li>Máximo 3 colores</li>
+<li>Tipografía definida</li>
+</ul>
+
+<h2>📅 Cronograma</h2>
+<div class="cronograma">
+<div>25 marzo 2026 - Apertura</div>
+<div>24 abril 2026 - Cierre</div>
+<div>01 mayo 2026 - Evaluación</div>
+<div>06 mayo 2026 - Resultados</div>
 </div>
-<div class="autor-info">
-<h3 class="anchored">Catalina Concha Osbahr</h3>
-<p>Autora de la noticia</p>
-<small>Haz clic para ver el comité</small>
+
+<h2>🏆 Premio</h2>
+<p>Inscripción al congreso o stand comercial + certificado oficial.</p>
+
+<div class="botones">
+<a href="https://forms.gle/YsNRCLoibKhumTeq6" target="_blank" class="btn-primary">Participar</a>
+<a href="https://drive.google.com/file/d/1yMwalERVwAflB5820sPcIdlX4dED32iH/view" target="_blank" class="btn-secondary">Ver términos</a>
 </div>
+
+<div class="invitacion">
+<p>¡Participa y deja tu huella en la mastozoología colombiana!</p>
+</div>
+
+<div class="detalle-nav">
+<a href="../2026-02-01_segunda_circular/segunda_circular.html">
+<div class="label">Anterior</div>
+<div class="title">Segunda Circular</div>
 </a>
 
-<p>El II Encuentro de Semilleros de Mastozoología Colombiana se realizará en el marco del VI Congreso Colombiano de Mastozoología, del 2 al 6 de noviembre de 2026 en Florencia, Caquetá. Esta iniciativa es liderada por el Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA), la Red Colombiana de Estudiantes de Mastozoología (RECMas) y la representación estudiantil de la Sociedad Colombiana de Mastozoología (SCMas).  </p>
-
-<p>El encuentro busca consolidarse como un espacio de integración, formación e intercambio académico para estudiantes interesados en el estudio de los mamíferos de Colombia. Reunirá semilleros de investigación, grupos estudiantiles, docentes, investigadores y profesionales con el propósito de fortalecer la colaboración entre instituciones, visibilizar los procesos de investigación liderados por estudiantes y promover nuevas iniciativas para el conocimiento y la conservación de la mastofauna colombiana. </p>
-
-<p>📢 ¡Las preinscripciones ya están abiertas!  <a href="https://docs.google.com/forms/d/e/1FAIpQLSemggxAosN6qnqk91aK3ey-QbN7yiYnrdo7dELdv3Chr6QMew/viewform" target="_blank" rel="noopener noreferrer" class="enlace-destacado">👉 en este enlace 👈</a></p>
-
-<h2 class="anchored">Propuestas de Simposios, Cursos y Talleres</h2>
-
-<div class="modalidades-grid">
-
-<div class="modalidad-card">
-<div class="modalidad-icono">🎤</div>
-<h3 class="anchored">Simposios</h3>
-<p>Son sesiones temáticas organizadas alrededor de un eje central, con el propósito de sintetizar el estado del conocimiento, debatir retos y oportunidades, y proponer agendas o estrategias futuras para el campo científico.</p>
-<div class="modalidad-duracion">Duración: 2h 30min</div>
+<a href="../2026-02-09_Formulario/formulario.html">
+<div class="label">Siguiente</div>
+<div class="title">Formulario</div>
+</a>
 </div>
+----------------------------------------------------------------------------------------------------------->
 
-<div class="modalidad-card">
-<div class="modalidad-icono">🔬</div>
-<h3 class="anchored">Cursos y Talleres</h3>
-<p>Son espacios formativos orientados a la transferencia de conocimientos y habilidades en mastozoología, biodiversidad, conservación, manejo de datos, herramientas de campo, análisis, comunicación científica o temas afines.</p>
-<div class="modalidad-duracion">Duración: 2h 30min</div>
+<div class="noticia-header">
+<div class="noticia-meta">
+  <p style="text-align: justify;">El II Encuentro de Semilleros de Mastozoología Colombiana se realizará en el marco del VI Congreso Colombiano de Mastozoología, del 2 al 6 de noviembre de 2026 en Florencia, Caquetá. Esta iniciativa es liderada por el Semillero de Investigación en Biodiversidad Amazónica y Agroecosistemas (SIBIAMA), la Red Colombiana de Estudiantes de Mastozoología (RECMas) y la representación estudiantil de la Sociedad Colombiana de Mastozoología (SCMas). </p>
+  <p>El encuentro busca consolidarse como un espacio de integración, formación e intercambio académico para estudiantes interesados en el estudio de los mamíferos de Colombia. Reunirá semilleros de investigación, grupos estudiantiles, docentes, investigadores y profesionales con el propósito de fortalecer la colaboración entre instituciones, visibilizar los procesos de investigación liderados por estudiantes y promover nuevas iniciativas para el conocimiento y la conservación de la mastofauna colombiana. </p>
+  
 </div>
 
 </div>
 
-<h2 class="anchored">¿Quiénes pueden participar?</h2>
 
-<p>El encuentro está dirigido a:</p>
+<div class="noticia-body">
 
+<h2 class="anchored">📢 ¡Las preinscripciones ya están abiertas!</h2>
+  <p style="margin-bottom: 10px; >Si haces parte de un semillero de investigación, un grupo estudiantil o estás interesado(a) en vincularte a la comunidad de mastozoología en Colombia, te invitamos a realizar tu preinscripción al II Encuentro de Semilleros de Mastozoología Colombiana.</p>
+<h2 class=" anchored"="">Formulario de Preinscripción
+<pstyle="margin-bottom: 10px;=""><a href="https://docs.google.com/forms/d/e/1FAIpQLSemggxAosN6qnqk91aK3ey-QbN7yiYnrdo7dELdv3Chr6QMew/viewform " target="_blank" class="btn-primary">Realizar Preinscripción</a></pstyle="margin-bottom:></p>
+
+<h2 class="anchored">🎯 Objetivo</h2>
+<p style="margin-bottom: 10px;>Crear la imagen institucional del VICCM 2026 que represente la biodiversidad amazónica y la mastozoología colombiana.</p>
+
+<h2 style=" margin-bottom:="" 10px;="" class="anchored">¿Quiénes pueden participar?
+</p><p>El encuentro está dirigido a:</p>
 <ul class="lista-viñetas">
 <li>Integrantes de semilleros de investigación y grupos estudiantiles. </li>
-<li>Estudiantes de pregrado y posgrado.</li>
-<li>Jóvenes investigadores</li>
-<li>Docentes e investigadores interesados en la formación de nuevos mastozoólogos. </li>
+<li>Jóvenes investigadores.</li>
+<li>Docentes e investigadores interesados en la formación de nuevos mastozoólogos</li>
 <li>Personas interesadas en vincularse a un semillero o grupo de estudio en mastozoología.</li>
 </ul>
 
-<h2 class="anchored">¿Qué encontrarás en el encuentro?</h2>
-
+<h2 style="margin-bottom: 10px; class=" anchored"="" class="anchored">💡 ¿Qué encontrarás en el encuentro?</h2>
 <p>Durante la jornada se desarrollarán actividades orientadas al fortalecimiento de la comunidad estudiantil de mastozoología, entre ellas:</p>
-
-<ul class="lista-viñetas">
-<li>Presentación de los semilleros participantes y sus líneas de trabajo. </li>
-<li>Socialización de experiencias exitosas y procesos de investigación estudiantil.</li>
-<li>Presentación de los semilleros ganadores del concurso realizado durante el V Congreso Colombiano de Mastozoología.</li>
-<li>Concurso de propuestas de investigación estudiantil. </li>
-<li>Espacios de diálogo sobre los retos y oportunidades de los semilleros de mastozoología en Colombia.</li>
-<li>Actividades de articulación para fortalecer la Red Colombiana de Estudiantes de Mastozoología (RECMas) y promover la vinculación de nuevos integrantes.</li>
+<ul style="margin-bottom: 10px;  class=" lista-numerada"="">
+<li>    Presentación de los semilleros participantes y sus líneas de trabajo.</li>
+<li>    Socialización de experiencias exitosas y procesos de investigación estudiantil.</li>
+<li>  Presentación de los semilleros ganadores del concurso realizado durante el V Congreso Colombiano de Mastozoología.</li>
+<li>    Concurso de propuestas de investigación estudiantil.</li>
+<li>    Espacios de diálogo sobre los retos y oportunidades de los semilleros de mastozoología en Colombia.</li>
+<li>    Actividades de articulación para fortalecer la Red Colombiana de Estudiantes de Mastozoología (RECMas) y promover la vinculación de nuevos integrantes.</li>
 </ul>
 
-<h2 class="anchored">¿Por qué participar?</h2>
-
+<h2 style="margin-bottom: 10px; class=" anchored"="" class="anchored">¿Por qué participar?</h2>
 <p>Participar en el II Encuentro de Semilleros de Mastozoología Colombiana te permitirá:</p>
-
-<ul class="lista-viñetas">
-<li>Compartir experiencias y resultados de investigación con estudiantes de diferentes regiones del país. </li>
-<li>Fortalecer tu formación científica y tus habilidades para comunicar proyectos de investigación.</li>
-<li>Establecer redes de colaboración con otros semilleros, investigadores e instituciones.</li>
-<li>Conocer iniciativas innovadoras en investigación y conservación de mamíferos. </li>
-<li>Acceder a oportunidades de financiación para proyectos liderados por estudiantes..</li>
-<li>Vincularte a la Red Colombiana de Estudiantes de Mastozoología (RECMas) y fortalecer tu participación en la comunidad mastozoológica nacional.</li>
+<ul style="margin-bottom: 10px;" class="lista-numerada">
+<li>    Compartir experiencias y resultados de investigación con estudiantes de diferentes regiones del país.</li>
+<li>    Fortalecer tu formación científica y tus habilidades para comunicar proyectos de investigación.</li>
+<li>    Establecer redes de colaboración con otros semilleros, investigadores e instituciones.</li>
+<li>    Conocer iniciativas innovadoras en investigación y conservación de mamíferos.</li>
+<li>    Acceder a oportunidades de financiación para proyectos liderados por estudiantes.</li>
+<li>    Vincularte a la Red Colombiana de Estudiantes de Mastozoología (RECMas) y fortalecer tu participación en la comunidad mastozoológica nacional.</li>
 </ul>
 
-<h2 class="anchored">🏆 Concurso de Investigación para Semilleros</h2>
 
-<p style="font-weight: bold; font-size: 1.1em;">¿Tu semillero desarrolla proyectos sobre los mamíferos de Colombia?  Esta es una oportunidad para llevar tu investigación al siguiente nivel.</p>
-
-<p style="text-align:justify;">En el marco del II Encuentro de Semilleros de Mastozoología Colombiana, se abrirá una convocatoria para que semilleros, grupos de estudio e iniciativas estudiantiles postulen propuestas de investigación orientadas al conocimiento, monitoreo y conservación de la mastofauna colombiana.</p>
-<p style="text-align:justify;">Las propuestas serán evaluadas por especialistas de la SCMas mediante la revisión del documento escrito y una sustentación oral en formato Flash Talk durante el encuentro. Las iniciativas mejor calificadas recibirán apoyo económico para el desarrollo de sus proyectos, fortaleciendo así los procesos de investigación liderados por estudiantes y promoviendo la generación de nuevo conocimiento sobre los mamíferos de Colombia. Además del apoyo financiero, los proyectos ganadores recibirán acompañamiento académico y deberán socializar sus resultados durante el siguiente Congreso Colombiano de Mastozoología y en otros espacios promovidos por la SCMas y la RECMas.</p>
-<p style="font-weight: bold; font-size: 1.1em;">¡Anímate a participar y convierte tu idea de investigación en un proyecto con impacto para la mastozoología colombiana!</p>
+<h2 style="margin-bottom: 10px; class=" anchored"="" class="anchored">🏆 Concurso de Investigación para Semilleros</h2>
+<h3 class="anchored">¿Tu semillero desarrolla proyectos sobre los mamíferos de Colombia? </h3>
+<p style="margin-bottom: 10px; >Esta es una oportunidad para llevar tu investigación al siguiente nivel.</p>
+<p style=" text-align:="" justify;"="">En el marco del II Encuentro de Semilleros de Mastozoología Colombiana, se abrirá una convocatoria para que semilleros, grupos de estudio e iniciativas estudiantiles postulen propuestas de investigación orientadas al conocimiento, monitoreo y conservación de la mastofauna colombiana.</p>
+<p style="text-align: justify;">Las propuestas serán evaluadas por especialistas de la SCMas mediante la revisión del documento escrito y una sustentación oral en formato Flash Talk durante el encuentro. Las iniciativas mejor calificadas recibirán apoyo económico para el desarrollo de sus proyectos, fortaleciendo así los procesos de investigación liderados por estudiantes y promoviendo la generación de nuevo conocimiento sobre los mamíferos de Colombia. Además del apoyo financiero, los proyectos ganadores recibirán acompañamiento académico y deberán socializar sus resultados durante el siguiente Congreso Colombiano de Mastozoología y en otros espacios promovidos por la SCMas y la RECMas.</p>
+<h4 class="anchored">¡Anímate a participar y convierte tu idea de investigación en un proyecto con impacto para la mastozoología colombiana!</h4>
 <p>Próximamente se publicarán las bases de la convocatoria, el cronograma y los requisitos para la postulación de propuestas.</p>
-<p style="font-weight: bold; font-size: 1.1em;"> ¡Te esperamos!</p>
-<p style="text-align:justify;">El II Encuentro de Semilleros de Mastozoología Colombiana será un espacio para compartir experiencias, fortalecer capacidades, generar alianzas y construir el futuro de la mastozoología colombiana desde la investigación estudiantil.</p>
-<p style="text-align:justify;">Realiza tu preinscripción y haz parte de esta red nacional de estudiantes comprometidos con el conocimiento y la conservación de los mamíferos de Colombia.</p>
+<h2 class="anchored">🤲¡Te esperamos!</h2>
 
-<p style="font-weight: bold; font-size: 1.1em;">¡Síguenos y no te pierdas ninguna actualización!</p>
-<p style="font-weight: bold; font-size: 1.1em; margin-bottom: auto;">Instagram</p>
+<p style="margin-bottom: 10px;>El II Encuentro de Semilleros de Mastozoología Colombiana será un espacio para compartir experiencias, fortalecer capacidades, generar alianzas y construir el futuro de la mastozoología colombiana desde la investigación estudiantil.</p>
+<p>Realiza tu preinscripción y haz parte de esta red nacional de estudiantes comprometidos con el conocimiento y la conservación de los mamíferos de Colombia.</p>
+<h2>¡Síguenos y no te pierdas ninguna actualización!</h2>
+<h2>Instagram</h2>
+<p><a href=" https:="" www.instagram.com="" @recmasto"="" target="_blank" rel="noopener noreferrer" class="btn-primary">RECMas</p>
+<p style="margin-bottom: 10px"><a href="https://www.instagram.com/@sibiama.udla" target="_blank" rel="noopener noreferrer" class="btn-primary">SIBIAMA</a></p>
+<p><a href="https://www.instagram.com/@mastozoologiacolombia" target="_blank" rel="noopener noreferrer" class="btn-primary">SCMas</a></p>
 
-<a style="color:rgb(44, 97, 243);" font-weight: bold; font-size: 1.1em;"  href="https://www.instagram.com/recmasto" target="_blank" rel="noopener noreferrer">RECMas</a>
-<a style="color:rgb(44, 97, 243);" font-weight: bold; font-size: 1.1em;" href="https://www.instagram.com/sibiama.udla" target="_blank" rel="noopener noreferrer">SIBIAMA</a>
-<a style="color:rgb(44, 97, 243);" font-weight: bold; font-size: 1.1em;" href="https://www.instagram.com/mastozoologiacolombia" target="_blank" rel="noopener noreferrer">SCMas</a>
 
-<div class="detalle-nav">
 
-<a href="../2026-01-28_primera_circular/primera_circular.html">
-<div class="label">Anterior</div>
-<div class="title">Primera Circular</div>
-</a>
 
-<a href="../2026-02-09_Formulario/formulario.html" class="next">
-<div class="label">Siguiente</div>
-<div class="title">Formulario de Propuestas</div>
-</a>
+
 
 </div>
-
-</div>
-</article>
+</div></article>
 </section>
-<script src="segunda_circular.js"></script>
+<script src="concurso_diseno.js"></script>
+
 
 
 <footer class="custom-footer">
 
   <div class="footer-wave">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320" aria-hidden="true">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true">-->
 
       <path fill="var(--primary)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 
-    </svg>
+    
 
   </div>
 
@@ -272,9 +583,9 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="footer-logo-container">
 
-          <img src="../../images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
+          <img style="height: 80px; width: 170px;" src="../../images/logos/VICCM_logo.png" alt="VI Congreso Colombiano de Mastozoología" class="footer-logo-main">
 
-          <img src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
+          <img style="height: 90px; width: 80px;" src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="footer-logo-main">
 
         </div>
 
@@ -284,7 +595,7 @@ ul.task-list li input[type="checkbox"] {
 
           VI Congreso Colombiano de Mastozoología · Amazonía 2026<br>
 
-          <span class="footer-quote">"Amazonia sin fronteras"</span>
+          <span class="footer-quote">“Amazonia sin fronteras: tejiendo saberes, biodiversidad y conocimiento.” </span>
 
         </p>
 
@@ -338,7 +649,7 @@ ul.task-list li input[type="checkbox"] {
 
           <li>
 
-            <span class="event-date">14 Ago 2026</span>
+            <span class="event-date">28 Ago 2026</span>
 
             <span class="event-name">Límite envío resúmenes</span>
 
@@ -346,7 +657,7 @@ ul.task-list li input[type="checkbox"] {
 
           <li>
 
-            <span class="event-date">11 Sep 2026</span>
+            <span class="event-date">18 Sep 2026</span>
 
             <span class="event-name">Notificación aceptación</span>
 
@@ -418,9 +729,9 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="sponsors-grid">
 
-        <img src="../../images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
+        <img style="height: 100px; width: 250px;" src="../../images/logos/VICCM_logo.png" alt="VICCM" class="sponsor-logo">
 
-        <img src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
+        <img style="height: 100px; width: 100px;" src="../../images/logos/Simple_byn_negativo.png" alt="Universidad de la Amazonia" class="sponsor-logo">
 
       </div>
 
@@ -451,6 +762,14 @@ ul.task-list li input[type="checkbox"] {
         </p>
 
       </div>
+
+      <div id="mensaje-flotante">
+
+  <span id="mf-icono">📢</span>
+
+  <span>¡El pago de la membresía a la SCMas no es la inscripción al evento!</span>
+
+</div>
 
     </div>
 
@@ -862,6 +1181,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 <script src="../../js/main.js"></script>
+<script src="../../js/search.js"></script>
 <script src="../../js/menu.js"></script>
 <script src="../../js/slider.js"></script>
 <script src="../../js/comites.js"></script>

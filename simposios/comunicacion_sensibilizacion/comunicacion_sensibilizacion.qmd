@@ -33,28 +33,31 @@ format:
 <div class="organizadores-info">
 <h3>Organizan</h3>
 <ul class="lista-organizadores">
-<li>Catalina Rodriguez</li>
-<li>César Rojano</li>
 <li>Mónica Peñuela Salgado</li>
 <li>Juan Camilo Rubiano Pérez</li>
-<li>Mariana Zanotti Tavares de Oliveira</li>
-<li>Ginna Gómez Junco</li>
 <li>Diana Alejandra Moncada Garzón</li>
 <li>Katherine Pérez Gómez</li>
-<li>Angie Tinoco Sotomayor</li>
-<li>Luisa Fernanda Blanco Uribe</li>
-<li>Carlos Ágamez López</li>
-<li>Oscar Ducuara</li>
-<li>Mariana Vélez Orozco</li>
 <li>María Camila Machado Aguilar</li>
+<li>Angie Tinoco Sotomayor</li>
+<li>Mariana Zanotti Tavares de Oliveira</li>
+<li>Juan Manuel Carvajalino Fernández</li>
+<li>Catalina Rodriguez</li>
+<li>César Rojano</li>
 </ul>
 <div class="badge-simposio">Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</div>
+</div>
+<div class="simposio-logos" >
+<img   src="/images/S7_/Cunaguaro Biodiversidad y Cultura/CBC.png" alt="Refugios de Murciélagos">
+<img   src="/images/S7_/Fundacion_Galictis/logo Galictis_Negro.png" alt="Refugios de Murciélagos">
+<img   src="/images/S7_/Fundación Mapache Colombia/PREFERENCIAL-SOBRE-BLANCO-V@3x.png">
+<img   src="/images/S7_/Fundación Parque Jaime Duque/Logo fundacon parque.png">
+<img   src="/simposios/comunicacion_sensibilizacion/images/imagen imprimir_Logo Negro Texto_J.png">
 </div>
 </div>
 
 <div class="col-derecha">
 <h1>Comunicación, Sensibilización y Enseñanza para la Conservación de Mamíferos: Experiencias, Estrategias y Retos</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

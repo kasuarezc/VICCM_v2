@@ -31,26 +31,14 @@ format:
 <div class="cards-grid">
 
 <!-- CURSO REAL 1 -->
-<article class="card-placeholder card-contenido">
-<div class="card-imagen">
-<img src="cursos/c1_interacciones_bioticas_mamiferos/images/c1_interacciones_bioticas_mamiferos.jpg" alt="Curso interacciones bióticas">
-</div>
-<h3 class="card-titulo">Conceptos y herramientas metodológicas en el estudio de las interacciones bióticas de mamíferos</h3>
-<div class="card-organizadores">
-<span class="card-organizador">Kevin González Gutiérrez</span>
-<span class="card-organizador">Alejandro Rodriguez Villa</span>
-<span class="card-organizador">John Harold Castaño Salazar</span>
-</div>
-<p class="card-descripcion">Las interacciones bióticas constituyen un componente fundamental para comprender la estructura y el funcionamiento de los ecosistemas.</p>
-<a href="cursos/c1_interacciones_bioticas_mamiferos/c1_interacciones_bioticas_mamiferos.html" class="card-boton">Ver el Curso Completo →</a>
-</article>
 
-<!-- CURSO REAL 2 -->
+
+<!-- CURSO REAL 2 
 <article class="card-placeholder card-contenido">
 <div class="card-imagen">
 <img src="cursos/c2_ciencia_dosel/images/c2_ciencia_dosel.jpg" alt="Curso Ciencia del Dosel">
 </div>
-<h3 class="card-titulo">Investigación de Ciencia del Dosel para la conservación de mamíferos</h3>
+<h3 class="card-titulo">Investigación de Ciencia del Dosel para la Conservación de Mamíferos</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Juan Lucas Capa Procel</span>
 <span class="card-organizador">Ollie Thomas </span>
@@ -59,7 +47,8 @@ format:
 </div>
 <p class="card-descripcion">El curso Investigación de Ciencia del Dosel para la Conservación de Mamíferos tiene como objetivo principal fortalecer las capacidades técnicas y científicas de jóvenes, estudiantes y actores vinculados a la conservación, mediante la apropiación de herramientas básicas para la investigación del dosel.</p>
 <a href="cursos/c2_ciencia_dosel/c2_ciencia_dosel.html" class="card-boton">Ver el Curso Completo →</a>
-</article>
+</article> -->
+
 
 <!-- CURSO REAL 3 -->
 <article class="card-placeholder card-contenido">
@@ -81,7 +70,7 @@ format:
 <div class="card-imagen">
 <img src="cursos/c4_procesamiento/images/c4_procesamiento.jpg" alt="Curso Procesamiento, analisis de datos">
 </div>
-<h3 class="card-titulo">Procesamiento, visualización y análisis de datos espaciales en R.</h3>
+<h3 class="card-titulo">Procesamiento, Visualización y Análisis de Datos Espaciales en R.</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Diego J. Lizcano</span>
 <span class="card-organizador">Andrés Felipe Suárez Castro</span>
@@ -135,23 +124,24 @@ format:
 
 <div class="cards-grid">
 
-<!-- TALLER REAL 1 -->
+<!-- TALLER REAL 1 
 <article class="card-placeholder card-contenido">
 <div class="card-imagen">
 <img src="cursos/t1_tejiendo_conservacion/images/t1_tejiendo_conservacion.jpg" alt="Taller Tejiendo la conservación">
 </div>
-<h3 class="card-titulo">Tejiendo la conservación: arte y mamíferos en peligro</h3>
+<h3 class="card-titulo">Tejiendo la Conservación: Arte y Mamíferos en Peligro</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Leidy Laura Ocampo López</span>
 </div>
 <p class="card-descripcion">Fortalecer capacidades en educación para la conservación de mamíferos mediante el uso del tejido como herramienta pedagógica y comunitaria.</p>
 <a href="cursos/t1_tejiendo_conservacion/t1_tejiendo_conservacion.html" class="card-boton">Ver Taller Completo →</a>
 </article>
+-->
 
 <!-- TALLER REAL 2 -->
 <article class="card-placeholder card-contenido">
 <div class="card-imagen">
-<img src="cursos/t2_murcielagos/images/t2_murcielagos.png" alt="Refugios de Murciélagos">
+<img src="cursos/t2_murcielagos/images/banner.jpg" alt="Refugios de Murciélagos">
 </div>
 <h3 class="card-titulo">Introducción al Estudio de los Refugios de Murciélagos en Colombia</h3>
 <div class="card-organizadores">
@@ -167,7 +157,7 @@ format:
 <div class="card-imagen">
 <img src="cursos/t3_murcielloween/images/t3_murcielloween.jpg" alt="Taller Ciencia participativa para la conservación de murciélagos en contextos urbanos.">
 </div>
-<h3 class="card-titulo">Murcielloween: Investigación participativa para la conservación de murciélagos en entornos urbanos</h3>
+<h3 class="card-titulo">Murcielloween: Investigación Participativa para la Conservación de Murciélagos en Entornos Urbanos</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Kevin Alexander Ramírez</span>
 <span class="card-organizador">Joseph Alejandro Romero</span>
@@ -184,7 +174,7 @@ format:
 <div class="card-imagen">
 <img src="cursos/t4_innovacion/images/t4_innovacion.jpg" alt="Herramientas didácticas que construyen puentes entre la ciencia y las comunidades">
 </div>
-<h3 class="card-titulo">Innovación educativa y herramientas didácticas para la conservación de mamíferos</h3>
+<h3 class="card-titulo">Innovación Educativa y Herramientas Didácticas para la Conservación de Mamíferos</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Laura Suárez Ramírez</span>
 <span class="card-organizador">María Angélica Contreras</span>
@@ -215,7 +205,7 @@ format:
 <div class="card-imagen">
 <img src="cursos/t6_conozcamonos/images/t6_conozcamonos.png" alt="Jugar para aprender: el arte de conocer nuestros primates.">
 </div>
-<h3 class="card-titulo">ConozcáMonos: aprende sobre ecología y conservación de monos de Colombia</h3>
+<h3 class="card-titulo">ConozcáMonos: Aprende sobre Ecología y Conservación de Monos de Colombia</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Alma Hernández</span>
 <span class="card-organizador">Caralina Orrego</span>
@@ -259,7 +249,7 @@ format:
 <div class="card-imagen">
 <img src="cursos/t9_dato/images/t9_dato.jpg" alt="La ilustración territorial como herramienta para narrar y conservar la biodiversidad.">
 </div>
-<h3 class="card-titulo">Del dato a la imagen: infografías narrativas con contexto territorial para la conservación de mamíferos</h3>
+<h3 class="card-titulo">Del Dato a la Imagen: Infografías Narrativas con Contexto Territorial para la Conservación de Mamíferos</h3>
 <div class="card-organizadores">
 <span class="card-organizador">Yesyca Andrea López Bolaños</span>
 <span class="card-organizador">Nilsa Lorena Alvear </span>

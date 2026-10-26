@@ -11,12 +11,12 @@
   }
 
   .header-container {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0.8rem 0;
   }
 
   body {
-    padding-top: 135px;
+    padding-top: 15%;
   }
 }
 

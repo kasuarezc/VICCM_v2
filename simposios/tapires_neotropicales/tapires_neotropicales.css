@@ -55,6 +55,20 @@
   padding: 2rem;
 }
 
+.simposio-logos{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;
+  justify-content: center;  
+  
+}
+
+.simposio-logos img{
+  height: 80px;
+  min-width: 60px; 
+  object-fit: object-fit;
+}
+
 .imagen-card {
   background: white;
   border-radius: 20px;

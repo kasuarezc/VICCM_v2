@@ -43,11 +43,23 @@ format:
 </ul>
 <div class="badge-simposio">IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</div>
 </div>
+
+<div class="simposio-logos" >
+<img  class="imagen-logo-simposio" src="/images/S17_/FINAL ECOTONOS 3.jpg" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/GHA_text.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/Logo Humboldt Fondo blanco.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/logo_REC.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/pcmco.jpg" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/WCS_LOGO-small.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/images/S17_/WildMon_logo.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/simposios/bioacustica_mamiferos/images/logo_palmita_ci.png" alt=" ">
+</div>
+
 </div>
 
 <div class="col-derecha">
 <h1>IV Simposio de Bioacústica de Mamíferos de Colombia: Desafíos Actuales y Nuevas Rutas de Investigación</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>

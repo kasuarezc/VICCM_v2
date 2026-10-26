@@ -1,5 +1,5 @@
 ---
-title: "Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos"
+title: "Fronteras en Movimiento: Ciencia de Vanguardia e Impacto Real en la Conservación de Mamíferos"
 format:
   html:
     css:
@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/fronteras_movimiento.jpg" alt="Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos">
+<img src="images/fronteras_movimiento.jpeg" alt="Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos">
 <div class="pie-foto">
 📷 Ciencia y tecnología para el monitoreo y al servicio de la conservación de ecosistemas estratégicos.
 </div>
@@ -41,13 +41,20 @@ format:
 <li>Rurik List</li>
 <li>José F. González Maya</li>
 </ul>
-<div class="badge-simposio">Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos</div>
+<div class="badge-simposio">Fronteras en Movimiento: Ciencia de Vanguardia e Impacto Real en la Conservación de Mamíferos</div>
+</div>
+
+<div class="simposio-logos" >
+
+<img  class="imagen-logo-simposio" src="/images/S16_/logo_procat_vertical_color_col.png" alt=" ">
+
+<img  class="imagen-logo-simposio" src="/images/S16_/variacion7Ler.png" alt=" ">
 </div>
 </div>
 
 <div class="col-derecha">
-<h1>Fronteras en movimiento: ciencia de vanguardia e impacto real en la conservación de mamíferos</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<h1>Fronteras en Movimiento: Ciencia de Vanguardia e Impacto Real en la Conservación de Mamíferos</h1>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

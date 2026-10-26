@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/pequenos_carnivoros.jpg" alt="Pequeños Carnívoros.">
+<img src="images/pequenos_carnivoros.jpeg" alt="Pequeños Carnívoros.">
 <div class="pie-foto">
 📷 Pequeños Carnívoros: hacia la coexistencia y conservación integral en Colombia.
 </div>
@@ -45,11 +45,15 @@ format:
 </ul>
 <div class="badge-simposio">VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia</div>
 </div>
+<div class="simposio-logos"> 
+<img    src="/images/S13_/variacion5Ler.png" alt="">
+<img    src="/images/S13_/logo_procat_vertical_color_col.png" alt="">
+</div>
 </div>
 
 <div class="col-derecha">
 <h1>VI Simposio de pequeños carnívoros en Colombia & II Simposio Nuevas aproximaciones a la conservación de carnívoros de Colombia</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivos</h2>

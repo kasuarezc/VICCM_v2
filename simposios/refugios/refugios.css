@@ -43,6 +43,20 @@
   gap: 0;
 }
 
+.simposio-logos{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 20px;
+  justify-content: center;  
+  
+}
+
+.simposio-logos img{
+  height: 70px;
+  min-width: 70px; 
+  object-fit: object-fit;
+}
+
 .col-izquierda {
   background: #eef1ef;
   padding: 2rem;

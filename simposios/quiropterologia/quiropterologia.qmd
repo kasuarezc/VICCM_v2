@@ -24,7 +24,7 @@ format:
 
 <div class="col-izquierda">
 <div class="imagen-card">
-<img src="images/quiropterologia.jpg" alt="Murciélagos colombianos: ciencia y conservación desde la diversidad.">
+<img src="images/quiropterologia.png" alt="Murciélagos colombianos: ciencia y conservación desde la diversidad.">
 <div class="pie-foto">
 📷 Murciélagos colombianos: ciencia y conservación desde la diversidad. 
 </div>
@@ -39,20 +39,30 @@ format:
 </ul>
 <div class="badge-simposio">VI Simposio Colombiano de Quiropterología</div>
 </div>
+
+<div class="simposio-logos" >
+<img  class="imagen-logo-simposio" src="/simposios/quiropterologia/images/Logo University of Regensburg_logo.png" alt=" ">
+<img  class="imagen-logo-simposio" src="/simposios/quiropterologia/images/Texas-AM-University-Emblem.png" alt=" ">
+
+
+</div>
 </div>
 
 <div class="col-derecha">
 <h1>VI Simposio Colombiano de Quiropterología</h1>
-<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Amazonía 2026</div>
+<div class="subtitulo">VI Congreso Colombiano de Mastozoología · Florencia 2026</div>
 
 <div class="objetivos">
 <h2>Objetivo</h2>
-<p>El VI Simposio tiene como objetivo central reunir a investigadores, estudiantes, organizaciones no gubernamentales y entidades gubernamentales en torno a una visión integrada de la quiropterología nacional. En particular, se busca articular avances recientes en sistemática, ecología y fisiología, disciplinas cuya integración resulta fundamental para el diseño de estrategias efectivas de conservación. Asimismo, se propone consolidar redes de colaboración entre actores del sector académico, ambiental y de política pública, fortaleciendo así la capacidad colectiva de respuesta ante las amenazas que enfrentan estas especies.De este modo, el simposio se proyecta como un espacio de síntesis, diálogo y proyección científica, orientado no solo a compartir hallazgos recientes, sino a construir una agenda común que impulse la investigación y la conservación de los murciélagos en Colombia durante los próximos años.</p>
+<ul class="lista-objetivos">
+<li>Evaluar el estado actual del conocimiento sobre los murciélagos de Colombia y definir prioridades de investigación que fortalezcan su conservación.</li>
+<li>Articular a investigadores, estudiantes y entidades para consolidar redes de colaboración que integren avances en sistemática, ecología y fisiología.</li>
 </div>
 
 <div class="resumen">
 <h2>Resumen</h2>
-<p>Los murciélagos constituyen uno de los grupos de mamíferos más diversos y ecológicamente relevantes del planeta, y Colombia, con su excepcional biodiversidad, alberga una de las quiropterofaunas más ricas del mundo. Sin embargo, estos animales continúan enfrentando amenazas crecientes derivadas de la pérdida y transformación de hábitat, el cambio climático y la persistente desinformación sobre su papel en los ecosistemas. Este escenario hace necesario generar un nuevo espacio de encuentro académico que permita evaluar el estado actual del conocimiento sobre los murciélagos colombianos, identificar vacíos de información y trazar rutas de investigación para los próximos años.</p>
+<p>Los murciélagos representan uno de los grupos de mamíferos más diversos y ecológicamente importantes del planeta, y Colombia destaca por albergar una de las quiropterofaunas más ricas del mundo. A pesar de su relevancia, estas especies continúan enfrentando amenazas crecientes asociadas a la pérdida y transformación de hábitat, el cambio climático y la persistente desinformación sobre su papel en los ecosistemas. Desde la realización del último Simposio Colombiano de Quiropterología han transcurrido cinco años marcados por avances significativos en el estudio de este grupo, lo que hace necesario un nuevo espacio académico que permita actualizar el panorama nacional, identificar vacíos de información y orientar las líneas de investigación futuras.
+El VI Simposio se plantea como un encuentro integrador que reúna a investigadores, estudiantes, organizaciones no gubernamentales y entidades gubernamentales en torno a una visión conjunta de la quiropterología en el país. Su propósito central es articular los progresos recientes en sistemática, ecología y fisiología, disciplinas cuya convergencia resulta esencial para diseñar estrategias de conservación efectivas. Asimismo, busca fortalecer redes de colaboración entre actores del ámbito académico, ambiental y de política pública, incrementando la capacidad colectiva de respuesta frente a las amenazas que enfrentan los murciélagos. En conjunto, el evento aspira a consolidarse como un espacio de síntesis, diálogo y proyección científica que impulse la investigación y conservación de estos mamíferos en Colombia.
 
 </div>
 
