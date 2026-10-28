@@ -35,6 +35,28 @@ format:
 
 
 
+<div class="noticia-card" data-categoria="Programa" data-fecha="2026-10-28" data-titulo="Programa Preminimar" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba, Luisa Martínez">
+<div class="noticia-badge">28 Octubre</div>
+<div class="noticia-img"><img src="noticias/2026-10-28_Programa/images/Programa.png" alt="Programa y agenda"></div>
+<div class="noticia-content">
+<div class="noticia-meta">
+<span class="noticia-fecha">28 Octubre 2026</span>
+<span class="noticia-hora">2:00 p.m</span>
+</div>
+<div class="noticia-autores">
+<span class="noticia-autor">Diego J. Lizcano</span>
+<span class="noticia-autor">Catalina Concha-Osbahr</span>
+<span class="noticia-autor">Javier García-Villalba</span>
+<span class="noticia-autor">Luisa Martínez</span>
+</div>
+<h3 class="noticia-titulo">Programa</h3>
+<p class="noticia-descripcion">El programa tiene un buscador por título, autor, tema o ID, filtros por día, modalidad y simposio, y una estrella en cada charla. Los asistentes arman su propia agenda en “Mi agenda”, que avisa si dos charlas se cruzan y se guarda en su dispositivo móvil.</p>
+<a href="noticias/2026-10-28_Programa/Programa.html" class="noticia-btn">Ver Noticia Completa →</a>
+</div>
+</div>
+
+
+
 <div class="noticia-card" data-categoria="convocatorias" data-fecha="2026-07-14" data-titulo="Concurso de Fotografía" data-autor="Diego J. Lizcano, Catalina Concha-Osbahr, Javier García-Villalba">
 <div class="noticia-badge">17 Jul</div>
 <div class="noticia-img"><img src="noticias/2026-07-17_Concurso_Fotografia/images/ConcursoPortada.png" alt="Concurso de Fotografía"></div>
@@ -53,7 +75,6 @@ format:
 <a href="noticias/2026-07-17_Concurso_Fotografia/concurso_fotografia.html" class="noticia-btn">Ver Noticia Completa →</a>
 </div>
 </div>
-
 
 
 
